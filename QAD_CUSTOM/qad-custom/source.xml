@@ -5,7 +5,6 @@
 			<file name="source.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/source.xml" />
 		</update>
 	</info>
-	
 	<element name="Qadrudia Campaign Custom" type="Source" source="Core" id="ID_QAD_CAMPAIGN_SOURCE_QADRUDIA_CAMPAIGN_CUSTOM">
 		<description>
 			<p>Custom stuff from the Qadrudia Campaign.</p>
@@ -13,7 +12,7 @@
 		<setters>
 			<set name="abbreviation">QAD_CAMPAIGN</set>
 			<set name="url">https://www.youtube.com/watch?v=dQw4w9WgXcQ</set>
-            <set name="author" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Custom stuff from the Qadrudia Campaign</set>
+			<set name="author" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Custom stuff from the Qadrudia Campaign</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
