@@ -12,7 +12,8 @@
 		</description>
 		<setters>
 			<set name="abbreviation">QAD_CAMPAIGN</set>
-			<set name="url">https://google.com</set>
+			<set name="url">https://www.youtube.com/watch?v=dQw4w9WgXcQ</set>
+            <set name="author" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Custom stuff from the Qadrudia Campaign</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
