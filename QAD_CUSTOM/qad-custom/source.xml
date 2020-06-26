@@ -12,8 +12,9 @@
 		<setters>
 			<set name="abbreviation">QAD_CAMPAIGN</set>
 			<set name="url">https://www.youtube.com/watch?v=dQw4w9WgXcQ</set>
-			<set name="author" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Custom stuff from the Qadrudia Campaign</set>
+			<set name="author" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Qadrudia Campaign</set>
 			<set name="homebrew">true</set>
+			<set name="information">This source uses items found in The Greasemonkey's Handbook.</set>
 		</setters>
 	</element>
 </elements>
