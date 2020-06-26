@@ -36,8 +36,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	
-		<element name="Bag of holding potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
+	<element name="Bag of holding potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
 		<description>
 			<p>It appears to be a simple potatoe sack, but using an action, 1d4 potatoes can be removed from it.</p>
 			<p class="indent">The supply of potatoes seemingly is infinite, altough it cannot be said if it produces the potatoes magically or displaces them from somewhere else. Once potatoes have been removed 3 times, it can't be used again until the next dawn.</p>
@@ -50,8 +49,6 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
-
-
 
 
 </elements>
