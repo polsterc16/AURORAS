@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="2020.06.26">
+			<file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/critical-role/source.xml" />
+		</update>
+	</info>
+	
+
+	<element name="Qadrudia Campaign Custom" type="Source" source="Core" id="ID_QAD_CAMPAIGN_SOURCE_QADRUDIA_CAMPAIGN_CUSTOM">
+		<description>
+			<p>Custom stuff from the Qadrudia Campaign.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">QAD_CAMPAIGN</set>
+			<set name="url">https://google.com</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

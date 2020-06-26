@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Items</name>
+		<description></description>
+        <update version="2020.06.26">
+            <file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/homebrew/qad-custom/items.xml" />
+        </update>
+    </info>
+    
+	<element name="Bildtafeln" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BILDTAFELN">
+		<description>
+			<p>Ein Set aus kleinen, quadratischen Metallplatten (ca. Größe Tarotkarte).</p>
+			<p class="indent">Als Aktion kann man eine der Bildtafel aktivieren. Richtet man die Vorderseite der Tafel auf etwas, das man abbilden möchte, so erscheint eine <i>Minor Illusion</i> davon auf der Rückseite. Nach einer Minute wird das Bild auf der Rückseite permanent. Die Bildtafel kann bis zum nächsten Morgengrauen nicht mehr verwendet werden.</p>
+			<p class="indent">Wenn die Bildtafel verwendet wird, geht ein zuvor gemachtes Bild verloren.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>    
+	<element name="Transportstein" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_TRANSPORTSTEIN">
+		<description>
+			<p>Ein kleiner Handteller großer Stein, bedeckt mit magischen Runen.</p>
+			<p class="indent">Transportsteine treten immer in Paaren auf und können dazu verwendet werden um leblose Objekte, die nicht größer as 2x2x2 Fuß sind, zu deren Gegenstück zu schicken. Transport in beide Richtungen ist möglich. Zum Verschicken müssen Objekte auf dem Stein platziert werden.</p>
+			<p class="indent">Ein Transportstein kann dreimal täglich verwendet werden, um ein Objekt zu schicken. Danach kann der Stein bis zum nächsten Morgengrauen nur noch zum Empfangen verwendet werden.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	
+		<element name="Bag of holding potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
+		<description>
+			<p>It appears to be a simple potatoe sack, but using an action, 1d4 potatoes can be removed from it.</p>
+			<p class="indent">The supply of potatoes seemingly is infinite, altough it cannot be said if it produces the potatoes magically or displaces them from somewhere else. Once potatoes have been removed 3 times, it can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+
+
+
+</elements>
