@@ -9,7 +9,6 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/homebrew/qad-custom/source.xml" />
-		
 		<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/homebrew/qad-custom/items.xml" />
 	</files>
 </index>

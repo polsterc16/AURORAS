@@ -6,7 +6,6 @@
 		</update>
 	</info>
 	
-
 	<element name="Qadrudia Campaign Custom" type="Source" source="Core" id="ID_QAD_CAMPAIGN_SOURCE_QADRUDIA_CAMPAIGN_CUSTOM">
 		<description>
 			<p>Custom stuff from the Qadrudia Campaign.</p>
