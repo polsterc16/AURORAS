@@ -4,10 +4,10 @@
 		<name>Custom Flow of Chaos</name>
 		<description>Custom Class: Flow of Chaos.</description>
 		<update version="2020.06.30">
-			<file name="zchaosflow.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/zchaosflow.index" />
+			<file name="zchaosflow.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/CHAOSFLOW/zchaosflow.index" />
 		</update>
 	</info>
 	<files>
-		<file name="class-chaosflow.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/classes/class-chaosflow.xml" />
+		<file name="class-chaosflow.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/CHAOSFLOW/class-chaosflow.xml" />
 	</files>
 </index>
