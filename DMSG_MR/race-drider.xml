@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-drider.xml" url="https://raw.githubusercontent.com/XXXXXXXXXXXXXXXXXXXX/race-drider.xml" />
+		</update>
+	</info>
+
+	
+	<element name="Race: Drider" type="Source" source="Core" id="ID_DMSG_MR_RDR_SOURCE_RACE_DRIDER">
+		<description>
+			<p>Play as a Drider in 5th edition, with subraces for Lurkers and Pouncers.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RDR</set>
+			<set name="url">https://www.dmsguild.com/product/199828/Race-Drider-5e</set>
+			<set name="image">https://www.dmsguild.com/images/8957/199828.jpg</set>
+			<set name="author" abbreviation="DMSG" url="https://www.dmsguild.com/browse.php?author=Michael%20Richter">Michael Richter</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	
+	
+    <element name="Drider" type="Race" source="Race: Drider" id="ID_DMSG_MR_RDR_RACE_DRIDER">
+        <description>
+            <p><i>“I excel at pulling strings. I'm a spider!”</i></p>
+			<p><center>—Arachne, The Mark of Athena</center></p>
+			
+            <h4>APPEARANCE</h4>
+            <p>Driders have the upper body of a drow, but their lower body is replaced with that of a large spider, their waist connecting to where the spiders head would have been. Different driders may have different types of spider bodies, with common examples being tarantulas or black widows.</p>
+			
+            <h4>HISTORY</h4>
+            <p>When a drow shows great promise, Lolth summons it to the Demonweb pits for a test of faith and strength. Those that pass the test rise higher in the Spider Queen's favor. Those that fail are transformed into driders, a living reminder of Lolth's power.</p>
+			
+            <h4>SOCIETY</h4>
+            <p>Drow transformed into driders return to the material plane as twisted and debased creatures. Driven by madness, they disappear into the Underdark to become hermits or hunters, either wandering alone or leading packs of giant spiders.</p>
+			<p class="indent">Over time, the madness may slowly settle. When this happens, some driders return to drow society, although they are feared and shunned by their former kin, who hold them in lower esteem than slaves, but tolerate their presence as living manifestations of Lolth's will, as well as a reminder of the fate that awaits all who fail the Spider Queen.</p>
+			<p class="indent">Others continue their solitary lives or band together with other driders to form their own societies. These societies tend to be even more vile than those of the drow. Over generations this can change though, as with any culture.</p>
+
+            <h4>DRIDER TRAITS</h4>
+            <p>Your drider character has a number of traits in common with all other driders.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 2. </p>
+            <p class="indent"><b><i>Age. </i></b>Driders have similar lifespans to drow.</p>
+            <p class="indent"><b><i>Alignment. </i></b>Driders tend very much to evil alignments. Their transformation has left them scarred for life, and to garner Lolth's interest to begin with, they were usually exceptionally vile drow before it.</p>
+            <p class="indent"><b><i>Size. </i></b>Driders drow-bodies are of elvish proportions, but their lower spider-bodies make them count as large creatures. For the purpose of using weapons and armor though, they still count as medium.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet. </p>
+            <p class="indent"><b><i>Darkvision. </i></b>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+            <p class="indent"><b><i>Spider Climb. </i></b>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+            <p class="indent"><b><i>Web Weaver. </i></b>You can produce spider silk and you ignore movement restrictions caused by webbing. You instinctively know how to build a web.</p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read and write Elvish and Undercommon.</p>
+            <p class="indent"><b><i>Subrace. </i></b>There are two main kinds of drider, depending on the type of spider their lower body represents: Lurkers and Pouncers. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="2" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" requirements="!ID_VISION_SUPERIORDARKVISION" />
+			<stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_SIZE" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_SPIDER_CLIMB" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_WEB_WEAVER" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_SUBRACE" />
+            <grant type="Language" id="ID_LANGUAGE_ELVISH" />
+            <grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
+        </rules>
+    </element>
+    <element name="Size" type="Racial Trait" source="Race: Drider" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_SIZE">
+        <description>
+			<p>Driders drow-bodies are of elvish proportions, but their lower spider-bodies make them count as large creatures. For the purpose of using weapons and armor though, they still count as medium.</p>
+        </description>
+        <sheet>
+            <description>Your lower spider-body makes you count as a large creature. For the purpose of using weapons and armor though, you still count as medium.</description>
+        </sheet>
+		<rules>		
+			<grant type="Size" id="ID_SIZE_LARGE" />
+		</rules>
+    </element>
+    <element name="Spider Climb" type="Racial Trait" source="Race: Drider" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_SPIDER_CLIMB">
+        <description>
+			<p>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Weaver" type="Racial Trait" source="Race: Drider" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_WEB_WEAVER">
+        <description>
+            <p>You can produce spider silk and you ignore movement restrictions caused by webbing. You instinctively know how to build a web.</p>
+        </description>
+        <sheet>
+            <description>You ignore movement restrictions caused by webbing, can produce spider silk and know how to build a web.</description>
+        </sheet>
+    </element>
+	<element name="Drider Subrace" type="Racial Trait" source="Race: Drider" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_SUBRACE">
+        <description>
+            <p>There are two main kinds of drider, depending on the type of spider their lower body represents: Lurkers and Pouncers. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Drider Subrace" supports="Drider Subrace" />
+        </rules>
+    </element>
+	
+	<element name="Lurker Drider" type="Sub Race" source="Race: Drider" id="ID_DMSG_MR_RDR_SUB_RACE_DRIDER_LURKER">
+		<supports>Drider Subrace</supports>
+		<description>
+			<p>This more common type of drider lies in wait for its prey, trapping it in webs or simply ambushing it with deadly precision. They are very accustomed to the darkness, but shun the sunlight.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity score increases by 1.</p>
+			<p class="indent"><b><i>Dark Lurker. </i></b>You have proficiency in the Stealth skill.</p>
+			<p class="indent"><b><i>Weapon Training. </i></b>You have proficiency with the longbow, shortbow and shortsword.</p>
+			<p class="indent"><b><i>Sunlight Sensitivity. </i></b>While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
+			<p class="indent"><b><i>Superior Darkvision. </i></b>darkvision has a range of 120 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Racial Trait" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_LURKER_SUNLIGHT_SENSITIVITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+		</rules>
+	</element>
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Race: Drider" id="ID_DMSG_MR_RDR_RACIAL_TRAIT_DRIDER_LURKER_SUNLIGHT_SENSITIVITY">
+		<description>
+			<p>While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
+		</description>
+		<sheet>
+			<description>While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pouncer Drider" type="Sub Race" source="Race: Drider" id="ID_DMSG_MR_RDR_SUB_RACE_DRIDER_POUNCER">
+		<supports>Drider Subrace</supports>
+		<description>
+			<p>These driders are built more powerful. They also use stealth, but prefer more open spaces where they can jump at their unknowing prey or outrun it. As a result they sometimes venture to the surface world to hunt.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength score increases by 1.</p>
+			<p class="indent"><b><i>Vicious Pouncer. </i></b>You have proficiency in the Athletics skill.</p>
+			<p class="indent"><b><i>Weapon Training. </i></b>You have proficiency with the javelin, longsword and hand crossbow.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+		</rules>
+	</element>
+</elements>

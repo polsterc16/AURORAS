@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-serpentfolk.xml" url="https://raw.githubusercontent.com/XXXXXXXXXXXXXXXXXXXX/race-serpentfolk.xml" />
+		</update>
+	</info>
+
+	
+	<element name="Race: Serpentfolk" type="Source" source="Core" id="ID_DMSG_MR_RSF_SOURCE_RACE_SERPENTFOLK">
+		<description>
+			<p>The serpentfolk are an ancient race of humanoids with the lower bodies of snakes. They have keen senses an can constrict their enemies in their coils.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RSF</set>
+			<set name="url">https://www.dmsguild.com/product/183775/Race-Serpentfolk-Naga-Lamia</set>
+			<set name="image">https://www.dmsguild.com/images/8957/183775.jpg</set>
+			<set name="author" abbreviation="DMSG" url="https://www.dmsguild.com/browse.php?author=Michael%20Richter">Michael Richter</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	
+	
+    <element name="Serpentfolk" type="Race" source="Race: Serpentfolk" id="ID_DMSG_MR_RSF_RACE_SERPENTFOLK">
+        <description>
+            <p><i>Look before you leap,</i></p>
+			<p><i>For snakes among sweet flowers do creep.</i></p>
+			<p><center>—German Proverb</center></p>
+			
+            <h4>APPEARANCE</h4>
+            <p>Serpentfolk combine a humanlike upper body with the lower body of a snake. The colours of their scales vary wildly but often show beautiful patterns as those seen on real snakes. Their upper bodies sometimes display additional reptilian traits such as fangs, slit eyes and patches of scales.</p>
+			
+            <h4>HISTORY</h4>
+            <p>The serpentfolk are an ancient race, predating humans, but never spread as far as them, partially due to them preferring a warmer climate. They tend to be traditional and set in their ways, leading to their numbers slowly dwindling over the ages. There now remain a few serpentfolk civilizations, usually secluded from the outside world, living either in the wild or in the remains of ancient cities from their days of glory.</p>
+			
+            <h4>SOCIETY</h4>
+            <p>Serpentfolk society is structured and traditional. They have a caste system and a strict hierarchy, choosing their leaders by rituals of divination. They tend to keep to themselves for the most part and try to live their lives as they did in ancient times. Not all serpentfolk agree with these ideals though and there are some who venture outside of their familiar realms to explore the world and mingle with the other races, sometimes becoming adventurers.</p>
+
+			<h4>SERPENTFOLK NAMES</h4>
+			<p>Serpentfolk tend to have names stemming from ancient egyptian, mayan or aztec culture, usually with a meaning. Male and female names are often interchangable.</p>
+			<p>
+			<span class="feature">Male.</span>Tlaloc (“earth”), Etzli (“blood”), Mahuizoh (“glory”)<br />
+			<span class="feature">Female.</span>Itzel (“rainbow”), Milintica (“fire”), Yolotli (“heart”)<br />
+			</p>
+			
+            <h4>SERPENTFOLK TRAITS</h4>
+            <p>Your serpentfolk character has a number of traits in common with other serpentfolk.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 2 and your Dexterity score increases by 1.</p>
+            <p class="indent"><b><i>Age. </i></b>DrSerpentfolk live about twice the time a human does. They reach adulthood at about the same rate, but then age much slower.</p>
+            <p class="indent"><b><i>Alignment. </i></b>Serpentfolk tend towards a lawful alignment. They value tradition and an organized way of life.</p>
+            <p class="indent"><b><i>Size. </i></b>Serpentfolk can be very long and use part of their tails to stand upright. This way they can be quite tall. Their upper body has the same dimensions as a humans. Your size is medium.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your base speed is 35 feet.</p>
+            <p class="indent"><b><i>Heatvision. </i></b>Serpentfolk can sense infrared light, allowing them to see heat. They can use this to see in the dark to an extent, given that there is a temperature gradient, meaning they will be able to see heat sources such as a warm blooded creature, but no features in a uniformly cold room. The range of this sense is 120ft.</p>
+            <p class="indent"><b><i>Keen smell. </i></b>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+            <p class="indent"><b><i>Athletic. </i></b>Serpentfolk are excellent swimmers, climbers and grapplers. You gain proficiency in the Athletics skill.</p>
+            <p class="indent"><b><i>Constrict. </i></b>You have a melee weapon attack that you are proficient with. It deals bludgeoning damage equal to 1d6 plus your Strength modifier. On a hit, the target is grappled by you, given that it's size is equal to or smaller than yours. You can only constrict one creature at the same time.</p>
+            <p class="indent"><b><i>Poison Resistance. </i></b>You have resistance to poison damage.</p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read and write Common and Parsel. Parsel is a language composed mostly of hissing sounds and uses hieroglyphs when written down.</p>
+        </description>
+        <sheet display="false" />
+		<setters>
+			<set name="names" type="male">Tlaloc (“earth”), Etzli (“blood”), Mahuizoh (“glory”)</set>
+			<set name="names" type="female">Itzel (“rainbow”), Milintica (“fire”), Yolotli (“heart”)</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+        <rules>
+            <stat name="constitution" value="2" />
+            <stat name="dexterity" value="1" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="35" bonus="base" />
+            <grant type="Vision" id="ID_DMSG_MR_RSF_VISION_HEATVISION_SERPENTFOLK" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_KEEN_SMELL" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_ATHLETIC" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_CONSTRICT" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_POISON_RESISTANCE" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_DMSG_MR_RSF_LANGUAGE_PARSEL" />
+        </rules>
+    </element>
+    <element name="Keen smell" type="Racial Trait" source="Race: Serpentfolk" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_KEEN_SMELL">
+        <description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+        </sheet>
+    </element>
+    <element name="Athletic" type="Racial Trait" source="Race: Serpentfolk" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_ATHLETIC">
+        <description>
+			<p>Serpentfolk are excellent swimmers, climbers and grapplers. You gain proficiency in the Athletics skill.</p>
+        </description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+    </element>
+    <element name="Constrict" type="Racial Trait" source="Race: Serpentfolk" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_CONSTRICT">
+        <description>
+            <p>You have a melee weapon attack that you are proficient with. It deals bludgeoning damage equal to 1d6 plus your Strength modifier. On a hit, the target is grappled by you, given that it's size is equal to or smaller than yours. You can only constrict one creature at the same time.</p>
+        </description>
+		<sheet>
+			<description>You have a melee weapon attack that you are proficient with. It deals 1d6+{{strength:modifier}} bludgeoning damage. On a hit, the target is grappled by you, if it's size is equal to or smaller than yours. You can only constrict one creature at the same time.</description>
+		</sheet>
+	</element>
+	<element name="Poison Resistance" type="Racial Trait" source="Race: Serpentfolk" id="ID_DMSG_MR_RSF_RACIAL_TRAIT_SERPENTFOLK_POISON_RESISTANCE">
+        <description>
+            <p>You have resistance to poison damage.</p>
+        </description>
+		<sheet>
+			<description>You have resistance to poison damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	
+	
+	<element name="Parsel" type="Language" source="Race: Serpentfolk" id="ID_DMSG_MR_RSF_LANGUAGE_PARSEL">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by serpentfolk.</p>
+            <p class="indent">Parsel is a language composed mostly of hissing sounds and uses hieroglyphs when written down.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Serpentfolk</set>
+			<set name="script">Hieroglyphs</set>
+		</setters>
+	</element>
+	
+	<element name="Heatvision" type="Vision" source="Race: Serpentfolk" id="ID_DMSG_MR_RSF_VISION_HEATVISION_SERPENTFOLK">
+        <description>
+			<p>Serpentfolk can sense infrared light, allowing them to see heat. They can use this to see in the dark to an extent, given that there is a temperature gradient, meaning they will be able to see heat sources such as a warm blooded creature, but no features in a uniformly cold room. The range of this sense is 120ft.</p>
+        </description>
+        <sheet>
+            <description>You can see temperature differences in the dark up to 120 feet, meaning you will be able to see heat sources such as a warm blooded creature, but no features in a uniformly cold room.</description>
+        </sheet>
+	</element>
+</elements>

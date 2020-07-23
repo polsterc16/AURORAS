@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sorcerer-elemental-vessel.xml" url="https://raw.githubusercontent.com/XXXXXXXXXXXXXXXXXXXX/sorcerer-elemental-vessel.xml" />
+		</update>
+	</info>
+
+	
+	<element name="Sorcerous Origin: Elemental Vessel" type="Source" source="Core" id="ID_DMSG_MR_SOEV_SOURCE_ARCHETYPE_ELEMENTAL_VESSEL">
+		<description>
+			<p>The elemental vessel origin for the Sorcerer lets you choose one of the four elements (Fire, Water, Air or Earth) and harness that elements power, allowing you to play a spellcaster who specializes in one element of magic like for example a water/ice-based caster.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">SOEV</set>
+			<set name="url">https://www.dmsguild.com/product/182673/Sorcerous-Origin-Elemental-Vessel-5e</set>
+			<set name="image">https://www.dmsguild.com/images/8957/182673.jpg</set>
+			<set name="author" abbreviation="DMSG" url="https://www.dmsguild.com/browse.php?author=Michael%20Richter">Michael Richter</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	
+	
+	<element name="Elemental Vessel" type="Archetype" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_ELEMENTAL_VESSEL">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic comes from a connection to one of the elemental planes: Fire, Water, Earth or Air. </p>
+			<p class="indent">This can have different reasons such as being born during an epic storm, surviving a roaring fire, being lost at sea for a long time or buried alive. Some say there was a spark inside you from birth that only needs to be awakened, others say that overexposure to your element has gifted you with your abilities to better cope with it. You or your ancestors could have also been directly touched by the magic of a powerful elemental or powerful magic in general. </p>
+			<p class="indent">Whatever the reason, your soul is tied firmly to an elemental plane and you can wield the associated powers to destroy your enemies.</p>
+			<div element="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_FOCUS"/>
+			<div element="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_FLEXIBILITY"/>
+			<div element="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_AFFINITY"/>
+			<div element="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_BODY"/>
+			<div element="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL"/>
+		</description>
+		<sheet display="false">
+			<description>Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Elemental Focus (Elemental Vessel)" supports="Elemental Focus" level="1"/>
+			<grant type="Archetype Feature" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_FLEXIBILITY" level="1" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_AFFINITY" level="6" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_BODY" level="14" />
+			<!-- In order to have nice item cards at the end (with the Feature origin being the Archetype rather than the feature which gives a ) -->
+			<grant type="Archetype Feature" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_AIR" requirements="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_AIR" level="18" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_FIRE" requirements="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_FIRE" level="18" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_WATER" requirements="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_WATER" level="18" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_EARTH" requirements="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_EARTH" level="18" />
+		</rules>
+	</element>
+
+	<element name="Elemental Focus" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_FOCUS">
+		<description>
+			<p>At 1st level, you choose one element to the plane of which your soul is connected. The damage type associated with each element is used by features you gain later.</p>
+			<h5 class="caption">ELEMENTAL FOCUS</h5>
+			<table>
+				<thead>
+					<tr><td>Element</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>Air</td><td>Lightning/Thunder</td></tr>
+				<tr><td>Fire</td><td>Fire</td></tr>
+				<tr><td>Water</td><td>Cold</td></tr>
+				<tr><td>Earth</td><td>Bludgeoning</td></tr>
+			</table>
+			<p>You can speak, read and write primordial. Additionally, whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Elemental Focus (Air)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_AIR">
+		<supports>Elemental Focus</supports>
+		<description>
+			<p>At 1st level, you choose air as the elemental plane to which your soul is connected. The lightning/thunder damage type is used by features you gain later.</p>
+			<p class="indent">You can speak, read and write primordial. Additionally, whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</p>
+		</description>
+		<sheet alt="Elemental Focus">
+			<description>You choose {{elemental focus element}} as your elemental focus, with {{elemental focus damage type}} as associated damage type. 
+			Whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+			<stat inline="true" name="elemental focus element" value="Air" />
+			<stat inline="true" name="elemental focus damage type" value="Lightning/Thunder" />
+			<stat inline="true" name="elemental focus damage type inverse" value="Fire, Cold, or Bludgeoning" />
+		</rules>
+	</element>
+	<element name="Elemental Focus (Fire)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_FIRE">
+		<supports>Elemental Focus</supports>
+		<description>
+			<p>At 1st level, you choose fire as the elemental plane to which your soul is connected. The fire damage type is used by features you gain later.</p>
+			<p class="indent">You can speak, read and write primordial. Additionally, whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</p>
+		</description>
+		<sheet alt="Elemental Focus">
+			<description>You choose {{elemental focus element}} as your elemental focus, with {{elemental focus damage type}} as associated damage type. 
+			Whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+			<stat inline="true" name="elemental focus element" value="Fire" />
+			<stat inline="true" name="elemental focus damage type" value="Fire" />
+			<stat inline="true" name="elemental focus damage type inverse" value="Lightning/Thunder, Cold, or Bludgeoning" />
+		</rules>
+	</element>
+	<element name="Elemental Focus (Water)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_WATER">
+		<supports>Elemental Focus</supports>
+		<description>
+			<p>At 1st level, you choose water as the elemental plane to which your soul is connected. The cold damage type is used by features you gain later.</p>
+			<p class="indent">You can speak, read and write primordial. Additionally, whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</p>
+		</description>
+		<sheet alt="Elemental Focus">
+			<description>You choose {{elemental focus element}} as your elemental focus, with {{elemental focus damage type}} as associated damage type. 
+			Whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+			<stat inline="true" name="elemental focus element" value="Water" />
+			<stat inline="true" name="elemental focus damage type" value="Cold" />
+			<stat inline="true" name="elemental focus damage type inverse" value="Lightning/Thunder, Fire, or Bludgeoning" />
+		</rules>
+	</element>
+	<element name="Elemental Focus (Earth)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_FOCUS_EARTH">
+		<supports>Elemental Focus</supports>
+		<description>
+			<p>At 1st level, you choose earth as the elemental plane to which your soul is connected. The bludgeoning damage type is used by features you gain later.</p>
+			<p class="indent">You can speak, read and write primordial. Additionally, whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</p>
+		</description>
+		<sheet alt="Elemental Focus">
+			<description>You choose {{elemental focus element}} as your elemental focus, with {{elemental focus damage type}} as associated damage type. 
+			Whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+			<stat inline="true" name="elemental focus element" value="Earth" />
+			<stat inline="true" name="elemental focus damage type" value="Bludgeoning" />
+			<stat inline="true" name="elemental focus damage type inverse" value="Lightning/Thunder, Fire, or Cold" />
+		</rules>
+	</element>
+	
+	<element name="Elemental Flexibility" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_FLEXIBILITY">
+		<description>
+			<p>At 1st level, when you cast a spell that deals damage of one of the types associated with one of the elements, you can instead have it deal damage of the type associated with your elemental focus.</p>
+			<p class="indent">When doing this the spell is reflavored to match the new damage type. For example a fireball that deals cold damage would be an explosion of coldness and would not set objects on fire.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals {{elemental focus damage type inverse}} damage, you can have it deal {{elemental focus damage type}} damage instead.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Affinity" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_AFFINITY">
+		<description>
+			<p>Starting at 6th level, when you cast a spell that deals damage of the type associated with your elemental focus, you can add your Charisma modifier to one damage roll of that spell. At the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour. This works in conjunction with your elemental flexibility</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals {{elemental focus damage type}} damage, add {{charisma:modifier}} to one damage roll of that spell. At the same time, you can spend 1 sorcery point to gain {{elemental focus damage type}} resistance for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Body" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_BODY">
+		<supports>Draconic Bloodline</supports>
+		<description>
+			<p>Starting at 14th level, you can use your action to turn your body into that of an elemental of your elemental focus (<i>Fire Elemental</i> for fire etc.). You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+			<p class="indent">You can stay in your elemental shape for an hour. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points or die.</p>
+			<p class="indent">While you are transformed, the following rules apply:</p>
+			<ul>
+				<li>Your game statistics are replaced by the statistics of the elemental, but you retain your alignment, personality, and Intelligence, Wisdom and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the elemental. If the elemental has the same proficiency as you and the bonus in its stat block is higher than yours, use the elemental's bonus instead of yours.</li>
+				<li>When you transform, you assume the elemental's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.</li>
+				<li>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
+				<li>Your worn equipment merges with the new form for the duration of the transformation.</li>
+				<li>You can cast spells in your elemental form.</li>
+			</ul>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description>You can magically assume the form of an Elemental ({{elemental focus element}}). 
+			You can stay in your elemental form for an hour. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+		</sheet>
+	</element>
+	
+	<element name="Elemental Soul" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL">
+		<description>
+			<p>At 18 level you gain immunity to the damage type associated with your elemental focus and a movement type depending on your elemental focus.</p>
+			<table>
+				<thead>
+					<tr><td>Element</td><td>Movement type</td></tr>
+				</thead>
+				<tr><td>Air</td><td>Fly, 60ft</td></tr>
+				<tr><td>Fire</td><td>+30 ft base walking speed</td></tr>
+				<tr><td>Water</td><td>Swim, 60 ft</td></tr>
+				<tr><td>Earth</td><td>Burrow, 30 ft</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Elemental Soul (Air)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_AIR">
+		<description>
+			<p>At 18 level you gain immunity to lightning/thunder damage and a flying speed of 60 feet.</p>
+		</description>
+		<sheet alt="Elemental Soul">
+			<description>You gain immunity to lightning/thunder damage and a flying speed of 60 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" />
+			<stat name="speed:fly" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Elemental Soul (Fire)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_FIRE">
+		<description>
+			<p>At 18 level you gain immunity to fire damage and your base walking speed increases by 30 feet.</p>
+		</description>
+		<sheet alt="Elemental Soul">
+			<description>You gain immunity to fire damage and your speed increases by 30 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+			<stat name="speed:misc" value="30" />
+		</rules>
+	</element>
+	<element name="Elemental Soul (Water)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_WATER">
+		<description>
+			<p>At 18 level you gain immunity to cold damage and a swimming speed of 60 feet.</p>
+		</description>
+		<sheet alt="Elemental Soul">
+			<description>You gain immunity to cold damage and a swimming speed of 60 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+			<stat name="speed:swim" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Elemental Soul (Earth)" type="Archetype Feature" source="Sorcerous Origin: Elemental Vessel" id="ID_DMSG_MR_SOEV_ARCHETYPE_FEATURE_ELEMENTAL_VESSEL_ELEMENTAL_SOUL_EARTH">
+		<description>
+			<p>At 18 level you gain immunity to bludgeoning damage and a burrowing speed of 30 feet.</p>
+		</description>
+		<sheet alt="Elemental Soul">
+			<description>You gain immunity to bludgeoning damage and a burrowing speed of 30 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" />
+			<stat name="speed:burrow" value="30" bonus="base" />
+		</rules>
+	</element>
+</elements>

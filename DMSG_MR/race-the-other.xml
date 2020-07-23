@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-the-other.xml" url="" />
+		</update>
+	</info>
+
+	
+	<element name="Race: The Other" type="Source" source="Core" id="ID_DMSG_MR_ROT_SOURCE_RACE_OTHER">
+		<description>
+			<p>The Other are intended as a catch-all racial option for players who want to play something of their own design, as well as a way for DMs to quickly create a custom race. A specific Other could be a member of a nearly extinct race, a mutant or variation of a more common race, the result of a magical experiment or a crossbreed of some kind.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">ROT</set>
+			<set name="url">https://www.dmsguild.com/product/252083/Race-The-Other-5e</set>
+			<set name="image">https://www.dmsguild.com/images/8957/252083.jpg</set>
+			<set name="author" abbreviation="DMSG" url="https://www.dmsguild.com/browse.php?author=Michael%20Richter">Michael Richter</set>
+			<set name="third-party">true</set>
+			<set name="information">This race uses a point-buy system for racial features, which is not inherently supported by this tool. </set>
+		</setters>
+	</element>
+	
+	
+	<element name="The Other" type="Race" source="Race: The Other" id="ID_DMSG_MR_ROT_RACE_OTHER">
+        <description>
+            <p><i>Scientists have calculated that the chances of something so patently absurd actually existing are millions to one.</i></p>
+			<p><i>But magicians have calculated that million-to-one chances crop up nine times out of ten.</i></p>
+			<p><center>—Terry Pratchett</center></p>
+			
+            <h4>APPEARANCE</h4>
+            <p>An Other may look however you want, as long as the DM allows it.</p>
+			
+            <h4>HISTORY</h4>
+            <p>Make up your own! Some things to consider:</p>
+			<ul>
+				<li>Are there more like you or are you unique?</li>
+				<li>Is your origin natural or are you the result of some event?</li>
+				<li>Are you from this world and plane, or from another?</li>
+			</ul>
+			
+            <h4>OTHER TRAITS</h4>
+            <p>Your Other character is unique in its own way. You may share certain traits with your kin, if you have any, but for the most part you could be anything.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Two different ability scores of your choice increase by 1.</p>
+            <p class="indent"><b><i>Size. </i></b>Your size is medium or small.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read and write a language of your choice. (Common is recommended for this)</p>
+            <p class="indent"><b><i>Variant Nature. </i></b>As an Other, you could be anything. To reflect this, you have a total of <b>14</b> points that you can use to “buy” traits from those listed below. You can't buy the same trait twice.</p>
+			<p></p>
+            <p class="indent"><b><i>(12) Feat. </i></b>You gain a feat.</p>
+            <p class="indent"><b><i>(12) Wings. </i></b>You have large wings, which grant you a flying speed of 30 ft. Your armor and clothing must be made to accommodate these. Altering a piece of gear to accommodate for wings costs 50% of its base cost. You can not fly while wearing medium or heavy armor, and you can only fly in spaces that are at least 15 ft. wide.</p>
+            <p class="indent"><b><i>(10) Physical Resistance. </i></b>You have resistance to a damage type of your choice from Bludgeoning, Piercing or Slashing.</p>
+            <p class="indent"><b><i>(8) Natural Armor. </i></b>Your AC increases by 1.</p>
+            <p class="indent"><b><i>(6) Ability Score Increase. </i></b>An ability score of your choice is increased by 1.</p>
+            <p class="indent"><b><i>(6) Blindsight. </i></b>You have blindsight with a range of 30 ft.</p>
+            <p class="indent"><b><i>(6) Expertise. </i></b>You gain Proficiency and Expertise in a skill.</p>
+            <p class="indent"><b><i>(4) Common Elemental Resistance. </i></b>You have resistance to a damage type of your choice from Fire or Poison.</p>
+            <p class="indent"><b><i>(4) No Breath. </i></b>You don't need to breathe.</p>
+            <p class="indent"><b><i>(3) Darkvision. </i></b>You have darkvision with a range of 60ft.</p>
+            <p class="indent"><b><i>(3) Skill Proficiency. </i></b>You are proficient in a skill of your choice.</p>
+            <p class="indent"><b><i>(3) Increased Speed. </i></b>Your ground movement speed increases by 5.</p>
+            <p class="indent"><b><i>(3) Weapon Training. </i></b>You are proficient with 2 weapons of your choice.</p>
+            <p class="indent"><b><i>(3) Cantrip. </i></b>You know a cantrip of your choice. Choose a mental ability score as the casting stat for it.</p>
+            <p class="indent"><b><i>(3) Uncommon Elemental Resistance. </i></b>You have resistance to a damage type of your choice from Cold, Lightning, Necrotic or Acid.</p>
+            <p class="indent"><b><i>(2) Rare Elemental Resistance. </i></b>You have resistance to a damage type of your choice from Radiant, Force, Psychic or Thunder.</p>
+            <p class="indent"><b><i>(2) Wakeful Mind. </i></b>You have advantage on saving throws against being charmed and magic can't put you to sleep.</p>
+            <p class="indent"><b><i>(2) Natural Weapon. </i></b>You have a natural melee weapon attack (Claws, Bite etc.) that deals 1d6 damage.</p>
+            <p class="indent"><b><i>(2) Climb. </i></b>You have a climb speed of 30 feet.</p>
+            <p class="indent"><b><i>(2) Swim. </i></b>You have a swim speed of 30 feet.</p>
+            <p class="indent"><b><i>(2) No Bones. </i></b>You can move normally through spaces as if you were one size smaller and squeeze (half speed) through spaces as if you were two sizes smaller.</p>
+            <p class="indent"><b><i>(2) Powerful Build. </i></b>You count as one size category larger for the purpose of carrying, lifting, pushing and dragging.</p>
+            <p class="indent"><b><i>(2) Gills. </i></b>You can breathe underwater.</p>
+            <p class="indent"><b><i>(1) Extra Language. </i></b>You can speak, read and write another language of your choice.</p>
+            <p class="indent"><b><i>(1) Tool Proficiency. </i></b>You are proficient with a tool of your choice.</p>
+			<p></p>
+			<div class="reference">
+				<div element="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_DMNOTES" />
+			</div>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<select type="Racial Trait" name="Ability Score Increase (The Other)" supports="The Other ASI 1" />
+			<select type="Racial Trait" name="Ability Score Increase (The Other)" supports="The Other ASI 2" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<select type="Language" name="Language (The Other)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE" />
+        </rules>
+    </element>
+	
+    <element name="Variant Nature" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE">
+        <description>
+			<p>As an Other, you could be anything. To reflect this, you have a total of 14 points that you can use to “buy” traits from those listed. You can't buy the same trait twice.</p>
+        </description>
+		<sheet>
+			<description>{{the-other:variant-nature:pts:used}}/14 points ({{the-other:variant-nature:pts:left}} left).</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:pts:left" value="14" bonus="base" />
+			<!-- all chosen traits will show up in the char sheet under "racial traits" to have an overview of your aquired traits and their cost. -->
+			<select type="Racial Trait" name="Variant Nature (The Other)" supports="The Other Variant Nature" number="8" />
+			
+			<!-- workaround for the variant nature point buy system -->
+			<stat name="the-other:variant-nature:trait:feat" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:wings" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:physicalresistance" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:naturalarmor" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:abilityscoreincrease" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:blindsight" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:expertise" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:commonelementalresistance" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:nobreath" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:darkvision" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:skillproficiency" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:increasedspeed" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:weapontraining" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:cantrip" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:uncommonelementalresistance" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:rareelementalresistance" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:wakefulmind" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:naturalweapon" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:climb" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:swim" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:nobones" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:powerfulbuild" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:gills" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:extralanguage" value="0" bonus="base" />
+			<stat name="the-other:variant-nature:trait:toolproficiency" value="0" bonus="base" />
+		</rules>
+    </element>
+	
+	<element name="Feat (12)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_FEAT">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>12 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:12]||[the-other:variant-nature:trait:feat:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 12 points</i></p>
+			<p>You gain a feat.</p>
+        </description>
+		<sheet>
+			<description>You gain a feat.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="12" />
+			<stat name="the-other:variant-nature:pts:left" value="-12" />
+			<stat name="the-other:variant-nature:trait:feat" value="1" />
+			<select type="Feat" name="Feat (Variant Nature)" />
+		</rules>
+    </element>
+	<element name="Wings (12)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_WINGS">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>12 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:12]||[the-other:variant-nature:trait:wings:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 12 points</i></p>
+			<p>You have large wings, which grant you a flying speed of 30 ft.</p>
+            <p class="indent">Your armor and clothing must be made to accommodate these. Altering a piece of gear to accommodate for wings costs 50% of its base cost.</p>
+            <p class="indent">You can not fly while wearing medium or heavy armor, and you can only fly in spaces that are at least 15 ft. wide.</p>
+        </description>
+		<sheet>
+			<description>You have a flying speed of 30 feet while you aren’t wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="12" />
+			<stat name="the-other:variant-nature:pts:left" value="-12" />
+			<stat name="the-other:variant-nature:trait:wings" value="1" />
+			<stat name="innate speed:fly" value="30" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+    </element>
+    
+	<element name="Physical Resistance (10)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_PHYSICALRESISTANCE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>10 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:10]||[the-other:variant-nature:trait:physicalresistance:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 10 points</i></p>
+			<p>You have resistance to a damage type of your choice from Bludgeoning, Piercing or Slashing.</p>
+        </description>
+		<sheet>
+			<description>You have resistance to a damage type of your choice from Bludgeoning, Piercing or Slashing.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="10" />
+			<stat name="the-other:variant-nature:pts:left" value="-10" />
+			<stat name="the-other:variant-nature:trait:physicalresistance" value="1" />
+			<select type="Racial Trait" name="Physical Resistance (Variant Nature)" supports="The Other Variant Nature Physical Resistance" />
+		</rules>
+    </element>
+	<element name="Bludgeoning" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_PHYSICALRESISTANCE_BLUDGEONING">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Physical Resistance</supports>
+        <description>
+			<p>You have resistance to Bludgeoning damage.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+    </element>
+	<element name="Slashing" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_PHYSICALRESISTANCE_SLASHING">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Physical Resistance</supports>
+        <description>
+			<p>You have resistance to Slashing damage.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+    </element>
+	<element name="Piercing" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_PHYSICALRESISTANCE_PIERCING">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Physical Resistance</supports>
+        <description>
+			<p>You have resistance to Piercing damage.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+		</rules>
+    </element>
+
+    <element name="Natural Armor (8)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_NATURALARMOR">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>8 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:8]||[the-other:variant-nature:trait:naturalarmor:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 8 points</i></p>
+			<p>Your AC increases by 1.</p>
+        </description>
+		<sheet>
+			<description>Your AC increases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="8" />
+			<stat name="the-other:variant-nature:pts:left" value="-8" />
+			<stat name="the-other:variant-nature:trait:naturalarmor" value="1" />
+			<stat name="ac:misc" value="1" />
+		</rules>
+    </element>
+
+	<!-- workaround to make this trait show up in the char sheet (&#160;) -->
+    <element name="Ability&#160; Score&#160; Increase (6)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_ASI">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>6 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:6]||[the-other:variant-nature:trait:abilityscoreincrease:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 6 points</i></p>
+			<p>An ability score of your choice is increased by 1.</p>
+        </description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="6" />
+			<stat name="the-other:variant-nature:pts:left" value="-6" />
+			<stat name="the-other:variant-nature:trait:abilityscoreincrease" value="1" />
+			<select type="Racial Trait" name="Ability Score Increase (Variant Nature)" supports="The Other ASI 3" />
+		</rules>
+    </element>
+    <element name="Blindsight (6)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_BLINDSIGHT">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>6 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:6]||[the-other:variant-nature:trait:blindsight:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 6 points</i></p>
+			<p>You have blindsight with a range of 30 ft.</p>
+        </description>
+		<sheet>
+			<description>You have blindsight with a range of 30 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="6" />
+			<stat name="the-other:variant-nature:pts:left" value="-6" />
+			<stat name="the-other:variant-nature:trait:blindsight" value="1" />
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+		</rules>
+    </element>
+	
+    <element name="Expertise (6)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>6 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:6]||[the-other:variant-nature:trait:expertise:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 6 points</i></p>
+			<p>You gain Proficiency and Expertise in a skill.</p>
+        </description>
+		<sheet>
+			<description>You gain Proficiency and Expertise in a skill.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="6" />
+			<stat name="the-other:variant-nature:pts:left" value="-6" />
+			<stat name="the-other:variant-nature:trait:expertise" value="1" />
+            <select type="Proficiency" name="Expertise (Variant Nature)" supports="The Other Variant Nature Expertise" />
+		</rules>
+    </element>
+	<element name="Acrobatics" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_ACROBATICS">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Acrobatics skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_ACROBATICS" />
+		</rules>
+    </element>
+	<element name="Animal Handling" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_ANIMALHANDLING">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Animal Handling skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_ANIMALHANDLING" />
+		</rules>
+    </element>
+	<element name="Arcana" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_ARCANA">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Arcana skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_ARCANA" />
+		</rules>
+    </element>
+	<element name="Athletics" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_ATHLETICS">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Athletics skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_ATHLETICS" />
+		</rules>
+    </element>
+	<element name="Deception" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_DECEPTION">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Deception skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_DECEPTION" />
+		</rules>
+    </element>
+	<element name="History" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_HISTORY">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the History skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_HISTORY" />
+		</rules>
+    </element>
+	<element name="Insight" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_INSIGHT">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Insight skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_INSIGHT" />
+		</rules>
+    </element>
+	<element name="Intimidation" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_INTIMIDATION">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Intimidation skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_INTIMIDATION" />
+		</rules>
+    </element>
+	<element name="Investigation" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_INVESTIGATION">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Investigation skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_INVESTIGATION" />
+		</rules>
+    </element>
+	<element name="Medicine" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_MEDICINE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Medicine skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_MEDICINE" />
+		</rules>
+    </element>
+	<element name="Nature" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_NATURE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Nature skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_NATURE" />
+		</rules>
+    </element>
+	<element name="Perception" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_PERCEPTION">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Perception skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_PERCEPTION" />
+		</rules>
+    </element>
+	<element name="Performance" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_PERFORMANCE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Performance skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_PERFORMANCE" />
+		</rules>
+    </element>
+	<element name="Persuasion" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_PERSUASION">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Persuasion skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_PERSUASION" />
+		</rules>
+    </element>
+	<element name="Religion" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_RELIGION">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Religion skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_RELIGION" />
+		</rules>
+    </element>
+	<element name="Sleight of Hand" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_SLEIGHTOFHAND">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Sleight of Hand skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND" />
+		</rules>
+    </element>
+	<element name="Stealth" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_STEALTH">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Stealth skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_STEALTH" />
+		</rules>
+    </element>
+	<element name="Survival" type="Proficiency" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXPERTISE_SURVIVAL">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Expertise</supports>
+        <description>
+			<p>You gain Proficiency and Expertise in the Survival skill.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_SURVIVAL" />
+		</rules>
+    </element>
+
+    <element name="Common Elemental Resistance (4)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_COMMONELEMENTALRESISTANCE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>4 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:4]||[the-other:variant-nature:trait:commonelementalresistance:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 4 points</i></p>
+			<p>You have resistance to a damage type of your choice from Fire or Poison.</p>
+        </description>
+		<sheet>
+			<description>You have resistance to a damage type of your choice from Fire or Poison.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="4" />
+			<stat name="the-other:variant-nature:pts:left" value="-4" />
+			<stat name="the-other:variant-nature:trait:commonelementalresistance" value="1" />
+            <select type="Racial Trait" name="Common Elemental Resistance (Variant Nature)" supports="The Other Variant Nature Common Elemental Resistance" />
+		</rules>
+    </element>
+	<element name="Fire" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_COMMONELEMENTALRESISTANCE_FIRE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Common Elemental Resistance</supports>
+        <description>
+			<p>You have resistance to Fire damage.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+    </element>
+	<element name="Poison" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_COMMONELEMENTALRESISTANCE_POISON">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Common Elemental Resistance</supports>
+        <description>
+			<p>You have resistance to Poison damage.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+    </element>
+
+    <element name="No Breath (4)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_NOBREATH">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>4 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:4]||[the-other:variant-nature:trait:nobreath:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 4 points</i></p>
+			<p>You don't need to breathe.</p>
+        </description>
+		<sheet>
+			<description>You don't need to breathe.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="4" />
+			<stat name="the-other:variant-nature:pts:left" value="-4" />
+			<stat name="the-other:variant-nature:trait:nobreath" value="1" />
+		</rules>
+    </element>
+	<element name="Darkvision (3)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_DARKVISION">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>3 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:3]||[the-other:variant-nature:trait:darkvision:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 3 points</i></p>
+			<p>You have darkvision with a range of 60ft.</p>
+        </description>
+		<sheet>
+			<description>You have darkvision with a range of 60ft.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="3" />
+			<stat name="the-other:variant-nature:pts:left" value="-3" />
+			<stat name="the-other:variant-nature:trait:darkvision" value="1" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+    </element>
+	<element name="Skill Proficiency (3)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_SKILLPROFICIENCY">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>3 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:3]||[the-other:variant-nature:trait:skillproficiency:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 3 points</i></p>
+			<p>You are proficient in a skill of your choice.</p>
+        </description>
+		<sheet>
+			<description>You are proficient in a skill of your choice.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="3" />
+			<stat name="the-other:variant-nature:pts:left" value="-3" />
+			<stat name="the-other:variant-nature:trait:skillproficiency" value="1" />
+			<select type="Proficiency" name="Skill Proficiency (Variant Nature)" supports="Skill" />
+		</rules>
+    </element>
+    <element name="Increased Speed (3)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_INCREASEDSPEED">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>3 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:3]||[the-other:variant-nature:trait:increasedspeed:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 3 points</i></p>
+			<p>Your ground movement speed increases by 5.</p>
+        </description>
+		<sheet>
+			<description>Your ground movement speed increases by 5.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="3" />
+			<stat name="the-other:variant-nature:pts:left" value="-3" />
+			<stat name="the-other:variant-nature:trait:increasedspeed" value="1" />
+			<stat name="speed:misc" value="5" />
+		</rules>
+    </element>
+    <element name="Weapon Training (3)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_WEAPONTRAINING">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>3 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:3]||[the-other:variant-nature:trait:weapontraining:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 3 points</i></p>
+			<p>You are proficient with 2 weapons of your choice.</p>
+        </description>
+		<sheet>
+			<description>You are proficient with 2 weapons of your choice.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="3" />
+			<stat name="the-other:variant-nature:pts:left" value="-3" />
+			<stat name="the-other:variant-nature:trait:weapontraining" value="1" />
+			<select type="Proficiency" name="Weapon Training (Variant Nature)" supports="Weapon" number="2" />
+		</rules>
+    </element>
+    <element name="Cantrip (3)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_CANTRIP">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>3 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:3]||[the-other:variant-nature:trait:cantrip:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 3 points</i></p>
+			<p>You know a cantrip of your choice. Choose a mental ability score as the casting stat for it.</p>
+        </description>
+		<sheet>
+			<description>You know a cantrip of your choice. Choose a mental ability score as the casting stat for it.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="3" />
+			<stat name="the-other:variant-nature:pts:left" value="-3" />
+			<stat name="the-other:variant-nature:trait:cantrip" value="1" />
+			<select type="Spell" name="Cantrip (Variant Nature)" supports="0" />
+		</rules>
+    </element>
+	
+    <element name="Uncommon Elemental Resistance (3)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_UNCOMMONELEMENTALRESISTANCE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>3 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:3]||[the-other:variant-nature:trait:uncommonelementalresistance:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 3 points</i></p>
+			<p>You have resistance to a damage type of your choice from Cold, Lightning, Necrotic or Acid.</p>
+        </description>
+		<sheet>
+			<description>You have resistance to a damage type of your choice from Cold, Lightning, Necrotic or Acid.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="3" />
+			<stat name="the-other:variant-nature:pts:left" value="-3" />
+			<stat name="the-other:variant-nature:trait:uncommonelementalresistance" value="1" />
+			<select type="Racial Trait" name="Uncommon Elemental Resistance (Variant Nature)" supports="The Other Variant Nature Uncommon Elemental Resistance" />
+		</rules>
+    </element>
+	<element name="Cold" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_UNCOMMONELEMENTALRESISTANCE_COLD">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Uncommon Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Cold damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_UNCOMMONELEMENTALRESISTANCE_LIGHTNING">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Uncommon Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Lightning damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_UNCOMMONELEMENTALRESISTANCE_NECROTIC">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Uncommon Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Necrotic damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Acid" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_UNCOMMONELEMENTALRESISTANCE_ACID">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Uncommon Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Acid damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	
+    <element name="Rare Elemental Resistance (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_RAREELEMENTALRESISTANCE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:rareelementalresistance:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You have resistance to a damage type of your choice from Radiant, Force, Psychic or Thunder.</p>
+        </description>
+		<sheet>
+			<description>You have resistance to Radiant damage.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:rareelementalresistance" value="1" />
+			<select type="Racial Trait" name="Rare Elemental Resistance (Variant Nature)" supports="The Other Variant Nature Rare Elemental Resistance" />
+		</rules>
+    </element>
+	<element name="Radiant" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_RAREELEMENTALRESISTANCE_RADIANT">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Rare Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Radiant damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	<element name="Force" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_RAREELEMENTALRESISTANCE_FORCE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Rare Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Force damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_RAREELEMENTALRESISTANCE_PSYCHIC">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Rare Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Psychic damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_RAREELEMENTALRESISTANCE_THUNDER">
+		<compendium display="false" />
+		<supports>The Other Variant Nature Rare Elemental Resistance</supports>
+		<description>
+			<p>You have resistance to Thunder damage.</p>
+		</description>
+        <sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+	
+    <element name="Wakeful Mind (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_WAKEFULMIND">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:wakefulmind:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You have advantage on saving throws against being charmed and magic can't put you to sleep.</p>
+        </description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed and magic can't put you to sleep.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:wakefulmind" value="1" />
+		</rules>
+    </element>
+    <element name="Natural Weapon (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_NATURALWEAPON">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:naturalweapon:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You have a natural melee weapon attack (Claws, Bite etc.) that deals 1d6 damage.</p>
+        </description>
+		<sheet>
+			<description>You have a natural melee weapon attack that deals 1d6 damage.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:naturalweapon" value="1" />
+		</rules>
+    </element>
+    <element name="Climb (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_CLIMB">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:climb:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You have a climb speed of 30 feet.</p>
+        </description>
+		<sheet>
+			<description>You have a climb speed of 30 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:climb" value="1" />
+			<stat name="innate speed:climb" value="30" bonus="base" />
+		</rules>
+    </element>
+    <element name="Swim (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_SWIM">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:swim:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You have a swim speed of 30 feet.</p>
+        </description>
+		<sheet>
+			<description>You have a swim speed of 30 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:swim" value="1" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+		</rules>
+    </element>
+    <element name="No Bones (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_NOBONES">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:nobones:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You can move normally through spaces as if you were one size smaller and squeeze (half speed) through spaces as if you were two sizes smaller.</p>
+        </description>
+		<sheet>
+			<description>You can move normally through spaces as if you were one size smaller and squeeze (half speed) through spaces as if you were two sizes smaller.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:nobones" value="1" />
+		</rules>
+    </element>
+    <element name="Powerful Build (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_POWERFULBUILD">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:powerfulbuild:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You count as one size category larger for the purpose of carrying, lifting, pushing and dragging.</p>
+        </description>
+		<sheet>
+			<description>You count as one size category larger for the purpose of carrying, lifting, pushing and dragging.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:powerfulbuild" value="1" />
+		</rules>
+    </element>
+    <element name="Gills (2)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_GILLS">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>2 points</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:2]||[the-other:variant-nature:trait:gills:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 2 points</i></p>
+			<p>You can breathe underwater.</p>
+        </description>
+		<sheet>
+			<description>You can breathe underwater.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="2" />
+			<stat name="the-other:variant-nature:pts:left" value="-2" />
+			<stat name="the-other:variant-nature:trait:gills" value="1" />
+		</rules>
+    </element>
+    <element name="Extra Language (1)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_EXTRALANGUAGE">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>1 point</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:1]||[the-other:variant-nature:trait:extralanguage:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 1 point</i></p>
+			<p>You can speak, read and write another language of your choice.</p>
+        </description>
+		<sheet>
+			<description>You can speak, read and write another language of your choice.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="1" />
+			<stat name="the-other:variant-nature:pts:left" value="-1" />
+			<stat name="the-other:variant-nature:trait:extralanguage" value="1" />
+      <select type="Language" name="Extra Language (Variant Nature)" supports="Standard||Exotic" />
+		</rules>
+    </element>
+    <element name="Tool Proficiency (1)" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_VARIANT_NATURE_TOOLPROFICIENCY">
+		<compendium display="false" />
+		<supports>The Other Variant Nature</supports>
+		<prerequisite>1 point</prerequisite>
+		<requirements>[the-other:variant-nature:pts:left:1]||[the-other:variant-nature:trait:toolproficiency:1]</requirements>
+        <description>
+			<p><i>Variant Nature cost: 1 point</i></p>
+			<p>You are proficient with a tool of your choice.</p>
+        </description>
+		<sheet>
+			<description>You are proficient with a tool of your choice.</description>
+		</sheet>
+		<rules>
+			<stat name="the-other:variant-nature:pts:used" value="1" />
+			<stat name="the-other:variant-nature:pts:left" value="-1" />
+			<stat name="the-other:variant-nature:trait:toolproficiency" value="1" />
+			<select type="Proficiency" name="Tool Proficiency (Variant Nature)" supports="Artisan tools" />
+		</rules>
+    </element>
+	
+	
+	<!-- The Other ASI Nr 1 -->
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_STRENGTH_1">
+		<compendium display="false" />
+		<supports>The Other ASI 1</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_DEXTERITY_1">
+		<compendium display="false" />
+		<supports>The Other ASI 1</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_CONSTITUTION_1">
+		<compendium display="false" />
+		<supports>The Other ASI 1</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_INTELLIGENCE_1">
+		<compendium display="false" />
+		<supports>The Other ASI 1</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_CHARISMA_1">
+		<compendium display="false" />
+		<supports>The Other ASI 1</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_WISDOM_1">
+		<compendium display="false" />
+		<supports>The Other ASI 1</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+	<!-- The Other ASI Nr 2 -->
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_STRENGTH_2">
+		<compendium display="false" />
+		<supports>The Other ASI 2</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_DEXTERITY_2">
+		<compendium display="false" />
+		<supports>The Other ASI 2</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_CONSTITUTION_2">
+		<compendium display="false" />
+		<supports>The Other ASI 2</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_INTELLIGENCE_2">
+		<compendium display="false" />
+		<supports>The Other ASI 2</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_CHARISMA_2">
+		<compendium display="false" />
+		<supports>The Other ASI 2</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_WISDOM_2">
+		<compendium display="false" />
+		<supports>The Other ASI 2</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+	<!--The Other ASI Nr 3 -->
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_STRENGTH_3">
+		<compendium display="false" />
+		<supports>The Other ASI 3</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_DEXTERITY_3">
+		<compendium display="false" />
+		<supports>The Other ASI 3</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_CONSTITUTION_3">
+		<compendium display="false" />
+		<supports>The Other ASI 3</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_INTELLIGENCE_3">
+		<compendium display="false" />
+		<supports>The Other ASI 3</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_CHARISMA_3">
+		<compendium display="false" />
+		<supports>The Other ASI 3</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="charisma" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_ASI_WISDOM_3">
+		<compendium display="false" />
+		<supports>The Other ASI 3</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+
+	
+    <element name="Notes for the DM" type="Racial Trait" source="Race: The Other" id="ID_DMSG_MR_ROT_RACIAL_TRAIT_OTHER_DMNOTES">
+		<compendium display="false" />
+        <description>
+			<p>As you can surely imagine, the point values given to the traits are not an exact science, and are mostly based on my own experiences from playing and running, as well as some attempts from other people online to rate different racial traits.</p>
+			<p></p>
+            <p>My initial goal when I made this was to be able to hand it to a player and let them build their own race, without overwhelming them or having to worry about them breaking anything. As a result the total power level of an Other is intended to be slightly below that of the PHB races, but the ability to pick exactly what you want should make up for that.</p>
+			<p></p>
+            <p>When using this instead as a quick way to homebrew a race for your setting you should feel free to give them a few more points as you see fit. (As a point of reference, building the variant human from the PHB would require 16 points).</p>
+			<p></p>
+            <p>This is also a work in progress and I’m adding to it and adjusting as it is required. So if you have a trait you would really like to see included, or feel that something is rated wildly inaccurately, leave me a note in the discussion section on DMsGuild and I’ll look into it.</p>
+			<p></p>
+            <p>Most importantly have fun!</p>
+        </description>
+        <sheet display="false" />
+    </element>
+</elements>

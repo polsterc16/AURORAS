@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-catfolk.xml" url="https://raw.githubusercontent.com/XXXXXXXXXXXXXXXXXXXX/race-catfolk.xml" />
+		</update>
+	</info>
+
+	<element name="Race: Catfolk" type="Source" source="Core" id="ID_DMSG_MR_RCF_SOURCE_RACE_CAFOLK">
+		<description>
+			<p>Be a catfolk in 5th edition, with subraces for jungle, savannah and arctic catfolk.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RCF</set>
+			<set name="url">https://www.dmsguild.com/product/182902/Race-Catfolk-5e</set>
+			<set name="image">https://www.dmsguild.com/images/8957/182902.jpg</set>
+			<set name="author" abbreviation="DMSG" url="https://www.dmsguild.com/browse.php?author=Michael%20Richter">Michael Richter</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	
+	
+    <element name="Catfolk" type="Race" source="Race: Catfolk" id="ID_DMSG_MR_RCF_RACE_CATFOLK">
+        <description>
+            <p><i>The smallest feline is a masterpiece.</i></p>
+			<p><center>—Leonardo da Vinci</center></p>
+			
+            <h4>APPEARANCE</h4>
+            <p>Catfolk vary greatly in their appearance, being anthropomorpic felines with tails, claws and fur covering their entire body. Their fur colour and body shape reflects that of actual wild cats, with great variance among them.</p>
+			
+            <h4>HISTORY</h4>
+            <p>Catfolk descended from felines thousands of years ago, only just older than humans. Catfolk are a tribal people, whose passion and love run deep. They form tribes around the world, often in harsh climates ranging from deep in the rain forests, to scorching savannahs, all the way to freezing arctic regions, but are also common around forest edges. Like elves, catfolk are attuned to nature, respect it and defend it against those who would do it harm.</p>
+			
+            <h4>SOCIETY</h4>
+            <p>Catfolk societies vary greatly, from those living a nomadic lifestyle, to highly territorial tribes. The tribes stay small though and split up when they become too big. They are naturally curious and many catfolk leave their tribes behind and seek out lives as adventurers. Quite a few also abandon life in the wilds to live with more civilized races in cities and villages. </p>
+
+            <h4>CATFOLK TRAITS</h4>
+            <p>Your catfolk character has a number of traits in common with all other catfolk.</p>
+            <p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity score increases by 2. </p>
+            <p class="indent"><b><i>Age. </i></b>Catfolk live about ¾ of the time a human does and mature at an appropriately faster rate.</p>
+            <p class="indent"><b><i>Alignment. </i></b>Catfolk tend towards a chaotic alignment. They are curious in nature and adaptive in their ways of life, valuing their individuality.</p>
+            <p class="indent"><b><i>Size. </i></b>Catfolk vary widely in height and build, but your size is Medium. </p>
+            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet. </p>
+            <p class="indent"><b><i>Darkvision. </i></b>Thanks to your feline heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. </p>
+            <p class="indent"><b><i>Soft Fall. </i></b>You have resistance to falling damage and always land on your feet. </p>
+            <p class="indent"><b><i>Nine Lives. </i></b>You succeed on a Death Saving Throw if you roll a 9 or higher.</p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read and write Common and Catfolk. The Catfolk language has no written form and includes a form of sign language made with face and hands in addition to sounds.</p>
+            <p class="indent"><b><i>Subrace. </i></b>There are three main kinds of catfolk, depending on the their home habitat: Jungle, Savannah and Arctic. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RCF_RACIAL_TRAIT_CATFOLK_SOFT_FALL" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RCF_RACIAL_TRAIT_CATFOLK_NINE_LIVES" />
+            <grant type="Racial Trait" id="ID_DMSG_MR_RCF_RACIAL_TRAIT_CATFOLK_SUBRACE" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_DMSG_MR_RCF_LANGUAGE_CATFOLK" />
+        </rules>
+    </element>
+    <element name="Soft Fall" type="Racial Trait" source="Race: Catfolk" id="ID_DMSG_MR_RCF_RACIAL_TRAIT_CATFOLK_SOFT_FALL">
+        <description>
+			<p>You have resistance to falling damage and always land on your feet.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to falling damage and always land on your feet.</description>
+        </sheet>
+    </element>
+    <element name="Nine Lives" type="Racial Trait" source="Race: Catfolk" id="ID_DMSG_MR_RCF_RACIAL_TRAIT_CATFOLK_NINE_LIVES">
+        <description>
+            <p>You succeed on a Death Saving Throw if you roll a 9 or higher.</p>
+        </description>
+        <sheet>
+            <description>You succeed on a Death Saving Throw if you roll a 9 or higher.</description>
+        </sheet>
+    </element>
+    
+	<element name="Catfolk Subrace" type="Racial Trait" source="Race: Catfolk" id="ID_DMSG_MR_RCF_RACIAL_TRAIT_CATFOLK_SUBRACE">
+        <description>
+            <p>There are three main kinds of catfolk, depending on the their home habitat: Jungle, Savannah and Arctic. Choose one of these subraces.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Catfolk Subrace" supports="Catfolk Subrace" />
+        </rules>
+    </element>
+	<element name="Jungle Catfolk" type="Sub Race" source="Race: Catfolk" id="ID_DMSG_MR_RCF_SUB_RACE_CATFOLK_JUNGLE">
+		<supports>Catfolk Subrace</supports>
+		<description>
+			<p>Jungle catfolk share their general appearance with jungle cats like tigers, panthers, and ocelots. They are stealthy hunters and deeply religious, worshipping nature and its spirits.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Wisdom score increases by 1.</p>
+			<p class="indent"><b><i>Jungle Lurker. </i></b>You have proficiency in the Stealth skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Savannah Catfolk" type="Sub Race" source="Race: Catfolk" id="ID_DMSG_MR_RCF_SUB_RACE_CATFOLK_SAVANNAH">
+		<supports>Catfolk Subrace</supports>
+		<description>
+			<p>Savannah catfolk share their general appearance with savannah cats like lions, leopards and cheetahs. They are the most social of the catfolk subraces and excellent runners and jumpers.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Charisma score increases by 1.</p>
+			<p class="indent"><b><i>Savannah Sprinter. </i></b>You have proficiency in the Athletics skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+	<element name="Arctic Catfolk" type="Sub Race" source="Race: Catfolk" id="ID_DMSG_MR_RCF_SUB_RACE_CATFOLK_ARCTIC">
+		<supports>Catfolk Subrace</supports>
+		<description>
+			<p>Arctic catfolk share their general appearance with arctic cats like white tigers, snow leopards and lynxes. They are hardy and used to living in harsh conditions.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Arctic Survivalist. </i></b>You have proficiency in the Survival skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+	
+	
+	<element name="Catfolk" type="Language" source="Race: Catfolk" id="ID_DMSG_MR_RCF_LANGUAGE_CATFOLK">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by catfolk.</p>
+            <p class="indent">The Catfolk language has no written form and includes a form of sign language made with face and hands in addition to sounds.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Catfolk</set>
+			<set name="script">—</set>
+		</setters>
+	</element>
+</elements>

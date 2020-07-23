@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="warlock-the-symbiont.xml" url="https://raw.githubusercontent.com/XXXXXXXXXXXXXXXXXXXX/warlock-the-symbiont.xml" />
+		</update>
+	</info>
+
+	
+	<element name="Warlock Patron: The Symbiont" type="Source" source="Core" id="ID_DMSG_MR_WPTS_SOURCE_ARCHETYPE_THE_SYMBIONT">
+		<description>
+			<p>You are infected with a powerful extraplanar symbiont for good or ill. It aids you by strengthening your body and granting you access to powerful magic, but your goals may not always align and it can be cruel and uncaring. Thankfully it needs you to survive, so for the foreseeable future you are stuck together.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">WPTS</set>
+			<set name="url">https://www.dmsguild.com/product/182342/Warlock-Patron-The-Symbiont-5e</set>
+			<set name="image">https://www.dmsguild.com/images/8957/182342.jpg</set>
+			<set name="author" abbreviation="DMSG" url="https://www.dmsguild.com/browse.php?author=Michael%20Richter">Michael Richter</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	
+	
+	<element name="The Symbiont" type="Archetype" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_THE_SYMBIONT">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>You have willingly or unwillingly been infested with an extraplanar symbiont, which is now part of your body. The creature's survival is tied inherently to your own and its main goals are survival and acquisiton of power, in that order.</p>
+			<p class="indent">The symbiont is an unempathic entity without any true concerns for others, although it may decide to fake such feelings. It will not shy away from severely harming you if it decides that this would be in its own best interest.</p>
+			<p class="indent">Based on the nature of your union, it will usually be a helpful companion though, trying to make you stronger by strengthening your connection and protecting you as effectively as possible. Your own favor and happiness is in its concern only so far as that it makes you more likely to comply with its own  wishes.</p>
+			<p class="indent">The symbiont's ultimate goal is a powerful host and if possible immortality, although it can't survive in an undead host.</p>
+			<p class="indent">The appearance and physical nature of the symbiont is up to you and your DM to decide. It might just inhabit one of your arms and appear as an eyeball or face on the back/inside of your hand, or perhaps it is a swarm of worms that are spread throughout your entire body. Maybe a second face on the back of your head?</p>
+			<div element="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_EXPANDED_SPELL_LIST" />
+			<div element="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_BIOELECTRICITY_MORPHING" />
+			<div element="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_REGENERATION" />
+			<div element="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PURITY" />
+			<div element="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_ELDRITCH_FLIGHT" />
+			<div class="reference">
+				<div element="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description>You are infected with a powerful extraplanar symbiont for good or ill.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS_BLADE" requirements="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS_TOME" requirements="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS_CHAIN" requirements="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN" />
+			
+			<grant type="Archetype Feature" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_EXPANDED_SPELL_LIST" level="1" />
+			<select type="Archetype Feature" name="Bioelectricity/Morphing (The Symbiont)" supports="The Symbiont Feature" level="1"/>
+			<grant type="Archetype Feature" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_REGENERATION" level="6" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PURITY" level="10" />
+			<grant type="Archetype Feature" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_ELDRITCH_FLIGHT" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Symbiont lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>SYMBIONT EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>false life, cure wounds</em></td></tr>
+				<tr><td>2nd</td><td><em>alter self, web</em></td></tr>
+				<tr><td>3rd</td><td><em>protection from energy, aura of vitality</em></td></tr>
+				<tr><td>4th</td><td><em>stoneskin, fire shield</em></td></tr>
+				<tr><td>5th</td><td><em>antilife shell, awaken</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Symbiont lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+			<extend>ID_PHB_SPELL_CURE_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_ALTER_SELF</extend>
+			<extend>ID_PHB_SPELL_WEB</extend>
+			<extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_VITALITY</extend>
+			<extend>ID_PHB_SPELL_STONESKIN</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+			<extend>ID_PHB_SPELL_AWAKEN</extend>
+		</spellcasting>
+	</element>
+	
+	<element name="Bioelectricity/Morphing" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_BIOELECTRICITY_MORPHING">
+		<description>
+			<p>Starting from 1st level, you know either the <i>Shocking Grasp</i> cantrip as well as the <i>Witch Bolt</i> spell, or you know the <i>Thorn Whip</i> cantrip as wells as the <i>Arms of Hadar</i> spell.</p>
+			<p class="indent">These spells do not count towards your limit of spells known.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Bioelectricity" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_BIOELECTRICITY">
+		<supports>The Symbiont Feature</supports>
+		<description>
+			<p>Starting from 1st level, you know the <i>Shocking Grasp</i> cantrip as well as the <i>Witch Bolt</i> spell.</p>
+			<p class="indent">These spells do not count towards your limit of spells known.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_SHOCKING_GRASP" />
+			</div>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_WITCH_BOLT" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_PHB_SPELL_WITCH_BOLT" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name="Morphing" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_MORPHING">
+		<supports>The Symbiont Feature</supports>
+		<description>
+			<p>Starting from 1st level, you know the <i>Thorn Whip</i> cantrip as wells as the <i>Arms of Hadar</i> spell.</p>
+			<p class="indent">These spells do not count towards your limit of spells known.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_THORN_WHIP" />
+			</div>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ARMS_OF_HADAR" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARMS_OF_HADAR" spellcasting="Warlock" />
+		</rules>
+	</element>
+	
+	<element name="Regeneration" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_REGENERATION">
+		<description>
+			<p>Starting a 6th level, you gain the ability to greatly enhance your metabolism and heal yourself.</p>
+			<p class="indent">As an action, you can regain hit points equal to three times your Warlock level. This can be used to restore lost limbs, eyes, etc.</p>
+			<p class="indent">You must finish a long rest before you can use this feature again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You regain {{symbiont:regeneration}} hit points. This can be used to restore lost limbs, eyes, etc.</description>
+		</sheet>
+		<rules>
+			<stat name="symbiont:regeneration" value="level:warlock" />
+			<stat name="symbiont:regeneration" value="level:warlock" />
+			<stat name="symbiont:regeneration" value="level:warlock" />
+		</rules>
+	</element>
+	<element name="Purity" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PURITY">
+		<description>
+			<p>From 10th level onward, your immune system is impeccable, making you immune to all diseases and poisons.</p>
+		</description>
+		<sheet>
+			<description>Your immune system is impeccable, making you immune to all diseases and poisons.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Flight" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_ELDRITCH_FLIGHT">
+		<description>
+			<p>At 14th level, you grow a pair of wings from your back, gaining a flying speed equal to your current speed.</p>
+			<p class="indent">These wings inhibit the use of armor, unless the armor is made to accommodate them. The wings have an appearance that you consider most fitting for your Symbiont (e.g. bat wings, feathered wings, insect wings or something more alien).</p>
+		</description>
+		<sheet>
+			<description>You grow a pair of wings from your back, gaining a {{speed}} ft. flying speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Pact Options" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS">
+		<description>
+			<p>When using the Symbiont patron, your pact features might differ slightly in flavor and form.</p>
+			<p class="indent"><b><i>Pact of the Blade. </i></b>Your pact weapon doesn't manifest in your hand, but instead grows from your body (usually your hand). It's appearance may reflect this, being made from bone or strange looking metals, although this doesn't affect it's properties. You may also choose to instead transform one of your arms into a weapon, meaning you can't be disarmed, but also don't have the option of dropping it. Transforming your limb back uses a bonus action.</p>
+			<p class="indent"><b><i>Pact of the Tome. </i></b>The book grows organically from your body and it's appearance represents that, with a cover of bone, pages made of skin and writing in blood. It can't be absorbed again. If you lose it the regular rules apply and you must grow a new one. Alternatively you may choose to have your body itself be the book, the secrets inside being etched onto your skin in a code that only you can read, although they are still visible to others. This way you cannot lose the tome, but it might draw unwanted attention. Any attempts to destroy the writing on your skin is futile. It will reappear after 1d4 days.</p>
+			<p class="indent"><b><i>Pact of the Chain. </i></b>The familiar grows from your body and may return to it. It's appearance may reflect this but doesn't necessarily have to.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Pact Option (Blade)" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS_BLADE">
+		<description>
+			<p>When using the Symbiont patron, your pact features might differ slightly in flavor and form:</p>
+			<p class="indent">Your pact weapon doesn't manifest in your hand, but instead grows from your body (usually your hand). It's appearance may reflect this, being made from bone or strange looking metals, although this doesn't affect it's properties.</p>
+			<p class="indent">You may also choose to instead transform one of your arms into a weapon, meaning you can't be disarmed, but also don't have the option of dropping it. Transforming your limb back uses a bonus action.</p>
+		</description>
+		<sheet alt="Pact Option">
+			<description>Your pact weapon grows from your body. Alternatively, you may choose to transform one of your arms into a weapon (you can't be disarmed, but also can't drop it). Transforming your limb back uses a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Pact Option (Tome)" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS_TOME">
+		<description>
+			<p>When using the Symbiont patron, your pact features might differ slightly in flavor and form:</p>
+			<p class="indent">The book grows organically from your body and it's appearance represents that, with a cover of bone, pages made of skin and writing in blood. It can't be absorbed again. If you lose it the regular rules apply and you must grow a new one.</p>
+			<p class="indent">Alternatively you may choose to have your body itself be the book, the secrets inside being etched onto your skin in a code that only you can read, although they are still visible to others. This way you cannot lose the tome, but it might draw unwanted attention. Any attempts to destroy the writing on your skin is futile. It will reappear after 1d4 days.</p>
+		</description>
+		<sheet alt="Pact Option">
+			<description>The Book of Shadows grows organically from your body. Alternatively you may choose to have your body itself be the book, the secrets inside being etched onto your skin in a code that only you can read, although they are still visible to others.</description>
+		</sheet>
+	</element>
+	<element name="Pact Option (Chain)" type="Archetype Feature" source="Warlock Patron: The Symbiont" id="ID_DMSG_MR_WPTS_ARCHETYPE_FEATURE_SYMBIONT_PACT_OPTIONS_CHAIN">
+		<description>
+			<p>When using the Symbiont patron, your pact features might differ slightly in flavor and form:</p>
+			<p class="indent">The familiar grows from your body and may return to it. It's appearance may reflect this but doesn't necessarily have to.</p>
+		</description>
+		<sheet alt="Pact Option">
+			<description>Your familiar grows from your body and may return to it.</description>
+		</sheet>
+	</element>
+</elements>
