@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="feats-ritual-caster-reworked.xml" url="" />
+		</update>
+	</info>
+
+	
+	<element name="Ritual Caster Feat (Reworked)" type="Source" source="Core" id="ID_RCFR_SOURCE_RITUALCASTERFEATREWORKED">
+		<description>
+			<p>This is a rework of the Ritual Caster Feat to allow for ritual spell browsing and selection.</p>
+			<p class="indent">It gives the character a seperate spellcasting feature for each of the feat's class options, which is of the type "spells prepared". Its spell list contains only ritual spells of the selected class and of the appropriate character level.</p>
+			<p class="indent">In order to add spells to the ritual book, they have to be "prepared" in the Magic section of the Ritual Caster spellcasting feature.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RCFR</set>
+			<set name="url">http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook/</set>
+			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="homebrew">true</set>
+			<set name="information">The rework uses some features of this tool in a way not initially intended. </set>
+		</setters>
+	</element>
+	
+	
+	<element name="Ritual Caster (Reworked)" type="Feat" source="Ritual Caster Feat (Reworked)" id="ID_RCFR_FEAT_RITUALCASTER">
+		<prerequisite>Intelligence or Wisdom 13 or higher</prerequisite>
+		<requirements>([int:13]||[wis:13])</requirements>
+		<description>
+			<p><i>Prerequisite: Intelligence or Wisdom 13 or higher</i></p>
+			<p>You have learned a number of spells that you can cast as rituals. These spells are written in a ritual book, which you must have in hand while casting one of them.</p>
+			<p class="indent">When you choose this feat, you acquire a ritual book holding two 1st-level spells of your choice. Choose one of the following classes: bard, cleric, druid, sorcerer, warlock, or wizard. You must choose your spells from that class’s spell list, and the spells you choose must have the ritual tag. The class you choose also determines your spellcasting ability for these spells: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</p>
+			<p class="indent">If you come across a spell in written form, such as a magical <i>spell scroll</i> or a wizard’s spellbook, you might be able to add it to your ritual book. The spell must be on the spell list for the class you chose, the spell’s level can be no higher than half your level (rounded up), and it must have the ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it.</p>
+		</description>
+		<sheet alt="Ritual Caster">
+			<description>You can learn ritual spells from a magical spell scroll or a wizard’s spellbook that are of level {{level:half:up}} or lower costing 50 gp and 2h per spell level.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Ritual Caster" supports="ritual-caster-reworked-pool" />
+		</rules>
+	</element>
+	
+	<element name="Bard" type="Feat Feature" source="Ritual Caster Feat (Reworked)" id="ID_RCFR_FEAT_RITUAL_CASTER_BARD">
+		<compendium display="false" />
+		<supports>ritual-caster-reworked-pool</supports>
+		<description>
+			<p>You acquire a ritual book holding two 1st-level Bard spells of your choice.</p>
+			<p class="indent">Your spellcasting ability for these spells is charisma.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Charisma.</description>
+		</sheet>
+		<spellcasting name="Ritual Caster Bard" ability="Charisma" prepare="true">
+			<list known="true">Bard,Ritual</list>
+		</spellcasting>
+		<rules>
+			<stat name="ritual caster bard:spellcasting:prepare" value="99" />
+			<!-- workaround -->
+			<stat name="ritual caster bard:spellcasting:slots:1" value="1" />
+			<stat name="ritual caster bard:spellcasting:slots:2" value="1" requirements="[level:3]" />
+			<stat name="ritual caster bard:spellcasting:slots:3" value="1" requirements="[level:5]" />
+			<stat name="ritual caster bard:spellcasting:slots:4" value="1" requirements="[level:7]" />
+			<stat name="ritual caster bard:spellcasting:slots:5" value="1" requirements="[level:9]" />
+			<stat name="ritual caster bard:spellcasting:slots:6" value="1" requirements="[level:11]" />
+			<stat name="ritual caster bard:spellcasting:slots:7" value="1" requirements="[level:13]" />
+			<stat name="ritual caster bard:spellcasting:slots:8" value="1" requirements="[level:15]" />
+			<stat name="ritual caster bard:spellcasting:slots:9" value="1" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Cleric" type="Feat Feature" source="Ritual Caster Feat (Reworked)" id="ID_RCFR_FEAT_RITUAL_CASTER_CLERIC">
+		<compendium display="false" />
+		<supports>ritual-caster-reworked-pool</supports>
+		<description>
+			<p>You acquire a ritual book holding two 1st-level Cleric spells of your choice.</p>
+			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Wisdom.</description>
+		</sheet>
+		<spellcasting name="Ritual Caster Cleric" ability="Wisdom" prepare="true">
+			<list known="true">Cleric,Ritual</list>
+		</spellcasting>
+		<rules>
+			<stat name="ritual caster cleric:spellcasting:prepare" value="99" />
+			<!-- workaround -->
+			<stat name="ritual caster cleric:spellcasting:slots:1" value="1" />
+			<stat name="ritual caster cleric:spellcasting:slots:2" value="1" requirements="[level:3]" />
+			<stat name="ritual caster cleric:spellcasting:slots:3" value="1" requirements="[level:5]" />
+			<stat name="ritual caster cleric:spellcasting:slots:4" value="1" requirements="[level:7]" />
+			<stat name="ritual caster cleric:spellcasting:slots:5" value="1" requirements="[level:9]" />
+			<stat name="ritual caster cleric:spellcasting:slots:6" value="1" requirements="[level:11]" />
+			<stat name="ritual caster cleric:spellcasting:slots:7" value="1" requirements="[level:13]" />
+			<stat name="ritual caster cleric:spellcasting:slots:8" value="1" requirements="[level:15]" />
+			<stat name="ritual caster cleric:spellcasting:slots:9" value="1" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Druid" type="Feat Feature" source="Ritual Caster Feat (Reworked)" id="ID_RCFR_FEAT_RITUAL_CASTER_DRUID">
+		<compendium display="false" />
+		<supports>ritual-caster-reworked-pool</supports>
+		<description>
+			<p>You acquire a ritual book holding two 1st-level Druid spells of your choice.</p>
+			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Wisdom.</description>
+		</sheet>
+		<spellcasting name="Ritual Caster Druid" ability="Wisdom" prepare="true">
+			<list known="true">Druid,Ritual</list>
+		</spellcasting>
+		<rules>
+			<stat name="ritual caster druid:spellcasting:prepare" value="99" />
+			<!-- workaround -->
+			<stat name="ritual caster druid:spellcasting:slots:1" value="1" />
+			<stat name="ritual caster druid:spellcasting:slots:2" value="1" requirements="[level:3]" />
+			<stat name="ritual caster druid:spellcasting:slots:3" value="1" requirements="[level:5]" />
+			<stat name="ritual caster druid:spellcasting:slots:4" value="1" requirements="[level:7]" />
+			<stat name="ritual caster druid:spellcasting:slots:5" value="1" requirements="[level:9]" />
+			<stat name="ritual caster druid:spellcasting:slots:6" value="1" requirements="[level:11]" />
+			<stat name="ritual caster druid:spellcasting:slots:7" value="1" requirements="[level:13]" />
+			<stat name="ritual caster druid:spellcasting:slots:8" value="1" requirements="[level:15]" />
+			<stat name="ritual caster druid:spellcasting:slots:9" value="1" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Sorcerer" type="Feat Feature" source="Ritual Caster Feat (Reworked)" id="ID_RCFR_FEAT_RITUAL_CASTER_SORCERER">
+		<compendium display="false" />
+		<supports>ritual-caster-reworked-pool</supports>
+		<description>
+			<p>You acquire a ritual book holding two 1st-level Sorcerer spells of your choice.</p>
+			<p class="indent">Your spellcasting ability for these spells is charisma.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Charisma.</description>
+		</sheet>
+		<spellcasting name="Ritual Caster Sorcerer" ability="Charisma" prepare="true">
+			<list known="true">Sorcerer,Ritual</list>
+		</spellcasting>
+		<rules>
+			<stat name="ritual caster sorcerer:spellcasting:prepare" value="99" />
+			<!-- workaround -->
+			<stat name="ritual caster sorcerer:spellcasting:slots:1" value="1" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:2" value="1" requirements="[level:3]" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:3" value="1" requirements="[level:5]" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:4" value="1" requirements="[level:7]" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:5" value="1" requirements="[level:9]" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:6" value="1" requirements="[level:11]" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:7" value="1" requirements="[level:13]" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:8" value="1" requirements="[level:15]" />
+			<stat name="ritual caster sorcerer:spellcasting:slots:9" value="1" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Warlock" type="Feat Feature" source="Ritual Caster Feat (Reworked)" id="ID_RCFR_FEAT_RITUAL_CASTER_WARLOCK">
+		<compendium display="false" />
+		<supports>ritual-caster-reworked-pool</supports>
+		<description>
+			<p>You acquire a ritual book holding two 1st-level Warlock spells of your choice.</p>
+			<p class="indent">Your spellcasting ability for these spells is charisma.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Charisma.</description>
+		</sheet>
+		<spellcasting name="Ritual Caster Warlock" ability="Charisma" prepare="true">
+			<list known="true">Warlock,Ritual</list>
+		</spellcasting>
+		<rules>
+			<stat name="ritual caster warlock:spellcasting:prepare" value="99" />
+			<!-- workaround -->
+			<stat name="ritual caster warlock:spellcasting:slots:1" value="1" />
+			<stat name="ritual caster warlock:spellcasting:slots:2" value="1" requirements="[level:3]" />
+			<stat name="ritual caster warlock:spellcasting:slots:3" value="1" requirements="[level:5]" />
+			<stat name="ritual caster warlock:spellcasting:slots:4" value="1" requirements="[level:7]" />
+			<stat name="ritual caster warlock:spellcasting:slots:5" value="1" requirements="[level:9]" />
+			<stat name="ritual caster warlock:spellcasting:slots:6" value="1" requirements="[level:11]" />
+			<stat name="ritual caster warlock:spellcasting:slots:7" value="1" requirements="[level:13]" />
+			<stat name="ritual caster warlock:spellcasting:slots:8" value="1" requirements="[level:15]" />
+			<stat name="ritual caster warlock:spellcasting:slots:9" value="1" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Wizard" type="Feat Feature" source="Ritual Caster Feat (Reworked)" id="ID_RCFR_FEAT_RITUAL_CASTER_WIZARD">
+		<compendium display="false" />
+		<supports>ritual-caster-reworked-pool</supports>
+		<description>
+			<p>You acquire a ritual book holding two 1st-level Wizard spells of your choice.</p>
+			<p class="indent">Your spellcasting ability for these spells is intelligence.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Intelligence.</description>
+		</sheet>
+		<spellcasting name="Ritual Caster Wizard" ability="Intelligence" prepare="true">
+			<list known="true">Wizard,Ritual</list>
+		</spellcasting>
+		<rules>
+			<stat name="ritual caster wizard:spellcasting:prepare" value="99" />
+			<!-- workaround -->
+			<stat name="ritual caster wizard:spellcasting:slots:1" value="1" />
+			<stat name="ritual caster wizard:spellcasting:slots:2" value="1" requirements="[level:3]" />
+			<stat name="ritual caster wizard:spellcasting:slots:3" value="1" requirements="[level:5]" />
+			<stat name="ritual caster wizard:spellcasting:slots:4" value="1" requirements="[level:7]" />
+			<stat name="ritual caster wizard:spellcasting:slots:5" value="1" requirements="[level:9]" />
+			<stat name="ritual caster wizard:spellcasting:slots:6" value="1" requirements="[level:11]" />
+			<stat name="ritual caster wizard:spellcasting:slots:7" value="1" requirements="[level:13]" />
+			<stat name="ritual caster wizard:spellcasting:slots:8" value="1" requirements="[level:15]" />
+			<stat name="ritual caster wizard:spellcasting:slots:9" value="1" requirements="[level:17]" />
+		</rules>
+	</element>
+</elements>
