@@ -2,8 +2,8 @@
 <elements>
     <info>
 		<name>Mechanus Domain</name>
-        <update version="0.0.1">
-            <file name="cleric-mechanus.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/cleric-mechanus.xml" />
+        <update version="0.0.2">
+            <file name="cleric-mechanus.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/classes/cleric-mechanus.xml" />
         </update>
 	</info>
 	

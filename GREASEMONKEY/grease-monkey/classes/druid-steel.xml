@@ -2,8 +2,8 @@
 <elements>
     <info>
 		<name>Circle of Steel</name>
-        <update version="0.0.1">
-            <file name="druid-steel.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/druid-steel.xml" />
+        <update version="0.0.2">
+            <file name="druid-steel.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/classes/druid-steel.xml" />
         </update>
 	</info>
 

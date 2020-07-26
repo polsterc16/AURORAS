@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>School of Automation</name>
-		<update version="0.0.1">
-			<file name="wizard-automation.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/wizard-automation.xml" />
+		<update version="0.0.2">
+			<file name="wizard-automation.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/classes/wizard-automation.xml" />
 		</update>
 	</info>
 	

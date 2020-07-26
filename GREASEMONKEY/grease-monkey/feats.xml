@@ -27,6 +27,7 @@
 			</description>
         </sheet>
     </element>
+	
     <element name="Mechanically Enhanced" type="Feat" source="The Greasemonkey's Handbook" id="ID_TGMHB_FEAT_MECHANICALLY_ENHANCED">
         <description>
             <p>You are more machine than mortal. Some call you crazy, others call you inspired. Whatever your motivation was, your new parts are certainly a sight to behold.</p>
@@ -46,7 +47,6 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase (Mechanically Enhanced)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
         </rules>
     </element>
-	
     <element name="Mechanically Enhanced (2)" type="Feat" source="The Greasemonkey's Handbook" id="ID_TGMHB_FEAT_MECHANICALLY_ENHANCED_2">
 		<compendium display="false" />
 		<requirements>ID_TGMHB_FEAT_MECHANICALLY_ENHANCED</requirements>
@@ -67,7 +67,6 @@
 			<stat name="ac:misc" value="1" />
         </rules>
 	</element>
-	
     <element name="Mechanically Enhanced (3)" type="Feat" source="The Greasemonkey's Handbook" id="ID_TGMHB_FEAT_MECHANICALLY_ENHANCED_3">
 		<compendium display="false" />
 		<requirements>ID_TGMHB_FEAT_MECHANICALLY_ENHANCED_2</requirements>

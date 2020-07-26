@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Greasemonkey</name>
-		<description>Greasemonkey Background</description>
-        <update version="0.0.1">
-			<file name="background-greasemonkey.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/background-greasemonkey.xml" />
+		<name>ATUM Trader</name>
+		<description>ATUM Trader Background</description>
+        <update version="0.0.2">
+			<file name="background-atumtrader.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/backgrounds/background-atumtrader.xml" />
 		</update>
 	</info>
 
-	<element name="Greasemonkey" type="Background" source="The Greasemonkey's Handbook" id="ID_TGMHB_BACKGROUND_GREASEMONKEY">
+	<element name="ATUM Trader" type="Background" source="The Greasemonkey's Handbook" id="ID_TGMHB_BACKGROUND_ATUMTRADER">
 		<description>
-			<p>You grew up in workshops; maintaining, supporting and outfitting ATUMs to earn a living. You’ve witnessed the creation of colossal, military class ATUMs, endured chilling winds and snow while repairing light civilian transports trapped atop rural mountains, and spent weeks at a time working in quiet solitude, with only your tools for company.</p>
+			<p>You have spent most of your life in the ATUM trade. Your natural eye for good business deals has bestowed you with a talent for making rather profitable business partnerships.</p>
 			<ul class="unstyled">
 				<li><strong>Skill Proficiencies:</strong> Deception, Persuasion</li>
-				<li><strong>Tool Proficiencies:</strong> Vehicles (All), Tinker’s Tools.</li>
-				<li><strong>Equipment:</strong> A set of mechanic’s overalls, a belt pouch containing 5gp, and a modified all-in-one survival toolbox; complete with a simple lamp, communication radio, camping stove, miniature fuel tank and multitude of repair tools for ATUM maintenance.</li>
+				<li><strong>Languages:</strong> Any one language of your choice</li>
+				<li><strong>Tool Proficiencies:</strong> Vehicles (Land, ATUMs)</li>
+				<li><strong>Equipment:</strong> A set of traveller’s business clothes, a belt pouch containing 20gp, and one written business agreement from a wealthy investor.</li>
 			</ul>
-			<div element="ID_TGMHB_BACKGROUND_FEATURE_HAPPY_TO_HELP" />
+			<div element="ID_TGMHB_BACKGROUND_FEATURE_SHREWD_BUSINESS" />
 		</description>
 		<setters>
-			<set name="short">Deception, Persuasion, Vehicles (All), Tinker’s Tools</set>
+			<set name="short">Deception, Persuasion, 1 Language, Vehicles (Land, ATUMs)</set>
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_ALL" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
-			<grant type="Background Feature" id="ID_TGMHB_BACKGROUND_FEATURE_HAPPY_TO_HELP" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_ATUM" />
+			<select type="Language" name="Language (ATUM Trader)" number="1" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_TGMHB_BACKGROUND_FEATURE_SHREWD_BUSINESS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 			<select type="List" name="Personality Trait" number="2">
 				<item id="1">When I set my mind on something, it’s hard to change it.</item>
@@ -55,11 +57,11 @@
 		</rules>
 	</element>
 	
-	<element name="Feature: Happy to Help" type="Background Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_BACKGROUND_FEATURE_HAPPY_TO_HELP">
+	<element name="Feature: Shrewd Business" type="Background Feature" source="The Greasemonkey's Handbook" id="ID_TGMHB_BACKGROUND_FEATURE_SHREWD_BUSINESS">
 		<supports>Background Feature</supports>
 		<description>
-			<p>You are a talented mechanic, and can offer to help repair something for those in need in exchange for information or a place for you and your companions to stay for the night. Often this can involve fixing a leaking sink in a tavern, or repairing an ATUM that has broken down on the roadside. When strangers recognize you in a town where you performed a particularly helpful good deed, they typically take a liking to you.</p>
+			<p>You are a resourceful talent when it comes to finding interested parties willing to do business, and often use this to fund your adventures. When residing in a settlement, you can always find a way to contact your esteemed investors; often through the use of trade representatives in the region. You can request funding, ATUMs, or other equipment for your travels from your investors, though what level of support your investors give you depends on how profitable they feel you can make it for them.</p>
 		</description>
-		<sheet alt="Happy to Help" />
+		<sheet alt="Shrewd Business" />
 	</element>
 </elements>

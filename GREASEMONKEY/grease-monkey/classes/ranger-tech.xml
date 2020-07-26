@@ -2,8 +2,8 @@
 <elements>
     <info>
 		<name>Tech Hunter</name>
-        <update version="0.0.1">
-            <file name="ranger-tech.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/ranger-tech.xml" />
+        <update version="0.0.2">
+            <file name="ranger-tech.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/classes/ranger-tech.xml" />
         </update>
 	</info>
 
