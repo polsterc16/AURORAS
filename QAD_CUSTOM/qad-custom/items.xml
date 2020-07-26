@@ -3,11 +3,12 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="2020.06.26">
+		<update version="2020.07.26">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
 	
+	<!-- General Items -->
 	<element name="Bildtafeln" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BILDTAFELN">
 		<description>
 			<p>Ein Set aus kleinen, quadratischen Metallplatten (ca. Größe Tarotkarte).</p>
@@ -36,7 +37,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	<element name="Bag of holding potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
+	<element name="Bag of Holding Potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
 		<description>
 			<p>It appears to be a simple potatoe sack, but using an action, 1d4 potatoes can be removed from it.</p>
 			<p class="indent">The supply of potatoes seemingly is infinite, altough it cannot be said if it produces the potatoes magically or displaces them from somewhere else. Once potatoes have been removed 3 times, it can't be used again until the next dawn.</p>
@@ -49,4 +50,115 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
+	<element name="Potion of Healing, light" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_POTIONOFHEALING_LIGHT">
+		<description>
+			<p>You regain 1d4 + 1 hit points when you drink this potion.</p>
+			<p>Whatever its potency, the potion’s red liquid glimmers when agitated. </p>
+			<p><i>Now with 30% less sugar! Every 8th vial wins a leather shoe!</i></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Potion of Healing, light" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_POTION_POTIONOFHEALING_LIGHT">		
+		<description>
+			<p>You regain 1d4 + 1 hit points when you drink this potion.</p>
+			<p>Whatever its potency, the potion’s red liquid glimmers when agitated. </p>
+			<p><i>Now with 30% less sugar! Every 8th vial wins a leather shoe!</i></p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<!-- Unique Items -->
+	<element name="(Un-) Natural Selection +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_UNNATURAL_SELECTION">
+		<description>
+			<p><i>Magical Longsword (Martial Melee Weapon), unique</i></p>
+			<p class="indent"><b><i>Properties. </i></b>Versatile (1d10).</p>
+			<p class="indent"><b><i>Damage. </i></b>1d8 slashing.</p>
+			
+			<p class="indent"><b><i>Magical Weapon. </i></b>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><b><i>Unnatural Selection. </i></b>When you hit a fiend or an undead with this weapon, that creature takes additional 2d6 radiant damage.</p>
+			<p>This longsword is made out of glass as black as the night, with a beautifully carved wooden handle.</p>
+			<p><i>Source: Dryad from the Grove of Gannola</i></p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<!-- <set name="attunement">true</set> -->
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+	
+	<element name="Ancient, Rusty Light Machine-Gun" type="Weapon" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_8, ID_TGMHB_WEAPON_PROPERTY_ROF_2, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</supports>
+		<description>
+			<p><i>Firearm (Machine-Gun Ammunition), unique</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (8), ROF (2), Ammunition (range 450/800).</p> 
+			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
+			
+			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
+			
+			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">450/800</set>
+			<set name="damage" type="(Ammunition)">1d6</set>
+			<set name="proficiency">ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LMG</set>
+		</setters>
+	</element>
+	
+	<element name="Ancient Railgun +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_RAIL_GUN">
+		<description>
+			<p><i>Magical Railgun Sniper Rifle (Firearm), unique</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Heavy, Two-Handed, Reload (2), Armour-Piercing, Ammunition (600/1300).</p> 
+			<p class="indent"><b><i>Damage. </i></b>2d6 (Ammunition).</p> 
+			
+			<p class="indent"><b><i>Magical Weapon. </i></b>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><b><i>Railgun. </i></b>The range of this weapon is increased by 100ft (to 600/1300).</p>
+			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
+			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
+			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
+			
+			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
+		</description>
+		<setters>
+			<set name="keywords">Sniper Rifle</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any weapon">Weapon</set>
+			<!-- <set name="attunement">true</set> -->
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE</set>
+		</setters>
+	</element>
+	
+	
+	
 </elements>
