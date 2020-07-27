@@ -78,13 +78,14 @@
 		</setters>
 	</element>
 	
-	<element name="Arrow, Grapple" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GRAPPLE_ARROW">
+	<element name="Arrow of Wrangling" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GRAPPLE_ARROW">
 		<description>
-			<p><b><i>Hooked Arrowhead. </i></b>When you hit a successful attack using this arrow, it lodges into your target and grabs into it with metal hooks dealing an extra 1d4 damage.</p>
-			<p><b><i>Ropeshot. </i></b>You can attach up to 90 ft of rope to this arrow without affecting the shot. If you successfully attack a small, medium, large or huge creature with this arrow, it can move unimpeded within a circle centered on the creature holding the other end of the rope. The radius of this circle is determined by when the ropeholder decides to tension the rope.</p>
-			<p>Should the hooked creature try to move outside this radius, then it must make a Strength (Athletics) check against the ropeholder’s Strength (Athletics). On a failure it looses half its movement. On a success it can move at half speed and drag the ropeholder along (forced movement), or it moves unimpeded if the ropeholder chooses to let go of the rope.</p>
-			<p>Conversely, the ropeholding creature can spend an action to reduce the radius by pulling in rope. If the rope is slack or the ropeholder chooses to move towards the hooked creature, the ropeholder can pull in up to 30 ft of rope. Additionally, if the rope is taut, the ropeholder can make a Strength (Athletics) check against the hooked creature’s Strength (Athletics) in order to forcefully move it closer. On a success the hooked creature is moved towards the ropeholder by 5 ft if its size is greater than the ropeholder’s, or 10 ft otherwise.</p>
-			<p>You can choose to climb the rope. Whether or not the arrow holds your weight, the Strength (Athletics) DC for the climb and any (dis)advantage are at the DM’s discretion.</p>
+			<p>An arrow made of metal, decorated with hooks that extend when pulled in the opposite direction.</p>
+			<p class="indent"><b><i>Hooked Arrowhead. </i></b>When you hit a successful attack using this arrow, it lodges into your target and grabs into it with metal hooks dealing an extra 1d4 damage.</p>
+			<p class="indent"><b><i>Ropeshot. </i></b>You can attach up to 90 ft of rope to this arrow without affecting the shot. If you successfully attack a small, medium, large or huge creature with this arrow, it can move unimpeded within a circle centered on the creature holding the other end of the rope. The radius of this circle is determined by when the ropeholder decides to tension the rope.</p>
+			<p class="indent">Should the hooked creature try to move outside this radius, then it must make a Strength (Athletics) check against the ropeholder’s Strength (Athletics). On a failure it looses half its movement. On a success it can move at half speed and drag the ropeholder along (forced movement), or it moves unimpeded if the ropeholder chooses to let go of the rope.</p>
+			<p class="indent">Conversely, the ropeholding creature can spend an action to reduce the radius by pulling in rope. If the rope is slack or the ropeholder chooses to move towards the hooked creature, the ropeholder can pull in up to 30 ft of rope. Additionally, if the rope is taut, the ropeholder can make a Strength (Athletics) check against the hooked creature’s Strength (Athletics) in order to forcefully move it closer. On a success the hooked creature is moved towards the ropeholder by 5 ft if its size is greater than the ropeholder’s, or 10 ft otherwise.</p>
+			<p class="indent">You can choose to climb the rope. Whether or not the arrow holds your weight, the Strength (Athletics) DC for the climb and any (dis)advantage are at the DM’s discretion.</p>
 		</description>
 		<setters>
 			<set name="category">Ammunition</set>
