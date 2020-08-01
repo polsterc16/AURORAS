@@ -128,7 +128,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			
@@ -155,7 +155,7 @@
 			<p class="indent"><b><i>Magical Weapon. </i></b>This weapon ignores resistances to nonmagical damage.</p>
 			<p class="indent"><b><i>Scorching Chainsaw Bayonet. </i></b>As a bonus action you can make a scorching chainsaw bayonet magically appear on the tip of your rifle. This allows the weapon to be used as a simple melee weapon. On a successful hit it deals 1d6 fire damage and your next ranged attack with this weapon on the same target does not suffer disadvantage from close combat until the end of your next turn.</p>
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			
@@ -186,7 +186,7 @@
 			<p class="indent"><b><i>Railgun. </i></b>The range of this weapon is increased by 100ft (to 600/1300).</p>
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			
