@@ -21,7 +21,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d4 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Concealed. </i></b>You can hide a weapon with this rule on your person. Make a Dexterity (Sleight of Hand) check. The total rolled becomes the Wisdom (Perception) or Intelligence (Investigation) check DC required for another creature to notice the concealed weapon. When concealed in a coat or pocket, the weapon can be fired once while counting as hidden, granting you advantage on the attack roll.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
@@ -44,7 +44,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
 		<setters>
@@ -66,7 +66,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d4 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
@@ -110,7 +110,7 @@
 			<p class="indent"><b><i>Properties. </i></b>Reload (6), Ammunition (range 100/300).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d8 (Ammunition).</p> 
 			
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
 		<setters>
@@ -132,7 +132,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d10 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
 		<setters>
@@ -154,7 +154,7 @@
 			<p class="indent"><b><i>Damage. </i></b>2d4 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
@@ -177,7 +177,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d12 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			<p class="indent"><b><i>Spread (x). </i></b>This weapon deals damage in a cone over a wide area. Creatures caught in the cone must succeed on a Dexterity saving throw, taking the weapon’s noted damage on a failure, or half as much on a success. Each spread range falls into a particular value, shown in the brackets (x): (1) 15-foot Cone, (2) 30-foot Cone, (3) 60-foot Cone.</p>
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this weapon, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
@@ -202,7 +202,7 @@
 			
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
@@ -226,7 +226,7 @@
 			
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
@@ -250,7 +250,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
@@ -274,7 +274,7 @@
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
@@ -300,7 +300,7 @@
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Flamethrower. </i></b>These weapons draw briefly on the power of the elemental plane of fire, sending forth a burst of flames towards their unfortunate opponents before rapidly cooling in order to repeat the process anew.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Spread (x). </i></b>This weapon deals damage in a cone over a wide area. Creatures caught in the cone must succeed on a Dexterity saving throw, taking the weapon’s noted damage on a failure, or half as much on a success. Each spread range falls into a particular value, shown in the brackets (x): (1) 15-foot Cone, (2) 30-foot Cone, (3) 60-foot Cone.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
 			<p class="indent"><b><i>Flamethrowers. </i></b>This weapon draws power from the elemental plane of fire.</p>
@@ -369,7 +369,7 @@
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>MT-00. </i></b>Missile Type: 5ft. explosion radius, 4d6 fire damage, DC 12 + Proficiency bonus (Saturation mode).</p>
 			<p class="indent"><b><i>Missile. </i></b>Missiles have two different fire modes. In <i>Targeted</i> mode, you can fire the missile at the target, dealing the weapon’s noted damage on a hit. In <i>Saturation</i> mode, you can instead fill an area with the entire armed and ready ammunition at your disposal. To do so, choose a point within range and consult the missile properties to work out the radius and damage dealt. Each creature in that radius must succeed on a Dexterity saving throw, taking the Missiles’s noted damage on a failed save, or half as much on a success.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
@@ -395,7 +395,7 @@
 			
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Demolisher. </i></b>Weapons with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
