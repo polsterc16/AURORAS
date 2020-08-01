@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
@@ -119,7 +119,7 @@
 		</setters>
 	</element>
 	
-	<element name="Ancient, Rusty Light Machine-Gun" type="Weapon" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
+	<!--<element name="Ancient, Rusty Light Machine-Gun" type="Weapon" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_8, ID_TGMHB_WEAPON_PROPERTY_ROF_2, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</supports>
 		<description>
 			<p><i>Firearm (Machine-Gun Ammunition), unique</i></p>
@@ -142,6 +142,35 @@
 			<set name="range">450/800</set>
 			<set name="damage" type="(Ammunition)">1d6</set>
 			<set name="proficiency">ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LMG</set>
+		</setters>
+	</element>-->
+	
+	<element name="Shiela" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
+		<description>
+			<p><i>Magical Light Machine-Gun (Firearm), unique</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Chainsaw Bayonet, Two-Handed, Reload (8), ROF (2), Ammunition (range 450/800).</p> 
+			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
+			
+			<p class="indent"><b><i>Magical Weapon. </i></b>This weapon ignores resistances to nonmagical damage.</p>
+			<p class="indent"><b><i>Scorching Chainsaw Bayonet. </i></b>As a bonus action you can make a scorching chainsaw bayonet magically appear on the tip of your rifle. This allows the weapon to be used as a simple melee weapon. On a successful hit it deals 1d6 fire damage and your next ranged attack with this weapon on the same target does not suffer disadvantage from close combat until the end of your next turn.</p>
+			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload a module or ranged weapon.</p>
+			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
+			
+			<p><i>"Your toast has been burned and no amount of scraping will remove the black parts!"</i></p>
+			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
+		</description>
+		<setters>
+			<set name="keywords">Machine-Gun, Light</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any weapon">Weapon</set>
+			<!-- <set name="attunement">true</set> -->
+			<set name="rarity">Unique</set>
+			<!-- <set name="enhancement">1</set> -->
+			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</set>
 		</setters>
 	</element>
 	
