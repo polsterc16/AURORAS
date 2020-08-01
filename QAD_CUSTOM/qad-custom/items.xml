@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="2020.07.27">
+		<update version="2020.08.01">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
@@ -145,14 +145,15 @@
 		</setters>
 	</element>
 	
-	<element name="Ancient Railgun +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_RAIL_GUN">
+	<element name="Widow’s Kiss +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_RAIL_GUN">
 		<description>
-			<p><i>Magical Railgun Sniper Rifle (Firearm), unique</i></p>
+			<p><i>Magical Railgun Sniper Rifle (Firearm)</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Heavy, Two-Handed, Reload (2), Armour-Piercing, Ammunition (600/1300).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d6 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Magical Weapon. </i></b>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><b><i>Poison Coating. </i></b>You can use a bonus action to cause thick, black poison to coat the next bullet - changing its damage type to poison. The poison remains for 1 minute or until this weapon fires a shot (regardless of hit or miss). On a successful hit, the target must succeed on a DC 15 Constitution saving throw or take 1d4 additional poison damage and become poisoned until the end of your next turn. The weapon can't be used this way again until the next dawn.</p>
 			<p class="indent"><b><i>Railgun. </i></b>The range of this weapon is increased by 100ft (to 600/1300).</p>
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
@@ -160,6 +161,7 @@
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			
+			<p><i>"Nothing personal, mon chéri."</i></p>
 			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
 		</description>
 		<setters>
