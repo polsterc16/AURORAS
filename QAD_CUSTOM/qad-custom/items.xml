@@ -3,17 +3,19 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
 	
 	<!-- General Items -->
-	<element name="Bildtafeln" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BILDTAFELN">
+	<element name="Image Tile" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BILDTAFELN">
 		<description>
-			<p>Ein Set aus kleinen, quadratischen Metallplatten (ca. Größe Tarotkarte).</p>
-			<p class="indent">Als Aktion kann man eine der Bildtafel aktivieren. Richtet man die Vorderseite der Tafel auf etwas, das man abbilden möchte, so erscheint eine <i>Minor Illusion</i> davon auf der Rückseite. Nach einer Minute wird das Bild auf der Rückseite permanent. Die Bildtafel kann bis zum nächsten Morgengrauen nicht mehr verwendet werden.</p>
-			<p class="indent">Wenn die Bildtafel verwendet wird, geht ein zuvor gemachtes Bild verloren.</p>
+			<p>A set of thin metal plates the size of playing cards, engraved with an eye on its front side.</p>
+			<p class="indent">You can activate a tile as an action and use it in one the following ways:</p>			
+			<p class="indent"><b><i>View. </i></b>The tile’s stored image appears as a miniature <i>minor illustion</i> its back side.</p>
+			<p class="indent"><b><i>Capture. </i></b>Pointing the tile at something, causes a miniature <i>minor illustion</i> of the tile’s view to appear on its back side. Doing so for one minute causes this image to be stored in the tile until overwritten.</p>
+			<p class="indent"><b><i>Transfer. </i></b>You can choose to copy an image from one tile to another by activating them next to each other for one minute.</p>
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
@@ -23,11 +25,11 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
-	<element name="Transportstein" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_TRANSPORTSTEIN">
+	<element name="Transport Stone" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_TRANSPORTSTEIN">
 		<description>
-			<p>Ein kleiner Handteller großer Stein, bedeckt mit magischen Runen.</p>
-			<p class="indent">Transportsteine treten immer in Paaren auf und können dazu verwendet werden um leblose Objekte, die nicht größer as 2x2x2 Fuß sind, zu deren Gegenstück zu schicken. Transport in beide Richtungen ist möglich. Zum Verschicken müssen Objekte auf dem Stein platziert werden.</p>
-			<p class="indent">Ein Transportstein kann dreimal täglich verwendet werden, um ein Objekt zu schicken. Danach kann der Stein bis zum nächsten Morgengrauen nur noch zum Empfangen verwendet werden.</p>
+			<p>A small flat stone, covered in magical runes. A stone needs to be paired to another to allow for transport between them.</p>
+			<p class="indent"><b><i>Send. </i></b>You can spend 10 minutes in order to send non-living objects that can fit an a 2 foot cube to the stone’s counterpart. The stone can be used this way up to three times until the next dawn.</p>
+			<p class="indent"><b><i>Receive. </i></b>When the stone receives objects, certain runes on it start to blink. Using an action you can make them appear in an unoccupied space within 5 feet.</p>
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
@@ -39,8 +41,9 @@
 	</element>
 	<element name="Bag of Holding Potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
 		<description>
-			<p>It appears to be a simple potatoe sack, but using an action, 1d4 potatoes can be removed from it.</p>
-			<p class="indent">The supply of potatoes seemingly is infinite, altough it cannot be said if it produces the potatoes magically or displaces them from somewhere else. Once potatoes have been removed 3 times, it can't be used again until the next dawn.</p>
+			<p>It appears to be a simple potato sack, but using an action, 1d4 potatoes can be removed from it.</p>
+			<p class="indent">Once potatoes have been removed 3 times, it can't be used again until the next dawn.</p>
+			<p class="indent"><i>The supply of potatoes seemingly is infinite, altough it cannot be said if it produces the potatoes magically or displaces them from somewhere else.</i></p>
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
@@ -83,9 +86,10 @@
 			<p>An arrow made of metal, decorated with hooks that extend when pulled in the opposite direction.</p>
 			<p class="indent"><b><i>Hooked Arrowhead. </i></b>When you hit a successful attack using this arrow, it lodges into your target and grabs into it with metal hooks dealing an extra 1d4 damage.</p>
 			<p class="indent"><b><i>Ropeshot. </i></b>You can attach up to 90 ft of rope to this arrow without affecting the shot. If you successfully attack a small, medium, large or huge creature with this arrow, it can move unimpeded within a circle centered on the creature holding the other end of the rope. The radius of this circle is determined by when the ropeholder decides to tension the rope.</p>
-			<p class="indent">Should the hooked creature try to move outside this radius, then it must make a Strength (Athletics) check against the ropeholder’s Strength (Athletics). On a failure it looses half its movement. On a success it can move at half speed and drag the ropeholder along (forced movement), or it moves unimpeded if the ropeholder chooses to let go of the rope.</p>
-			<p class="indent">Conversely, the ropeholding creature can spend an action to reduce the radius by pulling in rope. If the rope is slack or the ropeholder chooses to move towards the hooked creature, the ropeholder can pull in up to 30 ft of rope. Additionally, if the rope is taut, the ropeholder can make a Strength (Athletics) check against the hooked creature’s Strength (Athletics) in order to forcefully move it closer. On a success the hooked creature is moved towards the ropeholder by 5 ft if its size is greater than the ropeholder’s, or 10 ft otherwise.</p>
+			<p class="indent"><b><i>Struggle. </i></b>Should the hooked creature try to move outside this radius, then it must make a Strength (Athletics) check against the ropeholder’s Strength (Athletics). On a failure it looses half its movement. On a success it can move at half speed and drag the ropeholder along (forced movement), or it moves unimpeded if the ropeholder chooses to let go of the rope.</p>
+			<p class="indent"><b><i>Wrangle. </i></b>Conversely, the ropeholding creature can spend an action to reduce the radius by pulling in rope. If the rope is slack or the ropeholder chooses to move towards the hooked creature, the ropeholder can pull in up to 30 ft of rope. Additionally, if the rope is taut, the ropeholder can make a Strength (Athletics) check against the hooked creature’s Strength (Athletics) in order to forcefully move it closer. On a success the hooked creature is moved towards the ropeholder by 5 ft if its size is greater than the ropeholder’s, or 10 ft otherwise.</p>
 			<p class="indent">You can choose to climb the rope. Whether or not the arrow holds your weight, the Strength (Athletics) DC for the climb and any (dis)advantage are at the DM’s discretion.</p>
+			<p class="indent">A creature of reasonable intelligence might realize eventually, that it can just try to cut the rope.</p>
 		</description>
 		<setters>
 			<set name="category">Ammunition</set>
@@ -95,7 +99,9 @@
 		</setters>
 	</element>
 	
+	
 	<!-- Unique Items -->
+	
 	<element name="(Un-) Natural Selection +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_UNNATURAL_SELECTION">
 		<description>
 			<p><i>Magical Longsword (Martial Melee Weapon), unique</i></p>
@@ -112,42 +118,15 @@
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="longsword">Weapon</set>
-			<!-- <set name="attunement">true</set> -->
 			<set name="rarity">Unique</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Longsword</set>
 		</setters>
 	</element>
 	
-	<!--<element name="Ancient, Rusty Light Machine-Gun" type="Weapon" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_8, ID_TGMHB_WEAPON_PROPERTY_ROF_2, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</supports>
-		<description>
-			<p><i>Firearm (Machine-Gun Ammunition), unique</i></p>
-			
-			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (8), ROF (2), Ammunition (range 450/800).</p> 
-			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
-			
-			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
-			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
-			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
-			
-			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="10">10 lb.</set>
-			<set name="slot">twohand</set>
-			<set name="range">450/800</set>
-			<set name="damage" type="(Ammunition)">1d6</set>
-			<set name="proficiency">ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LMG</set>
-		</setters>
-	</element>-->
-	
 	<element name="Shiela" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
 		<description>
-			<p><i>Magical Light Machine-Gun (Firearm), unique</i></p>
+			<p><i>Magical Firearm (Light Machine-Gun), unique</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Chainsaw Bayonet, Two-Handed, Reload (8), ROF (2), Ammunition (range 450/800).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
@@ -158,6 +137,8 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
+			<p class="indent"><b><i>Sentience. </i></b><i>Shiela</i> is a sentient true neutral weapon with hearing and vision out to a range of 60 feet. The weapon can speak, read and understand Common and Undercommon.</p>
+			<p class="indent"><b><i>Personality. </i></b><i>Shiela</i>’s voice is neutral. The weapon’s purpose is to instruct its wielder on its correct usage.</p>
 			
 			<p><i>"Your toast has been burned and no amount of scraping will remove the black parts!"</i></p>
 			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
@@ -167,16 +148,14 @@
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="any weapon">Weapon</set>
-			<!-- <set name="attunement">true</set> -->
 			<set name="rarity">Unique</set>
-			<!-- <set name="enhancement">1</set> -->
 			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</set>
 		</setters>
 	</element>
 	
 	<element name="Widow’s Kiss +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_RAIL_GUN">
 		<description>
-			<p><i>Magical Railgun Sniper Rifle (Firearm)</i></p>
+			<p><i>Magical Firearm (Railgun Sniper Rifle)</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Heavy, Two-Handed, Reload (2), Armour-Piercing, Ammunition (600/1300).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d6 (Ammunition).</p> 
@@ -198,7 +177,6 @@
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="any weapon">Weapon</set>
-			<!-- <set name="attunement">true</set> -->
 			<set name="rarity">Unique</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE</set>
