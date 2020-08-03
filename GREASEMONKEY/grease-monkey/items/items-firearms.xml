@@ -7,10 +7,6 @@
 		</update>
 	</info>
 	
-	<!-- This contains ONLY the weapon proficiency for Firearms so far! -->
-	<!-- TODO: Weapon Properties -->
-	<!-- TODO: Weapons -->
-	
 	<!-- Martial Weapons (Firearms) -->
 	<element name="Pistol, Compact" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_COMPACT_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_CONCEALED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_COMPACT_PISTOL</supports>
@@ -514,6 +510,7 @@
 		</setters>
 	</element>
 	
+	
 	<!-- Ammunition -->
 	<element name="Magazine (Pistol)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_PISTOL">
 		<description>
@@ -611,7 +608,6 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	
 	<element name="Magazine (MT-00 Missile)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_MT00">
 		<description>
 			<p>(Damage according to weapon)</p>
@@ -642,7 +638,7 @@
 	<element name="Hotshot (Inferno)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_INFERNO">
 		<description>
 			<p>Deals fire damage.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -657,7 +653,7 @@
 	<element name="Hotshot (Nitrogen)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_NITROGEN">
 		<description>
 			<p>Deals cold damage.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -672,7 +668,7 @@
 	<element name="Hotshot (Acidic)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_ACIDIC">
 		<description>
 			<p>Deals acid damage.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -687,7 +683,7 @@
 	<element name="Hotshot (Tesla)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_TESLA">
 		<description>
 			<p>Deals lightning damage.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -702,7 +698,7 @@
 	<element name="Hotshot (H.E.)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_HE">
 		<description>
 			<p>Explodes out in a 5-foot radius sphere upon hitting a target. Creatures in the area (including the target) must succeed on a DC 14 Dexterity saving throw, taking 1d8 fire damage on a failed save, or half as much on a success.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -718,7 +714,7 @@
 		<description>
 			<p>On a hit, target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. Additional failed saving throws caused by being hit again by a weapon with this ammunition type can stack the poison’s duration, up to a maximum of 10 minutes.</p>
 			<p>A creature can make a Constitution saving throw at the end of its turn, ending the poison’s effect on a success.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -733,7 +729,7 @@
 	<element name="Hotshot (Paralysis)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_PARALYSIS">
 		<description>
 			<p>On a hit, target must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. A target can repeat the saving throw at the end of each of it’s turns, ending the effect on a success.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -749,7 +745,7 @@
 		<description>
 			<p>A large or smaller target hit by one or more shots from a weapon with this ammunition must succeed on a DC 10 Constitution saving throw at the end of its next turn or fall unconscious for 1 hour. If the target is hit multiple times by weapons with this ammuntion before it makes its saving throw, the save DC increases by 1, to a maximum of 17.</p>
 			<p>The target remains unconcious in this manner until a creature spends an action to rouse them, or they take damage. This ammunition has no effect on undead or constructs, or any creature that cannot be put to sleep.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -764,7 +760,7 @@
 	<element name="Hotshot (Silvered)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_SILVERED">
 		<description>
 			<p>This ammunition has been silvered.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -779,7 +775,7 @@
 	<element name="Hotshot (Sanctified)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_SANCTIFIED">
 		<description>
 			<p>Deals an additional 1d4 radiant damage to undead and fiends.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -794,7 +790,7 @@
 	<element name="Hotshot (Adamantine)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_ADAMANTINE">
 		<description>
 			<p>This ammunition has an adamantine head, and deals an additional 1d6 damage on a hit.</p>
-			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a magazine of that weapon type.</p>
 			<div class="reference">
 				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
 			</div>
@@ -808,148 +804,328 @@
 	</element>
 	
 	
-	<!-- weapon groups -->
-	<!-- <element name="Weapon Group (Firearms)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARMS" /> -->
-	<element name="Weapon Group (Anti-Tank Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_ANTI_TANK_RIFLE" />
-	<element name="Weapon Group (Laser Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_LASER_RIFLE" />
-	<element name="Weapon Group (Machine-Gun, Heavy)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_HMG" />
-	<element name="Weapon Group (Machine-Gun, Light)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_LMG" />
-	<element name="Weapon Group (Pistol, Compact)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_COMPACT_PISTOL" />
-	<element name="Weapon Group (Pistol, Semi-Auto)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_SEMI_AUTO_PISTOL" />
-	<element name="Weapon Group (Plasma Pistol)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_PLASMA_PISTOL" />
-	<element name="Weapon Group (Plasma Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_PLASMA_RIFLE" />
-	<element name="Weapon Group (Revolver)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_REVOLVER" />
-	<element name="Weapon Group (Revolver, Heavy)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_HEAVY_REVOLVER" />
-	<element name="Weapon Group (Rifle, Assault)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_ASSAULT_RIFLE" />
-	<element name="Weapon Group (Rifle, Bolt)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_BOLT_RIFLE" />
-	<element name="Weapon Group (Shotgun)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_SHOTGUN" />
-	<element name="Weapon Group (Sniper Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE" />
-	<element name="Weapon Group (Sniper Rifle, Heavy)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_HEAVY_SNIPER_RIFLE" />
-	<element name="Weapon Group (Missile Launcher)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_MISSILE_LAUNCHER" />
-	<element name="Weapon Group (Flamethrower)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_FLAMETHROWER" />
-
-	<element name="Weapon Group (Energy Blade)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_ENERGY_BLADE" />
-	<element name="Weapon Group (Energy Dagger)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_ENERGY_DAGGER" />
-	<element name="Weapon Group (Power Gauntlet)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_POWER_GAUNTLET" />
-	<element name="Weapon Group (Tesla Glove)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_TESLA_GLOVE" />
+	<!-- Firearm Modification -->
+	<!-- Frames -->
+	<element name="F.M. Frame, Lightened" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_FRAME_LIGHTENED">
+		<description>
+			<p><i>Firearm Modification (Frames)</i></p>
+			<p>Reduces the weapon’s weight by 5lbs, to a minimum of 1lb, reduces its damage die by one step, to a minimum of a 1d3, and grants it a +1 bonus to attack rolls.</p>
+			<p class="indent"><b><i>Damage Dice Steps. </i></b>d3 -&gt; d4 -&gt; d6 -&gt; d8 -&gt; d10 -&gt; d12 -&gt; 2d6 -&gt; 2d8 -&gt; 2d10 -&gt; 2d12</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Frame, Weighted" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_FRAME_WEIGHTED">
+		<description>
+			<p><i>Firearm Modification (Frames)</i></p>
+			<p>Increases the weapon’s weight by 5lbs, increases it’s damage die by 1 step, to a maximum of 2d10, and grants it a -2 penalty to attack rolls.</p>
+			<p class="indent"><b><i>Damage Dice Steps. </i></b>d3 -&gt; d4 -&gt; d6 -&gt; d8 -&gt; d10 -&gt; d12 -&gt; 2d6 -&gt; 2d8 -&gt; 2d10 -&gt; 2d12</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Frame, Calibrated Reciever" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_FRAME_CALIBRATED">
+		<description>
+			<p><i>Firearm Modification (Frames)</i></p>
+			<p>When scoring a critical hit with the weapon, you deal an additional 1d4 of the ammunition’s type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Frame, Bayonet" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_FRAME_BAYONET">
+		<description>
+			<p><i>Firearm Modification (Frames)</i></p>
+			<p>Allows the weapon to be used as a simple melee weapon, dealing 1d4 piercing (blade) or 1d6 slashing damage (chainsaw) on a successful hit. A chainsaw bayonet can only be installed on a two-handed ranged weapon, such as a bolt rifle or shotgun.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">45</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<!-- Barrels -->
+	<element name="F.M. Barrel, Long" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_BARREL_LONG">
+		<description>
+			<p><i>Firearm Modification (Barrels)</i></p>
+			<p>Increases the weapon’s long range by 200.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Barrel, Short" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_BARREL_SHORT">
+		<description>
+			<p><i>Firearm Modification (Barrels)</i></p>
+			<p>Grants the weapon the <i>Concealed</i> rule. If the weapon already has this rule, you gain a +1 bonus to Dexterity (Sleight of Hand) checks to hide the weapon.</p>
+			<p class="indent"><b><i>Concealed. </i></b>You can hide a weapon with this rule on your person. Make a Dexterity (Sleight of Hand) check. The total rolled becomes the Wisdom (Perception) or Intelligence (Investigation) check DC required for another creature to notice the concealed weapon. When concealed in a coat or pocket, the weapon can be fired once while counting as hidden, granting you advantage on the attack roll.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Barrel, Snub-Nose" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_BARREL_SNUBNOSE">
+		<description>
+			<p><i>Firearm Modification (Barrels)</i></p>
+			<p>Grants the weapon the <i>Concealed</i> rule, and you gain a +4 bonus to Dexterity (Sleight of Hand) checks to hide the weapon. In addition, the weapon reduces it’s damage die by one step, to a minimum of a 1d3.</p>
+			<p class="indent"><b><i>Damage Dice Steps. </i></b>d3 -&gt; d4 -&gt; d6 -&gt; d8 -&gt; d10 -&gt; d12 -&gt; 2d6 -&gt; 2d8 -&gt; 2d10 -&gt; 2d12</p>
+			<p class="indent"><b><i>Concealed. </i></b>You can hide a weapon with this rule on your person. Make a Dexterity (Sleight of Hand) check. The total rolled becomes the Wisdom (Perception) or Intelligence (Investigation) check DC required for another creature to notice the concealed weapon. When concealed in a coat or pocket, the weapon can be fired once while counting as hidden, granting you advantage on the attack roll.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<!-- Grips -->
+	<element name="F.M. Grip, Short Stock" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_GRIP_SHORT">
+		<description>
+			<p><i>Firearm Modification (Grips)</i></p>
+			<p>Grants the weapon the <i>Concealed</i> rule. If the weapon already has this rule, you gain a +1 bonus to Dexterity (Sleight of Hand) checks to hide the weapon.</p>
+			<p class="indent"><b><i>Concealed. </i></b>You can hide a weapon with this rule on your person. Make a Dexterity (Sleight of Hand) check. The total rolled becomes the Wisdom (Perception) or Intelligence (Investigation) check DC required for another creature to notice the concealed weapon. When concealed in a coat or pocket, the weapon can be fired once while counting as hidden, granting you advantage on the attack roll.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Grip, Marksmen’s Stock" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_GRIP_MARKSMEN">
+		<description>
+			<p><i>Firearm Modification (Grips)</i></p>
+			<p>Increases the weapon’s normal range value by 50, up to the maximum long range of the weapon. This does not increase the weapon’s maximum range.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Grip, Comfort" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_GRIP_COMFORT">
+		<description>
+			<p><i>Firearm Modification (Grips)</i></p>
+			<p>You gain a +1 bonus to the attack roll when firing the weapon within its normal range.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Grip, Sharpshooter’s" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_GRIP_SHARPSHOOTER">
+		<description>
+			<p><i>Firearm Modification (Grips)</i></p>
+			<p>When firing the weapon, attacking at long range doesn’t impose disadvantage on your attack rolls.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<!-- Magazines -->
+	<element name="F.M. Magazine, Large" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_MAGAZINE_LARGE">
+		<description>
+			<p><i>Firearm Modification (Magazines)</i></p>
+			<p>Grants a +1 bonus to the weapon’s Reload (x) value.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Magazine, Quick-Load" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_MAGAZINE_QUICKLOAD">
+		<description>
+			<p><i>Firearm Modification (Magazines)</i></p>
+			<p>Once per short rest, you can reload the weapon as a bonus action.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Magazine, Drum" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_MAGAZINE_DRUM">
+		<description>
+			<p><i>Firearm Modification (Magazines)</i></p>
+			<p>Grants a +3 bonus to the weapon’s Reload (x) value. In addition, when reloading the weapon, you must spend both an action and a bonus action on your turn to do so.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<!-- Sights -->
+	<element name="F.M. Sight, Reflex" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_SIGHT_REFLEX">
+		<description>
+			<p><i>Firearm Modification (Sights)</i></p>
+			<p>Grants a +1 bonus to attack rolls made with the weapon.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">45</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Sight, Scoped" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_SIGHT_SCOPED">
+		<description>
+			<p><i>Firearm Modification (Sights)</i></p>
+			<p>Increases the weapon’s normal range by 100, up to the weapon’s maximum range.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Sight, Darkvision" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_SIGHT_DARKVISION">
+		<description>
+			<p><i>Firearm Modification (Sights)</i></p>
+			<p>When aiming with the weapon, you gain darkvision out to the weapon’s normal range.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<!-- Muzzles -->
+	<element name="F.M. Muzzle, Suppressor" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_MUZZLE_SUPPRESSOR">
+		<description>
+			<p><i>Firearm Modification (Muzzles)</i></p>
+			<p>When you are hidden from a creature and miss it with a ranged weapon attack, from this weapon, making the attack doesn’t reveal your position.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="F.M. Muzzle, Compensator" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_FM_MUZZLE_COMPENSATOR">
+		<description>
+			<p><i>Firearm Modification (Muzzles)</i></p>
+			<p>The weapon’s maximum range is reduced by 100 (to a minimum of 30), and you gain a +1 bonus to attack rolls made with the weapon.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
 	
 	
-	<!-- proficiencies -->
-	<element name="Weapon Proficiency (Firearms)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_FIREARMS">
-		<sheet alt="Firearms" />
-		<rules>
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_COMPACT_PISTOL" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_REVOLVER" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SEMI_AUTO_PISTOL" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_PISTOL" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_REVOLVER" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_BOLT_RIFLE" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ASSAULT_RIFLE" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SHOTGUN" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SNIPER_RIFLE" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_SNIPER_RIFLE" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LMG" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HMG" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_FLAMER" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LASER_RIFLE" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_RIFLE" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_TBML" />
-			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ANTI_TANK_RIFLE" />
-		</rules>
-	</element>
-	<!-- For the Specialist property. Currently unused. -->
-	<element name="Weapon Proficiency (Specialist)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_SPECIALIST">
-		<sheet alt="Specialist" />
-	</element>
-
-	<element name="Weapon Proficiency (Compact Pistol)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_COMPACT_PISTOL">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD, ID_TGMHB_WEAPON_PROPERTY_CONCEALED</supports>
-		<sheet alt="Compact Pistol" />
-	</element>
-	<element name="Weapon Proficiency (Revolver)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_REVOLVER">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Revolver" />
-	</element>
-	<element name="Weapon Proficiency (Semi-Auto Pistol)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SEMI_AUTO_PISTOL">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Semi-Auto Pistol" />
-	</element>
-	<element name="Weapon Proficiency (Plasma Pistol)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_PISTOL">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
-		<sheet alt="Plasma Pistol" />
-	</element>
-	<element name="Weapon Proficiency (Heavy Revolver)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_REVOLVER">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Heavy Revolver" />
-	</element>
-	<element name="Weapon Proficiency (Bolt Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_BOLT_RIFLE">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Bolt Rifle" />
-	</element>
-	<element name="Weapon Proficiency (Assault Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ASSAULT_RIFLE">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Assault Rifle" />
-	</element>
-	<element name="Weapon Proficiency (Shotgun)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SHOTGUN">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Shotgun" />
-	</element>
-	<element name="Weapon Proficiency (Sniper Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SNIPER_RIFLE">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Sniper Rifle" />
-	</element>
-	<element name="Weapon Proficiency (Heavy Sniper Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_SNIPER_RIFLE">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Heavy Sniper Rifle" />
-	</element>
-	<element name="Weapon Proficiency (Light Machine-Gun)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LMG">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Light Machine-Gun" />
-	</element>
-	<element name="Weapon Proficiency (Heavy Machine-Gun)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HMG">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Heavy Machine-Gun" />
-	</element>
-	<element name="Weapon Proficiency (Heavy Flamer)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_FLAMER">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
-		<sheet alt="Heavy Flamer" />
-	</element>
-	<element name="Weapon Proficiency (Laser Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LASER_RIFLE">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
-		<sheet alt="Laser Rifle" />
-	</element>
-	<element name="Weapon Proficiency (Plasma Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_RIFLE">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
-		<sheet alt="Plasma Rifle" />
-	</element>
-	<element name="Weapon Proficiency (Twin-Barrel Missile Launcher)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_TBML">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
-		<sheet alt="Twin-Barrel Missile Launcher" />
-	</element>
-	<element name="Weapon Proficiency (Anti-Tank Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ANTI_TANK_RIFLE">
-		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
-		<sheet alt="Anti-Tank Rifle" />
-	</element>
-	
-	<element name="Weapon Proficiency (Energy Blade)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_ENERGY_BLADE">
-		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
-		<sheet alt="Energy Blade" />
-	</element>
-	<element name="Weapon Proficiency (Energy Dagger)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_ENERGY_DAGGER">
-		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
-		<sheet alt="Energy Dagger" />
-	</element>
-	<element name="Weapon Proficiency (Power Gauntlet)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_POWER_GAUNTLET">
-		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
-		<sheet alt="Power Gauntlet" />
-	</element>
-	<element name="Weapon Proficiency (Tesla Glove)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_TESLA_GLOVE">
-		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</supports>
-		<sheet alt="Tesla Glove" />
-	</element>
 	
 	<!-- properties -->
-	<!-- some of these properties are only about ATUM hardpoints. this might have to be rearranged in future, if ATUMs/hardpoints can be supported by Aurora (in some capacity). -->
+	<!-- some of these properties are only about ATUM hardpoints -->
 	<element name="Ammunition" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION">
 		<description>
 			<p>Some ranged weapons listed on TGMHB page 33 have ammunition requirements. Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire.</p>
@@ -1291,6 +1467,15 @@
 			<p>Hotshot magazines can only be purchased from towns or major cities, though sometimes smaller traders may have a limited stock available, albeit at a more inflated price. To work out the cost of purchasing a hotshot clip for your weapon, add the price shown below to the base cost for a clip of that weapon type, shown above. For example, inferno rounds for a revolver would cost 26gp: a total of 25gp from the hotshot cost, and 1gp from the base clip cost.</p>
 		</description>
 	</element>
+	<element name="Firearm Modifications" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_FIREARM_MODIFICATIONS">
+		<description>
+			<p>A firearm is composed of six particular components; a frame, barrel, grip, magazine, the sights, and a muzzle. Standard firearms are purchased with stock components, but each component can be modified using the tables below.</p>
+			<p><b>A component can only have one modification equipped or affecting it at any time.</b></p>
+			<p>The DM decides how many of the below options are available and suit your campaign.</p>
+			<p>Some modifications change the damage die of a weapon. The damage die steps for these modifications are shown below:</p>
+			<p><b>d3 -&gt; d4 -&gt; d6 -&gt; d8 -&gt; d10 -&gt; d12 -&gt; 2d6 -&gt; 2d8 -&gt; 2d10 -&gt; 2d12</b></p>
+		</description>
+	</element>
 	
 	
 	<!-- temporary custom property elements -->
@@ -1351,7 +1536,6 @@
 			<div element="ID_TGMHB_WEAPON_PROPERTY_RELOAD" />
 		</description>
 	</element>
-	
 
 	<element name="ROF (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_2">
 		<compendium display="false" />
@@ -1390,6 +1574,145 @@
 		</description>
 	</element>
 	
+	
+	<!-- weapon groups -->
+	<element name="Weapon Group (Anti-Tank Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_ANTI_TANK_RIFLE" />
+	<element name="Weapon Group (Laser Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_LASER_RIFLE" />
+	<element name="Weapon Group (Machine-Gun, Heavy)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_HMG" />
+	<element name="Weapon Group (Machine-Gun, Light)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_LMG" />
+	<element name="Weapon Group (Pistol, Compact)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_COMPACT_PISTOL" />
+	<element name="Weapon Group (Pistol, Semi-Auto)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_SEMI_AUTO_PISTOL" />
+	<element name="Weapon Group (Plasma Pistol)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_PLASMA_PISTOL" />
+	<element name="Weapon Group (Plasma Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_PLASMA_RIFLE" />
+	<element name="Weapon Group (Revolver)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_REVOLVER" />
+	<element name="Weapon Group (Revolver, Heavy)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_HEAVY_REVOLVER" />
+	<element name="Weapon Group (Rifle, Assault)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_ASSAULT_RIFLE" />
+	<element name="Weapon Group (Rifle, Bolt)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_BOLT_RIFLE" />
+	<element name="Weapon Group (Shotgun)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_SHOTGUN" />
+	<element name="Weapon Group (Sniper Rifle)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE" />
+	<element name="Weapon Group (Sniper Rifle, Heavy)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_HEAVY_SNIPER_RIFLE" />
+	<element name="Weapon Group (Missile Launcher)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_MISSILE_LAUNCHER" />
+	<element name="Weapon Group (Flamethrower)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_FIREARM_FLAMETHROWER" />
+
+	<element name="Weapon Group (Energy Blade)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_ENERGY_BLADE" />
+	<element name="Weapon Group (Energy Dagger)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_ENERGY_DAGGER" />
+	<element name="Weapon Group (Power Gauntlet)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_POWER_GAUNTLET" />
+	<element name="Weapon Group (Tesla Glove)" type="Weapon Group" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_GROUP_MELEE_TESLA_GLOVE" />
+	
+	
+	<!-- proficiencies -->
+	<element name="Weapon Proficiency (Firearms)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_FIREARMS">
+		<sheet alt="Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_COMPACT_PISTOL" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_REVOLVER" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SEMI_AUTO_PISTOL" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_PISTOL" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_REVOLVER" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_BOLT_RIFLE" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ASSAULT_RIFLE" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SHOTGUN" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SNIPER_RIFLE" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_SNIPER_RIFLE" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LMG" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HMG" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_FLAMER" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LASER_RIFLE" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_RIFLE" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_TBML" />
+			<grant type="Proficiency" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ANTI_TANK_RIFLE" />
+		</rules>
+	</element>
+	<!-- For the Specialist property. Currently unused. -->
+	<element name="Weapon Proficiency (Specialist)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_SPECIALIST">
+		<sheet alt="Specialist" />
+	</element>
+
+	<element name="Weapon Proficiency (Compact Pistol)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_COMPACT_PISTOL">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD, ID_TGMHB_WEAPON_PROPERTY_CONCEALED</supports>
+		<sheet alt="Compact Pistol" />
+	</element>
+	<element name="Weapon Proficiency (Revolver)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_REVOLVER">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Revolver" />
+	</element>
+	<element name="Weapon Proficiency (Semi-Auto Pistol)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SEMI_AUTO_PISTOL">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Semi-Auto Pistol" />
+	</element>
+	<element name="Weapon Proficiency (Plasma Pistol)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_PISTOL">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<sheet alt="Plasma Pistol" />
+	</element>
+	<element name="Weapon Proficiency (Heavy Revolver)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_REVOLVER">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Heavy Revolver" />
+	</element>
+	<element name="Weapon Proficiency (Bolt Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_BOLT_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Bolt Rifle" />
+	</element>
+	<element name="Weapon Proficiency (Assault Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ASSAULT_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Assault Rifle" />
+	</element>
+	<element name="Weapon Proficiency (Shotgun)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SHOTGUN">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Shotgun" />
+	</element>
+	<element name="Weapon Proficiency (Sniper Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_SNIPER_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Sniper Rifle" />
+	</element>
+	<element name="Weapon Proficiency (Heavy Sniper Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_SNIPER_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Heavy Sniper Rifle" />
+	</element>
+	<element name="Weapon Proficiency (Light Machine-Gun)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LMG">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Light Machine-Gun" />
+	</element>
+	<element name="Weapon Proficiency (Heavy Machine-Gun)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HMG">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Heavy Machine-Gun" />
+	</element>
+	<element name="Weapon Proficiency (Heavy Flamer)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_HEAVY_FLAMER">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+		<sheet alt="Heavy Flamer" />
+	</element>
+	<element name="Weapon Proficiency (Laser Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_LASER_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<sheet alt="Laser Rifle" />
+	</element>
+	<element name="Weapon Proficiency (Plasma Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_PLASMA_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<sheet alt="Plasma Rifle" />
+	</element>
+	<element name="Weapon Proficiency (Twin-Barrel Missile Launcher)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_TBML">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<sheet alt="Twin-Barrel Missile Launcher" />
+	</element>
+	<element name="Weapon Proficiency (Anti-Tank Rifle)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_FIREARM_ANTI_TANK_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<sheet alt="Anti-Tank Rifle" />
+	</element>
+	
+	<element name="Weapon Proficiency (Energy Blade)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_ENERGY_BLADE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<sheet alt="Energy Blade" />
+	</element>
+	<element name="Weapon Proficiency (Energy Dagger)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_ENERGY_DAGGER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
+		<sheet alt="Energy Dagger" />
+	</element>
+	<element name="Weapon Proficiency (Power Gauntlet)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_POWER_GAUNTLET">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+		<sheet alt="Power Gauntlet" />
+	</element>
+	<element name="Weapon Proficiency (Tesla Glove)" type="Proficiency" source="The Greasemonkey's Handbook" id="ID_TGMHB_PROFICIENCY_WEAPON_MARTIAL_MELEE_TESLA_GLOVE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</supports>
+		<sheet alt="Tesla Glove" />
+	</element>
 	
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
 		<rules>
