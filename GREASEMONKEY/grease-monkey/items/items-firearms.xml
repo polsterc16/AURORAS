@@ -575,7 +575,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Magazine (Heavy Sniper)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HEAVY_SNIPER">
+	<element name="Magazine (Sniper, Heavy)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HEAVY_SNIPER">
 		<description>
 			<p>Deals piercing damage.</p>
 			<p>A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire.</p>
@@ -599,7 +599,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Magazine (Anti Tank)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_ANTI_TANK">
+	<element name="Magazine (Anti-Tank)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_ANTI_TANK">
 		<description>
 			<p>Deals piercing damage.</p>
 			<p>A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire.</p>
@@ -632,6 +632,176 @@
 		<setters>
 			<set name="category">Ammunition</set>
 			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	
+	<!-- Hotshot Ammunition -->
+	<element name="Hotshot (Inferno)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_INFERNO">
+		<description>
+			<p>Deals fire damage.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Nitrogen)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_NITROGEN">
+		<description>
+			<p>Deals cold damage.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Acidic)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_ACIDIC">
+		<description>
+			<p>Deals acid damage.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Tesla)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_TESLA">
+		<description>
+			<p>Deals lightning damage.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (H.E.)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_HE">
+		<description>
+			<p>Explodes out in a 5-foot radius sphere upon hitting a target. Creatures in the area (including the target) must succeed on a DC 14 Dexterity saving throw, taking 1d8 fire damage on a failed save, or half as much on a success.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">125</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Poison)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_POISON">
+		<description>
+			<p>On a hit, target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. Additional failed saving throws caused by being hit again by a weapon with this ammunition type can stack the poison’s duration, up to a maximum of 10 minutes.</p>
+			<p>A creature can make a Constitution saving throw at the end of its turn, ending the poison’s effect on a success.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Paralysis)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_PARALYSIS">
+		<description>
+			<p>On a hit, target must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. A target can repeat the saving throw at the end of each of it’s turns, ending the effect on a success.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Tranquilizer)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_TRANQUILIZER">
+		<description>
+			<p>A large or smaller target hit by one or more shots from a weapon with this ammunition must succeed on a DC 10 Constitution saving throw at the end of its next turn or fall unconscious for 1 hour. If the target is hit multiple times by weapons with this ammuntion before it makes its saving throw, the save DC increases by 1, to a maximum of 17.</p>
+			<p>The target remains unconcious in this manner until a creature spends an action to rouse them, or they take damage. This ammunition has no effect on undead or constructs, or any creature that cannot be put to sleep.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Silvered)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_SILVERED">
+		<description>
+			<p>This ammunition has been silvered.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Sanctified)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_SANCTIFIED">
+		<description>
+			<p>Deals an additional 1d4 radiant damage to undead and fiends.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hotshot (Adamantine)" type="Item" source="The Greasemonkey's Handbook" id="ID_TGMHB_ITEM_AMMUNITION_HOTSHOT_ADAMANTINE">
+		<description>
+			<p>This ammunition has an adamantine head, and deals an additional 1d6 damage on a hit.</p>
+			<p>The price of hotshot ammunition is added to the base cost for a clip of that weapon type.</p>
+			<div class="reference">
+				<div element="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">50</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="stackable">true</set>
 		</setters>
@@ -1112,6 +1282,13 @@
 			<p>If you have two of these hardpoint modules or weapons equipped and take the attack action on your turn, before making the attack roll, you can declare to fire both weapons at the same target simultaneously, as part of the same action.</p>
 			<p>Make one attack roll for both modules. On a hit, the target takes the combined damage from both weapons or hardpoint modules, adding your Strength or Dexterity modifier to the total. This expends ammunition from both hardpoints at the same time.</p>
 			<p>You can also reload both weapons or modules as part of the same reload action.</p>
+		</description>
+	</element>
+	
+	<element name="Hotshot Ammuntion" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_HOTSHOT_AMMUNTION">
+		<description>
+			<p>Standard ammunition deals the nonmagical damage type specified on it’s entry, unless a special rule from the firing weapon specifies otherwise. In certain engagements, however, adventurers might find themselves facing a foe that requires more specilized ammunition to take down reliably. Particularly wary adventurers, or those hunting creatures weak to silver or adamantine, will often invest in special ammo magazines, known as “Hotshot Ammo”. Hotshot ammunition comes in many different types, with each variation utilizing a different damage type or additional property.</p>
+			<p>Hotshot magazines can only be purchased from towns or major cities, though sometimes smaller traders may have a limited stock available, albeit at a more inflated price. To work out the cost of purchasing a hotshot clip for your weapon, add the price shown below to the base cost for a clip of that weapon type, shown above. For example, inferno rounds for a revolver would cost 26gp: a total of 25gp from the hotshot cost, and 1gp from the base clip cost.</p>
 		</description>
 	</element>
 	
