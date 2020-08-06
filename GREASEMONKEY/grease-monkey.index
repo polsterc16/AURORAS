@@ -35,6 +35,6 @@
 		<file name="items-firearms.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/items/items-firearms.xml" />
 		
 		
-		<obsolete name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/vehicle-atum.xml" />
+		<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/vehicle-atum.xml" />
 	</files>
 </index>

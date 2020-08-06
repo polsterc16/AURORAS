@@ -159,15 +159,22 @@
     </element>
 	
 	<!-- Sub-Races -->
-	<element name="Light" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
-	<element name="Medium" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM">
-		<description></description>
-		<sheet display="false" />
-	</element>
-	<element name="Heavy" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY">
-		<description></description>
-		<sheet display="false" />
-	</element>
+	<element name="Light Conventional" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_CONVENTIONAL"><sheet display="false" /></element>
+	<element name="Medium Conventional" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_CONVENTIONAL"><sheet display="false" /></element>
+	<element name="Heavy Conventional" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_CONVENTIONAL"><sheet display="false" /></element>
+	<element name="Light Lodestone" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_LODESTONE"><sheet display="false" /></element>
+	<element name="Medium Lodestone" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_LODESTONE"><sheet display="false" /></element>
+	<element name="Heavy Lodestone" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_LODESTONE"><sheet display="false" /></element>
+	<element name="Light Plasma" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_PLASMA"><sheet display="false" /></element>
+	<element name="Medium Plasma" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_PLASMA"><sheet display="false" /></element>
+	<element name="Heavy Plasma" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_PLASMA"><sheet display="false" /></element>	
+	<element name="Light Soul Cage" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_SOULCAGE"><sheet display="false" /></element>
+	<element name="Medium Soul Cage" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_SOULCAGE"><sheet display="false" /></element>
+	<element name="Heavy Soul Cage" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_SOULCAGE"><sheet display="false" /></element>
+
+
+
+
 	
 	<!-- Chassis Type -->
 	<element name="Chassis Type" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_TYPE">
@@ -197,7 +204,6 @@
 			<description>{{atum-character:module-slots-used}}/{{atum-character:module-slots}} module slots, {{atum-character:crew-slots}} crew slots.</description>
 		</sheet>
 		<rules>
-			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
 			<stat name="atum-character:ac" value="18" />
 			<stat name="hp" value="-12" />
 			<grant type="Size" id="ID_SIZE_LARGE" />
@@ -228,7 +234,6 @@
 			<description>{{atum-character:module-slots-used}}/{{atum-character:module-slots}} module slots, {{atum-character:crew-slots}} crew slots.</description>
 		</sheet>
 		<rules>
-			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
 			<stat name="atum-character:ac" value="17" />
 			<stat name="hp" value="-15" />
 			<grant type="Size" id="ID_SIZE_HUGE" />
@@ -259,7 +264,6 @@
 			<description>{{atum-character:module-slots-used}}/{{atum-character:module-slots}} module slots, {{atum-character:crew-slots}} crew slots.</description>
 		</sheet>
 		<rules>
-			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
 			<stat name="atum-character:ac" value="16" />
 			<stat name="hp" value="-19" />
 			<grant type="Size" id="ID_SIZE_GARGANTUAN" />
@@ -378,9 +382,13 @@
         <sheet display="false"/>
 		<rules>
 			<select type="Racial Trait" name="Conventional Engine" supports="ATUM Conventional Engine Type Pool" />
-			<select type="Racial Trait" name="Fuel Tank" supports="Light Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
-			<select type="Racial Trait" name="Fuel Tank" supports="Medium Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
-			<select type="Racial Trait" name="Fuel Tank" supports="Heavy Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
+			<select type="Racial Trait" name="Fuel Tank" supports="Light Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
+			<select type="Racial Trait" name="Fuel Tank" supports="Medium Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
+			<select type="Racial Trait" name="Fuel Tank" supports="Heavy Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
+			
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_CONVENTIONAL" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_CONVENTIONAL" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_CONVENTIONAL" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
 		</rules>
 	</element>
 	<element name="Variant: Lodestone Crystal Engines" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_CRYSTALS">
@@ -405,6 +413,10 @@
         <sheet display="false"/>
 		<rules>
 			<select type="Racial Trait" name="Lodestone Crystal Element" supports="ATUM Lodestone Engine Element Pool" />
+			
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_LODESTONE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_LODESTONE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_LODESTONE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
 		</rules>
 	</element>
 	<element name="Variant: Plasma Engines" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA">
@@ -447,6 +459,10 @@
 			<stat name="atum-character:plasma-cell-limit" value="0" bonus="base" />
 			<stat name="atum-character:plasma-overload-risk" value="0" bonus="base" />
 			<select type="Racial Trait" name="Plasma Engine Quality" supports="ATUM Plasma Engine Quality Pool" />
+			
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_PLASMA" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_PLASMA" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_PLASMA" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
 		</rules>
 	</element>
 	
@@ -816,7 +832,7 @@
 	
 	<!-- ATUM Class -->
     <element name="ATUM" type="Class" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_ATUM_LIGHT">
-		<requirements>ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT</requirements>
+		<requirements>ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT</requirements>
         <description>
 			<p><center><b>Take exactly 15 levels (light chassis) in this class.</b></center></p>
 			<p></p>
@@ -869,7 +885,7 @@
         </rules>
     </element>
 	<element name="ATUM" type="Class" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_ATUM_MEDIUM">
-		<requirements>ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM</requirements>
+		<requirements>ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM</requirements>
         <description>
 			<p><center><b>Take 20 levels (medium chassis) in this class.</b></center></p>
 			<p></p>
@@ -921,7 +937,7 @@
         </rules>
     </element>
 	<element name="ATUM" type="Class" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_ATUM_HEAVY">
-		<requirements>ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY</requirements>
+		<requirements>ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY</requirements>
         <description>
 			<p><center><b>Take 20 levels (medium chassis) in this class.</b></center></p>
 			<p></p>
@@ -1106,9 +1122,9 @@
 		<rules>
 			<stat name="atum-character:stomp-mod" value="proficiency" />
 			<stat name="atum-character:stomp-mod" value="strength:modifier" />
-			<stat name="atum-character:stomp-die" value="1" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
-			<stat name="atum-character:stomp-die" value="2" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
-			<stat name="atum-character:stomp-die" value="3" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
+			<stat name="atum-character:stomp-die" value="1" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
+			<stat name="atum-character:stomp-die" value="2" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
+			<stat name="atum-character:stomp-die" value="3" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
 		</rules>
 	</element>
 	
