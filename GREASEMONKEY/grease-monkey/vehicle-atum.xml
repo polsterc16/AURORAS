@@ -5,17 +5,39 @@
 			<file name="vehicle-atum.xml" url="" />
 		</update>
 	</info>
-
-	<element name="ATUM" type="Race" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE">
+	
+	
+	<!-- Source -->
+	<element name="ATUMs (TGMHB)" type="Source" source="Core" id="ID_ATUM_TGMHB_SOURCE_ATUM_GREASE_MONKEY">
+		<description>
+			<p>Create character sheets for your ATUMs.</p>
+			<p>It is recommended to disable this Source if you do not intend to create an ATUM character sheet.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">ATGMHB</set>
+			<set name="url">https://www.dmsguild.com/product/259520/</set>
+			<set name="image">https://www.dmsguild.com/images/8957/259520.png</set>
+			<set name="author" url="https://www.dmsguild.com/">Vall Syrene, Mogman Dubloon</set>
+			<set name="third-party">true</set>
+			<set name="information">(Experimental) This is an optional addon to The Greasemonkey's Handbook.</set>
+		</setters>
+	</element>
+	
+	
+	<!-- ATUM Race -->
+	<element name="ATUM" type="Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE">
         <description>
             <h3>CONSTRUCTING YOUR ATUM</h3>
 			<h4>Step One: Picking Your Chassis and Mobility Type</h4>
 			<p>Choosing a chassis type is one of the most important aspects of constructing your own ATUM. Each category of chassis grants a different set of base statistics, and each mobility frame, when equipped to the chassis, gives it additional features.</p>
-			<div element="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
-			<div element="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
-			<div element="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
+			<h5>Light Chassis</h5>
+			<p>Light chassis have the highest base armour class, and lowest hit points and strength score. They are also the cheapest option of the three categories, and only require a single pilot in order to operate efficiently. In addition, they are the most flexible chassis when equipping a mobility frame, being the only chassis able to equip wheels.</p>
+			<h5>Medium Chassis</h5>
+			<p>Medium chassis are the most popular workhorse chassis for most ATUM pilots. The chassis boasts an increase in statistics across the board and an AC reduction, but also struggle from an increase in size, preventing it from utilizing the more numerous category 1 workshops for repairs, and cannot be equipped with wheels.</p>
+			<h5>Heavy Chassis</h5>
+			<p>Heavy chassis are expensive, sporting an impressive number of module slots, crew space, and are capable of housing the largest of ATUM weapons. Unfortunately, they are also the most expensive to repair effectively due to their high number of hit points. In addition, heavy chassis are limited to either tracked or quadrupedal frames, due to their immense size.</p>
 			<div class="reference">
-				<div element="ID_ATUM_TGMHB_RACIAL_INFO_AS" />
+				<div element="ID_ATUM_TGMHB_RACIAL_SELECT_PILOT_STATS" />
 			</div>
 			
 			<h6>Chassis Type</h6>
@@ -60,7 +82,7 @@
 				<tr><td><b>Large</b></td><td>Counts as 5 fuel tanks</td><td>Heavy only</td><td style="text-align:right">500 gp</td></tr>
 			</table>
 			
-			<h5>Engine Types</h5>
+			<h5>Conventional Engine Types</h5>
 			<p>Engine types vary depending on location. A poor village, for example, might have a few average and poor engines available for purchase, while a large city might have a good stock of average and good engines; with a possibility for a few masterwork ones from a selected dealer which are highly sought after.</p>
 			
 			<h6>Engine Type</h6>
@@ -78,14 +100,26 @@
 			<p>Fuel is used whenever the ATUM is active for any reason, such as combat or travel, for example. To keep fuel management simple, the engine type chosen dictates how long an installed fuel tank will last in days, regardless of the activity or amount of time during that day the ATUM is active for.</p>
 			<p>For example, if an ATUM was equipped with a poor grade engine and a small fuel tank, regardless of how many hours in the day the ATUM was active for, it would only have enough fuel to last it three days. If, however, the ATUM was equipped with an average grade engine, that same fuel tank could last for a total of 7 days.</p>
 			
+			<h5>Expanded ATUM Engine Types</h5>
+			<p>While the ATUM construction guide goes into great depth on creating your own personal designs, fuel types - and to an extension engine types - have been deliberately kept as simple as possible. This is to ensure when creating an ATUM, you aren’t limited on what sort of fuel source or engine design that construct would require in order to function.</p>
+			<p>However, when deciding what fuel source would be best suited for your campaign, you or your players might find the open-ended option presented in Chapter 5 too simple. Below you can find an expanded list of variant fuels alongside their own engine types. Each variant has a gold cost, description and functionality that grants you more in depth options for customization, should you feel either your players, campaign or villains require it.</p>
+			<p><b>It is also important to note these rules have been added here as variants which you, as Dungeon Master, can choose to add to your games as you see fit, and do not function as ordinary options players can choose when outfitting their ATUMs, as the benefits they grant can greatly change the flow of your story.</b></p>
+			<p>Feel free to completely ignore this section, or instead treat them as magical items in terms of rarity and rewards, should you allow your players limited access to them.</p>
+			
+			
         </description>
         <sheet display="false" />
         <rules>
+			<stat name="ac:unarmored" value="-20" />
 			<stat name="ac:calculation" value="atum-character:ac" bonus="calculation" alt="Chassis" />
 			<stat name="atum-character:ac" value="0" bonus="base" />
 			<stat name="atum-character:cost" value="0" bonus="base" />
 			<stat name="atum-character:crew-slots" value="0" bonus="base" />
 			<stat name="atum-character:module-slots" value="0" bonus="base" />
+			<stat name="atum-character:module-slots-used" value="0" bonus="base" />
+			
+			
+			
 			
 			<!-- Ensure the desired stats -->
 			<stat name="strength" value="-100" />
@@ -94,12 +128,12 @@
 			<stat name="intelligence" value="-100" />
 			<stat name="wisdom" value="-100" />
 			<stat name="charisma" value="-100" />
-			<stat name="strength:score:set" value="10" bonus="base" />
-			<stat name="constitution:score:set" value="10" bonus="base" />
-			<stat name="dexterity:score:set" value="10" bonus="base" />
-			<stat name="intelligence:score:set" value="10" bonus="base" />
-			<stat name="wisdom:score:set" value="10" bonus="base" />
-			<stat name="charisma:score:set" value="10" bonus="base" />
+			<stat name="strength:score:set" value="0" bonus="base" />
+			<stat name="constitution:score:set" value="0" bonus="base" />
+			<stat name="dexterity:score:set" value="0" bonus="base" />
+			<stat name="intelligence:score:set" value="0" bonus="base" />
+			<stat name="wisdom:score:set" value="0" bonus="base" />
+			<stat name="charisma:score:set" value="0" bonus="base" />
 			
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_VEHICLECOST" />
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_TYPE" />
@@ -107,10 +141,15 @@
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
+			
+			<select type="Racial Trait" name="Mobility Type" supports="Heavy Chassis Mobility Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
+			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" requirements="(ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT||ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM||ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY)" />
+			
+            <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_SELECT_PILOT_STATS" requirements="(ID_ATUM_TGMHB_ENGINE_CONVENTIONAL||ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_CRYSTALS||ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA)" />
         </rules>
     </element>
 	
-	<element name="Vehicle Cost" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACIAL_VEHICLECOST">
+	<element name="ATUM Creation Cost" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_VEHICLECOST">
         <description>
             <p>Based on the choice of components, the ATUM has an associated cost.</p>
         </description>
@@ -119,17 +158,28 @@
 		</sheet>
     </element>
 	
-	<element name="Chassis Type" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_TYPE">
+	<!-- Sub-Races -->
+	<element name="Light" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
+	<element name="Medium" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM">
+		<description></description>
+		<sheet display="false" />
+	</element>
+	<element name="Heavy" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY">
+		<description></description>
+		<sheet display="false" />
+	</element>
+	
+	<!-- Chassis Type -->
+	<element name="Chassis Type" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_TYPE">
         <description>
             <p>Choosing a chassis type is one of the most important aspects of constructing your own ATUM. Each category of chassis grants a different set of base statistics.</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Sub Race" name="Chassis Type" supports="ATUM Chassis Type Pool" />
+            <select type="Racial Trait" name="Chassis Type" supports="ATUM Chassis Type Pool" />
         </rules>
     </element>
-	<!-- Light Chassis -->
-	<element name="Light" type="Sub Race" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT">
+	<element name="Light Chassis" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT">
 		<supports>ATUM Chassis Type Pool</supports>
 		<prerequisite>2,450 gp</prerequisite>
 		<description>
@@ -143,24 +193,11 @@
 			<p><b><i>Constitution Score. </i></b>18 (+4).</p>
 			<p><b><i>Cost. </i></b>2,450 gp.</p>
 		</description>
-		<sheet display="false" />
-	</element>
-	<element name="Light Chassis" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT">
-		<description>
-			<p>Light chassis have the highest base armour class, and lowest hit points and strength score. They are also the cheapest option of the three categories, and only require a single pilot in order to operate efficiently. In addition, they are the most flexible chassis when equipping a mobility frame, being the only chassis able to equip wheels.</p>
-			<p><b><i>Size. </i></b>Large.</p>
-			<p><b><i>AC. </i></b>18.</p>
-			<p><b><i>Crew. </i></b>1.</p>
-			<p><b><i>Hit Points. </i></b>142 (15d10 + 60).</p>
-			<p><b><i>Module Slots. </i></b>3.</p>
-			<p><b><i>Strength Score. </i></b>18 (+4).</p>
-			<p><b><i>Constitution Score. </i></b>18 (+4).</p>
-			<p><b><i>Cost. </i></b>2,450 gp.</p>
-		</description>
 		<sheet>
-			<description></description>
+			<description>{{atum-character:module-slots-used}}/{{atum-character:module-slots}} module slots, {{atum-character:crew-slots}} crew slots.</description>
 		</sheet>
 		<rules>
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
 			<stat name="atum-character:ac" value="18" />
 			<stat name="hp" value="-12" />
 			<grant type="Size" id="ID_SIZE_LARGE" />
@@ -169,14 +206,11 @@
 			<stat name="strength:score:set" value="18" bonus="base" />
 			<stat name="constitution:score:set" value="18" bonus="base" />
 			<stat name="atum-character:cost" value="2450" />
-			
 			<select type="Racial Trait" name="Mobility Type" supports="Light Chassis Mobility Type Pool" />
-			<select type="Racial Trait" name="Fuel Tank Type" supports="Light Chassis Fuel Tank Type Pool" />
-			<select type="Racial Trait" name="Engine Type" supports="ATUM Engine Type Type Pool" />
+			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" />
 		</rules>
 	</element>
-	<!-- Medium Chassis -->
-	<element name="Medium" type="Sub Race" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM">
+	<element name="Medium Chassis" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM">
 		<supports>ATUM Chassis Type Pool</supports>
 		<prerequisite>4,500 gp</prerequisite>
 		<description>
@@ -190,24 +224,11 @@
 			<p><b><i>Constitution Score. </i></b>20 (+5).</p>
 			<p><b><i>Cost. </i></b>4,500 gp.</p>
 		</description>
-		<sheet display="false" />
-	</element>
-	<element name="Medium Chassis" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM">
-		<description>
-			<p>Medium chassis are the most popular workhorse chassis for most ATUM pilots. The chassis boasts an increase in statistics across the board and an AC reduction, but also struggle from an increase in size, preventing it from utilizing the more numerous category 1 workshops for repairs, and cannot be equipped with wheels.</p>
-			<p><b><i>Size. </i></b>Huge.</p>
-			<p><b><i>AC. </i></b>17.</p>
-			<p><b><i>Crew. </i></b>3.</p>
-			<p><b><i>Hit Points. </i></b>230 (20d12 + 100).</p>
-			<p><b><i>Module Slots. </i></b>5.</p>
-			<p><b><i>Strength Score. </i></b>22 (+6).</p>
-			<p><b><i>Constitution Score. </i></b>20 (+5).</p>
-			<p><b><i>Cost. </i></b>4,500 gp.</p>
-		</description>
 		<sheet>
-			<description></description>
+			<description>{{atum-character:module-slots-used}}/{{atum-character:module-slots}} module slots, {{atum-character:crew-slots}} crew slots.</description>
 		</sheet>
 		<rules>
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
 			<stat name="atum-character:ac" value="17" />
 			<stat name="hp" value="-15" />
 			<grant type="Size" id="ID_SIZE_HUGE" />
@@ -216,14 +237,11 @@
 			<stat name="strength:score:set" value="22" bonus="base" />
 			<stat name="constitution:score:set" value="20" bonus="base" />
 			<stat name="atum-character:cost" value="4500" />
-			
 			<select type="Racial Trait" name="Mobility Type" supports="Medium Chassis Mobility Type Pool" />
-			<select type="Racial Trait" name="Fuel Tank Type" supports="Medium Chassis Fuel Tank Type Pool" />
-			<select type="Racial Trait" name="Engine Type" supports="ATUM Engine Type Type Pool" />
+			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" />
 		</rules>
 	</element>
-	<!-- Heavy Chassis -->
-	<element name="Heavy" type="Sub Race" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY">
+	<element name="Heavy Chassis" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY">
 		<supports>ATUM Chassis Type Pool</supports>
 		<prerequisite>8,000 gp</prerequisite>
 		<description>
@@ -237,24 +255,11 @@
 			<p><b><i>Constitution Score. </i></b>24 (+7).</p>
 			<p><b><i>Cost. </i></b>8,000 gp.</p>
 		</description>
-		<sheet display="false" />
-	</element>
-	<element name="Heavy Chassis" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY">
-		<description>
-			<p>Heavy chassis are expensive, sporting an impressive number of module slots, crew space, and are capable of housing the largest of ATUM weapons. Unfortunately, they are also the most expensive to repair effectively due to their high number of hit points. In addition, heavy chassis are limited to either tracked or quadrupedal frames, due to their immense size.</p>
-			<p><b><i>Size. </i></b>Gargantuan.</p>
-			<p><b><i>AC. </i></b>16.</p>
-			<p><b><i>Crew. </i></b>5.</p>
-			<p><b><i>Hit Points. </i></b>350 (20d20 + 140).</p>
-			<p><b><i>Module Slots. </i></b>10.</p>
-			<p><b><i>Strength Score. </i></b>26 (+8).</p>
-			<p><b><i>Constitution Score. </i></b>24 (+7).</p>
-			<p><b><i>Cost. </i></b>8,000 gp.</p>
-		</description>
 		<sheet>
-			<description></description>
+			<description>{{atum-character:module-slots-used}}/{{atum-character:module-slots}} module slots, {{atum-character:crew-slots}} crew slots.</description>
 		</sheet>
 		<rules>
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
 			<stat name="atum-character:ac" value="16" />
 			<stat name="hp" value="-19" />
 			<grant type="Size" id="ID_SIZE_GARGANTUAN" />
@@ -263,15 +268,27 @@
 			<stat name="strength:score:set" value="26" bonus="base" />
 			<stat name="constitution:score:set" value="24" bonus="base" />
 			<stat name="atum-character:cost" value="8000" />
-			
 			<select type="Racial Trait" name="Mobility Type" supports="Heavy Chassis Mobility Type Pool" />
-			<select type="Racial Trait" name="Fuel Tank Type" supports="Heavy Chassis Fuel Tank Type Pool" />
-			<select type="Racial Trait" name="Engine Type" supports="ATUM Engine Type Type Pool" />
+			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" />
 		</rules>
 	</element>
 	
+	<element name="ATUMs and Ability Scores" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_SELECT_PILOT_STATS">
+        <description>
+            <p>ATUMs have their own Strength and Constitution score, but use the pilot’s Dexterity ability score. For more details on ATUMs, ability scores, pilots, crew, saving throw DCs, and the general rules for ATUM combat, see “ATUM Special Rules” in The Greasemonkey's Handbook, Chapter 2 (pg 7).</p>
+        </description>
+        <sheet display="false"/>
+		<rules>
+            <select type="Racial Trait" name="Pilot Proficiency Bonus" supports="ATUM Pilot Proficiency Pool" />
+            <select type="Racial Trait" name="Pilot Dexterity Score" supports="ATUM Pilot Dexterity Score Pool" />
+			<stat name="intelligence:score:set" value="10" bonus="base" />
+			<stat name="wisdom:score:set" value="10" bonus="base" />
+			<stat name="charisma:score:set" value="10" bonus="base" />
+		</rules>
+    </element>
+	
 	<!-- Mobility Type -->
-	<element name="Wheeled" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_MOBILITY_WHEELED">
+	<element name="Wheeled" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MOBILITY_WHEELED">
 		<supports>Light Chassis Mobility Type Pool</supports>
 		<description>
 			<p><i>Mobility Type</i></p>
@@ -288,7 +305,7 @@
 			<stat name="atum-character:cost" value="500" />
 		</rules>
 	</element>
-	<element name="Bipedal" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_MOBILITY_BIPEDAL">
+	<element name="Bipedal" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MOBILITY_BIPEDAL">
 		<supports>Light Chassis Mobility Type Pool,Medium Chassis Mobility Type Pool</supports>
 		<description>
 			<p><i>Mobility Type</i></p>
@@ -306,7 +323,7 @@
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_STOMP_ATTACK" />
 		</rules>
 	</element>
-	<element name="Quadrupedal" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_MOBILITY_QUADRUPEDAL">
+	<element name="Quadrupedal" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MOBILITY_QUADRUPEDAL">
 		<supports>Light Chassis Mobility Type Pool,Medium Chassis Mobility Type Pool,Heavy Chassis Mobility Type Pool</supports>
 		<description>
 			<p><i>Mobility Type</i></p>
@@ -324,7 +341,7 @@
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_STOMP_ATTACK" />
 		</rules>
 	</element>
-	<element name="Tracked" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_MOBILITY_TRACKED">
+	<element name="Tracked" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MOBILITY_TRACKED">
 		<supports>Medium Chassis Mobility Type Pool,Heavy Chassis Mobility Type Pool</supports>
 		<description>
 			<p><i>Mobility Type</i></p>
@@ -342,8 +359,209 @@
 		</rules>
 	</element>
 	
+	<!-- Engine Types -->
+	<element name="Conventional Engines" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_CONVENTIONAL">
+		<supports>ATUM Choose Engine Type Pool</supports>
+		<description>
+			<p>Engine types vary depending on location. A poor village, for example, might have a few average and poor engines available for purchase, while a large city might have a good stock of average and good engines; with a possibility for a few masterwork ones from a selected dealer which are highly sought after.</p>
+		
+			<table>
+				<thead>
+					<tr><td>Engine Grade</td><td><center>Fuel Consumption Speed</center></td><td style="text-align:center">Cost</td></tr>
+				</thead>
+				<tr><td><b>Poor</b></td><td><center>3 days per fuel tank</center></td><td style="text-align:right">100 gp</td></tr>
+				<tr><td><b>Average</b></td><td><center>7 days per fuel tank</center></td><td style="text-align:right">250 gp</td></tr>
+				<tr><td><b>Good</b></td><td><center>10 days per fuel tank</center></td><td style="text-align:right">500 gp</td></tr>
+				<tr><td><b>Masterwork</b></td><td><center>14 days per fuel tank</center></td><td style="text-align:right">750 gp</td></tr>
+			</table>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<select type="Racial Trait" name="Conventional Engine" supports="ATUM Conventional Engine Type Pool" />
+			<select type="Racial Trait" name="Fuel Tank" supports="Light Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
+			<select type="Racial Trait" name="Fuel Tank" supports="Medium Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
+			<select type="Racial Trait" name="Fuel Tank" supports="Heavy Chassis Fuel Tank Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
+		</rules>
+	</element>
+	<element name="Variant: Lodestone Crystal Engines" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_CRYSTALS">
+		<supports>ATUM Choose Engine Type Pool</supports>
+		<description>
+			<p>Often used to power magical airships, lodestones are refined from magically-infused ores found in floating islands.</p>
+			<p>As the unrefined ores that make up the bulk of these islands gravitate close to one of the four elemental planes, they begin absorbing fragments of magical power which manifest in the form of small crystals deep within the island’s interior crust. Once an elemental crystal has formed inside the island, the vegetation and flora adopt traits akin to that element. A lodestone isle infused with the elemental plane of water, for example, might house many beautiful waterfalls and litter the surrounding area in powerful sea storms, while an isle infused with the elemental plane of air might instead be inhabited by a number of air elementals or tribes of Aaracockra. As these lodestone isles orbit small gateways into the elemental planes, many seek them out, knowing they not only act as a beacon of navigation when searching for an access point to such a plane, but also house within them a wealth of magical potency. In the hands of experienced technicians and wizards, refined lodestones can function as both a fuel source and engine for ATUMs; generating an almost infinite source of power and never requiring the ATUM to refuel. Each lodestone also grants the ATUM a slight trait from it’s infused element.</p>
+			<p>Lodestone engines are relatively rare, unstable, and for the most part, extremely expensive. Below you can find a table, listing the average cost of both the fuel and engine combination in a traditional, high magic setting (HM) and low magic setting (LM), as well as the benefits an ATUM will gain from having a lodestone engine installed.</p>
+			<p>In addition to the rules below, a lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			
+			<table>
+				<thead>
+					<tr><td class="col-10">Lodestone Engine Element</td> <td class="col-40"><center>Engine Details</center></td> <td class="col-15"><center>Cost</center></td></tr>
+				</thead>
+				<tr><td><b>Air</b></td> <td>Once per long rest, the pilot can overcharge the lodestone engine to gain a flight speed of 40 feet for 10 minutes.</td> <td style="text-align:right">3,200 gp (LM) 2,000gp (HM)</td></tr>
+				<tr><td><b>Earth</b></td> <td>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to nonmagical bludgeoning, piercing and slashing damage for 10 minutes.</td> <td style="text-align:right">3,000 gp (LM) 1,800 gp (HM)</td></tr>
+				<tr><td><b>Fire</b></td> <td>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to fire damage for 10 minutes. In addition, all installed hardpoint modules on the ATUM deal an additional 1d6 fire damage for the duration.</td> <td style="text-align:right">2,400 gp (LM) 1,300 gp (HM)</td></tr>
+				<tr><td><b>Water</b></td> <td>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to acid and cold damage for 10 minutes. In addition, all installed hardpoint modules on the ATUM deal an additional 1d6 cold damage for the duration.</td> <td style="text-align:right">2,400 gp (LM) 1,300 gp (HM)</td></tr>
+			</table>
+			<p>An ATUM with a lodestone engine never requires refueling. Once per long rest, the pilot can overcharge the lodestone engine to gain a temporary benefit. Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<select type="Racial Trait" name="Lodestone Crystal Element" supports="ATUM Lodestone Engine Element Pool" />
+		</rules>
+	</element>
+	<element name="Variant: Plasma Engines" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA">
+		<supports>ATUM Choose Engine Type Pool</supports>
+		<description>
+			<p>These engines are designed to house an especially volatile, but contained, fusion cell orb. A plasma engine can attach up to four fusion cells at a time. Each attached fusion cell grants the ATUM enough power to run reliably for 1 month before it burns out. Once a fusion cell has burnt out, it cannot be refueled or re-used, and a new cell must be purchased in its place. Fusion cells are extremely potent, and boost the ATUM’s mobility and reaction times by a large margin, however this does come with some major drawbacks. The table below details a list of the average costs of a plasma engine in a standard sci-fi setting, as well as the benefits an ATUM will gain from having a plasma engine installed.</p>
+			
+			<h5>Plasma Engine Overloads</h5>
+			<p>While very potent, a plasma engine’s fusion cells are incredibly volatile. Each time the ATUM suffers a point of severe damage, or a critical hit, roll a d100. The overload risk column of the Plasma Engine Table shows the likelihood of a fusion cell overloading when the engine is stressed or takes damage. If you roll equal to or below the overload risk value (70 or below for a low quality engine, for example), one random fusion cell installed in the plasma engine explodes. The ATUM takes 5d6 force damage from the sudden explosion, and the fusion cell is destroyed. If this would leave the plasma engine with no installed fusion cells, it ceases to function until a new cell is installed. A fusion cell orb can be installed or removed by hand as an action on your turn.</p>
+			
+			<h6>Plasma Engine Table</h6>
+			<table>
+				<thead>
+					<tr><td class="col-10">Plasma Engine Quality</td> <td class="col-7"><center>Fusion Cell Limit</center></td> <td class="col-50"><center>Engine Details</center></td> <td class="col-10"><center>Overload Risk</center></td> <td class="col-8"><center>Engine Cost</center></td></tr>
+				</thead>
+				<tr><td><b>Low</b></td> <td><center>3</center></td> <td>Once per long rest, the pilot can spend a bonus action to increase the ATUM’s movement speed by 20 feet for 1 minute.</td> <td><center>70</center></td> <td style="text-align:right">1,000 gp</td></tr>
+				
+				<tr><td><b>Medium</b></td> <td><center>5</center></td> <td>Once per long rest, the pilot can spend a bonus action to increase the ATUM’s movement speed by 20 feet or it’s AC by 2 for 1 minute.</td> <td><center>40</center></td> <td style="text-align:right">2,400 gp</td></tr>
+				
+				<tr><td><b>High</b></td> <td><center>6</center></td> <td>Once per long rest, the pilot can spend a bonus action to increase the ATUM’s movement speed by 30 feet, it’s AC by 2, or increase the maximum range of plasma and laser hardpoints by 100 feet for 1 minute.</td> <td><center>15</center></td> <td style="text-align:right">4,500 gp</td></tr>
+			</table>
+			<p>Each fusion cell powers the ATUM for 1 month. While active, installed plasma weapon hardpoints deal 1 additional die of damage.</p>
+			
+			<h5>Purchasing Fusion Cell Orbs</h5>
+			<p>Fusion cell orbs are a fairly common commodity, and high quality cells can be purchased from most ATUM workshops or vehicle traders for 200 gp each. You can also find counterfeit fusion cells on black markets and cheaper cells elsewhere, though their quality may vary. These fusion cells often cost as little as 30 gp each, however most come with an increased overload risk when installed in a plasma engine. Your Dungeon Master can either roll randomly for the fusion cell quality, or simply choose from the table opposite.</p>
+			
+			<h6>Fusion Cell Orb Quality Table</h6>
+			<table>
+				<thead>
+					<tr><td>Fusion Cell Quality</td> <td style="text-align:center">Overload Risk Increase</td> <td style="text-align:center">Cost</td></tr>
+				</thead>
+				<tr><td>High Quality</td> <td style="text-align:center">+0 (No Risk)</td> <td style="text-align:right">200 gp</td></tr>
+				<tr><td>Medium Quality</td> <td style="text-align:center">+5 (Slight Risk)</td> <td style="text-align:right">150 gp</td></tr>
+				<tr><td>Low Quality</td> <td style="text-align:center">+10 (Average Risk)</td> <td style="text-align:right">100 gp</td></tr>
+				<tr><td>Black Market Counterfeits</td> <td style="text-align:center">+15 (High Risk)</td> <td style="text-align:right">30 gp</td></tr>
+			</table>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="atum-character:plasma-cell-limit" value="0" bonus="base" />
+			<stat name="atum-character:plasma-overload-risk" value="0" bonus="base" />
+			<select type="Racial Trait" name="Plasma Engine Quality" supports="ATUM Plasma Engine Quality Pool" />
+		</rules>
+	</element>
+	
+	<!-- 
+	
+			
+			<h5>Variant Fuel Source: Soul Cages</h5>
+			<p>Soul cages are engines fuelled by fiendish possession, necromancy or souls of long forgotten primal beasts. You can’t purchase or install a soul cage as you would do a conventional engine. Instead, the ATUM must be infused with large influxes of magical energy, or planar magic, such as that from the Nine Hells, Shadowfell, the Abyss, or the Feywild, through summoning or soul-binding rituals. A character wishing to forge a soul cage for an ATUM must be confident they are powerful enough to bind such otherworldly forces to their will, as the forces that power the soul cage will always be yearning for freedom and revenge; especially when binding more powerful souls, such as those of a demon, devil, or powerful fey spirit.</p>
+			<p>An ATUM powered by a soul cage takes on an animalistic, demonic or necrotic form, depending on the souls bound to them. Some ATUMs internal components, while still mechanical, appear twisted and muscular. Weapon hardpoints meld into the chassis like flesh to bone, and internal wiring springs to life, becoming flailing, grasping tendrils.</p>
+			
+			<h6>Soul Caged ATUMs and Pilots</h6>
+			<p>A soul caged ATUM requires no pilot to function. Instead, the souls entombed within its chassis grant it a simplistic, primal sentience. This intelligence alters depending on the strength of the souls caged, and requires constant attention, less the souls break free of their bonds and turn the ATUM on its creator.</p>
+			
+			<h6>The Ritual of the Soul Cage</h6>
+			<p>To create a soul caged ATUM, you must choose which type of soul cage you wish to bind. There are three types: Demonic, Spiritual, or Primal.</p>
+			<p class="indent"><b><i>Demonic. </i></b>The most dangerous, but also the most powerful method of soul cage creation, this summons the essence of demons or fiends from the lower planes and binds them to the ATUM, granting it elements of infused strength from the Abyss, Hades, or the Nine Hells.</p>
+			<p class="indent"><b><i>Spiritual. </i></b>A commonplace ritual used by vampires, necromancers, liches and practitioners of the art of necromancy, this draws upon the tortured souls of ghosts, ghouls and other creatures of the Shadowfell, melding them into the chassis of the ATUM to grant it an undead mockery of life.</p>
+			<p class="indent"><b><i>Primal. </i></b>Used by druids and spellcasters close to nature, this ritual calls upon the spirits of long-dead beasts from the Feywild or the Beastlands, fusing their primal souls into the core of the ATUM and filling it with a primal, nigh uncontrollable vigour.</p>
+			
+			<h6>Performing the Ritual</h6>
+			<p>Once you have chosen your ritual, you must choose an ATUM you wish to soul cage and spend 8 hours creating an intricate, complex summoning circle around it. The summoning circle must be adorned with materials pertaining to your ritual type, worth a total of 5,000 gp, which the ritual consumes on completion. The material types are listed as follows:</p>
+			<p class="indent"><b><i>Demonic. </i></b>Golden vials of blood, eyes, fangs and precious gemstones if you are performing a demonic ritual.</p>
+			<p class="indent"><b><i>Spiritual. </i></b>Skulls, tokens or precious items they had in life from each undead spirit, and fine clothes, trinkets and coins if you are performing the spiritual ritual.</p>
+			<p class="indent"><b><i>Primal. </i></b>Animal bones, feathers and fangs from your chosen beasts, rare gemstones, and fine wines and fresh food if you are performing the primal ritual.</p>
+			<p>In addition, the ATUM must have an engine, but no fuel tank, and once soul-caged, all modules become part of its being and cannot be replaced. In addition, it no longer requires ammunition, but must still adhere to the reload (x) values presented in the weapon hardpoint’s entry. After completing the summoning circle, you must spend 1 hour chanting the summoning spell. You must chant in either infernal or abyssal for demonic rituals, deep speech or undercommon for spiritual rituals, and sylvan or primordial for primal rituals.</p>
+			<p>At the end of the spell’s chant, and again at the start of each new long rest, you must make an ability check using your spellcasting modifier, with a DC of 20. You can choose to expend spell-slots to give yourself a bonus to the roll. The bonus equals the total value of all expended spell slot levels. For example, you could expend a 1st-level and a 2nd-level spell slot to gain a +3 bonus to the roll.</p>
+			<p><b>You must choose whether to expend these spell slots before making the ability check.</b></p>
+			<p>On a successful check, the soul cage completes, transforming the ATUM into a demonic, undead or primal version of its previous form. It follows your instructions to the best of it’s ability (no action required by you), and understands only the language used in the soul cage ritual. If it does not receive an order from you, it will defend itself from attacks, but takes no further actions. In combat, it rolls it’s own initiative and acts under your command, and follows all applicable special rules detailed under the <i>Soul Caged ATUM Special Rules</i>. On a failed check, the soul cage completes, but it is not under your control. The ATUM becomes completely independent, and will instead follow the actions listed in the Free Will column of the Soul Cage table.</p>
+			
+			<h5>Soul Caged ATUM Special Rules</h5>
+			<p>Soul caged ATUMs follow all rules for ATUMs detailed in this supplement, with the addition of the rules shown below. If a rule written here directly contradicts a rule elsewhere in this supplement, defer to the rules found here instead. Each soul cage type also grants the ATUM additional features, as shown in the Soul Cage table.</p>
+			
+			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			
+			<h6>Soul Cage Table</h6>
+			<table>
+				<thead>
+					<tr><td class="col-10">Soul Cage</td> <td class="col-7"><center>Alignment Guidelines</center></td> <td class="col-50"><center>Soul Cage Features</center></td> <td class="col-35"><center>Free Will</center></td></tr>
+				</thead>
+				<tr><td><b>Demonic</b></td> <td><center>Chaotic or Lawful Evil</center></td> <td>The ATUM has resistance to fire and cold damage, and advantage on saving throws against spells and other magical effects. In addition, its Charisma, and either its Intelligence or Dexterity score, increases by 4.</td> <td>The ATUM actively seeks out its creator and attempts to kill them. If it can’t find its creator, it instead attacks the closest creatures it can see.</td></tr>
+				<tr><td><b>Spiritual</b></td> <td><center>Lawful Evil or Neutral Evil</center></td> <td>The ATUM’s Intelligence score is reduced to 6, and it’s Dexterity score is reduced by 4. It also gains the <i></i> (PHB, pg 311). Once per long rest, the ATUM can exhale noxious fumes, which spread out from it in a 15 foot cone as an action on its turn. Each creature in the area must succeed on a DC 14 Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much on a success.</td> <td>The ATUM gravitates towards the nearest source of life in the area and seeks to extinguish it. It prioritizes creatures speaking a language it understands, and holds no special interest in its creator.</td></tr>
+				<tr><td><b>Primal</b></td> <td><center>Chaotic Neutral, Evil or Unaligned</center></td> <td>The ATUM has a climbing and swim speed equal to its walking speed, and advantage on Wisdom (Perception) checks that rely on sound or smell. In addition, it’s Intelligence score is reduced to 3, and its Wisdom score increases by 4. Once per short rest, the ATUM can emit a monstrous roar audible out to 300 feet. Any creature within the area that can hear or see the ATUM must succeed on a DC 14 Wisdom saving throw or be frightened of the ATUM for 1 minute. A frightened creature can attempt the saving throw again at the end of each of its turns, ending the effect on a success.</td> <td>The ATUM adopts the preferred habitat and base instincts of whichever beast it resembles most, and actively seek out a suitable territory to claim. An ATUM resembling an ape, for example, would seek out jungles or mountains. While the ATUM doesn’t require food or drink, it still mimics such behaviour, leaving behind mangled carcasses or vegetation in its wake.</td></tr>
+			</table>
+	-->
+	
+	<!-- Conventional Engine Types -->
+	<element name="Poor Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_CONVENTIONAL_POOR">
+		<supports>ATUM Conventional Engine Type Pool</supports>
+		<description>
+			<p><i>Engine Type</i></p>
+			<p><b><i>Fuel Consumption Speed. </i></b>3 days per fuel tank.</p>
+			<p><b><i>Cost. </i></b>100 gp.</p>
+		</description>
+		<sheet alt="Engine (Poor)">
+			<description>3 days per fuel tank.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:engine-grade" value="3" bonus="base" />
+			<stat name="atum-character:cost" value="100" />
+		</rules>
+	</element>
+	<element name="Average Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_CONVENTIONAL_AVERAGE">
+		<supports>ATUM Conventional Engine Type Pool</supports>
+		<description>
+			<p><i>Engine Type</i></p>
+			<p><b><i>Fuel Consumption Speed. </i></b>7 days per fuel tank.</p>
+			<p><b><i>Cost. </i></b>250 gp.</p>
+		</description>
+		<sheet alt="Engine (Average)">
+			<description>7 days per fuel tank.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:engine-grade" value="7" bonus="base" />
+			<stat name="atum-character:cost" value="250" />
+		</rules>
+	</element>
+	<element name="Good Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_CONVENTIONAL_GOOD">
+		<supports>ATUM Conventional Engine Type Pool</supports>
+		<description>
+			<p><i>Engine Type</i></p>
+			<p><b><i>Fuel Consumption Speed. </i></b>10 days per fuel tank.</p>
+			<p><b><i>Cost. </i></b>500 gp.</p>
+		</description>
+		<sheet alt="Engine (Good)">
+			<description>10 days per fuel tank.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:engine-grade" value="10" bonus="base" />
+			<stat name="atum-character:cost" value="500" />
+		</rules>
+	</element>
+	<element name="Masterwork Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_CONVENTIONAL_MASTERWORK">
+		<supports>ATUM Conventional Engine Type Pool</supports>
+		<description>
+			<p><i>Engine Type</i></p>
+			<p><b><i>Fuel Consumption Speed. </i></b>14 days per fuel tank.</p>
+			<p><b><i>Cost. </i></b>750 gp.</p>
+		</description>
+		<sheet alt="Engine (Masterwork)">
+			<description>14 days per fuel tank.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:engine-grade" value="14" bonus="base" />
+			<stat name="atum-character:cost" value="750" />
+		</rules>
+	</element>
+	
 	<!-- Fuel Tank Type -->
-	<element name="Small Fuel Tank" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_FUELTANK_SMALL">
+	<element name="Small Fuel Tank" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FUELTANK_SMALL">
 		<supports>Light Chassis Fuel Tank Type Pool,Medium Chassis Fuel Tank Type Pool,Heavy Chassis Fuel Tank Type Pool</supports>
 		<description>
 			<p><i>Fuel Tank Type</i></p>
@@ -359,7 +577,7 @@
 			<stat name="atum-character:cost" value="100" />
 		</rules>
 	</element>
-	<element name="Medium Fuel Tank" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_FUELTANK_MEDIUM">
+	<element name="Medium Fuel Tank" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FUELTANK_MEDIUM">
 		<supports>Medium Chassis Fuel Tank Type Pool,Heavy Chassis Fuel Tank Type Pool</supports>
 		<description>
 			<p><i>Fuel Tank Type</i></p>
@@ -375,7 +593,7 @@
 			<stat name="atum-character:cost" value="250" />
 		</rules>
 	</element>
-	<element name="Large Fuel Tank" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_FUELTANK_LARGE">
+	<element name="Large Fuel Tank" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FUELTANK_LARGE">
 		<supports>Heavy Chassis Fuel Tank Type Pool</supports>
 		<description>
 			<p><i>Fuel Tank Type</i></p>
@@ -392,77 +610,212 @@
 		</rules>
 	</element>
 	
-	<!-- Engine Types -->
-	<element name="Poor Engine" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_ENGINE_POOR">
-		<supports>ATUM Engine Type Type Pool</supports>
+	
+	<!-- Lodestone Engine Element Pool -->
+	<element name="Air Lodestone Crystal Engine (LM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_AIR_LM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
 		<description>
-			<p><i>Engine Type</i></p>
-			<p><b><i>Fuel Consumption Speed. </i></b>3 days per fuel tank.</p>
-			<p><b><i>Cost. </i></b>100 gp.</p>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain a flight speed of 40 feet for 10 minutes.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>3,200 gp.</p>
 		</description>
-		<sheet alt="Engine (Poor)">
-			<description>3 days per fuel tank.</description>
+		<sheet alt="Air Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain a flight speed of 40 feet for 10 minutes. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
 		</sheet>
 		<rules>
-			<stat name="atum-character:engine-grade" value="3" bonus="base" />
-			<stat name="atum-character:cost" value="100" />
+			<stat name="atum-character:cost" value="3200" />
 		</rules>
 	</element>
-	<element name="Average Engine" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_ENGINE_AVERAGE">
-		<supports>ATUM Engine Type Type Pool</supports>
+	<element name="Air Lodestone Crystal Engine (HM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_AIR_HM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
 		<description>
-			<p><i>Engine Type</i></p>
-			<p><b><i>Fuel Consumption Speed. </i></b>7 days per fuel tank.</p>
-			<p><b><i>Cost. </i></b>250 gp.</p>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain a flight speed of 40 feet for 10 minutes.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>2,000 gp.</p>
 		</description>
-		<sheet alt="Engine (Average)">
-			<description>7 days per fuel tank.</description>
+		<sheet alt="Air Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain a flight speed of 40 feet for 10 minutes. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
 		</sheet>
 		<rules>
-			<stat name="atum-character:engine-grade" value="7" bonus="base" />
-			<stat name="atum-character:cost" value="250" />
+			<stat name="atum-character:cost" value="2000" />
 		</rules>
 	</element>
-	<element name="Good Engine" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_ENGINE_GOOD">
-		<supports>ATUM Engine Type Type Pool</supports>
+	<element name="Earth Lodestone Crystal Engine (LM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_EARTH_LM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
 		<description>
-			<p><i>Engine Type</i></p>
-			<p><b><i>Fuel Consumption Speed. </i></b>10 days per fuel tank.</p>
-			<p><b><i>Cost. </i></b>500 gp.</p>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to nonmagical bludgeoning, piercing and slashing damage for 10 minutes.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>3,000 gp.</p>
 		</description>
-		<sheet alt="Engine (Good)">
-			<description>10 days per fuel tank.</description>
+		<sheet alt="Earth Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain a flight speed of 40 feet for 10 minutes. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
 		</sheet>
 		<rules>
-			<stat name="atum-character:engine-grade" value="10" bonus="base" />
-			<stat name="atum-character:cost" value="500" />
+			<stat name="atum-character:cost" value="3000" />
 		</rules>
 	</element>
-	<element name="Masterwork Engine" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_ENGINE_MASTERWORK">
-		<supports>ATUM Engine Type Type Pool</supports>
+	<element name="Earth Lodestone Crystal Engine (HM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_EARTH_HM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
 		<description>
-			<p><i>Engine Type</i></p>
-			<p><b><i>Fuel Consumption Speed. </i></b>14 days per fuel tank.</p>
-			<p><b><i>Cost. </i></b>750 gp.</p>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to nonmagical bludgeoning, piercing and slashing damage for 10 minutes.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>1,800 gp.</p>
 		</description>
-		<sheet alt="Engine (Masterwork)">
-			<description>14 days per fuel tank.</description>
+		<sheet alt="Earth Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain a flight speed of 40 feet for 10 minutes. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
 		</sheet>
 		<rules>
-			<stat name="atum-character:engine-grade" value="14" bonus="base" />
-			<stat name="atum-character:cost" value="750" />
+			<stat name="atum-character:cost" value="1800" />
+		</rules>
+	</element>
+	<element name="Fire Lodestone Crystal Engine (LM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_FIRE_LM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
+		<description>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to fire damage for 10 minutes. In addition, all installed hardpoint modules on the ATUM deal an additional 1d6 fire damage for the duration.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>2,400 gp.</p>
+		</description>
+		<sheet alt="Fire Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain resistance to fire damage for 10 minutes, and all installed hardpoint modules deal an additional 1d6 fire damage for the duration. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="2400" />
+		</rules>
+	</element>
+	<element name="Fire Lodestone Crystal Engine (HM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_FIRE_HM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
+		<description>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to fire damage for 10 minutes. In addition, all installed hardpoint modules on the ATUM deal an additional 1d6 fire damage for the duration.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>1,300 gp.</p>
+		</description>
+		<sheet alt="Fire Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain resistance to fire damage for 10 minutes, and all installed hardpoint modules deal an additional 1d6 fire damage for the duration. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="1300" />
+		</rules>
+	</element>
+	<element name="Water Lodestone Crystal Engine (LM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_WATER_LM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
+		<description>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to acid and cold damage for 10 minutes. In addition, all installed hardpoint modules on the ATUM deal an additional 1d6 cold damage for the duration.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>2,400 gp.</p>
+		</description>
+		<sheet alt="Water Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain resistance to acid and cold damage for 10 minutes, and all installed hardpoint modules deal an additional 1d6 cold damage for the duration. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="2400" />
+		</rules>
+	</element>
+	<element name="Water Lodestone Crystal Engine (HM)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_WATER_HM">
+		<supports>ATUM Lodestone Engine Element Pool</supports>
+		<description>
+			<p><i>Lodestone Crystal Engine Element</i></p>
+			<p>An ATUM with a lodestone engine never requires refueling.</p>
+			<p>Once per long rest, the pilot can overcharge the lodestone engine to gain resistance to acid and cold damage for 10 minutes. In addition, all installed hardpoint modules on the ATUM deal an additional 1d6 cold damage for the duration.</p>
+			<p>Once the engine has been overcharged, roll a d20. On a 1, the engine crystals overheat and the ATUM suffers 1d3 points of severe damage.</p>
+			<p>A lodestone engine cannot function inside an anti-magic field, and if a lodestone-powered ATUM is targeted by <i>dispel magic</i>, it must succeed on a Constitution saving throw against the caster’s spell save DC or fall inert for 1 minute.</p>
+			<p><b><i>Cost. </i></b>1,300 gp.</p>
+		</description>
+		<sheet alt="Water Lodestone" usage="1/Long Rest">
+			<description>No fuel required. The pilot can overcharge the lodestone engine to gain resistance to acid and cold damage for 10 minutes, and all installed hardpoint modules deal an additional 1d6 cold damage for the duration. Once the engine has been overcharged, roll a d20. On a 1, the ATUM suffers 1d3 points of severe damage.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="1300" />
 		</rules>
 	</element>
 	
-	<element name="ATUMs and Ability Scores" type="Racial Trait" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACIAL_INFO_AS">
-        <description>
-            <p>ATUMs have their own Strength and Constitution score, but use the pilot’s Dexterity ability score. For more details on ATUMs, ability scores, pilots, crew, saving throw DCs, and the general rules for ATUM combat, see “ATUM Special Rules” in The Greasemonkey's Handbook, Chapter 2 (pg 7).</p>
-        </description>
-        <sheet display="false"/>
-    </element>
+	
+	<!-- Plasma Engine Quality Pool -->
+	<element name="Low Quality Plasma Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA_LOW">
+		<supports>ATUM Plasma Engine Quality Pool</supports>
+		<description>
+			<p><i>Plasma Engine Quality</i></p>
+			<p><b><i>Fusion Cell Limit. </i></b>3.</p>
+			<p><b><i>Engine Details. </i></b>Each fusion cell powers the ATUM for 1 month. While active, installed plasma weapon hardpoints deal 1 additional die of damage. Once per long rest, the pilot can spend a bonus action to increase the ATUM’s movement speed by 20 feet for 1 minute.</p>
+			<p><b><i>Overload Risk. </i></b>70.</p>
+			<p><b><i>Cost. </i></b>1,000 gp.</p>
+		</description>
+		<sheet alt="Plasma Engine (LQ)" action="Bonus Action" usage="1/Long Rest">
+			<description>{{atum-character:plasma-cell-installed}}/{{atum-character:plasma-cell-limit}} fusion cell orbs installed. Plasma weapon hardpoints deal 1 additional damage die. Once per long rest, the pilot can spend a bonus action to increase the ATUM’s speed by 20 feet for 1 minute.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="1000" />
+			<stat name="atum-character:plasma-cell-installed" value="0" bonus="base" />
+			<stat name="atum-character:plasma-cell-limit" value="3" bonus="base" />
+			<stat name="atum-character:plasma-overload-risk" value="70" bonus="base" />
+		</rules>
+	</element>
+	<element name="Medium Quality Plasma Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA_MEDIUM">
+		<supports>ATUM Plasma Engine Quality Pool</supports>
+		<description>
+			<p><i>Plasma Engine Quality</i></p>
+			<p><b><i>Fusion Cell Limit. </i></b>5.</p>
+			<p><b><i>Engine Details. </i></b>Each fusion cell powers the ATUM for 1 month. While active, installed plasma weapon hardpoints deal 1 additional die of damage. Once per long rest, the pilot can spend a bonus action to increase the ATUM’s movement speed by 20 feet or it’s AC by 2 for 1 minute.</p>
+			<p><b><i>Overload Risk. </i></b>40.</p>
+			<p><b><i>Cost. </i></b>2,400 gp.</p>
+		</description>
+		<sheet alt="Plasma Engine (MQ)" action="Bonus Action" usage="1/Long Rest">
+			<description>{{atum-character:plasma-cell-installed}}/{{atum-character:plasma-cell-limit}} fusion cell orbs installed. Plasma weapon hardpoints deal 1 additional damage die. Once per long rest, the pilot can spend a bonus action to increase the ATUM’s speed by 20 feet or it’s AC by 2 for 1 minute.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="2400" />
+			<stat name="atum-character:plasma-cell-installed" value="0" bonus="base" />
+			<stat name="atum-character:plasma-cell-limit" value="5" bonus="base" />
+			<stat name="atum-character:plasma-overload-risk" value="40" bonus="base" />
+		</rules>
+	</element>
+	<element name="High Quality Plasma Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA_HIGH">
+		<supports>ATUM Plasma Engine Quality Pool</supports>
+		<description>
+			<p><i>Plasma Engine Quality</i></p>
+			<p><b><i>Fusion Cell Limit. </i></b>6.</p>
+			<p><b><i>Engine Details. </i></b>Each fusion cell powers the ATUM for 1 month. While active, installed plasma weapon hardpoints deal 1 additional die of damage. Once per long rest, the pilot can spend a bonus action to increase the ATUM’s movement speed by 30 feet, it’s AC by 2, or increase the maximum range of plasma and laser hardpoints by 100 feet for 1 minute.</p>
+			<p><b><i>Overload Risk. </i></b>15.</p>
+			<p><b><i>Cost. </i></b>4,500 gp.</p>
+		</description>
+		<sheet alt="Plasma Engine (HQ)" action="Bonus Action" usage="1/Long Rest">
+			<description>{{atum-character:plasma-cell-installed}}/{{atum-character:plasma-cell-limit}} fusion cell orbs installed. Plasma weapon hardpoints deal 1 additional damage die. Once per long rest, the pilot can spend a bonus action to increase the ATUM’s speed by 30 feet, it’s AC by 2, or increase the maximum range of plasma and laser hardpoints by 100 feet for 1 minute.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="4500" />
+			<stat name="atum-character:plasma-cell-installed" value="0" bonus="base" />
+			<stat name="atum-character:plasma-cell-limit" value="6" bonus="base" />
+			<stat name="atum-character:plasma-overload-risk" value="15" bonus="base" />
+		</rules>
+	</element>
 	
 	
-    <element name="ATUM" type="Class" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_CLASS_ATUM_LIGHT">
+	
+	
+	
+	
+	<!-- ATUM Class -->
+    <element name="ATUM" type="Class" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_ATUM_LIGHT">
 		<requirements>ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT</requirements>
         <description>
 			<p><center><b>Take exactly 15 levels (light chassis) in this class.</b></center></p>
@@ -503,16 +856,19 @@
         </setters>
         <sheet display="false"/>
         <rules>
-			<select type="Archetype" name="ATUM Class" supports="ATUM Class Type Pool" level="15" requirements="!ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20" />
+			<select type="Archetype" name="ATUM Class" supports="ATUM Class Type Pool" level="15" requirements="!ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" />
 			
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV5" level="5" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV9" level="9" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV13" level="13" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV17" level="17" />
 			<!-- ensure that the ATUM has level 15 -->
-			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV15" level="14" />
-			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20" level="16" />
-            <select type="Class Feature" name="Level the ATUM up to Level 15!" supports="ATUM Go To Level 15 Pool" requirements="(!ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV15||ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20)" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV15" level="14" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" level="16" />
+            <select type="Class Feature" name="Level the ATUM up to Level 15!" supports="ATUM Go To Level 15 Pool" requirements="(!ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV15||ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20)" />
         </rules>
     </element>
-	
-    <element name="ATUM" type="Class" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_CLASS_ATUM_MEDIUM">
+	<element name="ATUM" type="Class" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_ATUM_MEDIUM">
 		<requirements>ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM</requirements>
         <description>
 			<p><center><b>Take 20 levels (medium chassis) in this class.</b></center></p>
@@ -555,13 +911,16 @@
         <rules>
 			<select type="Archetype" name="ATUM Class" supports="ATUM Class Type Pool" level="20" />
 			
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV5" level="5" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV9" level="9" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV13" level="13" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV17" level="17" />
 			<!-- ensure that the ATUM has level 20 -->
-			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20" level="19" />
-            <select type="Class Feature" name="Level the ATUM up to Level 20!" supports="ATUM Go To Level 20 Pool" requirements="!ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" level="19" />
+            <select type="Class Feature" name="Level the ATUM up to Level 20!" supports="ATUM Go To Level 20 Pool" requirements="!ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" />
         </rules>
     </element>
-	
-    <element name="ATUM" type="Class" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_CLASS_ATUM_HEAVY">
+	<element name="ATUM" type="Class" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_ATUM_HEAVY">
 		<requirements>ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY</requirements>
         <description>
 			<p><center><b>Take 20 levels (medium chassis) in this class.</b></center></p>
@@ -604,14 +963,17 @@
         <rules>
 			<select type="Archetype" name="ATUM Class" supports="ATUM Class Type Pool" level="20" />
 			
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV5" level="5" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV9" level="9" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV13" level="13" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV17" level="17" />
 			<!-- ensure that the ATUM has level 20 -->
-			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20" level="19" />
-            <select type="Class Feature" name="Level the ATUM up to Level 20!" supports="ATUM Go To Level 20 Pool" requirements="!ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20" />
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" level="19" />
+            <select type="Class Feature" name="Level the ATUM up to Level 20!" supports="ATUM Go To Level 20 Pool" requirements="!ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" />
         </rules>
     </element>
 	
-	
-	<element name="Civilian Class" type="Archetype" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_ARCHETYPE_CIVILIAN">
+	<element name="Civilian Class" type="Archetype" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ARCHETYPE_CIVILIAN">
 		<supports>ATUM Class Type Pool</supports>
 		<prerequisite>150 gp</prerequisite>
 		<description>
@@ -630,9 +992,11 @@
 			<stat name="atum-character:cost" value="150" />
 			<stat name="atum-character:ap-value" value="0" bonus="base" />
 			<stat name="atum-character:ap-threshold" value="0" bonus="base" />
+			
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_CIVILIANCLASS" />
 		</rules>
 	</element>
-	<element name="Industrial Class" type="Archetype" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_ARCHETYPE_INDUSTRIAL">
+	<element name="Industrial Class" type="Archetype" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ARCHETYPE_INDUSTRIAL">
 		<supports>ATUM Class Type Pool</supports>
 		<prerequisite>500 gp</prerequisite>
 		<description>
@@ -661,12 +1025,13 @@
 			<stat name="atum-character:ap-threshold" value="10" bonus="base" />
 			<stat name="atum-character:module-slots" value="1" />
 			
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_INDUSTRIALCLASS" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_CHASSIS_RESISTANCE_X" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_ARMOUR_PLATING" />
 		</rules>
 	</element>
-	<element name="Military Class" type="Archetype" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_ARCHETYPE_MILITARY">
+	<element name="Military Class" type="Archetype" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ARCHETYPE_MILITARY">
 		<supports>ATUM Class Type Pool</supports>
 		<prerequisite>800 gp</prerequisite>
 		<description>
@@ -695,13 +1060,17 @@
 			<stat name="atum-character:ap-threshold" value="10" bonus="base" />
 			<stat name="atum-character:module-slots" value="1" />
 			
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_MILITARYCLASS" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_CHASSIS_RESISTANCE_X" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_ARMOUR_PLATING" />
 		</rules>
 	</element>
 	
-    <element name="Chassis Resistance (x)" type="Class Feature" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_CLASS_FEATURE_CHASSIS_RESISTANCE_X">
+    
+	
+	
+    <element name="Chassis Resistance (x)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_FEATURE_CHASSIS_RESISTANCE_X">
         <description>
 			<p>ATUMs with this rule are hardier than most, and build to withstand punishment.</p>
             <p>As a reaction when the ATUM takes damage, the pilot can use their reaction to roll the die shown in brackets next to the chassis resistance rule (x), reducing the incoming damage by the value shown on the dice.</p>
@@ -710,8 +1079,7 @@
 			<description>When the ATUM takes damage, the pilot can use their reaction to reduce the incoming damage by 1d{{atum-character:chassis-resistance-die}}.</description>
 		</sheet>
     </element>
-	
-    <element name="Armour Plating" type="Class Feature" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_CLASS_FEATURE_ARMOUR_PLATING">
+	<element name="Armour Plating" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_FEATURE_ARMOUR_PLATING">
         <description>
 			<p>Armour Plating is a collection of reinforced armour plates, scales, or other physical defensive shielding that grants the ATUM additional protection against incoming damage.</p>
 			<p>This plating functions as an additional pool of hit points, separate from the ATUM, it’s pilot, or any temporary hit points either has.</p>
@@ -726,36 +1094,556 @@
 			<description>{{atum-character:ap-value}} ({{atum-character:ap-threshold}}). Your ATUM has {{atum-character:ap-value}} armour plating. When it takes damage, you can choose to have the armour plating take up to {{atum-character:ap-threshold}} of that damage instead. Any damage exceeding this threshold is dealt to the ATUM’s hit points instead.</description>
 		</sheet>
     </element>
-	
-	<element name="Stomp" type="Class Feature" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_RACIAL_STOMP_ATTACK">
+	<element name="Stomp" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_STOMP_ATTACK">
 		<description>
 			<p>An ATUM with this rule can perform a special melee weapon attack, called a stomp. As a bonus action, the pilot can elect to kick or crush one target it can see within 5-feet of it that is of it’s size category or smaller with the ATUM’s foot.</p>
 			<p>Make a melee weapon attack against the target, using the ATUM chassis Strength modifier for the attack and damage rolls. On a hit, the target takes 1d10 bludgeoning damage. This damage increases to 2d10 if the ATUM has a medium chassis, or 3d10 if the ATUM has a heavy chassis.</p>
 			<p><b><i>Trample. </i></b>If an ATUM performs a stomp attack on a prone creature and successfully hits it, that creature takes an additional 2d10 bludgeoning damage.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>As a bonus action, the pilot can make a melee weapon attack against a target within 5-feet of it of it’s size or smaller, using the ATUM chassis Strength modifier for the attack and damage rolls. On a hit, the target takes {{atum-character:stop-die}}d10 bludgeoning damage, and additional 2d10 bludgeoning damage if the target is prone.</description>
+			<description>As a bonus action, the pilot can make a melee weapon attack (+{{atum-character:stomp-mod}} to hit) against a target within 5-feet of it of it’s size or smaller. On a hit, the target takes {{atum-character:stomp-die}}d10+{{strength:modifier}} bludgeoning damage, and additional 2d10 bludgeoning damage if the target is prone.</description>
 		</sheet>
 		<rules>
-			<stat name="atum-character:stop-die" value="1" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
-			<stat name="atum-character:stop-die" value="2" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
-			<stat name="atum-character:stop-die" value="3" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
+			<stat name="atum-character:stomp-mod" value="proficiency" />
+			<stat name="atum-character:stomp-mod" value="strength:modifier" />
+			<stat name="atum-character:stomp-die" value="1" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
+			<stat name="atum-character:stomp-die" value="2" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
+			<stat name="atum-character:stomp-die" value="3" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
 		</rules>
 	</element>
 	
 	
-    <element name="Has Level 15" type="Class Feature" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV15">
-        <description>
-			<p></p>
-        </description>
-		<sheet display="false" />
-    </element>
-    <element name="Has Level 20" type="Class Feature" source="ATUMs (The Greasemonkey's Handbook)" id="ID_ATUM_TGMHB_CLASS_FEATURE_HAS_LV20">
-        <description>
-			<p></p>
-        </description>
-		<sheet display="false" />
-    </element>
+	
+	
+	
+	<!-- Fuels -->
+	<element name="Fusion Cell Orb (High Quality)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_HQ">
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+0 (No Risk).</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Plasma Engine Fuel</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
+            <grant type="Racial Trait" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_HQ_ACTIVE" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA,(!ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB||ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_HQ_ACTIVE)" />
+		</rules>
+	</element>
+	<element name="Fusion Cell Orb (Medium Quality)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_MQ">
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+5 (Slight Risk).</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Plasma Engine Fuel</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
+            <grant type="Racial Trait" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_MQ_ACTIVE" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA,(!ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB||ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_MQ_ACTIVE)" />
+		</rules>
+	</element>
+	<element name="Fusion Cell Orb (Low Quality)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_LQ">
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+10 (Average Risk).</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Plasma Engine Fuel</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
+            <grant type="Racial Trait" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_LQ_ACTIVE" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA,(!ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB||ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_LQ_ACTIVE)" />
+		</rules>
+	</element>
+	<element name="Fusion Cell Orb (Black Market Counterfeit)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_BMC">
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+15 (High Risk).</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Plasma Engine Fuel</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
+            <grant type="Racial Trait" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_BMC_ACTIVE" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA,(!ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB||ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_BMC_ACTIVE)" />
+		</rules>
+	</element>
+	<element name="Fusion Cell Orb (Unknown Quality)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_NA">
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>?</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Plasma Engine Fuel</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
+            <grant type="Racial Trait" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_NA_ACTIVE" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA,(!ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB||ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_NA_ACTIVE)" />
+		</rules>
+	</element>
+	<element name="Active Fusion Cell Orb (High Quality)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_HQ_ACTIVE">
+		<compendium display="false" />
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+0 (No Risk).</p>
+			<p> </p>
+			<p><b>Plasma Engine Overloads</b></p>
+			<p>While very potent, a plasma engine’s fusion cells are incredibly volatile. The overload risk of your Plasma Engine (modified by your Fusion Cell Orb) determines the likelihood of a fusion cell overloading when the engine is stressed or takes damage.</p>
+			<p>Each time the ATUM suffers a point of severe damage, or a critical hit, roll a d100. If you roll equal to or below the overload risk value, one random fusion cell installed in the plasma engine explodes. The ATUM takes 5d6 force damage from the sudden explosion, and the fusion cell is destroyed.</p>
+			<p>If this would leave the plasma engine with no installed fusion cells, it ceases to function until a new cell is installed. A fusion cell orb can be installed or removed by hand as an action on your turn.</p>
+		</description>
+		<sheet alt="Fusion Cell Orb (HQ)">
+			<description>Plasma Engine Overload Risk {{atum-character:plasma-overload-risk}}.</description>
+		</sheet>
+		<rules>
+            <grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB" />
+			<stat name="atum-character:plasma-overload-risk" value="0" />
+		</rules>
+	</element>
+	<element name="Active Fusion Cell Orb (Medium Quality)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_MQ_ACTIVE">
+		<compendium display="false" />
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+5 (Slight Risk).</p>
+			<p> </p>
+			<p><b>Plasma Engine Overloads</b></p>
+			<p>While very potent, a plasma engine’s fusion cells are incredibly volatile. The overload risk of your Plasma Engine (modified by your Fusion Cell Orb) determines the likelihood of a fusion cell overloading when the engine is stressed or takes damage.</p>
+			<p>Each time the ATUM suffers a point of severe damage, or a critical hit, roll a d100. If you roll equal to or below the overload risk value, one random fusion cell installed in the plasma engine explodes. The ATUM takes 5d6 force damage from the sudden explosion, and the fusion cell is destroyed.</p>
+			<p>If this would leave the plasma engine with no installed fusion cells, it ceases to function until a new cell is installed. A fusion cell orb can be installed or removed by hand as an action on your turn.</p>
+		</description>
+		<sheet alt="Fusion Cell Orb (MQ)">
+			<description>Plasma Engine Overload Risk {{atum-character:plasma-overload-risk}}.</description>
+		</sheet>
+		<rules>
+            <grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB" />
+			<stat name="atum-character:plasma-overload-risk" value="5" />
+		</rules>
+	</element>
+	<element name="Active Fusion Cell Orb (Low Quality)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_LQ_ACTIVE">
+		<compendium display="false" />
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+10 (Average Risk).</p>
+			<p> </p>
+			<p><b>Plasma Engine Overloads</b></p>
+			<p>While very potent, a plasma engine’s fusion cells are incredibly volatile. The overload risk of your Plasma Engine (modified by your Fusion Cell Orb) determines the likelihood of a fusion cell overloading when the engine is stressed or takes damage.</p>
+			<p>Each time the ATUM suffers a point of severe damage, or a critical hit, roll a d100. If you roll equal to or below the overload risk value, one random fusion cell installed in the plasma engine explodes. The ATUM takes 5d6 force damage from the sudden explosion, and the fusion cell is destroyed.</p>
+			<p>If this would leave the plasma engine with no installed fusion cells, it ceases to function until a new cell is installed. A fusion cell orb can be installed or removed by hand as an action on your turn.</p>
+		</description>
+		<sheet alt="Fusion Cell Orb (LQ)">
+			<description>Plasma Engine Overload Risk {{atum-character:plasma-overload-risk}}.</description>
+		</sheet>
+		<rules>
+            <grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB" />
+			<stat name="atum-character:plasma-overload-risk" value="10" />
+		</rules>
+	</element>
+	<element name="Active Fusion Cell Orb (Black Market Counterfeit)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_BMC_ACTIVE">
+		<compendium display="false" />
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>+15 (High Risk).</p>
+			<p> </p>
+			<p><b>Plasma Engine Overloads</b></p>
+			<p>While very potent, a plasma engine’s fusion cells are incredibly volatile. The overload risk of your Plasma Engine (modified by your Fusion Cell Orb) determines the likelihood of a fusion cell overloading when the engine is stressed or takes damage.</p>
+			<p>Each time the ATUM suffers a point of severe damage, or a critical hit, roll a d100. If you roll equal to or below the overload risk value, one random fusion cell installed in the plasma engine explodes. The ATUM takes 5d6 force damage from the sudden explosion, and the fusion cell is destroyed.</p>
+			<p>If this would leave the plasma engine with no installed fusion cells, it ceases to function until a new cell is installed. A fusion cell orb can be installed or removed by hand as an action on your turn.</p>
+		</description>
+		<sheet alt="Fusion Cell Orb (BMC)">
+			<description>Plasma Engine Overload Risk {{atum-character:plasma-overload-risk}}.</description>
+		</sheet>
+		<rules>
+            <grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB" />
+			<stat name="atum-character:plasma-overload-risk" value="15" />
+		</rules>
+	</element>
+	<element name="Active Fusion Cell Orb (Unknown Quality)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_FUSIONCELLORB_NA_ACTIVE">
+		<compendium display="false" />
+		<description>
+			<p>Powers an ATUM for 1 month.</p>
+			<p><b><i>Overload Risk Increase. </i></b>?</p>
+			<p> </p>
+			<p><b>Plasma Engine Overloads</b></p>
+			<p>While very potent, a plasma engine’s fusion cells are incredibly volatile. The overload risk of your Plasma Engine (modified by your Fusion Cell Orb) determines the likelihood of a fusion cell overloading when the engine is stressed or takes damage.</p>
+			<p>Each time the ATUM suffers a point of severe damage, or a critical hit, roll a d100. If you roll equal to or below the overload risk value, one random fusion cell installed in the plasma engine explodes. The ATUM takes 5d6 force damage from the sudden explosion, and the fusion cell is destroyed.</p>
+			<p>If this would leave the plasma engine with no installed fusion cells, it ceases to function until a new cell is installed. A fusion cell orb can be installed or removed by hand as an action on your turn.</p>
+		</description>
+		<sheet alt="Fusion Cell Orb (N/A)">
+			<description>Plasma Engine Overload Risk {{atum-character:plasma-overload-risk}}?</description>
+		</sheet>
+		<rules>
+            <grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB" />
+			<stat name="atum-character:plasma-overload-risk" value="0" />
+		</rules>
+	</element>
+	
+	<!-- Modules and Hardpoint -->
+	<element name="Module Adapter (Civilian)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_MODULE_ADAPTER_CIVILIAN">
+		<description>
+			<p>Enables access to Civilian Class Modules.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Module Adapter</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_CIVILIANCLASS" />
+		</rules>
+	</element>
+	<element name="Module Adapter (Industrial)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_MODULE_ADAPTER_INDUSTRIAL">
+		<description>
+			<p>Enables access to Industrial Class Modules.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Module Adapter</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_INDUSTRIALCLASS" />
+		</rules>
+	</element>
+	<element name="Module Adapter (Military)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_MODULE_ADAPTER_MILITARY">
+		<description>
+			<p>Enables access to Military Class Modules.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Module Adapter</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_MILITARYCLASS" />
+		</rules>
+	</element>
+	
+	
+	
+	<!-- Grants -->
+	<element name="Has Level 15" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV15" />
+	<element name="Has Level 20" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" />
+	<element name="ATUM Class Level 5" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+	<element name="ATUM Class Level 9" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+	<element name="ATUM Class Level 13" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+	<element name="ATUM Class Level 17" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+	<element name="Civilian Class Requirement" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_CIVILIANCLASS" />
+	<element name="Industrial Class Requirement" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_INDUSTRIALCLASS" />
+	<element name="Military Class Requirement" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_REQUIREMENT_MILITARYCLASS" />
+	<element name="Has active Fuel Cell Orb" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ACTIVE_FUEL_CELL_ORB" />
+	
+	
+	<!-- Edit ATUM stats -->
+	<!-- Proficiency Bonus -->
+	<element name="+2" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_2">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a proficiency bonus of +2.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
+	<element name="+3" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_3">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a proficiency bonus of +3.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="1" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
+	<element name="+4" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_4">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a proficiency bonus of +4.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="2" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
+	<element name="+5" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_5">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a proficiency bonus of +5.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="3" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
+	<element name="+6" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_6">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a proficiency bonus of +6.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="4" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
+	<element name="+7" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_7">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a proficiency bonus of +7.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
+	<element name="+8" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_8">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a proficiency bonus of +8.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="6" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
+	<!-- Dexterity -->
+	<element name="00-01 (-5)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_0">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 0-1 (-5).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="0" bonus="base" />
+		</rules>
+	</element>
+	<element name="02-03 (-4)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_2">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 2-3 (-4).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="2" bonus="base" />
+		</rules>
+	</element>
+	<element name="04-05 (-3)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_4">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 4-5 (-3).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="4" bonus="base" />
+		</rules>
+	</element>
+	<element name="06-07 (-2)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_6">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 6-7 (-2).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="6" bonus="base" />
+		</rules>
+	</element>
+	<element name="08-09 (-1)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_8">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 8-9 (-1).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="8" bonus="base" />
+		</rules>
+	</element>
+	<element name="10-11 (+0)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_10">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 10-11 (+0).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="10" bonus="base" />
+		</rules>
+	</element>
+	<element name="12-13 (+1)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_12">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 12-13 (+1).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="12" bonus="base" />
+		</rules>
+	</element>
+	<element name="14-15 (+2)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_14">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 14-15 (+2).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="14" bonus="base" />
+		</rules>
+	</element>
+	<element name="16-17 (+3)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_16">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 16-17 (+3).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="16" bonus="base" />
+		</rules>
+	</element>
+	<element name="18-19 (+4)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_18">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 18-19 (+4).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="18" bonus="base" />
+		</rules>
+	</element>
+	<element name="20-21 (+5)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_20">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 20-21 (+5).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="22-23 (+6)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_22">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 22-23 (+6).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="22" bonus="base" />
+		</rules>
+	</element>
+	<element name="24-25 (+7)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_24">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 24-26 (+7).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="24" bonus="base" />
+		</rules>
+	</element>
+	<element name="26-27 (+8)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_26">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 26-27 (+8).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="26" bonus="base" />
+		</rules>
+	</element>
+	<element name="28-29 (+9)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_28">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 28-29 (+9).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="28" bonus="base" />
+		</rules>
+	</element>
+	<element name="30 (+10)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_30">
+		<compendium display="false" />
+		<supports>ATUM Pilot Dexterity Score Pool</supports>
+		<description>
+			<p>The ATUM Pilot has a Dexterity score of 30 (+10).</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="30" bonus="base" />
+		</rules>
+	</element>
+	
 	
 	
 </elements>

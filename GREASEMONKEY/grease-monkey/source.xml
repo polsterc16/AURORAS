@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/source.xml" />
 		</update>
 	</info>
@@ -28,19 +28,6 @@
 		</setters>
 	</element>
 	
-	<element name="ATUMs (The Greasemonkey's Handbook)" type="Source" source="Core" id="ID_ATUM_TGMHB_SOURCE_ATUM_GREASE_MONKEY">
-		<description>
-			<p>Create character sheets for your ATUMs.</p>
-		</description>
-		<setters>
-			<set name="abbreviation">ATGMHB</set>
-			<set name="url">https://www.dmsguild.com/product/259520/</set>
-			<set name="image">https://www.dmsguild.com/images/8957/259520.png</set>
-			<set name="author" url="https://www.dmsguild.com/">Vall Syrene, Mogman Dubloon</set>
-			<set name="third-party">true</set>
-			<set name="information">(Experimental) This is an optional addon to The Greasemonkey's Handbook.</set>
-		</setters>
-	</element>
 	
 	
 	

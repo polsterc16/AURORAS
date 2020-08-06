@@ -4,7 +4,7 @@
 		<name>The Greasemonkey's Handbook</name>
 		<description>Rules for piloting Magitech, Steampunk and Sci Fi mechs in D&amp;D 5th Edition.</description>
 		<author url="https://www.dmsguild.com/">Vall Syrene, Mogman Dubloon</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="grease-monkey.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey.index" />
 		</update>
 	</info>
@@ -35,6 +35,6 @@
 		<file name="items-firearms.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/items/items-firearms.xml" />
 		
 		
-		<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/vehicle-atum.xml" />
+		<obsolete name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/vehicle-atum.xml" />
 	</files>
 </index>
