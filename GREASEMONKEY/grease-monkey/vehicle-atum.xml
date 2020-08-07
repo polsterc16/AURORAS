@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="vehicle-atum.xml" url="" />
 		</update>
 	</info>
@@ -465,24 +465,22 @@
 			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_PLASMA" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
 		</rules>
 	</element>
-	
-	<!-- 
-	
-			
-			<h5>Variant Fuel Source: Soul Cages</h5>
+	<element name="Variant: Soul Cages" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_SOULCAGE">
+		<supports>ATUM Choose Engine Type Pool</supports>
+		<description>
 			<p>Soul cages are engines fuelled by fiendish possession, necromancy or souls of long forgotten primal beasts. You can’t purchase or install a soul cage as you would do a conventional engine. Instead, the ATUM must be infused with large influxes of magical energy, or planar magic, such as that from the Nine Hells, Shadowfell, the Abyss, or the Feywild, through summoning or soul-binding rituals. A character wishing to forge a soul cage for an ATUM must be confident they are powerful enough to bind such otherworldly forces to their will, as the forces that power the soul cage will always be yearning for freedom and revenge; especially when binding more powerful souls, such as those of a demon, devil, or powerful fey spirit.</p>
 			<p>An ATUM powered by a soul cage takes on an animalistic, demonic or necrotic form, depending on the souls bound to them. Some ATUMs internal components, while still mechanical, appear twisted and muscular. Weapon hardpoints meld into the chassis like flesh to bone, and internal wiring springs to life, becoming flailing, grasping tendrils.</p>
 			
-			<h6>Soul Caged ATUMs and Pilots</h6>
+			<h5>Soul Caged ATUMs and Pilots</h5>
 			<p>A soul caged ATUM requires no pilot to function. Instead, the souls entombed within its chassis grant it a simplistic, primal sentience. This intelligence alters depending on the strength of the souls caged, and requires constant attention, less the souls break free of their bonds and turn the ATUM on its creator.</p>
 			
-			<h6>The Ritual of the Soul Cage</h6>
+			<h5>The Ritual of the Soul Cage</h5>
 			<p>To create a soul caged ATUM, you must choose which type of soul cage you wish to bind. There are three types: Demonic, Spiritual, or Primal.</p>
 			<p class="indent"><b><i>Demonic. </i></b>The most dangerous, but also the most powerful method of soul cage creation, this summons the essence of demons or fiends from the lower planes and binds them to the ATUM, granting it elements of infused strength from the Abyss, Hades, or the Nine Hells.</p>
 			<p class="indent"><b><i>Spiritual. </i></b>A commonplace ritual used by vampires, necromancers, liches and practitioners of the art of necromancy, this draws upon the tortured souls of ghosts, ghouls and other creatures of the Shadowfell, melding them into the chassis of the ATUM to grant it an undead mockery of life.</p>
 			<p class="indent"><b><i>Primal. </i></b>Used by druids and spellcasters close to nature, this ritual calls upon the spirits of long-dead beasts from the Feywild or the Beastlands, fusing their primal souls into the core of the ATUM and filling it with a primal, nigh uncontrollable vigour.</p>
 			
-			<h6>Performing the Ritual</h6>
+			<h5>Performing the Ritual</h5>
 			<p>Once you have chosen your ritual, you must choose an ATUM you wish to soul cage and spend 8 hours creating an intricate, complex summoning circle around it. The summoning circle must be adorned with materials pertaining to your ritual type, worth a total of 5,000 gp, which the ritual consumes on completion. The material types are listed as follows:</p>
 			<p class="indent"><b><i>Demonic. </i></b>Golden vials of blood, eyes, fangs and precious gemstones if you are performing a demonic ritual.</p>
 			<p class="indent"><b><i>Spiritual. </i></b>Skulls, tokens or precious items they had in life from each undead spirit, and fine clothes, trinkets and coins if you are performing the spiritual ritual.</p>
@@ -495,24 +493,39 @@
 			<h5>Soul Caged ATUM Special Rules</h5>
 			<p>Soul caged ATUMs follow all rules for ATUMs detailed in this supplement, with the addition of the rules shown below. If a rule written here directly contradicts a rule elsewhere in this supplement, defer to the rules found here instead. Each soul cage type also grants the ATUM additional features, as shown in the Soul Cage table.</p>
 			
-			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
-			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
-			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
-			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
-			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
-			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
-			<div element="ID_ATUM_TGMHB_XXXXXXXX" />
+			<div element="ID_ATUM_TGMHB_SOULCAGE_RULE_UNMANNED_SENTIENCE" />
+			<div element="ID_ATUM_TGMHB_SOULCAGE_RULE_REGENERATIVE_CHASSIS" />
+			<div element="ID_ATUM_TGMHB_SOULCAGE_RULE_ORGANIC_MODULES" />
+			<div element="ID_ATUM_TGMHB_SOULCAGE_RULE_MULTIPLE_ACTIONS" />
+			<div element="ID_ATUM_TGMHB_SOULCAGE_RULE_NORLIVINGORDEAD" />
+			<div element="ID_ATUM_TGMHB_SOULCAGE_RULE_FREEING_BOUND_SOULS" />
 			
-			<h6>Soul Cage Table</h6>
+			<h5>Soul Cage Table</h5>
 			<table>
 				<thead>
 					<tr><td class="col-10">Soul Cage</td> <td class="col-7"><center>Alignment Guidelines</center></td> <td class="col-50"><center>Soul Cage Features</center></td> <td class="col-35"><center>Free Will</center></td></tr>
 				</thead>
 				<tr><td><b>Demonic</b></td> <td><center>Chaotic or Lawful Evil</center></td> <td>The ATUM has resistance to fire and cold damage, and advantage on saving throws against spells and other magical effects. In addition, its Charisma, and either its Intelligence or Dexterity score, increases by 4.</td> <td>The ATUM actively seeks out its creator and attempts to kill them. If it can’t find its creator, it instead attacks the closest creatures it can see.</td></tr>
-				<tr><td><b>Spiritual</b></td> <td><center>Lawful Evil or Neutral Evil</center></td> <td>The ATUM’s Intelligence score is reduced to 6, and it’s Dexterity score is reduced by 4. It also gains the <i></i> (PHB, pg 311). Once per long rest, the ATUM can exhale noxious fumes, which spread out from it in a 15 foot cone as an action on its turn. Each creature in the area must succeed on a DC 14 Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much on a success.</td> <td>The ATUM gravitates towards the nearest source of life in the area and seeks to extinguish it. It prioritizes creatures speaking a language it understands, and holds no special interest in its creator.</td></tr>
+				<tr><td><b>Spiritual</b></td> <td><center>Lawful Evil or Neutral Evil</center></td> <td>The ATUM’s Intelligence score is reduced to 6, and it’s Dexterity score is reduced by 4. It also gains the <i>undead fortitude</i> trait (PHB, pg 311). Once per long rest, the ATUM can exhale noxious fumes, which spread out from it in a 15 foot cone as an action on its turn. Each creature in the area must succeed on a DC 14 Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much on a success.</td> <td>The ATUM gravitates towards the nearest source of life in the area and seeks to extinguish it. It prioritizes creatures speaking a language it understands, and holds no special interest in its creator.</td></tr>
 				<tr><td><b>Primal</b></td> <td><center>Chaotic Neutral, Evil or Unaligned</center></td> <td>The ATUM has a climbing and swim speed equal to its walking speed, and advantage on Wisdom (Perception) checks that rely on sound or smell. In addition, it’s Intelligence score is reduced to 3, and its Wisdom score increases by 4. Once per short rest, the ATUM can emit a monstrous roar audible out to 300 feet. Any creature within the area that can hear or see the ATUM must succeed on a DC 14 Wisdom saving throw or be frightened of the ATUM for 1 minute. A frightened creature can attempt the saving throw again at the end of each of its turns, ending the effect on a success.</td> <td>The ATUM adopts the preferred habitat and base instincts of whichever beast it resembles most, and actively seek out a suitable territory to claim. An ATUM resembling an ape, for example, would seek out jungles or mountains. While the ATUM doesn’t require food or drink, it still mimics such behaviour, leaving behind mangled carcasses or vegetation in its wake.</td></tr>
 			</table>
-	-->
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<select type="Racial Trait" name="Soul Cage Type" supports="ATUM Soul Cage Souls Pool" />
+			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_UNMANNED_SENTIENCE" />
+			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_REGENERATIVE_CHASSIS" />
+			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_ORGANIC_MODULES" />
+			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_MULTIPLE_ACTIONS" />
+			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_NORLIVINGORDEAD" />
+			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_FREEING_BOUND_SOULS" />
+			
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_SOULCAGE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_SOULCAGE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
+			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_SOULCAGE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
+		</rules>
+	</element>
+	
 	
 	<!-- Conventional Engine Types -->
 	<element name="Poor Engine" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_CONVENTIONAL_POOR">
@@ -826,6 +839,74 @@
 	</element>
 	
 	
+	<!-- Soul Cage Souls Pool -->
+	<element name="Demonic Soul Cage" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_SOULCAGE_DEMONIC">
+		<supports>ATUM Soul Cage Souls Pool</supports>
+		<description>
+			<p><i>Soul Cage Type</i></p>
+			<p><b><i>Alignment Guidelines. </i></b>Chaotic or Lawful Evil.</p>
+			<p><b><i>Features. </i></b>The ATUM has resistance to fire and cold damage, and advantage on saving throws against spells and other magical effects. In addition, its Charisma, and either its Intelligence or Dexterity score, increases by 4.</p>
+			<p><b><i>Free Will. </i></b>The ATUM actively seeks out its creator and attempts to kill them. If it can’t find its creator, it instead attacks the closest creatures it can see.</p>
+			<p><b><i>Cost. </i></b>5,000 gp.</p>
+		</description>
+		<sheet alt="Soul Cage (Demonic)">
+			<description>(+4 Cha,{{atum-character:soul-cage:demonic-ability}}) The ATUM has resistance to fire and cold damage, and advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="5000" />
+			<stat inline="true" name="atum-character:soul-cage:soul" value="fiend" />
+			<select type="Racial Trait" name="+4 Ability Score Selection" supports="ATUM Soul Cage Demonic Score Selection Pool" />
+			<stat name="wisdom:score:set" value="14" bonus="base" />
+			<stat name="charisma:score:set" value="18" bonus="base" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Spiritual Soul Cage" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_SOULCAGE_SPIRITUAL">
+		<supports>ATUM Soul Cage Souls Pool</supports>
+		<description>
+			<p><i>Soul Cage Type</i></p>
+			<p><b><i>Alignment Guidelines. </i></b>Lawful Evil or Neutral Evil.</p>
+			<p><b><i>Features. </i></b>The ATUM’s Intelligence score is reduced to 6, and it’s Dexterity score is reduced by 4. It also gains the <i>undead fortitude</i> trait (PHB, pg 311). Once per long rest, the ATUM can exhale noxious fumes, which spread out from it in a 15 foot cone as an action on its turn. Each creature in the area must succeed on a DC 14 Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much on a success.</p>
+			<p><b><i>Free Will. </i></b>The ATUM gravitates towards the nearest source of life in the area and seeks to extinguish it. It prioritizes creatures speaking a language it understands, and holds no special interest in its creator.</p>
+			<p><b><i>Cost. </i></b>5,000 gp.</p>
+		</description>
+		<sheet alt="Soul Cage (Spiritual)" action="Action" usage="1/Long Rest">
+			<description>Once per long rest, the ATUM can exhale noxious fumes, which spread out from it in a 15 foot cone as an action on its turn. Each creature in the area must succeed on a DC 14 Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="5000" />
+			<stat inline="true" name="atum-character:soul-cage:soul" value="undead" />
+			<stat name="dexterity:score:set" value="10" bonus="base" />
+			<stat name="intelligence:score:set" value="6" bonus="base" />
+			<stat name="wisdom:score:set" value="14" bonus="base" />
+			<stat name="charisma:score:set" value="14" bonus="base" />
+			<grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_TRAIT_UNDEAD_FORTITUDE" />
+		</rules>
+	</element>
+	<element name="Primal Soul Cage" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ENGINE_VARIANT_SOULCAGE_PRIMAL">
+		<supports>ATUM Soul Cage Souls Pool</supports>
+		<description>
+			<p><i>Soul Cage Type</i></p>
+			<p><b><i>Alignment Guidelines. </i></b>Chaotic Neutral, Evil or Unaligned.</p>
+			<p><b><i>Features. </i></b>The ATUM has a climbing and swim speed equal to its walking speed, and advantage on Wisdom (Perception) checks that rely on sound or smell. In addition, it’s Intelligence score is reduced to 3, and its Wisdom score increases by 4. Once per short rest, the ATUM can emit a monstrous roar audible out to 300 feet. Any creature within the area that can hear or see the ATUM must succeed on a DC 14 Wisdom saving throw or be frightened of the ATUM for 1 minute. A frightened creature can attempt the saving throw again at the end of each of its turns, ending the effect on a success.</p>
+			<p><b><i>Free Will. </i></b>The ATUM adopts the preferred habitat and base instincts of whichever beast it resembles most, and actively seek out a suitable territory to claim. An ATUM resembling an ape, for example, would seek out jungles or mountains. While the ATUM doesn’t require food or drink, it still mimics such behaviour, leaving behind mangled carcasses or vegetation in its wake.</p>
+			<p><b><i>Cost. </i></b>5,000 gp.</p>
+		</description>
+		<sheet alt="Soul Cage (Primal)" usage="1/Short Rest">
+			<description>The ATUM has advantage on Wisdom (Perception) checks that rely on sound or smell. Once per short rest, the ATUM can emit a monstrous roar audible out to 300 feet. Any creature within the area that can hear or see the ATUM must succeed on a DC 14 Wisdom saving throw or be frightened of the ATUM for 1 minute. A frightened creature can attempt the saving throw again at the end of each of its turns, ending the effect on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:cost" value="5000" />
+			<stat inline="true" name="atum-character:soul-cage:soul" value="fey" />
+			<stat name="dexterity:score:set" value="14" bonus="base" />
+			<stat name="intelligence:score:set" value="3" bonus="base" />
+			<stat name="wisdom:score:set" value="18" bonus="base" />
+			<stat name="charisma:score:set" value="14" bonus="base" />
+			<stat name="speed:swim" value="speed" bonus="base" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
 	
 	
 	
@@ -1085,7 +1166,7 @@
 	
     
 	
-	
+	<!-- Rules -->
     <element name="Chassis Resistance (x)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_CLASS_FEATURE_CHASSIS_RESISTANCE_X">
         <description>
 			<p>ATUMs with this rule are hardier than most, and build to withstand punishment.</p>
@@ -1128,7 +1209,77 @@
 		</rules>
 	</element>
 	
+	<!-- Soul Cage Rules -->
+	<element name="Unmanned Sentience" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SOULCAGE_RULE_UNMANNED_SENTIENCE">
+		<description>
+			<p>A soul caged ATUM requires no fuel to function, and is considered its own pilot for the purposes of abilities or effects. It has a Dexterity, Intelligence, Wisdom and Charisma score of 14, immunity to the charmed, and frightened conditions, and can be knocked unconscious. It is also a creature (construct), and either a fiend, demon, undead or fey, depending on the type of soul cage used. These ATUMs ignore any rules involving crew, (as they don’t have any), and any effect or spell that would target the crew instead of the ATUM, instead targets the ATUM. It is always considered to have a proficiency bonus of +2, and is proficient in all saving throws.</p>
+		</description>
+		<sheet>
+			<description>A soul caged ATUM requires no fuel to function, is considered its own pilot, has immunity to the charmed, and frightened conditions, and can be knocked unconscious. It is also a creature (construct, {{atum-character:soul-cage:soul}}). It ignores any rules involving crew, (as it doesn’t have any), and any effect or spell that would target the crew instead of the ATUM, instead targets the ATUM.</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Regenerative Chassis" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SOULCAGE_RULE_REGENERATIVE_CHASSIS">
+		<description>
+			<p>Soul caged ATUMs do not require another creature to effect repairs on them, nor do they require the use of a workshop.</p>
+			<p>Instead, an ATUM housing a soul cage can expend hit dice on a short rest to recover hit points like any other creature, and regains all expended hit dice and repairs all hit points, severe damage and armour plating after finishing a long rest.</p>
+		</description>
+		<sheet>
+			<description>A soul caged ATUM can expend hit dice on a short rest to recover hit points like any other creature, and regains all expended hit dice and repairs all hit points, severe damage and armour plating after finishing a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Organic Modules" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SOULCAGE_RULE_ORGANIC_MODULES">
+		<description>
+			<p>Soul caged ATUMs do not require ammunition for their installed hardpoints, ignore the ammo box rule, and cannot change modules. The ATUM must still abide by any other properties of the hardpoints, including the reload (x) property.</p>
+			<p>The ATUM’s modules are ingrained into them as flesh is to bone, and to remove one would be akin to removing an internal organ from a living creature.</p>
+		</description>
+		<sheet>
+			<description>Soul caged ATUMs do not require ammunition for their installed hardpoints, ignore the ammo box rule, and cannot change modules. The ATUM must still abide by any other properties of the hardpoints, including the reload (x) property.</description>
+		</sheet>
+	</element>
+	<element name="Multiple Actions" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SOULCAGE_RULE_MULTIPLE_ACTIONS">
+		<description>
+			<p>ATUMs housing a soul cage can take 2 actions per round; one on their turn, and another at initiative step 3. This does not allow the ATUM to make additional movement or take additional bonus actions or reactions.</p>
+		</description>
+		<sheet>
+			<description>ATUMs housing a soul cage can take 2 actions per round; one on their turn, and another at initiative step 3. This does not allow the ATUM to make additional movement or take additional bonus actions or reactions.</description>
+		</sheet>
+	</element>
+	<element name="Nor Living or Dead" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SOULCAGE_RULE_NORLIVINGORDEAD">
+		<description>
+			<p>If a soul caged ATUM is reduced to 0 hit points, it collapses into its component parts, but is not destroyed. It can only be destroyed once the ATUM’s soul cage engine has been reduced to 0 hit points. A soul cage engine is a medium object with an AC of 16 and 30 hit points. If the soul cage is not destroyed, it will regrow a new body for itself in 2d6 days.</p>
+			<p>This body will appear slightly more organic and twisted than the original, but is assumed to retain all modules the original version had installed. Once reformed, it will will follow the actions shown in the <i>Free Will</i> column of the Soul Cage table.</p>
+		</description>
+		<sheet>
+			<description>If a soul caged ATUM is reduced to 0 hit points, it collapses into its component parts, but is not destroyed. It can only be destroyed once the ATUM’s soul cage engine has been reduced to 0 hit points. A soul cage engine is a medium object with an AC of 16 and 30 hit points. If the soul cage is not destroyed, it will regrow a new body for itself in 2d6 days.</description>
+		</sheet>
+	</element>
+	<element name="Freeing Bound Souls" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SOULCAGE_RULE_FREEING_BOUND_SOULS">
+		<description>
+			<p>If the soul cage’s creator dies, or the soul cage itself is destroyed, the bound souls inside it are immediately teleported back to the planes of existence they were summoned from and are no longer bound.</p>
+			<p>A soul caged ATUM with free will and an intelligence of 10 or higher can also choose to break their bindings by destroying it’s soul cage as an action.</p>
+		</description>
+		<sheet>
+			<description>If the soul cage’s creator dies, or the soul cage itself is destroyed, the bound souls inside it are immediately teleported back to the planes of existence they were summoned from and are no longer bound.</description>
+		</sheet>
+	</element>
 	
+	<element name="Undead Fortitude" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_UNDEAD_FORTITUDE">
+		<description>
+			<p>If damage reduces the ATUM to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.</p>
+		</description>
+		<sheet>
+			<description>If damage reduces the ATUM to 0 hit points, it must succeed on a Constitution saving throw with a DC of 5+the damage taken (unless the damage is radiant or from a critical hit) to drop to 1 hit point instead.</description>
+		</sheet>
+	</element>
 	
 	
 	
@@ -1377,7 +1528,7 @@
 	
 	
 	<!-- Edit ATUM stats -->
-	<!-- Proficiency Bonus -->
+	<!-- Pilot Proficiency Bonus -->
 	<element name="+2" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_2">
 		<compendium display="false" />
 		<supports>ATUM Pilot Proficiency Pool</supports>
@@ -1482,7 +1633,7 @@
 			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
 		</rules>
 	</element>
-	<!-- Dexterity -->
+	<!-- Pilot Dexterity -->
 	<element name="00-01 (-5)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_DEX_0">
 		<compendium display="false" />
 		<supports>ATUM Pilot Dexterity Score Pool</supports>
@@ -1659,7 +1810,32 @@
 			<stat name="dexterity:score:set" value="30" bonus="base" />
 		</rules>
 	</element>
-	
-	
+	<!-- Demonic Soul Cage +4 Stat -->
+	<element name="+4 Intelligence" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_SOULCAGE_DEMONIC_4_INT">
+		<compendium display="false" />
+		<supports>ATUM Soul Cage Demonic Score Selection Pool</supports>
+		<description>
+			<p>The ATUM gains +4 Intelligence.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="14" bonus="base" />
+			<stat name="intelligence:score:set" value="18" bonus="base" />
+			<stat inline="true" name="atum-character:soul-cage:demonic-ability" value="Int" />
+		</rules>
+	</element>
+	<element name="+4 Dexterity" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_SOULCAGE_DEMONIC_4_DEX">
+		<compendium display="false" />
+		<supports>ATUM Soul Cage Demonic Score Selection Pool</supports>
+		<description>
+			<p>The ATUM gains +4 Dexterity.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="dexterity:score:set" value="18" bonus="base" />
+			<stat name="intelligence:score:set" value="14" bonus="base" />
+			<stat inline="true" name="atum-character:soul-cage:demonic-ability" value="Dex" />
+		</rules>
+	</element>
 	
 </elements>
