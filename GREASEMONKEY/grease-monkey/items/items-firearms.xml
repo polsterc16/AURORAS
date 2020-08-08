@@ -58,12 +58,12 @@
 		<description>
 			<p><i>Firearm (Pistol Ammunition)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Light, Reload (4), ROF (2), Ammunition (range 80/200), Specialist.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Light, Reload (4), RoF (2), Ammunition (range 80/200), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d4 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
-			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
 		</description>
@@ -86,7 +86,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d6 fire.</p> 
 			
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
-			<p class="indent"><b><i>Plasma. </i></b>Before firing this weapon roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the weapon ionstead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>Plasma. </i></b>Before firing this weapon roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the weapon instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -146,12 +146,12 @@
 		<description>
 			<p><i>Firearm (Rifle Ammunition)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (6), ROF (2), Ammunition (range 200/600).</p> 
+			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (6), RoF (2), Ammunition (range 200/600).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d4 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
-			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
 		<setters>
@@ -242,12 +242,12 @@
 		<description>
 			<p><i>Firearm (Machine-Gun Ammunition)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (8), ROF (2), Ammunition (range 450/800).</p> 
+			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (8), RoF (2), Ammunition (range 450/800).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
-			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 		</description>
 		<setters>
@@ -265,13 +265,13 @@
 		<description>
 			<p><i>Firearm (Machine-Gun Ammunition)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Heavy, Reload (10), ROF (3), Ammunition (range 350/800), Specialist.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Heavy, Reload (10), RoF (3), Ammunition (range 350/800), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d8 (Ammunition).</p> 
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
-			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
 		</description>
@@ -342,7 +342,7 @@
 			
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
-			<p class="indent"><b><i>Plasma. </i></b>Before firing this weapon roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the weapon ionstead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>Plasma. </i></b>Before firing this weapon roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the weapon instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
 		</description>
 		<setters>
@@ -1227,12 +1227,12 @@
 			<p>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
 		</description>
 	</element>
-	<element name="Chassis Resistance (X)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_CHASSIS_RESISTANCE">
+	<!--<element name="Chassis Resistance (X)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_CHASSIS_RESISTANCE">
 		<description>
 			<p>ATUMs with this rule are hardier than most, and build to withstand punishment. As a reaction when the ATUM takes damage, the pilot can use their reaction to roll the die shown in brackets next to the chassis resistance rule (x), reducing the incoming damage by the value shown on the dice.</p>
 			<p>For example, if an ATUM would be hit by a weapon that dealt 20 piercing damage and had a chassis resistance of (1d12), the pilot could use their reaction to roll the die and reduce that damage by 1d12.</p>
 		</description>
-	</element>
+	</element>-->
 	<element name="Co-Axial" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_COAXIAL">
 		<description>
 			<p>Ballistic or energy hardpoints with this rule can be mounted alongside another ranged hardpoint at the cost of one module slot, instead of their normal cost, and their damage dice is reduced by one step. For example, a Light MG would have its damage die reduced from 1d10 to 1d8.</p>
@@ -1311,7 +1311,7 @@
 	</element>
 	<element name="Forward Facing" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_FORWARD_FACING">
 		<description>
-			<p>Modules with this rule can only be fixed facing forwards, and has a 45 degree firing arc. The ATUM must turn to face its target if it wishes to fire a forward firing hardpoint.</p>
+			<p>Modules with this rule can only be fixed facing forwards, and have a 45 degree firing arc. The ATUM must turn to face its target if it wishes to fire a forward firing hardpoint.</p>
 		</description>
 	</element>
 	<element name="Lasers" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_LASERS">
@@ -1320,6 +1320,42 @@
 			<p>This effect can stack up to 6 times, but the stacked effects are lost if the module misses its target, or doesn’t continue to attack the same target on subsequent rounds. </p>
 			<p><b>Damage Dice Steps</b></p>
 			<p>d3 -> d4 -> d6 -> d8 -> d10 -> d12 -> 2d6 -> 2d8 -> 2d10 -> 2d12</p>
+		</description>
+	</element>
+	
+	<element name="Manipulators" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_MANIPULATOR">
+		<description>
+			<p>A module with this special rule is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you, with a few exceptions:</p>
+			<ul>
+				<li>When attacking with or using a manipulator, your Strength Score is replaced by the score of the manipulator. A list of manipulator types is listed below.</li>
+				<li>If you are using a pair of manipulators to make unarmed strikes, you can make one additional unarmed strike as a bonus action.</li>
+				<li>When making Strength saving throws, you use the ATUM’s chassis or manipulator Strength modifier, whichever is better.</li>
+				<li>Manipulators can only wield weapons designed for creatures of their size category, or one size larger.</li>
+				<li>Manipulators on a light chassis have a reach of 5 feet.</li>
+				<li>Manipulators on a medium chassis have a reach of 10 feet.</li>
+				<li>Manipulators on a heavy chassis have a reach of 15 feet.</li>
+			</ul>
+			<h5>Manipulator Types</h5>
+			<table>
+				<thead>
+					<tr><td>Type</td><td><center>Strength Score</center></td></tr>
+				</thead>
+				<tr><td><b>Civilian</b></td><td><center>20 (+5)</center></td></tr>
+				<tr><td><b>Industrial</b></td><td><center>26 (+8)</center></td></tr>
+				<tr><td><b>Military</b></td><td><center>22 (+6)</center></td></tr>
+			</table>
+			
+			<h5>Attacking in Melee without a Manipulator</h5>
+			<p>An ATUM without a manipulator can still make unarmed strikes, but can only make a single weapon attack against a target within 5 feet of it, using the chassis’s Strength modifier for the attack and damage roll, and dealing nonmagical bludgeoning damage based on the chassis type:</p>
+			<table>
+				<thead>
+					<tr><td>Type</td><td><center>Unarmed Damage</center></td></tr>
+				</thead>
+				<tr><td><b>Light</b></td><td><center>1d8 Bludgeoning</center></td></tr>
+				<tr><td><b>Medium</b></td><td><center>1d10 Bludgeoning</center></td></tr>
+				<tr><td><b>Heavy</b></td><td><center>1d12 Bludgeoning</center></td></tr>
+			</table>
+			
 		</description>
 	</element>
 	
@@ -1377,13 +1413,15 @@
 	</element>
 	<element name="Ram" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_RAM">
 		<description>
-			<p>A ram is a reinforced slab of armour plating, steel or other protective covering that is mounted on the front of the ATUM. If an ATUM with this rule moves at least 20 feet towards a target and hits it with an unarmed strike on the same turn, the target takes an extra 1d10 bludgeoning damage per 10 feet it moved. If the target is a creature, it must succeed on a Strength saving throw or be knocked prone. If the target cannot be knocked prone, it is instead pushed 10 feet away from the ATUM in a straight line.</p>
+			<p>A ram is a reinforced slab of armour plating, steel or other protective covering that is mounted on the front of the ATUM.</p>
+			<p>If an ATUM with this rule moves at least 20 feet towards a target and hits it with an unarmed strike on the same turn, the target takes an extra 1d10 bludgeoning damage per 10 feet it moved.</p>
+			<p>If the target is a creature, it must succeed on a Strength saving throw or be knocked prone. If the target cannot be knocked prone, it is instead pushed 10 feet away from the ATUM in a straight line.</p>
 		</description>
 	</element>
 	<element name="Rate of Fire (X)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF">
 		<description>
 			<p>All hardpoints (apart from manipulators, their ranged weapons and adventuring equipment) require your action to activate. Some hardpoints and weapons, however, make more than one attack (called a shot, or strike) when activated. The number of shots or strikes a hardpoint or ranged weapon makes each time it is activated is shown under the rate of fire column, or in brackets, abbreviated as ROF (x).</p>
-			<p>For example, a melee hardpoint with ROF (2) would make 2 strikes when activated, making separate attack rolls for both. An ordinary ranged weapon, such as an assault rifle with ROF(2), would instead make 2 separate shots each time a character took the attack action with it. So a fighter with 2 attacks would make 4 shots.</p>
+			<p>For example, a melee hardpoint with RoF (2) would make 2 strikes when activated, making separate attack rolls for both. An ordinary ranged weapon, such as an assault rifle with RoF (2), would instead make 2 separate shots each time a character took the attack action with it. So a fighter with 2 attacks would make 4 shots.</p>
 		</description>
 	</element>
 	<element name="Reload (X)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_RELOAD">
@@ -1479,6 +1517,31 @@
 	
 	
 	<!-- temporary custom property elements -->
+	<element name="Ammo Box (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2">
+		<description>
+			<p>This hardpoint needs to be reloaded after 2 encounters.</p>
+			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+		</description>
+	</element>
+	<element name="Ammo Box (3)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3">
+		<description>
+			<p>This hardpoint needs to be reloaded after 3 encounters.</p>
+			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+		</description>
+	</element>
+	<element name="Ammo Box (4)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_4">
+		<description>
+			<p>This hardpoint needs to be reloaded after 4 encounters.</p>
+			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+		</description>
+	</element>
+	<element name="Ammo Box (5)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_5">
+		<description>
+			<p>This hardpoint needs to be reloaded after 5 encounters.</p>
+			<p>An ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+		</description>
+	</element>
+	
 	<element name="Arc Lightning (1)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1">
 		<compendium display="false" />
 		<description>
@@ -1537,14 +1600,14 @@
 		</description>
 	</element>
 
-	<element name="ROF (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_2">
+	<element name="RoF (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_2">
 		<compendium display="false" />
 		<description>
 			<p>This weapon makes 2 shots/strikes per attack.</p>
 			<div element="ID_TGMHB_WEAPON_PROPERTY_ROF" />
 		</description>
 	</element>
-	<element name="ROF (3)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_3">
+	<element name="RoF (3)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_3">
 		<compendium display="false" />
 		<description>
 			<p>This weapon makes 3 shots/strikes per attack.</p>
