@@ -121,8 +121,6 @@
 			<stat name="atum-character:module-slots" value="0" bonus="base" />
 			<stat name="atum-character:module-slots-used" value="0" bonus="base" />
 			
-			<stat inline="true" name="atum-character:adapters" value="" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-			
 			
 			
 			<!-- Ensure the desired stats -->
@@ -142,14 +140,6 @@
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_VEHICLECOST" />
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_TYPE" />
 			
-            <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT" />
-            <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM" />
-            <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
-			
-            <grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_UNARMEDSTRIKE_ATTACK" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_MANIPULATOR,(ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT||ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM||ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY)" />
-			
-			<select type="Racial Trait" name="Mobility Type" supports="Heavy Chassis Mobility Type Pool" requirements="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY" />
-			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" requirements="(ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT||ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM||ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY)" />
 			
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_SELECT_PILOT_STATS" requirements="(ID_ATUM_TGMHB_ENGINE_CONVENTIONAL||ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_CRYSTALS||ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA)" />
         </rules>
@@ -178,7 +168,7 @@
 	<element name="Medium Soul Cage" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_SOULCAGE"><sheet display="false" /></element>
 	<element name="Heavy Soul Cage" type="Sub Race" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_SOULCAGE"><sheet display="false" /></element>
 
-	<element name="Unarmed Strike (no manipulator)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_UNARMEDSTRIKE_ATTACK">
+	<element name="Unarmed Strike" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_UNARMEDSTRIKE_ATTACK">
 		<description>
 			<p>An ATUM without a manipulator can still make unarmed strikes, but can only make a single weapon attack against a target within 5 feet of it, using the chassis’s Strength modifier for the attack and damage roll, and dealing nonmagical bludgeoning damage based on the chassis type:</p>
 			<table>
@@ -244,6 +234,8 @@
 			<stat name="atum-character:cost" value="2450" />
 			<select type="Racial Trait" name="Mobility Type" supports="Light Chassis Mobility Type Pool" />
 			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" />
+			
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_UNARMEDSTRIKE_ATTACK" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_MANIPULATOR" />
 		</rules>
 	</element>
 	<element name="Medium Chassis" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM">
@@ -274,6 +266,8 @@
 			<stat name="atum-character:cost" value="4500" />
 			<select type="Racial Trait" name="Mobility Type" supports="Medium Chassis Mobility Type Pool" />
 			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" />
+			
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_UNARMEDSTRIKE_ATTACK" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_MANIPULATOR" />
 		</rules>
 	</element>
 	<element name="Heavy Chassis" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY">
@@ -304,6 +298,8 @@
 			<stat name="atum-character:cost" value="8000" />
 			<select type="Racial Trait" name="Mobility Type" supports="Heavy Chassis Mobility Type Pool" />
 			<select type="Racial Trait" name="Engine Type" supports="ATUM Choose Engine Type Pool" />
+			
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_UNARMEDSTRIKE_ATTACK" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_MANIPULATOR" />
 		</rules>
 	</element>
 	
@@ -1001,6 +997,14 @@
         </setters>
         <sheet display="false"/>
         <rules>
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_001" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_010" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_100" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_011" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_101" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_110" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_111" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			
 			<select type="Archetype" name="ATUM Class" supports="ATUM Class Type Pool" level="15" requirements="!ID_ATUM_TGMHB_GRANTS_REQUIREMENT_HAS_LV20" />
 			
 			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV5" level="5" />
@@ -1054,6 +1058,14 @@
         </setters>
         <sheet display="false"/>
         <rules>
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_001" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_010" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_100" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_011" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_101" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_110" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_111" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			
 			<select type="Archetype" name="ATUM Class" supports="ATUM Class Type Pool" level="20" />
 			
 			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV5" level="5" />
@@ -1106,6 +1118,14 @@
         </setters>
         <sheet display="false"/>
         <rules>
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_001" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_010" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_100" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_011" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_101" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_110" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_MODULE_ADAPTER_111" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
+			
 			<select type="Archetype" name="ATUM Class" supports="ATUM Class Type Pool" level="20" />
 			
 			<grant type="Grants" id="ID_ATUM_TGMHB_ATUM_CLASS_LV5" level="5" />
@@ -1129,7 +1149,7 @@
 			<p><b><i>Cost. </i></b>150 gp.</p>
 		</description>
 		<sheet>
-			<description>Civilian module cost -50%.  {{atum-character:adapters}}</description>
+			<description>Civilian module cost -50%.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:calculation" value="-1" alt="Chassis" />
@@ -1160,7 +1180,7 @@
 			</div>
 		</description>
 		<sheet>
-			<description>+1 Module Slot (Tools only). {{atum-character:adapters}}</description>
+			<description>+1 Module Slot (Tools only).</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed" value="-10" />
@@ -1195,7 +1215,7 @@
 			</div>
 		</description>
 		<sheet>
-			<description>+1 Module Slot (Tools only). {{atum-character:adapters}}</description>
+			<description>+1 Module Slot (Tools only).</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed" value="5" />
@@ -1402,7 +1422,7 @@
 	<!-- Hardpoints -->
 	<!-- Light Hardpoints -->
 	<element name="H.P.L., 25mm Flak Battery" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_25MMFLAKBATTERY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_FLAK, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_4, ID_TGMHB_WEAPON_PROPERTY_ROF_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_FLAK, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_4, ID_TGMHB_WEAPON_PROPERTY_ROF_2</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Ballistic)</i></p>
 			
@@ -1429,7 +1449,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., 30mm Tank Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_30MMTANKCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2,ID_TGMHB_WEAPON_PROPERTY_RELOAD_4</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2,ID_TGMHB_WEAPON_PROPERTY_RELOAD_4</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Ballistic)</i></p>
 			
@@ -1460,7 +1480,7 @@
 		<description>
 			<p><i>Light Civilian Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Ram.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Ram, Melee.</p> 
 			<p class="indent"><b><i>Damage. </i></b>Special.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
@@ -1483,7 +1503,7 @@
 		<description>
 			<p><i>Light Civilian Hardpoint (Arm)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Manipulator.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Manipulator, Range 5/10/15.</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d8 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
@@ -1493,8 +1513,7 @@
 			<set name="keywords">light, civilian, hardpoint, manipulator</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">25</set>
-			<set name="slot">onehand</set>
-			<set name="range">5/10/15</set>
+			<set name="slot">misc</set>
 			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN</set>
 		</setters>
 		<rules>
@@ -1505,7 +1524,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Fixed Machine-Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_FIXEDMACHINEGUN">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN, ID_TGMHB_WEAPON_PROPERTY_FORWARD_FACING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_4, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN, ID_TGMHB_WEAPON_PROPERTY_FORWARD_FACING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_4, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
 		<description>
 			<p><i>Light Civilian Hardpoint (Ballistic)</i></p>
 			
@@ -1519,7 +1538,7 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, civilian, hardpoint, ballistic</set>
+			<set name="keywords">light, civilian, hardpoint, ballistic, machinegun</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="slot">misc</set>
@@ -1532,7 +1551,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Heat Ray" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_HEATRAY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Energy)</i></p>
 			
@@ -1557,7 +1576,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Laser Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_LASERGUN">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ROF_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ROF_2</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Energy)</i></p>
 			
@@ -1582,7 +1601,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Light Carronade" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_LIGHTCARRONADE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Ballistic)</i></p>
 			
@@ -1607,7 +1626,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Light MG" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_LIGHTMG">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_COAXIAL, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_5, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_COAXIAL, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_5, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Ballistic)</i></p>
 			
@@ -1621,7 +1640,7 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, ballistic</set>
+			<set name="keywords">light, military, hardpoint, ballistic, machinegun</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="slot">misc</set>
@@ -1634,7 +1653,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., MT-01 Hornet Battery" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_MT01HORNETBATTERY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_MULTI_ROCKETS, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ROF_4</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_MULTI_ROCKETS, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ROF_4</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Ballistic)</i></p>
 			
@@ -1662,7 +1681,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Pintle-Mount" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_PINTLEMOUNT">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN, ID_TGMHB_WEAPON_PROPERTY_PINTLE_MOUNT, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_4, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN, ID_TGMHB_WEAPON_PROPERTY_PINTLE_MOUNT, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_4, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
 		<description>
 			<p><i>Light Civilian Hardpoint (Ballistic)</i></p>
 			
@@ -1689,7 +1708,7 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Plasma Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_PLASMAGUN">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Energy)</i></p>
 			
@@ -1713,11 +1732,11 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Plasma-Torch" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_PLASMATORCH">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
 		<description>
 			<p><i>Light Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Plasma.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Plasma, Melee.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d8 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
@@ -1736,6 +1755,88 @@
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
+	<!-- Medium Hardpoints -->
+	<element name="H.P.M., 40mm Flak Battery" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_40MMFLAKBATTERY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_FLAK, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Flak, Ammo Box (3), Reload (6), RoF (3), Range 100.</p> 
+			<p class="indent"><b><i>Damage. </i></b>4d6 Slashing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Flak. </i></b>When firing this hardpoint module, choose a target you can see within range. Each creature in a 15-foot cube (including and centered on the target) must succeed on a Dexterity saving throw, taking the flak module’s noted damage on a failed save, or half as much on a success.</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">misc</set>
+			<set name="range">100</set>
+			<set name="damage" type="slashing">4d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., BeanBag Toaster" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_BEANBAGTOASTER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_EXPERIMENTAL, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Experimental)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Experimental, Ammo Box (1), Range 100/250.</p> 
+			<p class="indent"><b><i>Damage. </i></b>Special.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Experimental. </i></b>Before using any experimental hardpoint, the user must first roll (d8) on the experimental hardpoint table: (1-5) normal activation, (6-7) activaton failure and your action is wasted, (8) the ATUM takes 5d8 force damage and reroll (ignoring 8s)</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>BeanBag Toaster. </i></b>The Beanbag toaster is an experimental hardpoint of gnomish design; accidentally created after trying to develop a more efficient toast-delivery system. A battery of toasters welded together forms the hardpoints base, while a funnel brimming with gunpowder-filled beanbags acts as the hardpoints auto-loader.</p>
+			<p>When fired, the beanbags are briefly cooked inside the toasting mechanism, catching fire before catapulting out towards a target and exploding violently on impact. As an action, you can choose to fire the beanbag toaster at one target you can see within range. For the next minute, the beanbag toaster will continue to fire flaming beanbags, choosing a different target within 20ft of the previous target it fired at during the beginning of each of your turns (no additional actions required by you). If there are no other targets within range or line of sight, the hardpoint will continue to fire at the same target it fired at previously if possible. It otherwise fires wildly into the air.</p>
+			<p>Make a single ranged attack roll against your chosen target each time this hardpoint fires. On a hit, the target is hit by 3d6 flaming beanbags. Each beanbag deals 1d4 bludgeoning damage and 1d4 fire damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, experimental</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="slot">misc</set>
+			<set name="range">100/250</set>
+			<!-- <set name="damage" type="slashing">4d6</set> -->
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Carronade" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_CARRONADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Ammo Box (2), Reload (1), Range 100/180.</p> 
+			<p class="indent"><b><i>Damage. </i></b>5d10 Bludgeoning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">misc</set>
+			<set name="range">100/180</set>
+			<set name="damage" type="bludgeoning">5d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	
 	
 	
 	<!-- Hardpoint Attacks -->
@@ -1882,9 +1983,9 @@
 	
 	
 	<!-- weapon groups -->
-	<element name="Weapon Group (Hardpoint, Light)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT" />
-	<element name="Weapon Group (Hardpoint, Medium)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM" />
-	<element name="Weapon Group (Hardpoint, Heavy)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY" />
+	<element name="Weapon Group (H.P. Light)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT" />
+	<element name="Weapon Group (H.P. Medium)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM" />
+	<element name="Weapon Group (H.P. Heavy)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY" />
 	<element name="Weapon Group (Civilian)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN" />
 	<element name="Weapon Group (Industrial)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL" />
 	<element name="Weapon Group (Military)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY" />
@@ -2014,33 +2115,76 @@
 	
 	<element name="Has Adapter (Civilian)" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN">
 		<rules>
-			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER" />
 			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN" />
 		</rules>
 	</element>
 	<element name="Has Adapter (Industrial)" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL" >
 		<rules>
-			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER" />
 			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL" />
 		</rules>
 	</element>
 	<element name="Has Adapter (Military)" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" >
 		<rules>
-			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER" />
 			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY" />
 		</rules>
 	</element>
-	<element name="Has Adapter" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER">
-		<rules>
-			<stat inline="true" name="atum-character:adapters" value="(Adapter: Military)" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-			<stat inline="true" name="atum-character:adapters" value="(Adapter: Industrial)" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-			<stat inline="true" name="atum-character:adapters" value="(Adapter: Industrial, Military)" requirements="!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-			<stat inline="true" name="atum-character:adapters" value="(Adapter: Civilian)" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-			<stat inline="true" name="atum-character:adapters" value="(Adapter: Civilian, Military)" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-			<stat inline="true" name="atum-character:adapters" value="(Adapter: Civilian, Industrial)" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,!ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-			<stat inline="true" name="atum-character:adapters" value="(Adapter: Civilian, Industrial, Military)" requirements="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL,ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" />
-		</rules>
+	<element name="Module Adapter (Civilian)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_001">
+		<description>
+			<p>Enables access to Civilian Class Modules.</p>
+		</description>
+		<sheet alt="Module Adapter">
+			<description>Civilian.</description>
+		</sheet>
 	</element>
+	<element name="Module Adapter (Industrial)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_010">
+		<description>
+			<p>Enables access to Industrial Class Modules.</p>
+		</description>
+		<sheet alt="Module Adapter">
+			<description>Industrial.</description>
+		</sheet>
+	</element>
+	<element name="Module Adapter (Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_100">
+		<description>
+			<p>Enables access to Military Class Modules.</p>
+		</description>
+		<sheet alt="Module Adapter">
+			<description>Military.</description>
+		</sheet>
+	</element>
+	<element name="Module Adapter (Civilian, Industrial)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_011">
+		<description>
+			<p>Enables access to Civilian, Industrial Class Modules.</p>
+		</description>
+		<sheet alt="Module Adapter">
+			<description>Civilian, Industrial.</description>
+		</sheet>
+	</element>
+	<element name="Module Adapter (Civilian, Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_101">
+		<description>
+			<p>Enables access to Civilian, Military Class Modules.</p>
+		</description>
+		<sheet alt="Module Adapter">
+			<description>Civilian, Military.</description>
+		</sheet>
+	</element>
+	<element name="Module Adapter (Industrial, Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_110">
+		<description>
+			<p>Enables access to Industrial, Military Class Modules.</p>
+		</description>
+		<sheet alt="Module Adapter">
+			<description>Industrial, Military.</description>
+		</sheet>
+	</element>
+	<element name="Module Adapter (Civilian, Industrial, Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_111">
+		<description>
+			<p>Enables access to Civilian, Industrial, Military Class Modules.</p>
+		</description>
+		<sheet alt="Module Adapter">
+			<description>Civilian, Industrial, Military.</description>
+		</sheet>
+	</element>
+	
 	
 	
 	<!-- Edit ATUM stats -->
