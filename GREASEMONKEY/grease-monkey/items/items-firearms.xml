@@ -286,7 +286,7 @@
 		</setters>
 	</element>
 	<element name="Heavy Flamer" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_HEAVY_FLAMER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3, ID_TGMHB_WEAPON_PROPERTY_SPREAD_1, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_PROPERTY_FLAMETHROWERS, ID_TGMHB_WEAPON_GROUP_FIREARM_FLAMETHROWER</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3, ID_TGMHB_WEAPON_PROPERTY_SPREAD_1, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_GROUP_FIREARM_FLAMETHROWER</supports>
 		<description>
 			<p><i>Firearm (Fire)</i></p>
 			
@@ -299,7 +299,6 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Spread (x). </i></b>This weapon deals damage in a cone over a wide area. Creatures caught in the cone must succeed on a Dexterity saving throw, taking the weapon’s noted damage on a failure, or half as much on a success. Each spread range falls into a particular value, shown in the brackets (x): (1) 15-foot Cone, (2) 30-foot Cone, (3) 60-foot Cone.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
-			<p class="indent"><b><i>Flamethrowers. </i></b>This weapon draws power from the elemental plane of fire.</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -489,7 +488,7 @@
 		</setters>
 	</element>
 	<element name="Tesla Glove" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_MARTIAL_MELEE_TESLA_GLOVE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1, ID_TGMHB_WEAPON_PROPERTY_TESLA_POWER, ID_TGMHB_WEAPON_GROUP_MELEE_TESLA_GLOVE</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1, ID_TGMHB_WEAPON_GROUP_MELEE_TESLA_GLOVE</supports>
 		<description>
 			<p><i>Martial Melee Weapon</i></p>
 			
@@ -497,8 +496,7 @@
 			<p class="indent"><b><i>Damage. </i></b>1d6 Lightning.</p> 
 			
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
-			<p class="indent"><b><i>Arc Lightning (X). </i></b>Whenever a weapon with this rule hits a target, the lightning arcs towards a number of objects or creatures shown in the brackets that are within 5 feet of the original target. The lightning jumps to the object or creature closest to the original target (aside from you). The targets must succeed on a Dexterity saving throw, taking the half the attack’s initial lightning damage on a failed save, or no damage on a successful one.</p>
-			<p class="indent"><b><i>Tesla Power. </i></b>This weapon is charged with magical energy from the elemental planes.</p>
+			<p class="indent"><b><i>Arc Lightning (x). </i></b>Whenever a weapon with this rule hits a target, the lightning arcs towards a number of objects or creatures shown in the brackets that are within 5 feet of the original target. The lightning jumps to the object or creature closest to the original target (aside from you). The targets must succeed on a Dexterity saving throw, taking the half the attack’s initial lightning damage on a failed save, or no damage on a successful one.</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -1147,17 +1145,6 @@
 			</table>
 		</description>
 	</element>
-	<element name="Flamethrowers" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_FLAMETHROWERS">
-		<description>
-			<p>In a similar style to Tesla weaponry, compact, hand held flamethrower designs don’t require ammunition in order to function. Instead, these weapons draw briefly on the power of the elemental plane of fire, sending forth a burst of flames towards their unfortunate opponents before rapidly cooling in order to repeat the process anew.</p>
-		</description>
-	</element>
-	<element name="Tesla Power" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_TESLA_POWER">
-		<description>
-			<p>Tesla weaponry utilizes arcs of powerful lightning or electricity; unleashing in a sparking volley of dancing violence that can jump from one creature to the damge, should they be close enough. This close range proximity has meant their use is mainly focused on melee combat weapons, where the booming arcs of short range electrical energy can be most effective.</p>
-			<p>Advanced elements of Tesla technology use battery cells or solar charges in order to maintain functionality. More primitive or steampunk designs are frequently seen using powerful static metal nodes, charged with magical energy from the elemental planes to achieve the same result.</p>
-		</description>
-	</element>
 	
 	<element name="Ammo Box (X)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX">
 		<description>
@@ -1546,6 +1533,13 @@
 		<compendium display="false" />
 		<description>
 			<p>This weapon causes lightning arcs towards 1 object/creature.</p>
+			<div element="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING" />
+		</description>
+	</element>
+	<element name="Arc Lightning (1d3)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1D3">
+		<compendium display="false" />
+		<description>
+			<p>This weapon causes lightning arcs towards 1d3 objects/creatures.</p>
 			<div element="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING" />
 		</description>
 	</element>
