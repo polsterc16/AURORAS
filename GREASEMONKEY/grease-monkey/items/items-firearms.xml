@@ -393,7 +393,7 @@
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
-			<p class="indent"><b><i>Demolisher. </i></b>Weapons with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+			<p class="indent"><b><i>Demolisher. </i></b>Weapons with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the weapon deals an additional die of damage.</p>
 			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
 			<p class="indent"><b><i>Specialist. </i></b>Weapons with this rule require specialist training to use and cannot be used by someone who is not proficient with them.</p>
 		</description>
@@ -477,7 +477,7 @@
 			
 			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
 			<p class="indent"><b><i>Powerful Blow. </i></b>A weapon with this rule ignores resistance to bludgeoning damage. In addition, if the attack roll exceeds the target’s AC by 5 or more, it must succeed on a Strength saving throw or be pushed back 5 feet per damage die and knocked prone.</p>
-			<p class="indent"><b><i>Demolisher. </i></b>Weapons with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+			<p class="indent"><b><i>Demolisher. </i></b>Weapons with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the weapon deals an additional die of damage.</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
