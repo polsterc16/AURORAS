@@ -1432,7 +1432,7 @@
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Flak. </i></b>When firing this hardpoint module, choose a target you can see within range. Each creature in a 15-foot cube (including and centered on the target) must succeed on a Dexterity saving throw, taking the flak module’s noted damage on a failed save, or half as much on a success.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
@@ -1453,13 +1453,13 @@
 		<description>
 			<p><i>Light Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour Piercing, Ammo Box (2), Reload (4), Range 200/500.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (2), Reload (4), Range 200/500.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d8 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
-			<p class="indent"><b><i>Flak. </i></b>When firing this hardpoint module, choose a target you can see within range. Each creature in a 15-foot cube (including and centered on the target) must succeed on a Dexterity saving throw, taking the flak module’s noted damage on a failed save, or half as much on a success.</p>
+			<p class="indent"><b><i>Armour-Piercing. </i></b>This hardpoint ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
@@ -1534,7 +1534,7 @@
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
 			<p class="indent"><b><i>Forward-Facing. </i></b>Modules with this rule can only be fixed facing forwards, and have a 45 degree firing arc. The ATUM must turn to face its target if it wishes to fire a forward firing hardpoint.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
@@ -1560,7 +1560,7 @@
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Laser. </i></b>Lasers deal more damage the more the same target is hit with a laser weapon. If the weapon hits the same target on the following turn, its damage die increases by one step (d3 -> d4 -> d6 -> d8 -> d10 -> d12 -> 2d6 -> 2d8 -> 2d10 -> 2d12). This effect can stack up to 6 times, but the stacked effects are lost if the weapon misses its target, or doesn’t continue to attack the same target on subsequent rounds. </p>
-			<p class="indent"><b><i>Plasma. </i></b>Before firing this weapon roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the weapon instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
 			<set name="keywords">light, military, hardpoint, energy</set>
@@ -1610,7 +1610,7 @@
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
 			<set name="keywords">light, military, hardpoint, ballistic</set>
@@ -1636,7 +1636,7 @@
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
 			<p class="indent"><b><i>Co-Axial. </i></b>Ballistic or energy hardpoints with this rule can be mounted alongside another ranged hardpoint at the cost of one module slot, instead of their normal cost, and their damage dice is reduced by one step. Whenever the main hardpoint is used, you can fire the co-axial hardpoint at the same target as a bonus action on your turn. A hardpoint module can only have one co-axial hardpoint attached at a time.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
@@ -1664,7 +1664,7 @@
 			<p class="indent"><b><i>Missile. </i></b>Missiles have two different fire modes. In <i>Targeted</i> mode, you must spend a bonus action to lock onto a target that you can see within the hardpoint’s range. The target remains locked for one minute, or until it is successfully hit by the hardpoint or leaves the hardpoint’s range. A pilot does not require line of sight when firing a missile hardpoint at a locked target. Once locked, you can fire the hardpoint at the target as an action on your turn, dealing the hardpoint’s noted damage on a hit. In <i>Saturation</i> mode, you can instead spend your action to fill an area with the entire armed and ready ammunition at your disposal. To do so, choose a point within range and consult the missile table to work out the radius and damage dealt. Each creature in that radius must succeed on a Dexterity saving throw, taking the table’s noted damage on a failed save, or half as much on a success.</p>
 			<p class="indent"><b><i>Multi-rocket. </i></b>When using a multi-rocket, you can lock onto a number of targets in range equal to the hardpoints RoF value as a bonus action. You can choose the same target more than once, or different ones. Make a single attack roll for all targets. Each target takes the noted damage in the hardpoints entry. For every additional missile locked onto a single target, that target takes an extra die of the hardpoint’s damage. When calculating when to reload, a multi rocket hardpoint only counts as making one attack per action, regardless of its RoF value, unless it uses the saturation fire mode.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
@@ -1691,7 +1691,7 @@
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
 			<p class="indent"><b><i>Pintle Mount. </i></b>The hardpoint is always two-handed, and requires a crew member other than the pilot to operate it. In addition, a pintle mount must be attached to either the front, back, left, right or top of the ATUM. If attached to the top, it has a domed arc of fire, and can shoot 360 degrees. If attached elsewhere, the hardpoint has a 180 degree firing arc. Passengers can fire pintle mounts.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
@@ -1716,7 +1716,7 @@
 			<p class="indent"><b><i>Damage. </i></b>2d6 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
-			<p class="indent"><b><i>Plasma. </i></b>Before firing this weapon roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the weapon instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
 			<set name="keywords">light, military, hardpoint, energy</set>
@@ -1741,7 +1741,7 @@
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
-			<p class="indent"><b><i>Plasma. </i></b>Before firing this weapon roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the weapon instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
 			<set name="keywords">light, industrial, hardpoint, tool</set>
@@ -1767,7 +1767,7 @@
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Flak. </i></b>When firing this hardpoint module, choose a target you can see within range. Each creature in a 15-foot cube (including and centered on the target) must succeed on a Dexterity saving throw, taking the flak module’s noted damage on a failed save, or half as much on a success.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
@@ -1821,7 +1821,7 @@
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
 			<set name="keywords">medium, military, hardpoint, ballistic</set>
@@ -1830,6 +1830,532 @@
 			<set name="slot">misc</set>
 			<set name="range">100/180</set>
 			<set name="damage" type="bludgeoning">5d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Circular Saw" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_CIRCULARSAW">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER</supports>
+		<description>
+			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Melee.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d8 Slashing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">misc</set>
+			<set name="damage" type="slashing">3d8</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Energy Blade" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_ENERGYBLADE">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Melee)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Flesh-Bane, Reach 10ft.</p> 
+			<p class="indent"><b><i>Damage. </i></b>2d8 Fire.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
+			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">misc</set>
+			<set name="range">10</set>
+			<set name="damage" type="fire">2d8</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Excavator" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_EXCAVATOR">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_EXCAVATION</supports>
+		<description>
+			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Excavation, Reach 10ft.</p> 
+			<p class="indent"><b><i>Damage. </i></b>2d10 Bludgeoning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Excavation. </i></b>A hardpoint with this rule can reshape dirt, sand or clay in an area no bigger than 20 feet on any side in any manner. You can choose to raise or lower the area’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such change can’t exceed half the area’s largest dimension. So if you affect a 20-foot square, you can create a pillar up to 10 feet high, raise or lower the square’s elevation by up to 10 feet, dig a trench up to 10 feet deep, and so on. It takes 10 minutes for these changes to complete.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="slot">misc</set>
+			<set name="range">10</set>
+			<set name="damage" type="bludgeoning">2d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., G-23 AT Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_G23ATRIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (3), Reload (2), Range 300/600.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d8 Piercing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Armour-Piercing. </i></b>This hardpoint ignores armour plating and resistances to nonmagical piercing damage.</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">900</set>
+			<set name="slot">misc</set>
+			<set name="range">300/600</set>
+			<set name="damage" type="piercing">3d8</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Heavy MG" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_HEAVYMG">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_COAXIAL, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_3</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Co-Axial, Ammo Box (3), Reload (6), RoF (3), Range 100/400.</p> 
+			<p class="indent"><b><i>Damage. </i></b>1d10 Piercing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Co-Axial. </i></b>Ballistic or energy hardpoints with this rule can be mounted alongside another ranged hardpoint at the cost of one module slot, instead of their normal cost, and their damage dice is reduced by one step. Whenever the main hardpoint is used, you can fire the co-axial hardpoint at the same target as a bonus action on your turn. A hardpoint module can only have one co-axial hardpoint attached at a time.</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, ballistic, machinegun</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">misc</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Jackhammer" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_JACKHAMMER">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<description>
+			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Demolisher, Melee.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d10 Bludgeoning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">misc</set>
+			<set name="damage" type="bludgeoning">3d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Laser Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_LASERCANNON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Energy)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Laser, Range 500.</p> 
+			<p class="indent"><b><i>Damage. </i></b>2d6 Fire.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Laser. </i></b>Lasers deal more damage the more the same target is hit with a laser weapon. If the weapon hits the same target on the following turn, its damage die increases by one step (d3 -> d4 -> d6 -> d8 -> d10 -> d12 -> 2d6 -> 2d8 -> 2d10 -> 2d12). This effect can stack up to 6 times, but the stacked effects are lost if the weapon misses its target, or doesn’t continue to attack the same target on subsequent rounds. </p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">misc</set>
+			<set name="range">500</set>
+			<set name="damage" type="fire">2d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Light Artillery Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_LIGHTARTILLERYGUN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARTILLERY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Artillery, Ammo Box (2), Reload (3), Range 40ft - 1 Mile.</p> 
+			<p class="indent"><b><i>Damage. </i></b>6d6 Bludgeoning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Artillery. </i></b>To fire artillery, you must spend your action and choose a target point within one of the three range bands to find out the explosion radius. Each creature in the selected radius must succeed on a Dexterity saving throw, taking the artillery module's noted damage on a failed save, or half as much on a success. An artillery hardpoint module can never be activated more than once per turn, regardless of upgrades, and cannot shoot a target that is within 40 feet of it.</p>
+			<p class="indent"><i>Range Band 1. </i>40ft - 240ft, Explosion Radius 15ft.</p>
+			<p class="indent"><i>Range Band 2. </i>241ft - 500ft, Explosion Radius 30ft.</p>
+			<p class="indent"><i>Range Band 3. </i>501ft - 1 Mile, Explosion Radius 60ft.</p>
+			
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="slot">misc</set>
+			<set name="range">up to 1 mile</set>
+			<set name="damage" type="bludgeoning">6d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Light Autocannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_LIGHTAUTOCANNON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_5, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_ROF_2</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Ammo Box (5), Reload (6), RoF (2), Range 160/400.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d6 Piercing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">misc</set>
+			<set name="range">160/400</set>
+			<set name="damage" type="piercing">3d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Light Sniper Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_LIGHTSNIPERCANNON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Ammo Box (3), Reload (2), Range 600/1200.</p> 
+			<p class="indent"><b><i>Damage. </i></b>2d12 Piercing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">650</set>
+			<set name="slot">misc</set>
+			<set name="range">600/1200</set>
+			<set name="damage" type="piercing">2d12</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Military Manipulator" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_MILITARYMANIPULATOR">
+		<supports>ID_TGMHB_WEAPON_PROPERTY_MANIPULATOR, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Arm)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Manipulator, Range 5/10/15.</p> 
+			<p class="indent"><b><i>Damage. </i></b>1d10 Bludgeoning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, manipulator</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="slot">misc</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_MANIPULATOR_MILITARY_LIGHT_ATTACK" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_MANIPULATOR_MILITARY_MEDIUM_ATTACK" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_MANIPULATOR_MILITARY_HEAVY_ATTACK" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
+		</rules>
+	</element>
+	<element name="H.P.M., Mining Drill" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_MININGDRILL">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<description>
+			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Demolisher, Melee.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d10 Piercing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">misc</set>
+			<set name="damage" type="piercing">3d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., MT-02 Missile Launcher" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_MT02MISSILELAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Missile, Ammo Box (2), Reload (3), Range 80/250.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d10 Fire.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Missile. </i></b>Missiles have two different fire modes. In <i>Targeted</i> mode, you must spend a bonus action to lock onto a target that you can see within the hardpoint’s range. The target remains locked for one minute, or until it is successfully hit by the hardpoint or leaves the hardpoint’s range. A pilot does not require line of sight when firing a missile hardpoint at a locked target. Once locked, you can fire the hardpoint at the target as an action on your turn, dealing the hardpoint’s noted damage on a hit. In <i>Saturation</i> mode, you can instead spend your action to fill an area with the entire armed and ready ammunition at your disposal. To do so, choose a point within range and consult the missile table to work out the radius and damage dealt. Each creature in that radius must succeed on a Dexterity saving throw, taking the table’s noted damage on a failed save, or half as much on a success.</p>
+			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, military, hardpoint, ballistic</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="slot">misc</set>
+			<set name="range">80/250</set>
+			<set name="damage" type="fire">3d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Napalm Battery" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_NAPALMBATTERY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_SPREAD_2, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Energy)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Spread (2), Flesh-Bane, Reload (1), Range 60.</p> 
+			<p class="indent"><b><i>Damage. </i></b>10d6 Fire.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Spread (x). </i></b>This hardpoint deals damage in a cone over a wide area. Creatures caught in the cone must succeed on a Dexterity saving throw, taking the hardpoint’s noted damage on a failure, or half as much on a success. Each spread range falls into a particular value, shown in the brackets (x): (1) 15-foot Cone, (2) 30-foot Cone, (3) 60-foot Cone.</p>
+			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="slot">misc</set>
+			<set name="range">60</set>
+			<set name="damage" type="fire">10d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Pile Driver" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_PILEDRIVER">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<description>
+			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Demolisher, Melee.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d6 Piercing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Armour-Piercing. </i></b>This hardpoint ignores armour plating and resistances to nonmagical piercing damage.</p>
+			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">misc</set>
+			<set name="damage" type="piercing">3d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Plasma Autocannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_PLASMAAUTOCANNON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ROF_2</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Energy)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Plasma, RoF (2), Range 60/240.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d8 Fire.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="slot">misc</set>
+			<set name="range">60/240</set>
+			<set name="damage" type="fire">3d8</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Reflector Shield" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_REFLECTORSHIELD">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_TITAN_SHIELDS</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Tool)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Titan Shield, Melee.</p> 
+			<p class="indent"><b><i>Damage. </i></b>1d10 Radiant.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Titan Shield. </i></b>A shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes 1d10 radiant damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p class="indent"><b><i>Reflector Features. </i></b>When you would be hit by a ranged attack, you can spend your reaction to deflect that attack towards a target you can see within 10-feet of you. That target must succeed on a Dexterity saving throw or be hit by the deflected attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, tool</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+2</set>
+			<set name="damage" type="radiant">1d10</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_RACIAL_REFLECTORSHIELD_ATTACK" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Storm Hammer" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_STORMHAMMER">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_POWERFUL_BLOW</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Melee)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Powerful Blow, Reach 10ft.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d6 Bludgeoning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Powerful Blow. </i></b>A hardpoint with this rule ignores resistance to bludgeoning damage. In addition, if the attack roll exceeds the target’s AC by 5 or more, it must succeed on a Strength saving throw or be pushed back 5 feet per damage die and knocked prone.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">misc</set>
+			<set name="range">10</set>
+			<set name="damage" type="bludgeoning">3d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Tesla Arc Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_TESLAARCRIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1D3</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Energy)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Arc Lightning (1d3), Range 150.</p> 
+			<p class="indent"><b><i>Damage. </i></b>10d6 Lightning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Arc Lightning (x). </i></b>Whenever a hardpoint with this rule hits a target, the lightning arcs towards a number of objects or creatures shown in the brackets that are within 5 feet of the original target. The lightning jumps to the object or creature closest to the original target (aside from you). The targets must succeed on a Dexterity saving throw, taking the half the attack’s initial lightning damage on a failed save, or no damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1850</set>
+			<set name="slot">misc</set>
+			<set name="range">150</set>
+			<set name="damage" type="lightning">10d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Titan Cleaver" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_TITANCLEAVER">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Melee)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Reach 15ft.</p> 
+			<p class="indent"><b><i>Damage. </i></b>3d6 Slashing.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="slot">misc</set>
+			<set name="range">15</set>
+			<set name="damage" type="slashing">3d6</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="H.P.M., Titan Flail" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_TITANFLAIL">
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<description>
+			<p><i>Medium Military Hardpoint (Melee)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Demolisher, Reach 20ft.</p> 
+			<p class="indent"><b><i>Damage. </i></b>2d8 Bludgeoning.</p> 
+			
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="slot">misc</set>
+			<set name="range">20</set>
+			<set name="damage" type="bludgeoning">2d8</set>
 			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
 		</setters>
 		<rules>
@@ -1930,6 +2456,99 @@
 			<stat name="atum-character:manipulator-civilian-str-save" value="strength:modifier" bonus="base" />
 			<stat name="atum-character:manipulator-civilian-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
+	</element>
+	
+	<element name="Manipulator (Light Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_MANIPULATOR_MILITARY_LIGHT_ATTACK">
+		<description>
+			<p>A module with this special rule is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you, with a few exceptions:</p>
+			<ul>
+				<li>When attacking with or using a manipulator, your Strength Score is 22 (+6).</li>
+				<li>If you are using a pair of manipulators to make unarmed strikes, you can make one additional unarmed strike as a bonus action.</li>
+				<li>When making Strength saving throws, you use the ATUM’s chassis or manipulator Strength modifier, whichever is better. </li>
+				<li>Manipulators can only wield weapons designed for creatures of their size category, or one size larger.</li>
+				<li>Manipulators on a light chassis have a reach of 5 feet.</li>
+			</ul>
+		</description>
+		<sheet alt="Manipulator (Military)">
+			<description>Unarmed Strike: +{{atum-character:manipulator-military-attack}} to hit, reach 5 ft., Hit: 1d10+{{atum-character:manipulator-military-str-mod}} bludgeoning damage. The ATUM’s Strength save modifier is +{{atum-character:manipulator-military-str-save}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_MANIPULATOR" />
+			
+			<stat name="atum-character:manipulator-military-str-mod" value="6" bonus="base" />
+			
+			<stat name="atum-character:manipulator-military-attack" value="atum-character:manipulator-military-str-mod" bonus="base" />
+			<stat name="atum-character:manipulator-military-attack" value="proficiency" />
+			
+			<stat name="atum-character:manipulator-military-str-save" value="atum-character:manipulator-military-str-mod" bonus="base" />
+			<stat name="atum-character:manipulator-military-str-save" value="strength:modifier" bonus="base" />
+			<stat name="atum-character:manipulator-military-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+		</rules>
+	</element>
+	<element name="Manipulator (Medium Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_MANIPULATOR_MILITARY_MEDIUM_ATTACK">
+		<description>
+			<p>A module with this special rule is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you, with a few exceptions:</p>
+			<ul>
+				<li>When attacking with or using a manipulator, your Strength Score is 22 (+6).</li>
+				<li>If you are using a pair of manipulators to make unarmed strikes, you can make one additional unarmed strike as a bonus action.</li>
+				<li>When making Strength saving throws, you use the ATUM’s chassis or manipulator Strength modifier, whichever is better. </li>
+				<li>Manipulators can only wield weapons designed for creatures of their size category, or one size larger.</li>
+				<li>Manipulators on a medium chassis have a reach of 10 feet.</li>
+			</ul>
+		</description>
+		<sheet alt="Manipulator (Military)">
+			<description>Unarmed Strike: +{{atum-character:manipulator-military-attack}} to hit, reach 10 ft., Hit: 1d10+{{atum-character:manipulator-military-str-mod}} bludgeoning damage. The ATUM’s Strength save modifier is +{{atum-character:manipulator-military-str-save}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_MANIPULATOR" />
+			
+			<stat name="atum-character:manipulator-military-str-mod" value="6" bonus="base" />
+			
+			<stat name="atum-character:manipulator-military-attack" value="atum-character:manipulator-military-str-mod" bonus="base" />
+			<stat name="atum-character:manipulator-military-attack" value="proficiency" />
+			
+			<stat name="atum-character:manipulator-military-str-save" value="atum-character:manipulator-military-str-mod" bonus="base" />
+			<stat name="atum-character:manipulator-military-str-save" value="strength:modifier" bonus="base" />
+			<stat name="atum-character:manipulator-military-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+		</rules>
+	</element>
+	<element name="Manipulator (Heavy Military)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_MANIPULATOR_MILITARY_HEAVY_ATTACK">
+		<description>
+			<p>A module with this special rule is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you, with a few exceptions:</p>
+			<ul>
+				<li>When attacking with or using a manipulator, your Strength Score is 22 (+6).</li>
+				<li>If you are using a pair of manipulators to make unarmed strikes, you can make one additional unarmed strike as a bonus action.</li>
+				<li>When making Strength saving throws, you use the ATUM’s chassis or manipulator Strength modifier, whichever is better. </li>
+				<li>Manipulators can only wield weapons designed for creatures of their size category, or one size larger.</li>
+				<li>Manipulators on a heavy chassis have a reach of 15 feet.</li>
+			</ul>
+		</description>
+		<sheet alt="Manipulator (Military)">
+			<description>Unarmed Strike: +{{atum-character:manipulator-military-attack}} to hit, reach 15 ft., Hit: 1d10+{{atum-character:manipulator-military-str-mod}} bludgeoning damage. The ATUM’s Strength save modifier is +{{atum-character:manipulator-military-str-save}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_ATUM_TGMHB_GRANTS_HAS_MANIPULATOR" />
+			
+			<stat name="atum-character:manipulator-military-str-mod" value="6" bonus="base" />
+			
+			<stat name="atum-character:manipulator-military-attack" value="atum-character:manipulator-military-str-mod" bonus="base" />
+			<stat name="atum-character:manipulator-military-attack" value="proficiency" />
+			
+			<stat name="atum-character:manipulator-military-str-save" value="atum-character:manipulator-military-str-mod" bonus="base" />
+			<stat name="atum-character:manipulator-military-str-save" value="strength:modifier" bonus="base" />
+			<stat name="atum-character:manipulator-military-str-save" value="proficiency" requirements="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+		</rules>
+	</element>
+	
+	<element name="Reflector Shield" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_REFLECTORSHIELD_ATTACK">
+		<description>
+			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield grants an ATUM special features, shown below. In addition to these features, a shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes 1d10 radiant damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p class="indent"><b><i>Reflector Features. </i></b>When you would be hit by a ranged attack, you can spend your reaction to deflect that attack towards a target you can see within 10-feet of you. That target must succeed on a Dexterity saving throw or be hit by the deflected attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you would be hit by a ranged attack, you can spend your reaction to deflect that attack towards a target you can see within 10ft of you. That target must succeed on a DC {{atum-character:dc}} Dexterity saving throw or be hit by the deflected attack.</description>
+		</sheet>
 	</element>
 	
 	
