@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/vehicle-atum.xml" />
 		</update>
 	</info>
@@ -2362,6 +2362,8 @@
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
+	<!-- Heavy Hardpoints -->
+	
 	
 	
 	
