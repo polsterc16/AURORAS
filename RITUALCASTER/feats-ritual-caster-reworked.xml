@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="feats-ritual-caster-reworked.xml" url="" />
+		<update version="0.0.2">
+			<file name="feats-ritual-caster-reworked.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/RITUALCASTER/feats-ritual-caster-reworked.xml" />
 		</update>
 	</info>
 
