@@ -1550,6 +1550,13 @@
 			<div element="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING" />
 		</description>
 	</element>
+	<element name="Arc Lightning (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_2">
+		<compendium display="false" />
+		<description>
+			<p>This weapon causes lightning arcs towards 2 objects/creatures.</p>
+			<div element="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING" />
+		</description>
+	</element>
 	
 	<element name="Reload (1)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_RELOAD_1">
 		<compendium display="false" />
