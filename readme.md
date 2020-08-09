@@ -12,6 +12,7 @@ The Greasemonkey's Handbook](https://www.dmsguild.com/product/259520/)
     - Feats
     - Backgrounds
 	- Weapons (Firearms)
+	- Hardpoints
   - [dms-guild-michael-richter.index](https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index) for [Michael Richters content](https://www.dmsguild.com/browse.php?author=Michael%20Richter) from the DMs Guild
     - [Race: Catfolk](https://www.dmsguild.com/product/182902/Race-Catfolk-5e)
     - [Race: Drider](https://www.dmsguild.com/product/199828/Race-Drider-5e)
