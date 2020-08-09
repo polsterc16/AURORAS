@@ -11,7 +11,7 @@
 	<element name="Pistol, Compact" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_COMPACT_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_CONCEALED, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_COMPACT_PISTOL</supports>
 		<description>
-			<p><i>Firearm (Pistol Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Light, Reload (1), Concealed, Ammunition (range 30/80).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d4 (Ammunition).</p> 
@@ -34,7 +34,7 @@
 	<element name="Revolver" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_REVOLVER</supports>
 		<description>
-			<p><i>Firearm (Revolver Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Light, Reload (6), Ammunition (range 80/300).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
@@ -56,7 +56,7 @@
 	<element name="Pistol, Semi-Auto" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_SEMI_AUTO_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_TGMHB_WEAPON_PROPERTY_RELOAD_4, ID_TGMHB_WEAPON_PROPERTY_ROF_2, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_GROUP_FIREARM_SEMI_AUTO_PISTOL</supports>
 		<description>
-			<p><i>Firearm (Pistol Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Light, Reload (4), RoF (2), Ammunition (range 80/200), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d4 (Ammunition).</p> 
@@ -80,7 +80,7 @@
 	<element name="Plasma Pistol" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_PLASMA_PISTOL">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_GROUP_FIREARM_PLASMA_PISTOL</supports>
 		<description>
-			<p><i>Firearm (Plasma)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Light, Plasma, (range 30/60).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d6 fire.</p> 
@@ -101,7 +101,7 @@
 	<element name="Revolver, Heavy" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_HEAVY_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_6, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_HEAVY_REVOLVER</supports>
 		<description>
-			<p><i>Firearm (Revolver Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Reload (6), Ammunition (range 100/300).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d8 (Ammunition).</p> 
@@ -122,7 +122,7 @@
 	<element name="Rifle, Bolt" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_BOLT_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_4, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_BOLT_RIFLE</supports>
 		<description>
-			<p><i>Firearm (Rifle Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (4), Ammunition (range 200/800).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d10 (Ammunition).</p> 
@@ -144,7 +144,7 @@
 	<element name="Rifle, Assault" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_ASSAULT_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_4, ID_TGMHB_WEAPON_PROPERTY_ROF_2, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_ASSAULT_RIFLE</supports>
 		<description>
-			<p><i>Firearm (Rifle Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (6), RoF (2), Ammunition (range 200/600).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d4 (Ammunition).</p> 
@@ -167,7 +167,7 @@
 	<element name="Shotgun" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_SHOTGUN">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_SPREAD_1, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_GROUP_FIREARM_SHOTGUN</supports>
 		<description>
-			<p><i>Firearm (Shotgun Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (2), Ammunition, Spread (1) (DC 13), Flesh-Bane (DC 13).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d12 (Ammunition).</p> 
@@ -189,9 +189,9 @@
 		</setters>
 	</element>
 	<element name="Sniper Rifle" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_SNIPER_RIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE</supports>
 		<description>
-			<p><i>Firearm (Sniper Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Heavy, Two-Handed, Reload (2), Armour-Piercing, Ammunition (500/1200).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d6 (Ammunition).</p> 
@@ -215,7 +215,7 @@
 	<element name="Sniper Rifle, Heavy" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_HEAVY_SNIPER_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_GROUP_FIREARM_HEAVY_SNIPER_RIFLE</supports>
 		<description>
-			<p><i>Firearm (Heavy Sniper Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Heavy, Two-Handed, Reload (2), Armour-Piercing, Ammunition (700/1000), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d8 (Ammunition).</p> 
@@ -240,7 +240,7 @@
 	<element name="Machine-Gun, Light" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_LMG">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_8, ID_TGMHB_WEAPON_PROPERTY_ROF_2, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</supports>
 		<description>
-			<p><i>Firearm (Machine-Gun Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Reload (8), RoF (2), Ammunition (range 450/800).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
@@ -263,7 +263,7 @@
 	<element name="Machine-Gun, Heavy" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_HMG">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_10, ID_TGMHB_WEAPON_PROPERTY_ROF_3, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_GROUP_FIREARM_HMG</supports>
 		<description>
-			<p><i>Firearm (Machine-Gun Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Heavy, Reload (10), RoF (3), Ammunition (range 350/800), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d8 (Ammunition).</p> 
@@ -288,7 +288,7 @@
 	<element name="Heavy Flamer" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_HEAVY_FLAMER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3, ID_TGMHB_WEAPON_PROPERTY_SPREAD_1, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_GROUP_FIREARM_FLAMETHROWER</supports>
 		<description>
-			<p><i>Firearm (Fire)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Heavy, Reload (3), Spread (1) (DC 15), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d6 fire.</p> 
@@ -313,7 +313,7 @@
 	<element name="Laser Rifle" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_LASER_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_GROUP_FIREARM_LASER_RIFLE</supports>
 		<description>
-			<p><i>Firearm (Laser)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Laser, (range 120).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d4 fire.</p> 
@@ -334,7 +334,7 @@
 	<element name="Plasma Rifle" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_PLASMA_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_GROUP_FIREARM_PLASMA_RIFLE</supports>
 		<description>
-			<p><i>Firearm (Plasma)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Heavy, Plasma, (range 60/120), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d8 fire.</p> 
@@ -383,7 +383,7 @@
 	<element name="Anti-Tank Rifle" type="Weapon" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_FIREARM_ANTI_TANK_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_TGMHB_WEAPON_PROPERTY_SPECIALIST, ID_TGMHB_WEAPON_GROUP_FIREARM_ANTI_TANK_RIFLE</supports>
 		<description>
-			<p><i>Firearm (Anti-Tank Ammunition)</i></p>
+			<p><i>Firearm</i></p>
 			
 			<p class="indent"><b><i>Properties. </i></b>Two-Handed, Heavy, Reload (2), Armour-Piercing, Demolisher, Ammunition (range 300/1200), Specialist.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d8 (Ammunition).</p> 
@@ -1407,7 +1407,7 @@
 	</element>
 	<element name="Rate of Fire (X)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF">
 		<description>
-			<p>All hardpoints (apart from manipulators, their ranged weapons and adventuring equipment) require your action to activate. Some hardpoints and weapons, however, make more than one attack (called a shot, or strike) when activated. The number of shots or strikes a hardpoint or ranged weapon makes each time it is activated is shown under the rate of fire column, or in brackets, abbreviated as ROF (x).</p>
+			<p>All hardpoints (apart from manipulators, their ranged weapons and adventuring equipment) require your action to activate. Some hardpoints and weapons, however, make more than one attack (called a shot, or strike) when activated. The number of shots or strikes a hardpoint or ranged weapon makes each time it is activated is shown under the rate of fire column, or in brackets, abbreviated as RoF (x).</p>
 			<p>For example, a melee hardpoint with RoF (2) would make 2 strikes when activated, making separate attack rolls for both. An ordinary ranged weapon, such as an assault rifle with RoF (2), would instead make 2 separate shots each time a character took the attack action with it. So a fighter with 2 attacks would make 4 shots.</p>
 		</description>
 	</element>
@@ -1543,6 +1543,13 @@
 			<div element="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING" />
 		</description>
 	</element>
+	<element name="Arc Lightning (1d6+1)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1D6_1">
+		<compendium display="false" />
+		<description>
+			<p>This weapon causes lightning arcs towards 1d6+1 objects/creatures.</p>
+			<div element="ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING" />
+		</description>
+	</element>
 	
 	<element name="Reload (1)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_RELOAD_1">
 		<compendium display="false" />
@@ -1593,7 +1600,9 @@
 			<div element="ID_TGMHB_WEAPON_PROPERTY_RELOAD" />
 		</description>
 	</element>
+	
 
+	
 	<element name="RoF (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_2">
 		<compendium display="false" />
 		<description>
@@ -1608,6 +1617,14 @@
 			<div element="ID_TGMHB_WEAPON_PROPERTY_ROF" />
 		</description>
 	</element>
+	<element name="RoF (2d6)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_2D6">
+		<compendium display="false" />
+		<description>
+			<p>This weapon makes 2d6 shots/strikes per attack.</p>
+			<div element="ID_TGMHB_WEAPON_PROPERTY_ROF" />
+		</description>
+	</element>
+	
 	
 	<element name="Spread (1)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_SPREAD_1">
 		<compendium display="false" />
