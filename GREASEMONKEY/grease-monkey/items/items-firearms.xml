@@ -1609,6 +1609,14 @@
 	</element>
 	
 
+
+	<element name="RoF (1)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_1">
+		<compendium display="false" />
+		<description>
+			<p>This weapon makes 1 shot/strike per attack.</p>
+			<div element="ID_TGMHB_WEAPON_PROPERTY_ROF" />
+		</description>
+	</element>
 	
 	<element name="RoF (2)" type="Weapon Property" source="The Greasemonkey's Handbook" id="ID_TGMHB_WEAPON_PROPERTY_ROF_2">
 		<compendium display="false" />
