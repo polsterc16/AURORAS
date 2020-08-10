@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.4">
 			<file name="items-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/items-atum.xml" />
 		</update>
 	</info>
@@ -68,7 +68,7 @@
 		<description>
 			<p><i>Light Civilian Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Ram, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Ram.</p> 
 			<p class="indent"><b><i>Damage. </i></b>Special.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
@@ -139,16 +139,17 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Heat Ray" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_HEATRAY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Laser, Plasma, Range 500.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Laser, Plasma, RoF (1), Range 500.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d8 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Laser. </i></b>Lasers deal more damage the more the same target is hit with a laser weapon. If the weapon hits the same target on the following turn, its damage die increases by one step (d3 -> d4 -> d6 -> d8 -> d10 -> d12 -> 2d6 -> 2d8 -> 2d10 -> 2d12). This effect can stack up to 6 times, but the stacked effects are lost if the weapon misses its target, or doesn’t continue to attack the same target on subsequent rounds. </p>
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, light, military, hardpoint, energy</set>
@@ -189,16 +190,17 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Light Carronade" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_LIGHTCARRONADE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Ammo Box (2), Reload (1), Range 60/120.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Ammo Box (2), Reload (1), RoF (1), Range 60/120.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, light, military, hardpoint, ballistic</set>
@@ -297,15 +299,16 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Plasma Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_PLASMAGUN">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Light Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b> Plasma, Range 80/320.</p> 
+			<p class="indent"><b><i>Properties. </i></b> Plasma, RoF (1), Range 80/320.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d6 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, light, military, hardpoint, energy</set>
@@ -321,16 +324,17 @@
 		</rules>
 	</element>
 	<element name="H.P.L., Plasma-Torch" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_LIGHT_PLASMATORCH">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Light Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Plasma, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Plasma, RoF (1).</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d8 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, light, industrial, hardpoint, tool</set>
@@ -374,16 +378,17 @@
 		</rules>
 	</element>
 	<element name="H.P.M., BeanBag Toaster" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_BEANBAGTOASTER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_EXPERIMENTAL, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_EXPERIMENTAL, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Experimental)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Experimental, Ammo Box (1), Range 100/250.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Experimental, Ammo Box (1), RoF (1), Range 100/250.</p> 
 			<p class="indent"><b><i>Damage. </i></b>Special.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Experimental. </i></b>Before using any experimental hardpoint, the user must first roll (d8) on the experimental hardpoint table: (1-5) normal activation, (6-7) activaton failure and your action is wasted, (8) the ATUM takes 5d8 force damage and reroll (ignoring 8s)</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>BeanBag Toaster. </i></b>The Beanbag toaster is an experimental hardpoint of gnomish design; accidentally created after trying to develop a more efficient toast-delivery system. A battery of toasters welded together forms the hardpoints base, while a funnel brimming with gunpowder-filled beanbags acts as the hardpoints auto-loader.</p>
 			<p>When fired, the beanbags are briefly cooked inside the toasting mechanism, catching fire before catapulting out towards a target and exploding violently on impact. As an action, you can choose to fire the beanbag toaster at one target you can see within range. For the next minute, the beanbag toaster will continue to fire flaming beanbags, choosing a different target within 20ft of the previous target it fired at during the beginning of each of your turns (no additional actions required by you). If there are no other targets within range or line of sight, the hardpoint will continue to fire at the same target it fired at previously if possible. It otherwise fires wildly into the air.</p>
 			<p>Make a single ranged attack roll against your chosen target each time this hardpoint fires. On a hit, the target is hit by 3d6 flaming beanbags. Each beanbag deals 1d4 bludgeoning damage and 1d4 fire damage.</p>
@@ -402,16 +407,17 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Carronade" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_CARRONADE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Ammo Box (2), Reload (1), Range 100/180.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Ammo Box (2), Reload (1), RoF (1), Range 100/180.</p> 
 			<p class="indent"><b><i>Damage. </i></b>5d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
@@ -427,15 +433,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Circular Saw" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_CIRCULARSAW">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, RoF (1).</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d8 Slashing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
@@ -450,16 +457,17 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Energy Blade" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_ENERGYBLADE">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Melee)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Flesh-Bane, Reach +10ft.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Cutter, Flesh-Bane, RoF (1), Reach +10ft.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d8 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, melee</set>
@@ -475,15 +483,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Excavator" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_EXCAVATOR">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_EXCAVATION</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_EXCAVATION, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Excavation, Reach +10ft.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Excavation, RoF (1), Reach +10ft.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Excavation. </i></b>A hardpoint with this rule can reshape dirt, sand or clay in an area no bigger than 20 feet on any side in any manner. You can choose to raise or lower the area’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such change can’t exceed half the area’s largest dimension. So if you affect a 20-foot square, you can create a pillar up to 10 feet high, raise or lower the square’s elevation by up to 10 feet, dig a trench up to 10 feet deep, and so on. It takes 10 minutes for these changes to complete.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
@@ -499,17 +508,18 @@
 		</rules>
 	</element>
 	<element name="H.P.M., G-23 AT Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_G23ATRIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (3), Reload (2), Range 300/600.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (3), Reload (2), RoF (1), Range 300/600.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d8 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This hardpoint ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
@@ -552,15 +562,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Jackhammer" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_JACKHAMMER">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Demolisher, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Demolisher, RoF (1).</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
@@ -575,15 +586,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Laser Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_LASERCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_LASERS, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Laser, Range 500.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Laser, RoF (1), Range 500.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d6 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Laser. </i></b>Lasers deal more damage the more the same target is hit with a laser weapon. If the weapon hits the same target on the following turn, its damage die increases by one step (d3 -> d4 -> d6 -> d8 -> d10 -> d12 -> 2d6 -> 2d8 -> 2d10 -> 2d12). This effect can stack up to 6 times, but the stacked effects are lost if the weapon misses its target, or doesn’t continue to attack the same target on subsequent rounds. </p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, energy</set>
@@ -599,11 +611,11 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Light Artillery Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_LIGHTARTILLERYGUN">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARTILLERY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARTILLERY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Artillery, Ammo Box (2), Reload (3), Range 40ft - 1 Mile.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Artillery, Ammo Box (2), Reload (3), RoF (1), Range 40ft - 1 Mile.</p> 
 			<p class="indent"><b><i>Damage. </i></b>6d6 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
@@ -614,6 +626,7 @@
 			
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
@@ -655,16 +668,17 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Light Sniper Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_LIGHTSNIPERCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Ammo Box (3), Reload (2), Range 600/1200.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Ammo Box (3), Reload (2), RoF (1), Range 600/1200.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d12 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
@@ -705,15 +719,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Mining Drill" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_MININGDRILL">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Demolisher, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Demolisher, RoF (1).</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d10 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
@@ -728,11 +743,11 @@
 		</rules>
 	</element>
 	<element name="H.P.M., MT-02 Missile Launcher" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_MT02MISSILELAUNCHER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Missile, Ammo Box (2), Reload (3), Range 80/250.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Missile, Ammo Box (2), Reload (3), RoF (1), Range 80/250.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d10 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
@@ -740,6 +755,7 @@
 			<p class="indent"><b><i>Missile. </i></b>Missiles have two different fire modes. In <i>Targeted</i> mode, you must spend a bonus action to lock onto a target that you can see within the hardpoint’s range. The target remains locked for one minute, or until it is successfully hit by the hardpoint or leaves the hardpoint’s range. A pilot does not require line of sight when firing a missile hardpoint at a locked target. Once locked, you can fire the hardpoint at the target as an action on your turn, dealing the hardpoint’s noted damage on a hit. In <i>Saturation</i> mode, you can instead spend your action to fill an area with the entire armed and ready ammunition at your disposal. To do so, choose a point within range and consult the missile table to work out the radius and damage dealt. Each creature in that radius must succeed on a Dexterity saving throw, taking the table’s noted damage on a failed save, or half as much on a success.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
@@ -755,17 +771,18 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Napalm Battery" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_NAPALMBATTERY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_SPREAD_2, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_SPREAD_2, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Spread (2), Flesh-Bane, Reload (1), Range 60.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Spread (2), Flesh-Bane, Reload (1), RoF (1), Range 60.</p> 
 			<p class="indent"><b><i>Damage. </i></b>10d6 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Spread (x). </i></b>This hardpoint deals damage in a cone over a wide area. Creatures caught in the cone must succeed on a Dexterity saving throw, taking the hardpoint’s noted damage on a failure, or half as much on a success. Each spread range falls into a particular value, shown in the brackets (x): (1) 15-foot Cone, (2) 30-foot Cone, (3) 60-foot Cone.</p>
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, energy</set>
@@ -781,16 +798,17 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Pile Driver" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_PILEDRIVER">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Demolisher, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Demolisher, RoF (1).</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d6 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This hardpoint ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
@@ -860,15 +878,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Storm Hammer" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_STORMHAMMER">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_POWERFUL_BLOW</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_POWERFUL_BLOW, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Melee)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Powerful Blow, Reach +10ft.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Powerful Blow, RoF (1), Reach +10ft.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d6 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Powerful Blow. </i></b>A hardpoint with this rule ignores resistance to bludgeoning damage. In addition, if the attack roll exceeds the target’s AC by 5 or more, it must succeed on a Strength saving throw or be pushed back 5 feet per damage die and knocked prone.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, melee</set>
@@ -884,15 +903,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Tesla Arc Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_TESLAARCRIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1D3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1D3, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Arc Lightning (1d3), Range 150.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Arc Lightning (1d3), RoF (1), Range 150.</p> 
 			<p class="indent"><b><i>Damage. </i></b>10d6 Lightning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Arc Lightning (x). </i></b>Whenever a hardpoint with this rule hits a target, the lightning arcs towards a number of objects or creatures shown in the brackets that are within 5 feet of the original target. The lightning jumps to the object or creature closest to the original target (aside from you). The targets must succeed on a Dexterity saving throw, taking the half the attack’s initial lightning damage on a failed save, or no damage on a successful one.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, energy</set>
@@ -908,14 +928,15 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Titan Cleaver" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_TITANCLEAVER">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Melee)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Reach +15ft.</p> 
+			<p class="indent"><b><i>Properties. </i></b>RoF (1), Reach +15ft.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d6 Slashing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, melee</set>
@@ -931,15 +952,16 @@
 		</rules>
 	</element>
 	<element name="H.P.M., Titan Flail" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_MEDIUM_TITANFLAIL">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Medium Military Hardpoint (Melee)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Demolisher, Reach +20ft.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Demolisher, RoF (1), Reach +20ft.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d8 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, melee</set>
@@ -990,16 +1012,17 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Crane (Winch or Hook)" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_CRANEWINCH">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN, ID_TGMHB_WEAPON_PROPERTY_CRANE</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN, ID_TGMHB_WEAPON_PROPERTY_CRANE, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Crane, Reach +15ft.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Crane, RoF (1), Reach +15ft.</p> 
 			<p class="indent"><b><i>Damage. </i></b>Special.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Crane. </i></b>Cranes are extending hardpoints attached to either a hook, lifting winch, or wrecking ball. As a bonus action, the crane’s reach can be extended by 15 feet, to a maximum of 60 feet. When extended further than 30 feet in this way, the ATUM’s movement speed is reduced to 0.</p>
 			<p class="indent"><b><i>Winch or Hook. </i></b>If using the winch or hook, the crane can be used to either move an object not being carried by another creature within its reach as an action, or can be swung at a target, dealing 1d10 bludgeoning damage on a hit. A Hook or Winch can lift an object weighing up to 2 tons if attached to a light ATUM. This limit increases to 4 tons if the hardpoint is attached to a medium ATUM, or 6 tons if attached to a heavy ATUM.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, industrial, hardpoint, tool</set>
@@ -1017,17 +1040,18 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Crane (Wrecking Ball)" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_CRANEWRECKINGBALL">
-		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_CRANE, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER</supports>
+		<supports>ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM, ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL, ID_TGMHB_WEAPON_PROPERTY_CRANE, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Industrial Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Crane, Demolisher, Reach +15ft.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Crane, Demolisher, RoF (1), Reach +15ft.</p> 
 			<p class="indent"><b><i>Damage. </i></b>Special.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
 			<p class="indent"><b><i>Crane. </i></b>Cranes are extending hardpoints attached to either a hook, lifting winch, or wrecking ball. As a bonus action, the crane’s reach can be extended by 15 feet, to a maximum of 60 feet. When extended further than 30 feet in this way, the ATUM’s movement speed is reduced to 0.</p>
 			<p class="indent"><b><i>Wrecking Ball. </i></b>If using the wrecking ball, as an action you can swing it in a 10-foot wide, 15-foot long arc. Creatures in the arc must succeed on a Dexterity saving throw, taking 4d10 bludgeoning damage and being knocked prone on a failed save, or half as much damage and not being knocked prone on a successful one. This damage increases by 1d10 when used by a medium ATUM, and 2d10 when used by a heavy ATUM.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, industrial, hardpoint, tool</set>
@@ -1045,17 +1069,18 @@
 		</rules>
 	</element>
 	<element name="H.P.H., G-42 AT Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_G42ATRIFLE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_2, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (2), Reload (2), Range 400/600.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (2), Reload (2), RoF (1), Range 400/600.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d12 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This hardpoint ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
@@ -1071,17 +1096,18 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Gauss Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_GAUSSCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_PIERCING, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (3), Reload (2), Range 800.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Armour-Piercing, Ammo Box (3), Reload (2), RoF (1), Range 800.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d12 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Armour-Piercing. </i></b>This hardpoint ignores armour plating and resistances to nonmagical piercing damage.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
@@ -1097,14 +1123,15 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Grav-Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_GRAVCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_EXPERIMENTAL</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_EXPERIMENTAL, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Experimental)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Experimental, Range 90ft cone.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Experimental, RoF (1), Range 90ft cone.</p> 
 			<p class="indent"><b><i>Damage. </i></b>Special.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>8.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Experimental. </i></b>Before using any experimental hardpoint, the user must first roll (d8) on the experimental hardpoint table: (1-5) normal activation, (6-7) activaton failure and your action is wasted, (8) the ATUM takes 5d8 force damage and reroll (ignoring 8s)</p>
 			<p class="indent"><b><i>Grav-Cannon. </i></b>The gravity cannon is an experimental hardpoint, powered by small arcane runestones and developed by dwarven engineers as a method of industrial mining. Each runestone contains a sealed anti gravity spell. You can use an action to fire the cannon. When fired, the runestones expel a brief pulse of magical energy in a 90-foot cone, changing the gravity to face away from the cannon for an instant. Each creature in the area must succeed on a Dexterity saving throw or “fall” in a straight line away from the cannon.</p>
 			<p>A creature continues falling in this manner until it leaves the cones area of effect or strikes a piece of terrain. When leaving the cones area of effect, a creature lands prone, taking fall damage equal to the distance it moved.</p>
@@ -1124,11 +1151,11 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Heavy Artillery Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_HEAVYARTILLERYGUN">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARTILLERY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_1, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARTILLERY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_1, ID_TGMHB_WEAPON_PROPERTY_RELOAD_2, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Artillery, Ammo Box (1), Reload (2), Range 40ft - 1 Mile.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Artillery, Ammo Box (1), Reload (2), RoF (1), Range 40ft - 1 Mile.</p> 
 			<p class="indent"><b><i>Damage. </i></b>10d6 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>5.</p>
@@ -1138,6 +1165,7 @@
 			<p class="indent"><i>Range Band 3. </i>501ft - 1 Mile, Explosion Radius 60ft.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
@@ -1204,17 +1232,18 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Inferno Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_INFERNOCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_SPREAD_3, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_SPREAD_3, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Spread (3), Flesh-Bane, Reload (1).</p> 
+			<p class="indent"><b><i>Properties. </i></b>Spread (3), Flesh-Bane, Reload (1), RoF (1).</p> 
 			<p class="indent"><b><i>Damage. </i></b>16d6 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>5.</p>
 			<p class="indent"><b><i>Spread (x). </i></b>This hardpoint deals damage in a cone over a wide area. Creatures caught in the cone must succeed on a Dexterity saving throw, taking the hardpoint’s noted damage on a failure, or half as much on a success. Each spread range falls into a particular value, shown in the brackets (x): (1) 15-foot Cone, (2) 30-foot Cone, (3) 60-foot Cone.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
@@ -1230,14 +1259,15 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Ion Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_IONCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_EXPERIMENTAL</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_EXPERIMENTAL, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Experimental)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Experimental, Range 500.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Experimental, RoF (1), Range 500.</p> 
 			<p class="indent"><b><i>Damage. </i></b>10d20 Radiant.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>11.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Experimental. </i></b>Before using any experimental hardpoint, the user must first roll (d8) on the experimental hardpoint table: (1-5) normal activation, (6-7) activaton failure and your action is wasted, (8) the ATUM takes 5d8 force damage and reroll (ignoring 8s)</p>
 			<p class="indent"><b><i>Ion Cannon. </i></b>The ion cannon was developed in response to the increasing number of undead giants being recruited into enemy armies. Requiring a vast surplus of power and module slots, the ion cannon requires mounting on a quadrupedal heavy chassis, and cannot move on the same turn it fires.</p>
 			<p>You can spend an action to charge up the ion cannon, and spend an additional action to fire it at a target you can see within range. When fired, the ion cannon emits a powerful radiant beam of energy in a 20ft wide line towards its target. The target, and any creature in the line must succeed on a Constitution saving throw, taking 10d20 radiant damage on a failed save, or half as much on a success.</p>
@@ -1258,11 +1288,11 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Mass Driver" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_MASSDRIVER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_POWERFUL_BLOW, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_1, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_DEMOLISHER, ID_TGMHB_WEAPON_PROPERTY_POWERFUL_BLOW, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_1, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Demolisher, Powerful Blow, Ammo Box (1), Reload (1), Range 1200/2000.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Demolisher, Powerful Blow, Ammo Box (1), Reload (1), RoF (1), Range 1200/2000.</p> 
 			<p class="indent"><b><i>Damage. </i></b>10d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>5.</p>
@@ -1270,6 +1300,7 @@
 			<p class="indent"><b><i>Powerful Blow. </i></b>A hardpoint with this rule ignores resistance to bludgeoning damage. In addition, if the attack roll exceeds the target’s AC by 5 or more, it must succeed on a Strength saving throw or be pushed back 5 feet per damage die and knocked prone.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
@@ -1285,11 +1316,11 @@
 		</rules>
 	</element>
 	<element name="H.P.H., MT-03 Missile Launcher" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_MT03MISSILELAUNCHER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_1, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_1, ID_TGMHB_WEAPON_PROPERTY_RELOAD_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Missile, Ammo Box (1), Reload (1), Range 1000/2000.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Missile, Ammo Box (1), Reload (1), RoF (1), Range 1000/2000.</p> 
 			<p class="indent"><b><i>Damage. </i></b>4d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>5.</p>
@@ -1297,6 +1328,7 @@
 			<p class="indent"><b><i>Missile. </i></b>Missiles have two different fire modes. In <i>Targeted</i> mode, you must spend a bonus action to lock onto a target that you can see within the hardpoint’s range. The target remains locked for one minute, or until it is successfully hit by the hardpoint or leaves the hardpoint’s range. A pilot does not require line of sight when firing a missile hardpoint at a locked target. Once locked, you can fire the hardpoint at the target as an action on your turn, dealing the hardpoint’s noted damage on a hit. In <i>Saturation</i> mode, you can instead spend your action to fill an area with the entire armed and ready ammunition at your disposal. To do so, choose a point within range and consult the missile table to work out the radius and damage dealt. Each creature in that radius must succeed on a Dexterity saving throw, taking the table’s noted damage on a failed save, or half as much on a success.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
@@ -1312,16 +1344,17 @@
 		</rules>
 	</element>
 	<element name="H.P.H., MT-04 “Doomsday” Missile" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_MT04DOOMSDAYMISSILE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_SINGLE_USE</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_MISSILE, ID_TGMHB_WEAPON_PROPERTY_SINGLE_USE, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Missile, Single Use, Range 1 Mile.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Missile, RoF (1), Single Use, Range 1 Mile.</p> 
 			<p class="indent"><b><i>Damage. </i></b>10d10 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>10.</p>
 			<p class="indent"><b><i>MT-04. </i></b>Saturation: 120ft. explosion radius, 26d6 fire damage.</p>
 			<p class="indent"><b><i>Missile. </i></b>Missiles have two different fire modes. In <i>Targeted</i> mode, you must spend a bonus action to lock onto a target that you can see within the hardpoint’s range. The target remains locked for one minute, or until it is successfully hit by the hardpoint or leaves the hardpoint’s range. A pilot does not require line of sight when firing a missile hardpoint at a locked target. Once locked, you can fire the hardpoint at the target as an action on your turn, dealing the hardpoint’s noted damage on a hit. In <i>Saturation</i> mode, you can instead spend your action to fill an area with the entire armed and ready ammunition at your disposal. To do so, choose a point within range and consult the missile table to work out the radius and damage dealt. Each creature in that radius must succeed on a Dexterity saving throw, taking the table’s noted damage on a failed save, or half as much on a success.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 			<p class="indent"><b><i>Single Use. </i></b>A hardpoint with this rule can be fired once before needing to be reloaded with a new ammo box.</p>
 		</description>
 		<setters>
@@ -1338,17 +1371,18 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Particle Accelerator" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_PARTICLEACCELERATOR">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ARMOUR_CUTTER, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Plasma, Armour-Cutter, Flesh-Bane, Range 800.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Plasma, Armour-Cutter, Flesh-Bane, RoF (1), Range 800.</p> 
 			<p class="indent"><b><i>Damage. </i></b>3d12 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
@@ -1364,11 +1398,11 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Plasma Launcher" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_PLASMALAUNCHER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARTILLERY, ID_TGMHB_WEAPON_PROPERTY_PLASMA</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARTILLERY, ID_TGMHB_WEAPON_PROPERTY_PLASMA, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Artillery, Plasma, Range 40ft - 1 Mile.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Artillery, Plasma, RoF (1), Range 40ft - 1 Mile.</p> 
 			<p class="indent"><b><i>Damage. </i></b>6d6 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
@@ -1377,6 +1411,7 @@
 			<p class="indent"><i>Range Band 2. </i>241ft - 500ft, Explosion Radius 30ft.</p>
 			<p class="indent"><i>Range Band 3. </i>501ft - 1 Mile, Explosion Radius 60ft.</p>
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
@@ -1392,17 +1427,18 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Promethium Launcher" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_PROMETHIUMLAUNCHER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_SPREAD_2, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_SPREAD_2, ID_TGMHB_WEAPON_PROPERTY_FLESH_BANE, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Spread (2), Flesh-Bane, Reload (3), Range 30.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Spread (2), Flesh-Bane, Reload (3), RoF (1), Range 30.</p> 
 			<p class="indent"><b><i>Damage. </i></b>6d6 Fire.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Spread (x). </i></b>This hardpoint deals damage in a cone over a wide area. Creatures caught in the cone must succeed on a Dexterity saving throw, taking the hardpoint’s noted damage on a failure, or half as much on a success. Each spread range falls into a particular value, shown in the brackets (x): (1) 15-foot Cone, (2) 30-foot Cone, (3) 60-foot Cone.</p>
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
@@ -1418,16 +1454,17 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Sniper Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_SNIPERCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_AMMO_BOX_3, ID_TGMHB_WEAPON_PROPERTY_RELOAD_3, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Ballistic)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Ammo Box (3), Reload (3), Range 600/1200.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Ammo Box (3), Reload (3), RoF (1), Range 600/1200.</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d12 Piercing.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Ammo Box (x). </i></b>The hardpoint is assumed to hold enough ammo to be used in a certain number of encounters before needing to be reloaded. An ammo box holds ammo for a single type of module. Each chassis can hold a number of ammo boxes equal to half its module slots, rounded down. Unlike conventional reloading, an ammo box takes 10 minutes to reload, and must be reloaded by hand unless in a workshop.</p>
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
@@ -1443,15 +1480,16 @@
 		</rules>
 	</element>
 	<element name="H.P.H., Tesla Arc Cannon" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_HP_HEAVY_TESLAARCCANNON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1D6_1</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY, ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY, ID_TGMHB_WEAPON_PROPERTY_ARC_LIGHTNING_1D6_1, ID_TGMHB_WEAPON_PROPERTY_ROF_1</supports>
 		<description>
 			<p><i>Heavy Military Hardpoint (Energy)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Arc Lightning (1d6+1), Range 200.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Arc Lightning (1d6+1), RoF (1), Range 200.</p> 
 			<p class="indent"><b><i>Damage. </i></b>16d6 Lightning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>5.</p>
 			<p class="indent"><b><i>Arc Lightning (x). </i></b>Whenever a hardpoint with this rule hits a target, the lightning arcs towards a number of objects or creatures shown in the brackets that are within 5 feet of the original target. The lightning jumps to the object or creature closest to the original target (aside from you). The targets must succeed on a Dexterity saving throw, taking the half the attack’s initial lightning damage on a failed save, or no damage on a successful one.</p>
+			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, military, hardpoint, energy</set>

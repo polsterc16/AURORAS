@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.5">
+		<update version="0.0.7">
 			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/vehicle-atum.xml" />
 		</update>
 	</info>
