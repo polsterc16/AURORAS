@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/vehicle-atum.xml" />
 		</update>
 	</info>
@@ -1620,6 +1620,21 @@
 	
 	<!-- Edit ATUM stats -->
 	<!-- Pilot Proficiency Bonus -->
+	<element name="+0 (not proficient)" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_0">
+		<compendium display="false" />
+		<supports>ATUM Pilot Proficiency Pool</supports>
+		<description>
+			<p>The ATUM Pilot has no proficiency with ATUMs.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+			<stat name="proficiency" value="-2" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV5" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV9" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV13" />
+			<stat name="proficiency" value="-1" requirements="ID_ATUM_TGMHB_ATUM_CLASS_LV17" />
+		</rules>
+	</element>
 	<element name="+2" type="Racial Trait" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_RACIAL_TRAIT_PROFICIENCY_2">
 		<compendium display="false" />
 		<supports>ATUM Pilot Proficiency Pool</supports>
