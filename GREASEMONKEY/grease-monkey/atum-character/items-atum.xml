@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="items-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/items/items-atum.xml" />
+		<update version="0.0.2">
+			<file name="items-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/items-atum.xml" />
 		</update>
 	</info>
 	
@@ -24,13 +24,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, light, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">550</set>
 			<set name="slot">misc</set>
 			<set name="range">100</set>
 			<set name="damage" type="slashing">3d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -51,13 +51,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, light, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">600</set>
 			<set name="slot">misc</set>
 			<set name="range">200/500</set>
 			<set name="damage" type="piercing">2d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -75,11 +75,11 @@
 			<p class="indent"><b><i>Ram. </i></b>If the ATUM moves at least 20 feet towards a target and hits it with an unarmed strike on the same turn, the target takes an extra 1d10 bludgeoning damage per 10 feet it moved. If the target is a creature, it must succeed on a Strength saving throw or be knocked prone. If the target cannot be knocked prone, it is instead pushed 10 feet away from the ATUM in a straight line.</p>
 		</description>
 		<setters>
-			<set name="keywords">light, civilian, hardpoint, tool</set>
+			<set name="keywords">atum, light, civilian, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">75</set>
 			<set name="slot">misc</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -98,11 +98,11 @@
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
 		</description>
 		<setters>
-			<set name="keywords">light, civilian, hardpoint, manipulator</set>
+			<set name="keywords">atum, light, civilian, hardpoint, manipulator</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">25</set>
 			<set name="slot">misc</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -126,13 +126,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, civilian, hardpoint, ballistic, machinegun</set>
+			<set name="keywords">atum, light, civilian, hardpoint, ballistic, machinegun</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="slot">misc</set>
 			<set name="range">100/400</set>
 			<set name="damage" type="piercing">1d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -151,13 +151,13 @@
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, energy</set>
+			<set name="keywords">atum, light, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">500</set>
 			<set name="damage" type="fire">2d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -176,13 +176,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, energy</set>
+			<set name="keywords">atum, light, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">300</set>
 			<set name="slot">misc</set>
 			<set name="range">300</set>
 			<set name="damage" type="fire">2d4</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -201,13 +201,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, light, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">60/120</set>
 			<set name="damage" type="bludgeoning">3d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -228,13 +228,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, ballistic, machinegun</set>
+			<set name="keywords">atum, light, military, hardpoint, ballistic, machinegun</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="slot">misc</set>
 			<set name="range">80/320</set>
 			<set name="damage" type="piercing">1d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -257,13 +257,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, light, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">120</set>
 			<set name="damage" type="fire">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -284,13 +284,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">light, civilian, hardpoint, ballistic</set>
+			<set name="keywords">atum, light, civilian, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="slot">misc</set>
 			<set name="range">80/320</set>
 			<set name="damage" type="piercing">1d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -308,13 +308,13 @@
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
-			<set name="keywords">light, military, hardpoint, energy</set>
+			<set name="keywords">atum, light, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">80/320</set>
 			<set name="damage" type="fire">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -333,12 +333,12 @@
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
-			<set name="keywords">light, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, light, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="fire">3d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -361,13 +361,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">750</set>
 			<set name="slot">misc</set>
 			<set name="range">100</set>
 			<set name="damage" type="slashing">4d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -389,13 +389,13 @@
 			<p>Make a single ranged attack roll against your chosen target each time this hardpoint fires. On a hit, the target is hit by 3d6 flaming beanbags. Each beanbag deals 1d4 bludgeoning damage and 1d4 fire damage.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, experimental</set>
+			<set name="keywords">atum, medium, military, hardpoint, experimental</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">5000</set>
 			<set name="slot">misc</set>
 			<set name="range">100/250</set>
 			<!-- <set name="damage" type="slashing">4d6</set> -->
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -414,13 +414,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">750</set>
 			<set name="slot">misc</set>
 			<set name="range">100/180</set>
 			<set name="damage" type="bludgeoning">5d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -438,12 +438,12 @@
 			<p class="indent"><b><i>Armour-Cutter. </i></b>A hardpoint with this rule can choose to deal all damage directly to the armour plating of a target, regardless of its threshold. If this damage would reduce the armour plating’s hit points to 0, or the target has no armour plating to begin with, it must succeed on a Constitution saving throw or have its AC reduced by 1, to a minimum of 10. A creature’s worn armour is destroyed if its AC value is reduced to 10. This reduction lasts until the target repairs the damage during a short or long rest, or is healed with the <i>reconstruct</i> spell. This rule has no effect on organic targets, or creatures not wearing armour.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="slashing">3d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -462,13 +462,13 @@
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="keywords">atum, medium, military, hardpoint, melee</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="range">15</set>
 			<set name="damage" type="fire">2d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -486,13 +486,13 @@
 			<p class="indent"><b><i>Excavation. </i></b>A hardpoint with this rule can reshape dirt, sand or clay in an area no bigger than 20 feet on any side in any manner. You can choose to raise or lower the area’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such change can’t exceed half the area’s largest dimension. So if you affect a 20-foot square, you can create a pillar up to 10 feet high, raise or lower the square’s elevation by up to 10 feet, dig a trench up to 10 feet deep, and so on. It takes 10 minutes for these changes to complete.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="slot">misc</set>
 			<set name="range">15</set>
 			<set name="damage" type="bludgeoning">2d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -512,13 +512,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">900</set>
 			<set name="slot">misc</set>
 			<set name="range">300/600</set>
 			<set name="damage" type="piercing">3d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -539,13 +539,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic, machinegun</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic, machinegun</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">100/400</set>
 			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -563,12 +563,12 @@
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="bludgeoning">3d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -586,13 +586,13 @@
 			<p class="indent"><b><i>Laser. </i></b>Lasers deal more damage the more the same target is hit with a laser weapon. If the weapon hits the same target on the following turn, its damage die increases by one step (d3 -> d4 -> d6 -> d8 -> d10 -> d12 -> 2d6 -> 2d8 -> 2d10 -> 2d12). This effect can stack up to 6 times, but the stacked effects are lost if the weapon misses its target, or doesn’t continue to attack the same target on subsequent rounds. </p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="keywords">atum, medium, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">500</set>
 			<set name="damage" type="fire">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -616,13 +616,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">800</set>
 			<set name="slot">misc</set>
 			<set name="range">40ft - 1 Mile</set>
 			<set name="damage" type="bludgeoning">6d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -642,13 +642,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="range">160/400</set>
 			<set name="damage" type="piercing">3d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -667,13 +667,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">650</set>
 			<set name="slot">misc</set>
 			<set name="range">600/1200</set>
 			<set name="damage" type="piercing">2d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -691,11 +691,11 @@
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, manipulator</set>
+			<set name="keywords">atum, medium, military, hardpoint, manipulator</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">75</set>
 			<set name="slot">misc</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -716,12 +716,12 @@
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="piercing">3d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -742,13 +742,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, medium, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">600</set>
 			<set name="slot">misc</set>
 			<set name="range">80/250</set>
 			<set name="damage" type="fire">3d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -768,13 +768,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="keywords">atum, medium, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1500</set>
 			<set name="slot">misc</set>
 			<set name="range">60</set>
 			<set name="damage" type="fire">10d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -793,12 +793,12 @@
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, medium, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="piercing">3d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -817,13 +817,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="keywords">atum, medium, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">800</set>
 			<set name="slot">misc</set>
 			<set name="range">60/240</set>
 			<set name="damage" type="fire">3d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -834,15 +834,15 @@
 		<description>
 			<p><i>Medium Military Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Titan Shield, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Titan Shield (AC +2).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d10 Radiant.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>3.</p>
-			<p class="indent"><b><i>Titan Shield. </i></b>A shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p class="indent"><b><i>Titan Shield. </i></b>A titan shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Reflector Features. </i></b>When you would be hit by a ranged attack, you can spend your reaction to deflect that attack towards a target you can see within 10-feet of you. That target must succeed on a Dexterity saving throw or be hit by the deflected attack.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, tool</set>
+			<set name="keywords">atum, medium, military, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">750</set>
 			<set name="slot">onehand,secondary</set>
@@ -850,11 +850,12 @@
 			<set name="armor">Shield</set>
 			<set name="armorClass">+2</set>
 			<set name="damage" type="radiant">1d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
-			<stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<!-- <stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
+			<stat name="ac:shield" value="2" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_HP_REFLECTORSHIELD" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
@@ -870,13 +871,13 @@
 			<p class="indent"><b><i>Powerful Blow. </i></b>A hardpoint with this rule ignores resistance to bludgeoning damage. In addition, if the attack roll exceeds the target’s AC by 5 or more, it must succeed on a Strength saving throw or be pushed back 5 feet per damage die and knocked prone.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="keywords">atum, medium, military, hardpoint, melee</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">15</set>
 			<set name="damage" type="bludgeoning">3d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -894,13 +895,13 @@
 			<p class="indent"><b><i>Arc Lightning (x). </i></b>Whenever a hardpoint with this rule hits a target, the lightning arcs towards a number of objects or creatures shown in the brackets that are within 5 feet of the original target. The lightning jumps to the object or creature closest to the original target (aside from you). The targets must succeed on a Dexterity saving throw, taking the half the attack’s initial lightning damage on a failed save, or no damage on a successful one.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, energy</set>
+			<set name="keywords">atum, medium, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1850</set>
 			<set name="slot">misc</set>
 			<set name="range">150</set>
 			<set name="damage" type="lightning">10d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -917,13 +918,13 @@
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="keywords">atum, medium, military, hardpoint, melee</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">400</set>
 			<set name="slot">misc</set>
 			<set name="range">20</set>
 			<set name="damage" type="slashing">3d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -941,13 +942,13 @@
 			<p class="indent"><b><i>Demolisher. </i></b>Hardpoints with this rule deal double damage when rolling damage against structures. In addition, when dealing damage to constructs or creatures made of earth, stone or metal, the hardpoint deals an additional die of damage.</p>
 		</description>
 		<setters>
-			<set name="keywords">medium, military, hardpoint, melee</set>
+			<set name="keywords">atum, medium, military, hardpoint, melee</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="range">25</set>
 			<set name="damage" type="bludgeoning">2d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -976,13 +977,13 @@
 			<p>As an action, choose one target within range make a ranged weapon attack. On a hit, the target takes 2d6 x 10 force damage. If this damage would reduce the target to 0 hit points, the target and any nonmagical items they are carrying explode in a violent, bloody mess.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, experimental</set>
+			<set name="keywords">atum, heavy, military, hardpoint, experimental</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">8000</set>
 			<set name="slot">misc</set>
 			<set name="range">200/500</set>
 			<set name="damage" type="force">2d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="8" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1001,13 +1002,13 @@
 			<p class="indent"><b><i>Winch or Hook. </i></b>If using the winch or hook, the crane can be used to either move an object not being carried by another creature within its reach as an action, or can be swung at a target, dealing 1d10 bludgeoning damage on a hit. A Hook or Winch can lift an object weighing up to 2 tons if attached to a light ATUM. This limit increases to 4 tons if the hardpoint is attached to a medium ATUM, or 6 tons if attached to a heavy ATUM.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, heavy, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">220</set>
 			<set name="slot">misc</set>
 			<set name="range">20</set>
 			<!-- <set name="damage" type="bludgeoning">2d10</set> -->
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1029,13 +1030,13 @@
 			<p class="indent"><b><i>Wrecking Ball. </i></b>If using the wrecking ball, as an action you can swing it in a 10-foot wide, 15-foot long arc. Creatures in the arc must succeed on a Dexterity saving throw, taking 4d10 bludgeoning damage and being knocked prone on a failed save, or half as much damage and not being knocked prone on a successful one. This damage increases by 1d10 when used by a medium ATUM, and 2d10 when used by a heavy ATUM.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, industrial, hardpoint, tool</set>
+			<set name="keywords">atum, heavy, industrial, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">450</set>
 			<set name="slot">misc</set>
 			<set name="range">20</set>
 			<!-- <set name="damage" type="bludgeoning">2d10</set> -->
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1057,13 +1058,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1000</set>
 			<set name="slot">misc</set>
 			<set name="range">400/600</set>
 			<set name="damage" type="piercing">3d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1083,13 +1084,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">800</set>
 			<set name="slot">misc</set>
 			<set name="range">800</set>
 			<set name="damage" type="piercing">3d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1110,13 +1111,13 @@
 			<p>Once fired, you must spend an action cooling down the runestones before the cannon can fire again.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, experimental</set>
+			<set name="keywords">atum, heavy, military, hardpoint, experimental</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">8000</set>
 			<set name="slot">misc</set>
 			<set name="range">90ft cone</set>
 			<!-- <set name="damage" type="force">2d10</set> -->
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="8" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1139,13 +1140,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1200</set>
 			<set name="slot">misc</set>
 			<set name="range">40ft - 1 Mile</set>
 			<set name="damage" type="bludgeoning">10d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="5" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1165,13 +1166,13 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1200</set>
 			<set name="slot">misc</set>
 			<set name="range">100/320</set>
 			<set name="damage" type="piercing">3d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1189,11 +1190,11 @@
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, industrial, hardpoint, manipulator</set>
+			<set name="keywords">atum, heavy, industrial, hardpoint, manipulator</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="slot">misc</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1216,13 +1217,13 @@
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, energy</set>
+			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">2200</set>
 			<set name="slot">misc</set>
 			<set name="range">-</set>
 			<set name="damage" type="fire">16d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="5" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1244,13 +1245,13 @@
 			<p>Once fired, you must spend an action to vent the heat from the cannon before you can use it again.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, experimental</set>
+			<set name="keywords">atum, heavy, military, hardpoint, experimental</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">8000</set>
 			<set name="slot">misc</set>
 			<set name="range">500</set>
 			<set name="damage" type="radiant">10d20</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="11" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1271,13 +1272,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">3000</set>
 			<set name="slot">misc</set>
 			<set name="range">1200/2000</set>
 			<set name="damage" type="bludgeoning">10d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="5" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1298,13 +1299,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">2850</set>
 			<set name="slot">misc</set>
 			<set name="range">1000/2000</set>
 			<set name="damage" type="bludgeoning">4d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="5" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1324,13 +1325,13 @@
 			<p class="indent"><b><i>Single Use. </i></b>A hardpoint with this rule can be fired once before needing to be reloaded with a new ammo box.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">5000</set>
 			<set name="slot">misc</set>
 			<set name="range">1 mile</set>
 			<set name="damage" type="bludgeoning">10d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="10" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1350,13 +1351,13 @@
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, energy</set>
+			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1000</set>
 			<set name="slot">misc</set>
 			<set name="range">800</set>
 			<set name="damage" type="fire">3d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1378,13 +1379,13 @@
 			<p class="indent"><b><i>Plasma. </i></b>Before firing this hardpoint roll a d20. If a natural 20 is rolled, the attack ignores resistance to fire damage, and deals an additional die of damage to the target. If a 1 is rolled, the hardpoint instead overheats, you take the attack’s damage, and it cannot be used again until you spend an action to vent the excess heat. Each time you fire, the chance for it to overheat increases by one step on the d20 roll, while spending an action to vent the excess heat resets it to 1.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, energy</set>
+			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">1000</set>
 			<set name="slot">misc</set>
 			<set name="range">40ft - 1 Mile</set>
 			<set name="damage" type="fire">6d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1404,13 +1405,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, energy</set>
+			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">800</set>
 			<set name="slot">misc</set>
 			<set name="range">30</set>
 			<set name="damage" type="fire">6d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1429,13 +1430,13 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, ballistic</set>
+			<set name="keywords">atum, heavy, military, hardpoint, ballistic</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="slot">misc</set>
 			<set name="range">600/1200</set>
 			<set name="damage" type="piercing">2d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1453,13 +1454,13 @@
 			<p class="indent"><b><i>Arc Lightning (x). </i></b>Whenever a hardpoint with this rule hits a target, the lightning arcs towards a number of objects or creatures shown in the brackets that are within 5 feet of the original target. The lightning jumps to the object or creature closest to the original target (aside from you). The targets must succeed on a Dexterity saving throw, taking the half the attack’s initial lightning damage on a failed save, or no damage on a successful one.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, energy</set>
+			<set name="keywords">atum, heavy, military, hardpoint, energy</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">2400</set>
 			<set name="slot">misc</set>
 			<set name="range">200</set>
 			<set name="damage" type="lightning">16d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="5" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1470,15 +1471,15 @@
 		<description>
 			<p><i>Heavy Military Hardpoint (Tool)</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Titan Shield, Melee.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Titan Shield (AC +3).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d6 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
-			<p class="indent"><b><i>Titan Shield. </i></b>A shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p class="indent"><b><i>Titan Shield. </i></b>A titan shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Tower Features. </i></b>As a bonus action, you can dig the shield into the ground. While dug-in, your movement becomes 0, and you count as being behind three-quarters cover. You can spend a bonus action again to raise the shield and return to normal.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, tool</set>
+			<set name="keywords">atum, heavy, military, hardpoint, tool</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">600</set>
 			<set name="slot">onehand,secondary</set>
@@ -1486,11 +1487,12 @@
 			<set name="armor">Shield</set>
 			<set name="armorClass">+3</set>
 			<set name="damage" type="bludgeoning">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
-			<stat name="ac:calculation" value="3" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<!-- <stat name="ac:calculation" value="3" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
+			<stat name="ac:shield" value="3" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_HP_TOWERSHIELD" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
@@ -1512,13 +1514,13 @@
 			<p>The X-42 missile battery cannot then be fired again until it has been reloaded at a workshop.</p>
 		</description>
 		<setters>
-			<set name="keywords">heavy, military, hardpoint, experimental</set>
+			<set name="keywords">atum, heavy, military, hardpoint, experimental</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">8000</set>
 			<set name="slot">misc</set>
 			<set name="range">1 mile</set>
 			<!-- <set name="damage" type="bludgeoning">10d10</set> -->
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:module-slots-used" value="8" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
@@ -1539,15 +1541,15 @@
 		<description>
 			<p><i>Military Manipulator Weapon</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Arm Mount, Titan Shield.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Arm Mount, Titan Shield (AC +1).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d4 Bludgeoning.</p> 
 			
 			<p class="indent"><b><i>Arm Mount. </i></b>Weapons with this rule must be mounted on a manipulator arm. They still require an action to fire, but the manipulator can also carry a weapon or be used as normal when an arm mount is equipped.</p>
-			<p class="indent"><b><i>Titan Shield. </i></b>A shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p class="indent"><b><i>Titan Shield. </i></b>A titan shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Arm Features. </i></b>This shield has the Arm Mount special rule, but is limited to one handed weapons only. You cannot wield a weapon in two hands while using this shield.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">125</set>
 			<set name="weight" lb="15">15 lb.</set>
@@ -1556,10 +1558,11 @@
 			<set name="armor">Shield</set>
 			<set name="armorClass">+1</set>
 			<set name="damage" type="bludgeoning">2d4</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
-			<stat name="ac:calculation" value="1" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<!-- <stat name="ac:calculation" value="1" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
+			<stat name="ac:shield" value="1" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
 	<element name="M.W., Chain Gun" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_CHAINGUN">
@@ -1575,14 +1578,14 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">350</set>
 			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">60/120</set>
 			<set name="damage" type="piercing">3d4</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Energy Shield" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_ENERGYSHIELD">
@@ -1590,14 +1593,14 @@
 		<description>
 			<p><i>Military Manipulator Weapon</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Titan Shield.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Titan Shield (AC +2).</p> 
 			<p class="indent"><b><i>Damage. </i></b>2d4 Force.</p> 
 			
-			<p class="indent"><b><i>Titan Shield. </i></b>A shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p class="indent"><b><i>Titan Shield. </i></b>A titan shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Energy Features. </i></b>This shield can be doffed or donned as a bonus action. When you take damage other than psychic, bludgeoning, piercing or slashing damage, you can use your reaction to have the energy shield absorb half the damage dealt to you. The shield then loses its AC bonus, damage, and features until you finish a short rest.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="weight" lb="5">5 lb.</set>
@@ -1606,10 +1609,11 @@
 			<set name="armor">Shield</set>
 			<set name="armorClass">+2</set>
 			<set name="damage" type="force">2d4</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
-			<stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<!-- <stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
+			<stat name="ac:shield" value="2" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_HP_ENERGYSHIELD" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
@@ -1626,14 +1630,14 @@
 			<p class="indent"><b><i>Flesh-Bane. </i></b>Whenever an unarmoured creature takes damage from this hardpoint, they must succeed on a Constitution saving throw or have their armour class reduced by 1, to a minimum of 10, until the end of their next turn. This AC reduction can be stacked on a single target up to 4 times. This does not affect constructs or creatures without flesh, such as wind elementals.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">140</set>
 			<set name="weight" lb="10">10 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">60/120</set>
 			<set name="damage" type="fire">1d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Flamethrower" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_FLAMETHROWER">
@@ -1649,14 +1653,14 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, industrial</set>
+			<set name="keywords">atum, manipulator, industrial</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">250</set>
 			<set name="weight" lb="30">30 lb.</set>
 			<set name="slot">misc</set>
 			<!-- <set name="range">60/120</set> -->
 			<set name="damage" type="fire">5d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 	</element>
 	<element name="M.W., G-30 AT Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_G30ATRIFLE">
@@ -1673,14 +1677,14 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">500</set>
 			<set name="weight" lb="50">50 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">300/600</set>
 			<set name="damage" type="piercing">2d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Great Hammer" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_GREATHAMMER">
@@ -1695,14 +1699,14 @@
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, industrial</set>
+			<set name="keywords">atum, manipulator, industrial</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="weight" lb="28">28 lb.</set>
 			<set name="slot">misc</set>
 			<!-- <set name="range">60/120</set> -->
 			<set name="damage" type="bludgeoning">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 	</element>
 	<element name="M.W., Heavy Assault Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_HEAVYASSAULTRIFLE">
@@ -1717,14 +1721,14 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">240</set>
 			<set name="weight" lb="40">40 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">100/400</set>
 			<set name="damage" type="piercing">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Kite Shield" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_KITESHIELD">
@@ -1732,14 +1736,14 @@
 		<description>
 			<p><i>Military Manipulator Weapon</i></p>
 			
-			<p class="indent"><b><i>Properties. </i></b>Titan Shield.</p> 
+			<p class="indent"><b><i>Properties. </i></b>Titan Shield (AC +2).</p> 
 			<p class="indent"><b><i>Damage. </i></b>1d8 Bludgeoning.</p> 
 			
-			<p class="indent"><b><i>Titan Shield. </i></b>A shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p class="indent"><b><i>Titan Shield. </i></b>A titan shield grants an ATUM special features and it cannot benefit from more than one shield at a time. Additionally, a shield can be used to make a special melee weapon attack called a slam. As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Kite Features. </i></b>None.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">165</set>
 			<set name="weight" lb="24">24 lb.</set>
@@ -1748,10 +1752,11 @@
 			<set name="armor">Shield</set>
 			<set name="armorClass">+2</set>
 			<set name="damage" type="bludgeoning">1d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 		<rules>
-			<stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<!-- <stat name="ac:calculation" value="2" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
+			<stat name="ac:shield" value="2" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
 	<element name="M.W., Laser Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_LASERRIFLE">
@@ -1766,14 +1771,14 @@
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">300</set>
 			<set name="weight" lb="24">24 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">300</set>
 			<set name="damage" type="fire">1d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Light Assault Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_LIGHTASSAULTRIFLE">
@@ -1789,14 +1794,14 @@
 			<p class="indent"><b><i>RoF (x). </i></b>Some hardpoints make more than one shot or strike per attack. The number of shots or strikes a hardpoint makes each time it is activated is shown in the brackets (x).</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">120</set>
 			<set name="weight" lb="25">25 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">80/320</set>
 			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., MT-00 Wrist Rocket" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_MT00WRISTROCKET">
@@ -1814,14 +1819,14 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">200</set>
 			<set name="weight" lb="45">45 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">80/250</set>
 			<set name="damage" type="fire">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Plasma Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_PLASMARIFLE">
@@ -1836,14 +1841,14 @@
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">400</set>
 			<set name="weight" lb="35">35 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">80/320</set>
 			<set name="damage" type="fire">1d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Sniper Rifle" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_SNIPERRIFLE">
@@ -1859,14 +1864,14 @@
 			<p class="indent"><b><i>Reload (x). </i></b>This hardpoint must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">300</set>
 			<set name="weight" lb="40">40 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">600/1000</set>
 			<set name="damage" type="piercing">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Broadsword" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANBROADSWORD">
@@ -1881,14 +1886,14 @@
 			<p class="indent"><b><i>Versatile. </i></b>This weapon can be used with one or two hands. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="weight" lb="28">28 lb.</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="slashing">1d10</set>
 			<set name="versatile">1d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Dagger" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANDAGGER">
@@ -1904,14 +1909,14 @@
 			<p class="indent"><b><i>Thrown. </i></b>If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon.</p> 
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">20</set>
 			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">30/60</set>
 			<set name="damage" type="piercing">1d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Flail" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANFLAIL">
@@ -1923,14 +1928,14 @@
 			<p class="indent"><b><i>Damage. </i></b>1d10 Bludgeoning.</p> 
 		</description>
 		<setters>
-			<set name="keywords">manipulator, industrial</set>
+			<set name="keywords">atum, manipulator, industrial</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">75</set>
 			<set name="weight" lb="35">35 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">15</set> 
 			<set name="damage" type="bludgeoning">1d10</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Powerfist Flux Arc" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANPOWERFISTFLUXARC">
@@ -1947,13 +1952,13 @@
 			<p class="indent"><b><i>Powerful Blow. </i></b>A hardpoint with this rule ignores resistance to bludgeoning damage. In addition, if the attack roll exceeds the target’s AC by 5 or more, it must succeed on a Strength saving throw or be pushed back 5 feet per damage die and knocked prone.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, industrial</set>
+			<set name="keywords">atum, manipulator, industrial</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">350</set>
 			<set name="weight" lb="40">40 lb.</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="lightning">3d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Greataxe" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANGREATAXE">
@@ -1968,13 +1973,13 @@
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, industrial</set>
+			<set name="keywords">atum, manipulator, industrial</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="weight" lb="25">25 lb.</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="slashing">2d6</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Greatsword" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANGREATSWORD">
@@ -1990,14 +1995,14 @@
 			<p class="indent"><b><i>Requirements. </i></b>22 Strength.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">230</set>
 			<set name="weight" lb="120">120 lb.</set>
 			<set name="slot">misc</set>
 			<set name="strength">22</set>
 			<set name="damage" type="slashing">2d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Halberd" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANHALBERD">
@@ -2012,14 +2017,14 @@
 			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">75</set>
 			<set name="weight" lb="40">40 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">15</set>
 			<set name="damage" type="slashing">1d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan Scimitar" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANSCIMITAR">
@@ -2034,13 +2039,13 @@
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">40</set>
 			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="slashing">1d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan War Axe" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANWARAXE">
@@ -2055,14 +2060,14 @@
 			<p class="indent"><b><i>Versatile. </i></b>This weapon can be used with one or two hands. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, military</set>
+			<set name="keywords">atum, manipulator, military</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="weight" lb="30">30 lb.</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="slashing">1d10</set>
 			<set name="versatile">1d12</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
 		</setters>
 	</element>
 	<element name="M.W., Titan War Pick" type="Weapon" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_WEAPON_MW_TITANWARPICK">
@@ -2076,13 +2081,13 @@
 			<p class="indent"><b><i>Light. </i></b>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.</p>
 		</description>
 		<setters>
-			<set name="keywords">manipulator, industrial</set>
+			<set name="keywords">atum, manipulator, industrial</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">40</set>
 			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">misc</set>
 			<set name="damage" type="piercing">1d8</set>
-			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
 		</setters>
 	</element>
 	
@@ -2349,7 +2354,7 @@
 	<element name="Reflector Shield" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_REFLECTORSHIELD">
 		<description>
 			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield grants an ATUM special features, shown below. In addition to these features, a shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
-			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes 1d10 radiant damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Reflector Features. </i></b>When you would be hit by a ranged attack, you can spend your reaction to deflect that attack towards a target you can see within 10-feet of you. That target must succeed on a Dexterity saving throw or be hit by the deflected attack.</p>
 		</description>
 		<sheet action="Reaction">
@@ -2359,7 +2364,7 @@
 	<element name="Tower Shield" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_TOWERSHIELD">
 		<description>
 			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield grants an ATUM special features, shown below. In addition to these features, a shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
-			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes 2d6 bludgeoning damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Tower Features. </i></b>As a bonus action, you can dig the shield into the ground. While dug-in, your movement becomes 0, and you count as being behind three-quarters cover. You can spend a bonus action again to raise the shield and return to normal.</p>
 		</description>
 		<sheet action="Bonus Action">
@@ -2369,7 +2374,7 @@
 	<element name="Energy Shield" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_HP_ENERGYSHIELD">
 		<description>
 			<p>Titan Shields are huge towering sheets of armour plate designed to take the heaviest of blows. Some are held using manipulators, while the largest of them are built directly onto an arm from the chassis. A shield grants an ATUM special features, shown below. In addition to these features, a shield can be used to make a special melee weapon attack called a slam. You cannot benefit from more than one shield at a time.</p>
-			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes 2d6 bludgeoning damage and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
+			<p>As a bonus action, make a melee weapon attack against a creature you can see within range. On a hit, that creature takes the titan shield’s noted and must succeed on a Strength saving throw or be shoved 10ft away from the ATUM in a straight line.</p>
 			<p class="indent"><b><i>Energy Features. </i></b>This shield can be doffed or donned as a bonus action. When you take damage other than psychic, bludgeoning, piercing or slashing damage, you can use your reaction to have the energy shield absorb half the damage dealt to you. The shield then loses its AC bonus, damage, and features until you finish a short rest.</p>
 		</description>
 		<sheet action="Reaction" usage="1/Short Rest" >
@@ -2417,14 +2422,64 @@
 	</element>
 	
 	
+	<!-- weapon groups -->
+	<element name="Weapon Group (H.P. Light)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT" />
+	<element name="Weapon Group (H.P. Medium)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM" />
+	<element name="Weapon Group (H.P. Heavy)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY" />
+	<element name="Weapon Group (Civilian)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN" />
+	<element name="Weapon Group (Industrial)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL" />
+	<element name="Weapon Group (Military)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY" />
+	<element name="Weapon Group (Manipulator Weapon)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_MANIPULATORWEAPON" />
 	
 	
-	<!-- Modules -->
+	<!-- proficiencies -->
+	<element name="Weapon Proficiency (Civilian)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN">
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_INDUSTRIAL" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_MILITARY" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL" />
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Industrial)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL">
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_INDUSTRIAL" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL_MILITARY" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL" />
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Military)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY">
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_MILITARY" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL_MILITARY" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL" />
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Civilian OR Industrial)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_INDUSTRIAL"><sheet display="false" /></element>
+	<element name="Weapon Proficiency (Civilian OR Military)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_MILITARY"><sheet display="false" /></element>
+	<element name="Weapon Proficiency (Industrial OR Military)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL_MILITARY"><sheet display="false" /></element>
+	<element name="Weapon Proficiency (All)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL"><sheet display="false" /></element>
+	
+	<element name="Weapon Proficiency (Trailer)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_TRAILERS"><sheet display="false" /></element>
+	
+	<element name="Weapon Proficiency (Chassis Medium OR Heavy)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_MEDIUM_HEAVY"><sheet display="false" /></element>
+	<element name="Weapon Proficiency (Chassis Heavy)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_HEAVY"><sheet display="false" /></element>
+	
+	<element name="Weapon Proficiency (Chassis Medium OR Heavy AND Military)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_MEDIUM_HEAVY_MILITARY"><sheet display="false" /></element>
+	<element name="Weapon Proficiency (Chassis Heavy AND  Military)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_HEAVY_MILITARY"><sheet display="false" /></element>
+	
+	
+	<!-- Module Adapter -->
 	<element name="Module Adapter (Civilian)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_MODULE_ADAPTER_CIVILIAN">
 		<description>
-			<p>Enables access to Civilian Class Modules.</p>
+			<p><i>Enables access to Civilian Class Modules</i></p>
+			<p>An ATUM only has access to modules of its current class, unless you purchase a class module adapter. </p>
+			<p>These adapters don’t take up any module slots, as they are built into the structural integrity of the chassis. Though, like class conversions, choosing to upgrade an ATUM later with any of these modules will cost considerably more due to the complex reconstruction required</p>
 		</description>
 		<setters>
+			<set name="keywords">atum, module</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Module Adapter</set>
 			<set name="slot">misc</set>
@@ -2437,9 +2492,12 @@
 	</element>
 	<element name="Module Adapter (Industrial)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_MODULE_ADAPTER_INDUSTRIAL">
 		<description>
-			<p>Enables access to Industrial Class Modules.</p>
+			<p><i>Enables access to Industrial Class Modules</i></p>
+			<p>An ATUM only has access to modules of its current class, unless you purchase a class module adapter. </p>
+			<p>These adapters don’t take up any module slots, as they are built into the structural integrity of the chassis. Though, like class conversions, choosing to upgrade an ATUM later with any of these modules will cost considerably more due to the complex reconstruction required</p>
 		</description>
 		<setters>
+			<set name="keywords">atum, module</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Module Adapter</set>
 			<set name="slot">misc</set>
@@ -2452,9 +2510,12 @@
 	</element>
 	<element name="Module Adapter (Military)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_MODULE_ADAPTER_MILITARY">
 		<description>
-			<p>Enables access to Military Class Modules.</p>
+			<p><i>Enables access to Military Class Modules</i></p>
+			<p>An ATUM only has access to modules of its current class, unless you purchase a class module adapter. </p>
+			<p>These adapters don’t take up any module slots, as they are built into the structural integrity of the chassis. Though, like class conversions, choosing to upgrade an ATUM later with any of these modules will cost considerably more due to the complex reconstruction required</p>
 		</description>
 		<setters>
+			<set name="keywords">atum, module</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Module Adapter</set>
 			<set name="slot">misc</set>
@@ -2466,34 +2527,1201 @@
 		</rules>
 	</element>
 	
+	<element name="A.M.T., Wheeled" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ADDMOBILITY_WHEELED">
+		<description>
+			<p><i>Additional Mobility Type</i></p>
+			<p><b><i>Speed. </i></b>60ft.</p>
+			<p>When a trailer is installed, you must also install an additional mobility type for it. The ATUM does not benefit from any features of this mobility type, and can only ever move at the lowest speed available to it.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, module, trailer, mobility</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Additional Mobility Type</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_TRAILERS</set>
+		</setters>
+	</element>
+	<element name="A.M.T., Bipedal" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ADDMOBILITY_BIPEDAL">
+		<description>
+			<p><i>Additional Mobility Type</i></p>
+			<p><b><i>Speed. </i></b>40ft.</p>
+			<p>When a trailer is installed, you must also install an additional mobility type for it. The ATUM does not benefit from any features of this mobility type, and can only ever move at the lowest speed available to it.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, module, trailer, mobility</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Additional Mobility Type</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_TRAILERS</set>
+		</setters>
+	</element>
+	<element name="A.M.T., Quadrupedal" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ADDMOBILITY_QUADRUPEDAL">
+		<description>
+			<p><i>Additional Mobility Type</i></p>
+			<p><b><i>Speed. </i></b>30ft.</p>
+			<p>When a trailer is installed, you must also install an additional mobility type for it. The ATUM does not benefit from any features of this mobility type, and can only ever move at the lowest speed available to it.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, module, trailer, mobility</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Additional Mobility Type</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_TRAILERS</set>
+		</setters>
+	</element>
+	<element name="A.M.T., Tracked" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ADDMOBILITY_TRACKED">
+		<description>
+			<p><i>Additional Mobility Type</i></p>
+			<p><b><i>Speed. </i></b>50ft.</p>
+			<p>When a trailer is installed, you must also install an additional mobility type for it. The ATUM does not benefit from any features of this mobility type, and can only ever move at the lowest speed available to it.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, module, trailer, mobility</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Additional Mobility Type</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_TRAILERS</set>
+		</setters>
+	</element>
 	
-	<!-- weapon groups -->
-	<element name="Weapon Group (H.P. Light)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_LIGHT" />
-	<element name="Weapon Group (H.P. Medium)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_MEDIUM" />
-	<element name="Weapon Group (H.P. Heavy)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_HARDPOINT_HEAVY" />
-	<element name="Weapon Group (Civilian)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_CIVILIAN" />
-	<element name="Weapon Group (Industrial)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_INDUSTRIAL" />
-	<element name="Weapon Group (Military)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_CLASS_MILITARY" />
-	<element name="Weapon Group (Manipulator Weapon)" type="Weapon Group" source="ATUMs (TGMHB)" id="ID_TGMHB_WEAPON_GROUP_MANIPULATORWEAPON" />
 	
-	<!-- proficiencies -->
-	<element name="Weapon Proficiency (Hardpoints, Civilian)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN">
-		<sheet alt="Hardpoints, Civilian" />
+	
+	<!-- Upgrade Modules -->
+	<element name="U.M., Acid-resistant Frame" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ACIDRESISTANTFRAME">
+		<description>
+			<p><i>Industrial Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Properties. </i></b>Grants the ATUM resistance to acid damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN_INDUSTRIAL" />
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
-	<element name="Weapon Proficiency (Hardpoints, Industrial)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL">
-		<sheet alt="H.P. Industrial" />
+	<element name="U.M., Active Countermeasures" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ACTIVECOUNTERMEASURES">
+		<description>
+			<p><i>Military Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>As a bonus action, you scramble the targeting systems of enemy sensors. Until the end of your next turn you cannot be target-locked. Charge (2).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN_INDUSTRIAL" />
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_ACTIVECOUNTERMEASURES" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
 		</rules>
 	</element>
-	<element name="Weapon Proficiency (Hardpoints, Military)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY">
-		<sheet alt="H.P. Military" />
+	<element name="U.M., Advanced Targeting Module" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ADVANCEDTARGETINGMODULE">
+		<description>
+			<p><i>Military Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>As an action, you stack additional tracking information on a target you have target-locked. Until the end of your next turn, any missile hardpoints fired at that target have advantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_ADVANCEDTARGETINGMODULE" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
 	</element>
-	<element name="Weapon Proficiency (Hardpoints, Civilian OR Industrial)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN_INDUSTRIAL">
-		<sheet display="false" />
+	<element name="U.M., Category 1 ATUM Workshop" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ATUMWORKSHOP_1">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>Medium or Heavy ATUMs only. This workshop can repair one ATUM at a time. Installation of this workshop takes 30 days, and once complete, increases engine fuel consumption speed by 1 day per tank.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">8000</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_MEDIUM_HEAVY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_ATUMWORKSHOP_1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
 	</element>
+	<element name="U.M., Category 2 ATUM Workshop" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ATUMWORKSHOP_2">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Properties. </i></b>Heavy ATUMs only. This workshop can repair one ATUM at a time. Installation of this workshop takes 60 days, and once complete, increases engine fuel consumption speed by 2 days per tank.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">20000</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_HEAVY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_ATUMWORKSHOP_2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Docking Clamps" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_DOCKINGCLAMPS">
+		<description>
+			<p><i>General Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>The ATUM can be carried by an aircraft or ship, locked to the hull. Can be activated or deactivated as an action. When active, the ATUM is incapacitated.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_DOCKINGCLAMPS" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
+		</rules>
+	</element>
+	<element name="U.M., Emergency Oxygen Supply" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_EMERGENCYOXYGENSUPPLY">
+		<description>
+			<p><i>General Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>Grants an internal oxygen supply, allowing the crew to breath normally for 1 hour in pressurized ATUMs. Charge (2).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_EMERGENCYOXYGENSUPPLY" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Energy Field" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_ENERGYFIELD">
+		<description>
+			<p><i>Industrial Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>Titan Shield (AC +1).</p>
+			
+			<p class="indent"><b><i>Titan Shield. </i></b>A titan shield grants an ATUM special features and it cannot benefit from more than one shield at a time.</p>
+			<p class="indent"><b><i>Energy Features. </i></b>As a reaction when you would be hit by an attack, you can flare up the shield, adding a +3 bonus to your AC for that attack. You can use this feature twice. You regain all expended uses after a short rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+1</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			
+			<!-- <stat name="ac:calculation" value="1" alt="Chassis" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" /> -->
+			<stat name="ac:shield" value="1" bonus="shield" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_ENERGYFIELD" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., External Storage Trailer" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_EXTERNALSTORAGETRAILER">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Storage Trailers. </i></b>Trailers are upgrade modules pulled by ATUMs, much like a conventional trailer. Each trailer can store up to 500lbs of equipment or materials, and has a single module slot, which can be used to attach another trailer, hardpoint, upgrade module or one additional fuel tank of any size.</p>
+			<p>Unlike other modules, trailers can be targeted directly by attacks. If reduced to 0 hit points, trailers are reduced to a small scrap pile, and any separated trailers must be reattached to an ATUM before they can be moved again or the ATUM has access to any modules installed on them. Trailers have an AC of 15, 55 (10d10) hit points, and increase the length of the ATUM by 10 feet per trailer.</p>
+			<p>When a trailer is installed, you must also install an additional mobility type for it. The ATUM does not benefit from any features of this mobility type, and can only ever move at the lowest speed available to it.</p>
+			<p>An ATUM can pull a number of trailers at the same time equal to its chassis Strength modifier.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<stat name="atum-character:module-slots" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			
+			<stat name="atum-character:storage-trailer-qty" value="0" bonus="base" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<stat name="atum-character:storage-trailer-qty" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<stat name="atum-character:storage-trailer-length" value="0" bonus="base" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<stat name="atum-character:storage-trailer-length" value="10" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<stat name="atum-character:storage-trailer-weight" value="0" bonus="base" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<stat name="atum-character:storage-trailer-weight" value="500" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_EXTERNALSTORAGETRAILER" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_TRAILERS" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Fire Group Adapter" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_FIREGROUPADAPTER">
+		<description>
+			<p><i>Military Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>Requires Fire Group Modulator. Grants the use of one additional fire group. Pilot can swap between the 2 different fire groups as a bonus action on their turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_FIREGROUPADAPTER" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Fire Group Modulator (Ballistic)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_FIREGROUPMODULATOR_BALLISTIC">
+		<description>
+			<p><i>Military Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>This upgrade links up to three ballistic hardpoints the ATUM has into a fire group, allowing the pilot to spend an action to fire all linked hardpoints at the same target simultaneously.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">2200</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_FIREGROUPMODULATOR_BALLISTIC" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Fire Group Modulator (Energy)" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_FIREGROUPMODULATOR_ENERGY">
+		<description>
+			<p><i>Military Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>This upgrade links up to three energy hardpoints the ATUM has into a fire group, allowing the pilot to spend an action to fire all linked hardpoints at the same target simultaneously.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">2800</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_FIREGROUPMODULATOR_ENERGY" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Flotation Device" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_FLOTATIONDEVICE">
+		<description>
+			<p><i>General Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>When activated, prevents the ATUM from sinking for 1 hour. Charge (1).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_EMERGENCYOXYGENSUPPLY" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Fuel Surge" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_FUELSURGE">
+		<description>
+			<p><i>Civilian/Industrial Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>As a bonus action, you can push your engine to gain a brief surge of speed. You can take one additional action this turn. On your following turn, you cannot take any actions, but can still move. Charge (2).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, civilian, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">850</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_FUELSURGE" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Heat Dispersal Units" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_HEATDISPERSALUNITS">
+		<description>
+			<p><i>Industrial Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>When activated as a bonus action, grants the ATUM resistance to fire damage for 1 hour. Charge (2).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_HEATDISPERSALUNITS" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Hull Reinforcement" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_HULLREINFORCEMENT">
+		<description>
+			<p><i>Civilian Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>The ATUM gains +2 hit dice. In addition, roll these dice, adding the ATUM's Constitution modifier to each die. The ATUM's maximum hit points increase by this amount.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_HULLREINFORCEMENT" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Increased Armour Plating" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_INCREASEDARMOURPLATING">
+		<description>
+			<p><i>Military Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>Increases armour plating hit points by 10.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_INCREASEDARMOURPLATING" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Increased Servo Responders" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_INCREASEDSERVORESPONDERS">
+		<description>
+			<p><i>Military Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>Increase one hardpoints RoF value by 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_INCREASEDSERVORESPONDERS" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Internal Heater" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_INTERNALHEATER">
+		<description>
+			<p><i>Industrial Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>When activated as a bonus action, grants the ATUM resistance to cold damage for 1 hour. Charge (2).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_INTERNALHEATER" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Lightning Rod" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_LIGHTNINGROD">
+		<description>
+			<p><i>Industrial Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>Grants the ATUM resistance to lightning damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">600</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Mobility Booster" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_MOBILITYBOOSTER">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>Any mobility type required. Grants the mobility type +10ft movement speed.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_MOBILITYBOOSTER" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Module Splitter" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_MODULESPLITTER">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>Grants two additional module slots, but reduces AC by 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">1300</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_MODULESPLITTER" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Motion Sensor" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_MOTIONSENSOR">
+		<description>
+			<p><i>Military Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>You can activate this module as an action. Until the end of your next turn, the ATUM grants the pilot and crew blindsense out to 500ft. This only shows a creature's location when it moves during the sonars duration, but doesn't identify the creature in any other way.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_MOTIONSENSOR" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Night Sensors" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_NightSensors">
+		<description>
+			<p><i>Industrial/Military Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>You can activate this module as an action. For the next ten minutes, the ATUM grants the pilot and crew darkvision out to a range of 100 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_NIGHTSENSOR" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Nitros" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_NITROS">
+		<description>
+			<p><i>Civilian Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>As a bonus action, increase your movement speed by 100ft until the end of the current turn. Charge (2).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, civilian</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_NITROS" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Oil Slick" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_OILSLICK">
+		<description>
+			<p><i>Civilian Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>As an action, you can target a point on the ground you can see within 10ft of you, and apply the effects of the <i>Grease</i> spell to that area for 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, civilian</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_OILSLICK" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Passenger Compartment" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_PASSENGERCOMPARTMENT">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>A Passenger Compartment has enough space to transport up to 4 medium creatures. These creatures count as crew but cannot interact with the ATUM’s modules.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_PASSENGERCOMPARTMENT" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Penetration Dampeners" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_PENETRATIONDAMPENERS">
+		<description>
+			<p><i>Military Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>When choosing to divert damage to your armour plating, you can use your reaction to double your threshold against that damage. Charge (3).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">1100</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_PENETRATIONDAMPENERS" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Pressurized Cockpit" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_PRESSURIZEDCOCKPIT">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>Pressurizes the ATUM, allowing it to function underwater, or in space.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_PRESSURIZEDCOCKPIT" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Salvaging Unit" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_SALVAGINGUNIT">
+		<description>
+			<p><i>Civilian/Industrial Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>When activated, allows the pilot to scan for salvage. Duration: 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, civilian, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_SALVAGINGUNIT" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Servo-Clamp Booster" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_SERVOCLAMPBOOSTER">
+		<description>
+			<p><i>Industrial Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>When activated, grants the ATUM advantage on Strength checks for 1 hour. Requires Manipulator. Charge (3).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_SERVOCLAMPBOOSTER" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Speed-Loader" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_SPEEDLOADER">
+		<description>
+			<p><i>Military Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>2.</p>
+			<p class="indent"><b><i>Properties. </i></b>Can reload one ballistic hardpoint as a bonus action. Charge (2).</p>
+			
+			<p class="indent"><b><i>Charge (x). </i></b>Modules with the charge rule can be activated or used a number of times equal to the number in the brackets. Once expended, these modules must be reloaded, or have new charges installed by visiting a workshop.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="2" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_SPEEDLOADER" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Stabilizing Gyros" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_STABILIZINGGYROS">
+		<description>
+			<p><i>Industrial Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>Advantage on saving throws against being moved or being knocked prone.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_STABILIZINGGYROS" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Storage Crate" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_STORAGECRATE">
+		<description>
+			<p><i>General Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>Can store up to 250lbs of extra materials or other items, or one additional small fuel tank.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, civilian, industrial, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_GENERAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_STORAGECRATE" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Structural Integrity Support" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_STRUCTURALINTEGRITYSUPPORT">
+		<description>
+			<p><i>Industrial Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Properties. </i></b>The ATUM gains +5 hit dice. In addition, roll these dice, adding the ATUM's Constitution modifier to each die. The ATUM's maximum hit points increase by this amount.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, industrial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_STRUCTURALINTEGRITYSUPPORT" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Thermal Imaging" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_THERMALIMAGING">
+		<description>
+			<p><i>Military Upgrade Module (Active)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>1.</p>
+			<p class="indent"><b><i>Properties. </i></b>You can activate this module as an action. Until the end of your next turn, each crew member in the ATUM knows the location of any being that emits a body heat signature above 98.6°F (37°C) within 100 feet of it. Your DM has final say on whether a creature's body temps are high enough to be shown on thermal imaging.</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, active, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="1" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_THERMALIMAGING" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	<element name="U.M., Valkyrie Plating Enhancement" type="Item" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ITEM_UM_VALKYRIEPLATINGENHANCEMENT">
+		<description>
+			<p><i>Military Upgrade Module (Passive)</i></p>
+		
+			<p class="indent"><b><i>Slots. </i></b>3.</p>
+			<p class="indent"><b><i>Properties. </i></b>The ATUM ignores attacks or spells that would inflict damage equal to or less than its damage threshold (x) value. Other effects from a spell are unaffected. For example, if an ATUM has a damage threshold of (10), any attack or spell that inflicted a total of 10 or less damage would be ignored. This only affects damage dealt to the ATUM, not the pilot or crew. (Medium and Heavy ATUMs only).</p>
+		</description>
+		<setters>
+			<set name="keywords">atum, upgrade, module, passive, military</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Upgrade Module</set>
+			<set name="slot">misc</set>
+			<set name="cost" currency="gp">2500</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_MEDIUM_HEAVY_MILITARY</set>
+		</setters>
+		<rules>
+			<stat name="atum-character:module-slots-used" value="3" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+			<grant type="Class Feature" id="ID_ATUM_TGMHB_FEATURE_UM_VALKYRIEPLATINGENHANCEMENT" requirements="ID_ATUM_TGMHB_RACE_ATUM_VEHICLE" />
+		</rules>
+	</element>
+	
+	
+	<!-- Upgrade Module Features -->
+	<element name="Active Countermeasures" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_ACTIVECOUNTERMEASURES">
+		<description>
+			<p>As a bonus action, you scramble the targeting systems of enemy sensors. Until the end of your next turn you cannot be target-locked.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Charge (2)">
+			<description>As a bonus action, you scramble the targeting systems of enemy sensors. Until the end of your next turn you cannot be target-locked.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Targeting Module" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_ADVANCEDTARGETINGMODULE">
+		<description>
+			<p>As an action, you stack additional tracking information on a target you have target-locked. Until the end of your next turn, any missile hardpoints fired at that target have advantage.</p>
+		</description>
+		<sheet action="Action">
+			<description>Choose a target you have target-locked. Until the end of your next turn, any missile hardpoints fired at that target have advantage.</description>
+		</sheet>
+	</element>
+	<element name="Category 1 ATUM Workshop" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_ATUMWORKSHOP_1">
+		<description>
+			<p>This workshop can repair one ATUM at a time.</p>
+			<p>Installation of this workshop takes 30 days, and once complete, increases engine fuel consumption speed by 1 day per tank.</p>
+		</description>
+		<sheet alt="Workshop (1)">
+			<description>This workshop can repair one ATUM at a time. Engine fuel consumption speed increased by 1 day per tank.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:engine-grade" value="1" />
+		</rules>
+	</element>
+	<element name="Category 2 ATUM Workshop" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_ATUMWORKSHOP_2">
+		<description>
+			<p>This workshop can repair one ATUM at a time.</p>
+			<p>Installation of this workshop takes 60 days, and once complete, increases engine fuel consumption speed by 2 days per tank.</p>
+		</description>
+		<sheet alt="Workshop (2)">
+			<description>This workshop can repair one ATUM at a time. Engine fuel consumption speed increased by 2 day per tank.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:engine-grade" value="2" />
+		</rules>
+	</element>
+	<element name="Docking Clamps" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_DOCKINGCLAMPS">
+		<description>
+			<p>The ATUM can be carried by an aircraft or ship, locked to the hull. Can be activated or deactivated as an action. When active, the ATUM is incapacitated.</p>
+		</description>
+		<sheet action="Action">
+			<description>The ATUM can be carried by an aircraft or ship, locked to the hull. When active, the ATUM is incapacitated.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:engine-grade" value="2" />
+		</rules>
+	</element>
+	<element name="Emergency Oxygen Supply" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_EMERGENCYOXYGENSUPPLY">
+		<description>
+			<p>Grants an internal oxygen supply, allowing the crew to breath normally for 1 hour in pressurized ATUMs.</p>
+		</description>
+		<sheet usage="Charge (2)">
+			<description>Grants an internal oxygen supply, allowing the crew to breath normally for 1 hour in pressurized ATUMs.</description>
+		</sheet>
+	</element>
+	<element name="Energy Field" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_ENERGYFIELD">
+		<description>
+			<p class="indent"><b><i>AC. </i></b>+1.</p>
+			<p class="indent"><b><i>Energy Features. </i></b>As a reaction when you would be hit by an attack, you can flare up the shield, adding a +3 bonus to your AC for that attack. You can use this feature twice. You regain all expended uses after a short rest.</p>
+		</description>
+		<sheet action="Reaction" usage="2/Short Rest" >
+			<description>As a reaction when you would be hit by an attack, you can flare up the shield, adding a +3 bonus to your AC for that attack.</description>
+		</sheet>
+	</element>
+	<element name="External Storage Trailer" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_EXTERNALSTORAGETRAILER">
+		<description>
+			<p>Trailers are upgrade modules pulled by ATUMs, much like a conventional trailer. Each trailer can store up to 500lbs of equipment or materials, and has a single module slot, which can be used to attach another trailer, hardpoint, upgrade module or one additional fuel tank of any size.</p>
+			<p>Unlike other modules, trailers can be targeted directly by attacks. If reduced to 0 hit points, trailers are reduced to a small scrap pile, and any separated trailers must be reattached to an ATUM before they can be moved again or the ATUM has access to any modules installed on them. Trailers have an AC of 15, 55 (10d10) hit points, and increase the length of the ATUM by 10 feet per trailer.</p>
+			<p>When a trailer is installed, you must also install an additional mobility type for it. The ATUM does not benefit from any features of this mobility type, and can only ever move at the lowest speed available to it.</p>
+			<p>An ATUM can pull a number of trailers at the same time equal to its chassis Strength modifier.</p>
+		</description>
+		<sheet usage="{{atum-character:storage-trailer-qty}}/{{strength:modifier}}">
+			<description>Carrying capacity increased by {{atum-character:storage-trailer-weight}}lbs, module slots increased by {{atum-character:storage-trailer-qty}}, and ATUM length increased by {{atum-character:storage-trailer-length}}ft. The ATUM can only ever move at the speed of its slowest trailer.</description>
+		</sheet>
+	</element>
+	<element name="Fire Group Adapter" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_FIREGROUPADAPTER">
+		<description>
+			<p>Grants the use of one additional fire group. Pilot can swap between the 2 different fire groups as a bonus action on their turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Grants the use of one additional fire group. Pilot can swap between the 2 different fire groups as a bonus action on their turn.</description>
+		</sheet>
+	</element>
+	<element name="Fire Group Modulator (Ballistic)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_FIREGROUPMODULATOR_BALLISTIC">
+		<description>
+			<p>This upgrade links up to three ballistic hardpoints the ATUM has into a fire group, allowing the pilot to spend an action to fire all linked hardpoints at the same target simultaneously.</p>
+		</description>
+		<sheet action="Action">
+			<description>This upgrade links up to three ballistic hardpoints the ATUM has into a fire group, allowing the pilot to spend an action to fire all linked hardpoints at the same target simultaneously.</description>
+		</sheet>
+	</element>
+	<element name="Fire Group Modulator (Energy)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_FIREGROUPMODULATOR_ENERGY">
+		<description>
+			<p>This upgrade links up to three energy hardpoints the ATUM has into a fire group, allowing the pilot to spend an action to fire all linked hardpoints at the same target simultaneously.</p>
+		</description>
+		<sheet action="Action">
+			<description>This upgrade links up to three energy hardpoints the ATUM has into a fire group, allowing the pilot to spend an action to fire all linked hardpoints at the same target simultaneously.</description>
+		</sheet>
+	</element>
+	<element name="Flotation Device" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_FLOTATIONDEVICE">
+		<description>
+			<p>When activated, prevents the ATUM from sinking for 1 hour.</p>
+		</description>
+		<sheet usage="Charge (1)">
+			<description>When activated, prevents the ATUM from sinking for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Fuel Surge" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_FUELSURGE">
+		<description>
+			<p>As a bonus action, you can push your engine to gain a brief surge of speed. You can take one additional action this turn. On your following turn, you cannot take any actions, but can still move.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Charge (2)">
+			<description>You can take one additional action this turn. On your following turn, you cannot take any actions, but can still move.</description>
+		</sheet>
+	</element>
+	<element name="Heat Dispersal Units" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_HEATDISPERSALUNITS">
+		<description>
+			<p>When activated as a bonus action, grants the ATUM resistance to fire damage for 1 hour.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Charge (2)">
+			<description>Grants the ATUM resistance to fire damage for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Hull Reinforcement" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_HULLREINFORCEMENT">
+		<description>
+			<p>The ATUM gains +2 hit dice. In addition, roll these dice, adding the ATUM's Constitution modifier to each die. The ATUM's maximum hit points increase by this amount.</p>
+		</description>
+		<sheet>
+			<description>The ATUM gains +2 hit dice. In addition, roll these dice, adding +{{constitution:modifier}} to each die. The ATUM's maximum hit points increase by this amount.</description>
+		</sheet>
+	</element>
+	<element name="Increased Armour Plating" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_INCREASEDARMOURPLATING">
+		<description>
+			<p>Increases armour plating hit points by 10.</p>
+		</description>
+		<sheet>
+			<description>Increases armour plating hit points by 10.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:ap-value" value="10" />
+		</rules>
+	</element>
+	<element name="Increased Servo Responders" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_INCREASEDSERVORESPONDERS">
+		<description>
+			<p>Increase one hardpoints RoF value by 1.</p>
+		</description>
+		<sheet>
+			<description>Increase one hardpoints RoF value by 1.</description>
+		</sheet>
+	</element>
+	<element name="Internal Heater" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_INTERNALHEATER">
+		<description>
+			<p>When activated as a bonus action, grants the ATUM resistance to cold damage for 1 hour.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Charge (2)">
+			<description>Grants the ATUM resistance to cold damage for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Mobility Booster" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_MOBILITYBOOSTER">
+		<description>
+			<p>Grants the ATUM +10ft movement speed.</p>
+		</description>
+		<sheet>
+			<description>Grants the ATUM +10ft movement speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="10" />
+		</rules>
+	</element>
+	<element name="Module Splitter" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_MODULESPLITTER">
+		<description>
+			<p>Grants two additional module slots, but reduces AC by 2.</p>
+		</description>
+		<sheet>
+			<description>Grants two additional module slots, but reduces AC by 2.</description>
+		</sheet>
+		<rules>
+			<stat name="atum-character:module-slots" value="2" />
+			<stat name="ac:misc" value="-2" />
+		</rules>
+	</element>
+	<element name="Motion Sensor" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_MOTIONSENSOR">
+		<description>
+			<p>You can activate this module as an action. Until the end of your next turn, the ATUM grants the pilot and crew blindsense out to 500ft. This only shows a creature's location when it moves during the sonars duration, but doesn't identify the creature in any other way.</p>
+		</description>
+		<sheet action="Action">
+			<description>Until the end of your next turn, the ATUM grants the pilot and crew blindsense out to 500ft. This only shows a creature's location when it moves during the sonars duration, but doesn't identify the creature in any other way.</description>
+		</sheet>
+	</element>
+	<element name="Night Sensors" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_NIGHTSENSOR">
+		<description>
+			<p>You can activate this module as an action. For the next ten minutes, the ATUM grants the pilot and crew darkvision out to a range of 100 feet.</p>
+		</description>
+		<sheet action="Action">
+			<description>For the next ten minutes, the ATUM grants the pilot and crew darkvision out to a range of 100 feet.</description>
+		</sheet>
+	</element>
+	<element name="Nitros" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_NITROS">
+		<description>
+			<p>As a bonus action, increase your movement speed by 100ft until the end of the current turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Charge (2)">
+			<description>As a bonus action, increase your movement speed by 100ft until the end of the current turn.</description>
+		</sheet>
+	</element>
+	<element name="Oil Slick" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_OILSLICK">
+		<description>
+			<p>As an action, you can target a point on the ground you can see within 10ft of you, and apply the effects of the <i>Grease</i> spell to that area for 1 minute.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can target a point on the ground you can see within 10ft of you, and apply the effects of the Grease spell to that area for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Passenger Compartment" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_PASSENGERCOMPARTMENT">
+		<description>
+			<p>A Passenger Compartment has enough space to transport up to 4 medium creatures. These creatures count as crew but cannot interact with the ATUM’s modules.</p>
+		</description>
+		<sheet>
+			<description>The ATUM can transport up to 4 medium creatures.</description>
+		</sheet>
+	</element>
+	<element name="Penetration Dampeners" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_PENETRATIONDAMPENERS">
+		<description>
+			<p>When choosing to divert damage to your armour plating, you can use your reaction to double your threshold against that damage.</p>
+		</description>
+		<sheet action="Reaction" usage="Charge (3)">
+			<description>When choosing to divert damage to your armour plating, you can use your reaction to double your threshold against that damage.</description>
+		</sheet>
+	</element>
+	<element name="Pressurized Cockpit" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_PRESSURIZEDCOCKPIT">
+		<description>
+			<p>Pressurizes the ATUM, allowing it to function underwater, or in space.</p>
+		</description>
+		<sheet>
+			<description>Allowing the ATUM to function underwater or in space.</description>
+		</sheet>
+	</element>
+	<element name="Salvaging Unit" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_SALVAGINGUNIT">
+		<description>
+			<p>When activated, allows the pilot to scan for salvage. Duration: 1 hour.</p>
+		</description>
+		<sheet>
+			<description>When activated, allows the pilot to scan for salvage. Duration: 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Servo-Clamp Booster" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_SERVOCLAMPBOOSTER">
+		<description>
+			<p>When activated, grants the ATUM advantage on Strength checks for 1 hour.</p>
+		</description>
+		<sheet usage="Charge (3)">
+			<description>When activated, grants the ATUM advantage on Strength checks for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Speed-Loader" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_SPEEDLOADER">
+		<description>
+			<p>Can reload one ballistic hardpoint as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Charge (2)">
+			<description>Can reload one ballistic hardpoint as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Stabilizing Gyros" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_STABILIZINGGYROS">
+		<description>
+			<p>Advantage on saving throws against being moved or being knocked prone.</p>
+		</description>
+		<sheet>
+			<description>Advantage on saving throws against being moved or being knocked prone.</description>
+		</sheet>
+	</element>
+	<element name="Storage Crate" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_STORAGECRATE">
+		<description>
+			<p>Can store up to 250lbs of extra materials or other items, or one additional small fuel tank.</p>
+		</description>
+		<sheet>
+			<description>Can store up to 250lbs of extra materials or other items, or one additional small fuel tank.</description>
+		</sheet>
+	</element>
+	<element name="Structural Integrity Support" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_STRUCTURALINTEGRITYSUPPORT">
+		<description>
+			<p>The ATUM gains +5 hit dice. In addition, roll these dice, adding the ATUM's Constitution modifier to each die. The ATUM's maximum hit points increase by this amount.</p>
+		</description>
+		<sheet>
+			<description>The ATUM gains +5 hit dice. In addition, roll these dice, adding +{{constitution:modifier}} to each die. The ATUM's maximum hit points increase by this amount.</description>
+		</sheet>
+	</element>
+	<element name="Thermal Imaging" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_THERMALIMAGING">
+		<description>
+			<p>You can activate this module as an action. Until the end of your next turn, each crew member in the ATUM knows the location of any being that emits a body heat signature above 98.6°F (37°C) within 100 feet of it. Your DM has final say on whether a creature's body temps are high enough to be shown on thermal imaging.</p>
+		</description>
+		<sheet action="Action">
+			<description>Until the end of your next turn, each crew member in the ATUM knows the location of any being that emits a body heat signature above 98.6°F (37°C) within 100 feet of it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Valkyrie Plating Enhancement" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_FEATURE_UM_VALKYRIEPLATINGENHANCEMENT">
+		<description>
+			<p>The ATUM ignores attacks or spells that would inflict damage equal to or less than its damage threshold (x) value. Other effects from a spell are unaffected. </p>
+			<p>For example, if an ATUM has a damage threshold of (10), any attack or spell that inflicted a total of 10 or less damage would be ignored. </p>
+			<p>This only affects damage dealt to the ATUM, not the pilot or crew. </p>
+			<p>(Medium and Heavy ATUMs only).</p>
+		</description>
+		<sheet>
+			<description>The ATUM ignores attacks or spells that would inflict damage equal to or less than its damage threshold (x) value. Other effects from a spell are unaffected. This only affects damage dealt to the ATUM, not the pilot or crew.</description>
+		</sheet>
+	</element>
+	
 	
 </elements>

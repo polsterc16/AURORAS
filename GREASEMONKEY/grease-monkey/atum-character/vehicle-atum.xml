@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.4">
-			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/vehicle-atum.xml" />
+		<update version="0.0.5">
+			<file name="vehicle-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/vehicle-atum.xml" />
 		</update>
 	</info>
 	
@@ -142,6 +142,12 @@
 			
 			
             <grant type="Racial Trait" id="ID_ATUM_TGMHB_RACIAL_SELECT_PILOT_STATS" requirements="(ID_ATUM_TGMHB_ENGINE_CONVENTIONAL||ID_ATUM_TGMHB_ENGINE_VARIANT_LODESTONE_CRYSTALS||ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA)" />
+			
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_MEDIUM_HEAVY" requirements="(ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM||ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY)" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_HEAVY" requirements="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_HEAVY" />
+			
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_MEDIUM_HEAVY_MILITARY" requirements="ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY,(ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM||ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY)" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_HEAVY_MILITARY" requirements="ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY,ID_ATUM_TGMHB_PROFICIENCY_CHASSIS_HEAVY" />
         </rules>
     </element>
 	
@@ -564,6 +570,8 @@
 			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_NORLIVINGORDEAD" />
 			<grant type="Class Feature" name="ID_ATUM_TGMHB_SOULCAGE_RULE_FREEING_BOUND_SOULS" />
 			
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_SOULCAGE" />
+			
 			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_LIGHT_SOULCAGE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_LIGHT" />
 			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_MEDIUM_SOULCAGE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_MEDIUM" />
 			<grant type="Sub Race" id="ID_ATUM_TGMHB_SUB_RACE_CHASSIS_HEAVY_SOULCAGE" requirements="ID_ATUM_TGMHB_RACIAL_CHASSIS_HEAVY" />
@@ -580,7 +588,7 @@
 			<p><b><i>Cost. </i></b>100 gp.</p>
 		</description>
 		<sheet alt="Engine (Poor)">
-			<description>3 days per fuel tank.</description>
+			<description>{{atum-character:engine-grade}} days per fuel tank.</description>
 		</sheet>
 		<rules>
 			<stat name="atum-character:engine-grade" value="3" bonus="base" />
@@ -595,7 +603,7 @@
 			<p><b><i>Cost. </i></b>250 gp.</p>
 		</description>
 		<sheet alt="Engine (Average)">
-			<description>7 days per fuel tank.</description>
+			<description>{{atum-character:engine-grade}} days per fuel tank.</description>
 		</sheet>
 		<rules>
 			<stat name="atum-character:engine-grade" value="7" bonus="base" />
@@ -610,7 +618,7 @@
 			<p><b><i>Cost. </i></b>500 gp.</p>
 		</description>
 		<sheet alt="Engine (Good)">
-			<description>10 days per fuel tank.</description>
+			<description>{{atum-character:engine-grade}} days per fuel tank.</description>
 		</sheet>
 		<rules>
 			<stat name="atum-character:engine-grade" value="10" bonus="base" />
@@ -625,7 +633,7 @@
 			<p><b><i>Cost. </i></b>750 gp.</p>
 		</description>
 		<sheet alt="Engine (Masterwork)">
-			<description>14 days per fuel tank.</description>
+			<description>{{atum-character:engine-grade}} days per fuel tank.</description>
 		</sheet>
 		<rules>
 			<stat name="atum-character:engine-grade" value="14" bonus="base" />
@@ -1158,7 +1166,7 @@
 			<stat name="atum-character:ap-value" value="0" bonus="base" />
 			<stat name="atum-character:ap-threshold" value="0" bonus="base" />
 			
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN" />
 		</rules>
 	</element>
 	<element name="Industrial Class" type="Archetype" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_ARCHETYPE_INDUSTRIAL">
@@ -1190,7 +1198,7 @@
 			<stat name="atum-character:ap-threshold" value="10" bonus="base" />
 			<stat name="atum-character:module-slots" value="1" />
 			
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_CHASSIS_RESISTANCE_X" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_ARMOUR_PLATING" />
@@ -1225,7 +1233,7 @@
 			<stat name="atum-character:ap-threshold" value="10" bonus="base" />
 			<stat name="atum-character:module-slots" value="1" />
 			
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_CHASSIS_RESISTANCE_X" />
 			<grant type="Class Feature" id="ID_ATUM_TGMHB_CLASS_FEATURE_ARMOUR_PLATING" />
@@ -1248,6 +1256,7 @@
 			<set name="slot">misc</set>
 			<set name="cost" currency="gp">200</set>
 			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_SOULCAGE</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
@@ -1265,6 +1274,7 @@
 			<set name="slot">misc</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_SOULCAGE</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
@@ -1282,6 +1292,7 @@
 			<set name="slot">misc</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_SOULCAGE</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
@@ -1299,6 +1310,7 @@
 			<set name="slot">misc</set>
 			<set name="cost" currency="gp">30</set>
 			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_SOULCAGE</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
@@ -1316,6 +1328,7 @@
 			<set name="slot">misc</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="rarity">Common</set>
+			<set name="proficiency">ID_ATUM_TGMHB_PROFICIENCY_SOULCAGE</set>
 		</setters>
 		<rules>
 			<stat name="atum-character:plasma-cell-installed" value="1" requirements="ID_ATUM_TGMHB_ENGINE_VARIANT_PLASMA" />
@@ -1533,17 +1546,17 @@
 	
 	<element name="Has Adapter (Civilian)" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_CIVILIAN">
 		<rules>
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_CIVILIAN" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_CIVILIAN" />
 		</rules>
 	</element>
 	<element name="Has Adapter (Industrial)" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_INDUSTRIAL" >
 		<rules>
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_INDUSTRIAL" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_INDUSTRIAL" />
 		</rules>
 	</element>
 	<element name="Has Adapter (Military)" type="Grants" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_GRANTS_HAS_ADAPTER_MILITARY" >
 		<rules>
-			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_HP_MILITARY" />
+			<grant type="Proficiency" id="ID_ATUM_TGMHB_PROFICIENCY_CLASS_MILITARY" />
 		</rules>
 	</element>
 	<element name="Module Adapter (Civilian)" type="Class Feature" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_MODULE_ADAPTER_001">
@@ -1915,5 +1928,10 @@
 			<stat inline="true" name="atum-character:soul-cage:demonic-ability" value="Dex" />
 		</rules>
 	</element>
+	
+	<element name="Weapon Proficiency (Soulcage)" type="Proficiency" source="ATUMs (TGMHB)" id="ID_ATUM_TGMHB_PROFICIENCY_SOULCAGE">
+		<sheet display="false" />
+	</element>
+	
 	
 </elements>
