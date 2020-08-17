@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-atum.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/GREASEMONKEY/grease-monkey/atum-character/items-atum.xml" />
 		</update>
 	</info>
@@ -96,6 +96,7 @@
 			
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
+			<p><i>(Equip only one Manipulator of the same kind in AURORA!)</i></p>
 		</description>
 		<setters>
 			<set name="keywords">atum, light, civilian, hardpoint, manipulator</set>
@@ -703,6 +704,7 @@
 			
 			<p class="indent"><b><i>Slots. </i></b>1.</p>
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
+			<p><i>(Equip only one Manipulator of the same kind in AURORA!)</i></p>
 		</description>
 		<setters>
 			<set name="keywords">atum, medium, military, hardpoint, manipulator</set>
@@ -1216,6 +1218,7 @@
 			
 			<p class="indent"><b><i>Slots. </i></b>2.</p>
 			<p class="indent"><b><i>Manipulator. </i></b>This module is an arm with a set of fingers attached to it. A manipulator requires a free hand to use when piloting an ATUM, and functions like an ordinary hand, allowing you to make unarmed strikes, wield and throw weapons, grapple enemies and benefit from additional features your class gives you.</p>
+			<p><i>(Equip only one Manipulator of the same kind in AURORA!)</i></p>
 		</description>
 		<setters>
 			<set name="keywords">atum, heavy, industrial, hardpoint, manipulator</set>
