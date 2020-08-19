@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
-			<file name="feats-ritual-caster-reworked.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/RITUALCASTER/feats-ritual-caster-reworked.index" />
+		<update version="0.0.2">
+			<file name="feats-ritual-caster-reworked.index" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/RITUALCASTER/feats-ritual-caster-reworked.index" />
 		</update>
 	</info>
 
 	<files>
-		<file name="feats-ritual-caster-reworked.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/RITUALCASTER/feats-ritual-caster-reworked.xml" />
+		<file name="feats-ritual-caster-reworked.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/RITUALCASTER/feats-ritual-caster-reworked.xml" />
 	</files>
 </index>

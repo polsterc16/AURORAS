@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
-			<file name="dms-guild-michael-richter.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index" />
+		<update version="0.0.2">
+			<file name="dms-guild-michael-richter.index" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/dms-guild-michael-richter.index" />
 		</update>
 	</info>
 
 	<files>
-		<file name="race-catfolk.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/race-catfolk.xml" />
-		<file name="race-drider.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/race-drider.xml" />
-		<file name="race-serpentfolk.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/race-serpentfolk.xml" />
-		<file name="race-the-other.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/race-the-other.xml" />
-		<file name="sorcerer-elemental-vessel.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/sorcerer-elemental-vessel.xml" />
-		<file name="warlock-the-symbiont.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/DMSG_MR/warlock-the-symbiont.xml" />
+		<file name="race-catfolk.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/race-catfolk.xml" />
+		<file name="race-drider.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/race-drider.xml" />
+		<file name="race-serpentfolk.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/race-serpentfolk.xml" />
+		<file name="race-the-other.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/race-the-other.xml" />
+		<file name="sorcerer-elemental-vessel.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/sorcerer-elemental-vessel.xml" />
+		<file name="warlock-the-symbiont.xml" url="https://raw.githubusercontent.com/mol-tres/AURORAS/master/DMSG_MR/warlock-the-symbiont.xml" />
 	</files>
 </index>
