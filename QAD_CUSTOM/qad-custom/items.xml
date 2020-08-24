@@ -103,7 +103,7 @@
 	<element name="Raw Magicum Crystal +1" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_MAGICUMCRYSTAL_RAW">
 		<description>
 			<p><i>Spellcasting Focus, Uncommon (requires attunement by a spellcaster)</i></p>
-			<p>The Raw Magicum Crystal can be used as a +1 spellcasting focus.</p>
+			<p>The Raw Magicum Crystal can be used as a spellcasting focus. While holding this crystal, you gain a +1 bonus to spell attack rolls.</p>
 			<p class="indent"><b><i>Untamed Magic. </i></b>Every spell of second level or higher that is cast while this crystal is on your body triggers a <i>Wild Magic Surge</i>. Roll a d100 and consult the <i>Wild Magic Surge</i> table for the random magical effect (PHB p. 104).</p>
 			<p><i>Magicum is the basis for refined ATUM fuel.</i></p>
 			<p><i>The wizard Kardos mentioned, that he might be able to remove the chaotic aspect of this crystal, for a fee.</i></p>
