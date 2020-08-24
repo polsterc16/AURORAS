@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
@@ -98,6 +98,60 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
+	
+	
+	<element name="Raw Magicum Crystal +1" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_MAGICUMCRYSTAL_RAW">
+		<description>
+			<p><i>Spellcasting Focus, Uncommon (requires attunement by a spellcaster)</i></p>
+			<p>The Raw Magicum Crystal can be used as a +1 spellcasting focus.</p>
+			<p class="indent"><b><i>Untamed Magic. </i></b>Every spell of second level or higher that is cast while this crystal is on your body triggers a <i>Wild Magic Surge</i>. Roll a d100 and consult the <i>Wild Magic Surge</i> table for the random magical effect (PHB p. 104).</p>
+			<p><i>Magicum is the basis for refined ATUM fuel.</i></p>
+			<p><i>The wizard Kardos mentioned, that he might be able to remove the chaotic aspect of this crystal, for a fee.</i></p>
+			<p><i>Source: Sunken temple (R17) in the Highland.</i></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<!-- <set name="container">Arcane Focus</set> -->
+			<set name="slot">onehand</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+		</rules>
+	</element>
+	
+	<element name="Grenade, Mustard Gas, Small" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GRENADE_MUSTARD_GAS_SMALL">
+		<description>
+			<p>As an action, a character can throw a grenade at a point up to 60 feet away.</p>
+			<p class="indent">When this grenade lands, it emits a cloud of gas that creates a heavily obscured area in a 20-foot sphere. A moderate wind (at least 10 miles per hour) disperses the smoke in 2 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round. Otherwise, the gas lasts for 3 rounds.</p>
+			<p class="indent">All creatures who end their turn within the cloud must make a DC 15 Constitution saving throw, taking 5d6 poison damage on a failed save or half as much on a successful one.</p>
+			<p><i>"It's not like anyone cared about the Geneva Conventions for the last 1300 years anyway."</i></p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Gas Mask, Improvised" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GAS_MASK_IMPROVISED">
+		<description>
+			<p>While wearing this mask, exposure to mustard gas has no effect on you for 2 rounds before you start to absorb the gas over your skin.</p>
+			<p><i>Basically a wet piece of cloth that you wear over the mouth and nose.</i></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+	
+	
 	
 	
 	<!-- Unique Items -->
