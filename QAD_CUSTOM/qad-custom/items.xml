@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
@@ -152,6 +152,45 @@
 	</element>
 	
 	
+	<element name="Stun Batton" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_WEAPON_MACE_STUNBATTON">
+		<description>
+			<p><i>Weapon (mace), Rare</i></p>
+			<p><b><i>Damage. </i></b>1d6 bludgeoning</p>
+			<p>This Stun Batton has 4 charges. On a hit, you can expend 1 charge to force the target to make a DC 12 Constitution saving throw. The target has disadvantage on the saving throw if it is wearing armor made of metal. On a failure, the target takes additional 1d6 lightning damage, and it can’t take reactions until the start of its next turn.</p>
+			<p class="indent">The Stun Batton regains 1d4 expended charges after a long rest.</p>
+			<p><i>"Ask your local Artificer for spare AA batteries."</i></p>
+		</description>
+		<setters>
+			<set name="keywords">mace</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="mace">Weapon</set>
+			<!-- <set name="attunement">true</set> -->
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MACES</set>
+		</setters>
+	</element>
+	
+	
+	<element name="Riot Shield" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_SHIELD_RIOTSHIELD">
+		<description>
+			<p><i>Armor (shield), Rare</i></p>
+			<p>The Riot Shield is made from a lightweight, almost glass-like substance and is carried in one hand. It seems like this material is unaffected by rust or acid.</p>
+			<p>The shield has an inbuild light source, that casts bright light in a 30-foot cone and dim light for an additional 30 feet. The light can be switched on or off as a free action.</p>
+			<p>Once the light has been active for one hour, it’s internal energy source must recharge and the light can't be used again until the next dawn.</p>
+			<p><i>"When you really want to see the white in the enemies eyes."</i></p>
+			<p><i>There is a small carving near the handle that spells the name "James".</i></p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<!-- <set name="attunement">true</set> -->
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
 	
 	
 	<!-- Unique Items -->
@@ -236,5 +275,7 @@
 			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE</set>
 		</setters>
 	</element>
+	
+	
 	
 </elements>
