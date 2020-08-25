@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
@@ -141,8 +141,8 @@
 	
 	<element name="Gas Mask, Improvised" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GAS_MASK_IMPROVISED">
 		<description>
-			<p>While wearing this mask, exposure to mustard gas has no effect on you for 2 rounds before you start to absorb the gas over your skin.</p>
-			<p><i>Basically a wet piece of cloth that you wear over the mouth and nose.</i></p>
+			<p>Basically a wet piece of cloth that you wear over the mouth and nose. If you breathe through it, exposure to mustard gas has no effect on you for 2 rounds before the mask becomes ineffective.</p>
+			<p><i>"It’s a wet piece of cloth. Might as well try to hold your breath."</i></p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
@@ -150,7 +150,30 @@
 			<set name="weight" lb="0">—</set>
 		</setters>
 	</element>
-	
+	<element name="Gas Mask" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GAS_MASK">
+		<description>
+			<p>A Gas Mask is a sealed mask which protects its wearer from inhaling hazardous gasses, vapors, fumes, and particles (including radioactive particles).</p>
+			<p>While wearing this mask, you are immune to non-magical inhaled chemicals, toxins, or particles, and you have advantage on saving throws against magical inhaled chemicals, toxins, or particles.</p>
+			<p>Its filters need to be replaced after one hour of use. It takes one action to replace a filter, due to the masks design to be used in emergency situations.</p>
+			<p><i>"For those moments when it is not love that is in the air."</i></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+	<element name="Gas Mask Filter" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GAS_MASK_FILTER">
+		<description>
+			<p>A spare charcoal filter for your Gas Mask.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">—</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 	
 	<element name="Stun Batton" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_WEAPON_MACE_STUNBATTON">
 		<description>
@@ -171,7 +194,6 @@
 		</setters>
 	</element>
 	
-	
 	<element name="Riot Shield" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_SHIELD_RIOTSHIELD">
 		<description>
 			<p><i>Armor (shield), Rare</i></p>
@@ -191,6 +213,59 @@
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 		</setters>
 	</element>
+	
+	<element name="Flight Suit" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_FLIGHTSUIT">
+		<description>
+			<p><i>Armor (light), Rare</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier</p>
+			<p>This armor includes two wings attached under the arms.</p>
+			<p class="indent">When you are falling, you can use your reaction to spread your arms and engage the wings. The wings allow you to glide with a flying speed for 30 feet. While you are glinding, you cannot move upwards, and you descend at least 10 feet every turn, but you can choose the rate of your fall and in which direction you move.</p>
+			<p><i>"This is not flying, this is falling with style."</i></p>
+		</description>
+		<setters>
+			<set name="keywords">fly, flight, wings</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">Leather</set>
+		</setters>
+	</element>
+	
+	<element name="Parachute" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_PARACHUTE">
+		<description>
+			<p>When equipped (as you would a normal backpack), as a bonus action while falling, you can pull a chord on this packpack to release its parachute.</p>
+			<p class="indent">Your descend is slowed to 60 feet per round, and if the parachute is not damaged before you land, you take no falling damage. You have advantage on any Dexterity (Acrobatics) check you make to land on your feet.</p>
+			<p class="indent">However, the parachute does not disappear, and your movement speed is halved while it is loose on the ground.</p>
+			<p class="indent">The parachute has an AC of 11 and 15 HP. Its approximate dimensions are 15 by 15 by 10 feet while in the air.</p>
+			<p><i>"If you are prone to jumping into dangerous situations head first, you might as well take this with you."</i></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="5">5 lb.</set>
+		</setters>
+	</element>
+	
+	<element name="Arcane Puzzle Box" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARCANE_PUZZLEBOX">
+		<description>
+			<p><i>Wonderous Item, Unique</i></p>
+			<p>A 10 cm wide puzzle box, engraved with a complex set of runes and movable components, that change every dawn.</p>
+			<p>This box can only hold one single item no bigger that 5 cubic feet, which appears once the box is opened.</p>
+			<p>To open the box, without being its owner, requires being occupied with the puzzle over 3 hours of uninterupted concentration. Then roll 3 consecutive DC 16 Intelligence checks. If one of the checks fail, the box "locks" and the puzzle cannot be attempted until it resets at the next dawn.</p>
+			<p>The last person to successfully open this box is its owner and can get access to it with a touch of their hand. They also receive a mental "alarm" whenever a puzzle attempt fails (provided they are on the same plane of existence).</p>
+			<p>The box cannot be destroyed by any means short of a <i>Disintegrate</i> or <i>Wish</i> spell.</p>
+			<p><i>Source: Dexter Griff’s corpse, Bunker 109, north-east of Suhast.</i></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
 	
 	
 	<!-- Unique Items -->
