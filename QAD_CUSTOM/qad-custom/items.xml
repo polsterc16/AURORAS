@@ -266,6 +266,19 @@
 		</setters>
 	</element>
 	
+    <element name="Magicum (flask)" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_MAGICUM_FLASK">
+		<description>
+			<p>Magicum can come in a clay flask that holds 1 pint (16 oz.). This form of magicum can be used to power machines, artifacts and gadgets that are not considered ATUMs.</p>
+            <p><i>"Some say, it also makes a good skin lotion ... or at least no one ever came back to complain about it."</i></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="0">—</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
 	
 	
 	<!-- Unique Items -->
