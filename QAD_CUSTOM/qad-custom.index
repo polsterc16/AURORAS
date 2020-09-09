@@ -16,6 +16,6 @@
 		<file name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/tov/deities.xml" />
 		
 		
-		<obsolete name="source.xml"  />
+		<obsolete name="source.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/source.xml" />
 	</files>
 </index>
