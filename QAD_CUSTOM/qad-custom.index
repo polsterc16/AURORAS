@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>Qadrudia Custom</name>
+		<name>Custom Campaing stuff</name>
 		<description>Campaign specific custum stuff.</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="qad-custom.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom.index" />
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/source.xml" />
+		<!-- QAD -->
+		<file name="sources.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/sources.xml" />
 		<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
+		
+		<!-- TOV -->
+		<file name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/tov/deities.xml" />
+		
+		
+		<obsolete name="source.xml"  />
 	</files>
 </index>
