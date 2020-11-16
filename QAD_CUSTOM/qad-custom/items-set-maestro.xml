@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items Maestro</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-set-maestro.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-set-maestro.xml" />
+		</update>
+	</info>
+	
+	<!-- Armor -->
+	<element name="The Maestro's Suit Jacket" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_MAESTRO_JACKET">
+		<description>
+			<p><i>Light Armor, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>12 + Dex modifier (Studded Leather Armor)</p>
+			<p>A very finely tailored black suit jacket, fitting seemingly perfectly whoever wears it.</p>
+			<p class="indent">You can use a free action to take up to 6 arrows out of the jacket's interior pocket. If you try to remove more than 6 arrows out of the pocket, the one currently being taken replaces the oldest arrow, which disappears in a small puff of smoke accompanied by the sound of a single piano tune being played.</p>
+			<p class="indent"><i>"Warning, might cause delusions of bandeur"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">maestro</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="studded leather">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Studded Leather</set>
+		</setters>
+	</element>
+	
+	<!-- Clothing -->
+	<element name="The Maestro's Shirt" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHIRT">
+		<description>
+			<p><i>Clothing, Unique (requires attunement)</i></p>
+			<p>A very finely tailored white shirt that seemingly never gets dirty, complete with fitting bowtie.</p>
+			<p class="indent">While wearing this shirt, you know the <i>Vicious Mockery</i> cantrip. Charisma is your spellcasting ability for this cantrip. In addition you also get advantage on the saving throw against the effects of the <i>Vicious Mockery</i> cantrip.</p>
+			<p class="indent">If worn in combination with the Maestro's Suit Jacket, you can change the damage type of one arrow produced by the jacket to Psychic damage.</p>
+			<p class="indent"><i>"Critics give this shirt two drums up"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">maestro</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Clothing</set>
+			<set name="slot">misc</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Unique</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+		</rules>
+	</element>
+	<element name="The Maestro's Pants" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_PANTS">
+		<description>
+			<p><i>Clothing, Unique (requires attunement)</i></p>
+			<p>A very finely tailored pair of pants that goes nicely with the Maestro's Suit Jacket.</p>
+			<p class="indent">These pants hold 3 charges, which are regained daily at dawn. As an action you can expend one charge to produce a magical arrow.</p>
+			<p class="indent">If you hit a creature with this arrow, it must succeed on a DC 12 Wisdom saving throw or be silenced and deafened for 30 seconds. At the end of each of its turns, the target can repeat the saving throw. Any creature affected by this arrow is immune to thunder damage. Once it hits a target, the arrow is no longer magical.</p>
+			<p class="indent">Whenever you use the Maestro's Pants to produce another magical arrow, the previous one disappears in a small puff of smoke accompanied by the sound of a gituar string being plucked.</p>
+			<p class="indent"><i>"Time to silence those critics... maybe forever"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">maestro</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Clothing</set>
+			<set name="slot">misc</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	<element name="The Maestro's Glasses" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_GLASSES">
+		<description>
+			<p><i>Accessory, Unique</i></p>
+			<p>Objects viewed through these glasses can be magnified up to twice their size.</p>
+			<p class="indent">Further, while looking through them you gain advantage on checks made to spot booing members in an audience. If you manage to spot one, these glasses give you advantage on your first ranges attack against them.</p>
+			<p class="indent"><i>"For eyeing up the composition"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">maestro</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Accessory</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	<element name="The Maestro's Shoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHOES">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent">As a bonus action you can cause these shoes to make trombone sounds with every step you take for up to one minute</p>
+			<p class="indent">If you attempt to kick a creature while wearing these shoes, you gain a +1 on the attack and damage rolls.</p>
+			<p class="indent">If you wear them in combination with the Maestro's Pants, the base damage of your unarmed strike becomes 1d4.</p>
+			<p class="indent"><i>"When it's time to gig up some dirt"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">maestro</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Clothing</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- Baton/Special -->
+	<element name="The Maestro's Baton" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_BATON">
+		<description>
+			<p><i>Ranged/Melee Weapon, Unique</i></p>
+			<p>When not used as a weapons, this item appears to be the baton of a maestro.</p>
+			<p class="indent">Using a bonus action, you can transform the baton into a quaterstaff, into a longbow, or back into its original form. If not used as a weapon, it turns back into a baton after one minute.</p>
+			<p class="indent">The attacks you make with this weapon are considered to be magical</p>
+			<p class="indent">Using this item also gives you advantage on checks made to conduct an orchestra.</p>
+			<p class="indent"><i>"With this, you can make the critics play after your tune"</i></p>
+		</description>
+		<setters>
+			<set name="keywords">maestro</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Accessory</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	
+	
+</elements>

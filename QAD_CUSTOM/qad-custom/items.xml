@@ -3,56 +3,12 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
 		</update>
 	</info>
 	
-	<!-- General Items -->
-	<element name="Image Tile" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BILDTAFELN">
-		<description>
-			<p>A set of thin metal plates the size of playing cards, engraved with an eye on its front side.</p>
-			<p class="indent">You can activate a tile as an action and use it in one the following ways:</p>			
-			<p class="indent"><b><i>View. </i></b>The tile’s stored image appears as a miniature <i>minor illustion</i> its back side.</p>
-			<p class="indent"><b><i>Capture. </i></b>Pointing the tile at something, causes a miniature <i>minor illustion</i> of the tile’s view to appear on its back side. Doing so for one minute causes this image to be stored in the tile until overwritten.</p>
-			<p class="indent"><b><i>Transfer. </i></b>You can choose to copy an image from one tile to another by activating them next to each other for one minute.</p>
-		</description>
-		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Uncommon</set>
-		</setters>
-	</element>
-	<element name="Transport Stone" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_TRANSPORTSTEIN">
-		<description>
-			<p>A small flat stone, covered in magical runes. A stone needs to be paired to another to allow for transport between them.</p>
-			<p class="indent"><b><i>Send. </i></b>You can spend 10 minutes in order to send non-living objects that can fit an a 2 foot cube to the stone’s counterpart. The stone can be used this way up to three times until the next dawn.</p>
-			<p class="indent"><b><i>Receive. </i></b>When the stone receives objects, certain runes on it start to blink. Using an action you can make them appear in an unoccupied space within 5 feet.</p>
-		</description>
-		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Rare</set>
-		</setters>
-	</element>
-	<element name="Bag of Holding Potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
-		<description>
-			<p>It appears to be a simple potato sack, but using an action, 1d4 potatoes can be removed from it.</p>
-			<p class="indent">Once potatoes have been removed 3 times, it can't be used again until the next dawn.</p>
-			<p class="indent"><i>The supply of potatoes seemingly is infinite, altough it cannot be said if it produces the potatoes magically or displaces them from somewhere else.</i></p>
-		</description>
-		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Uncommon</set>
-		</setters>
-	</element>
+	
 	<element name="Potion of Healing, light" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_POTIONOFHEALING_LIGHT">
 		<description>
 			<p>You regain 1d4 + 1 hit points when you drink this potion. Whatever its potency, the potion’s red liquid glimmers when agitated. </p>
@@ -81,63 +37,6 @@
 		</setters>
 	</element>
 	
-	<element name="Arrow of Wrangling" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GRAPPLE_ARROW">
-		<description>
-			<p>An arrow made of metal, decorated with hooks that extend when pulled in the opposite direction.</p>
-			<p class="indent"><b><i>Hooked Arrowhead. </i></b>When you hit a successful attack using this arrow, it lodges into your target and grabs into it with metal hooks dealing an extra 1d4 damage.</p>
-			<p class="indent"><b><i>Ropeshot. </i></b>You can attach up to 90 ft of rope to this arrow without affecting the shot. If you successfully attack a small, medium, large or huge creature with this arrow, it can move unimpeded within a circle centered on the creature holding the other end of the rope. The radius of this circle is determined by when the ropeholder decides to tension the rope.</p>
-			<p class="indent"><b><i>Struggle. </i></b>Should the hooked creature try to move outside this radius, then it must make a Strength (Athletics) check against the ropeholder’s Strength (Athletics). On a failure it looses half its movement. On a success it can move at half speed and drag the ropeholder along (forced movement), or it moves unimpeded if the ropeholder chooses to let go of the rope.</p>
-			<p class="indent"><b><i>Wrangle. </i></b>Conversely, the ropeholding creature can spend an action to reduce the radius by pulling in rope. If the rope is slack or the ropeholder chooses to move towards the hooked creature, the ropeholder can pull in up to 30 ft of rope. Additionally, if the rope is taut, the ropeholder can make a Strength (Athletics) check against the hooked creature’s Strength (Athletics) in order to forcefully move it closer. On a success the hooked creature is moved towards the ropeholder by 5 ft if its size is greater than the ropeholder’s, or 10 ft otherwise.</p>
-			<p class="indent">You can choose to climb the rope. Whether or not the arrow holds your weight, the Strength (Athletics) DC for the climb and any (dis)advantage are at the DM’s discretion.</p>
-			<p class="indent">A creature of reasonable intelligence might realize eventually, that it can just try to cut the rope.</p>
-		</description>
-		<setters>
-			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">30</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="stackable">true</set>
-		</setters>
-	</element>
-	
-	
-	<element name="Raw Magicum Crystal +1" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_MAGICUMCRYSTAL_RAW">
-		<description>
-			<p><i>Spellcasting Focus, Uncommon (requires attunement by a spellcaster)</i></p>
-			<p>The Raw Magicum Crystal can be used as a spellcasting focus. While holding this crystal, you gain a +1 bonus to spell attack rolls.</p>
-			<p class="indent"><b><i>Untamed Magic. </i></b>Every spell of second level or higher that is cast while this crystal is on your body triggers a <i>Wild Magic Surge</i>. Roll a d100 and consult the <i>Wild Magic Surge</i> table for the random magical effect (PHB p. 104).</p>
-			<p><i>Magicum is the basis for refined ATUM fuel.</i></p>
-			<p><i>The wizard Kardos mentioned, that he might be able to remove the chaotic aspect of this crystal, for a fee.</i></p>
-			<p><i>Source: Sunken temple (R17) in the Highland.</i></p>
-		</description>
-		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<!-- <set name="container">Arcane Focus</set> -->
-			<set name="slot">onehand</set>
-			<set name="attunement" addition="by a spellcaster">true</set>
-			<set name="rarity">Uncommon</set>
-			<set name="enhancement">1</set>
-		</setters>
-		<rules>
-			<stat name="spellcasting:attack" value="1" />
-		</rules>
-	</element>
-	
-	<element name="Grenade, Mustard Gas, Small" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GRENADE_MUSTARD_GAS_SMALL">
-		<description>
-			<p>As an action, a character can throw a grenade at a point up to 60 feet away.</p>
-			<p class="indent">When this grenade lands, it emits a cloud of gas that creates a heavily obscured area in a 20-foot sphere. A moderate wind (at least 10 miles per hour) disperses the smoke in 2 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round. Otherwise, the gas lasts for 3 rounds.</p>
-			<p class="indent">All creatures who end their turn within the cloud must make a DC 15 Constitution saving throw, taking 5d6 poison damage on a failed save or half as much on a successful one.</p>
-			<p><i>"It's not like anyone cared about the Geneva Conventions for the last 1300 years anyway."</i></p>
-		</description>
-		<setters>
-			<set name="category">Explosives</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="2">2 lb.</set>
-			<set name="stackable">true</set>
-		</setters>
-	</element>
 	
 	<element name="Gas Mask, Improvised" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GAS_MASK_IMPROVISED">
 		<description>
@@ -175,64 +74,6 @@
 		</setters>
 	</element>
 	
-	<element name="Stun Batton" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_WEAPON_MACE_STUNBATTON">
-		<description>
-			<p><i>Weapon (mace), Rare</i></p>
-			<p><b><i>Damage. </i></b>1d6 bludgeoning</p>
-			<p>This Stun Batton has 4 charges. On a hit, you can expend 1 charge to force the target to make a DC 12 Constitution saving throw. The target has disadvantage on the saving throw if it is wearing armor made of metal. On a failure, the target takes additional 1d6 lightning damage, and it can’t take reactions until the start of its next turn.</p>
-			<p class="indent">The Stun Batton regains 1d4 expended charges after a long rest.</p>
-			<p><i>"Ask your local Artificer for spare AA batteries."</i></p>
-		</description>
-		<setters>
-			<set name="keywords">mace</set>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="mace">Weapon</set>
-			<!-- <set name="attunement">true</set> -->
-			<set name="rarity">Rare</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MACES</set>
-		</setters>
-	</element>
-	
-	<element name="Riot Shield" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_SHIELD_RIOTSHIELD">
-		<description>
-			<p><i>Armor (shield), Rare</i></p>
-			<p>The Riot Shield is made from a lightweight, almost glass-like substance and is carried in one hand. It seems like this material is unaffected by rust or acid.</p>
-			<p>The shield has an inbuild light source, that casts bright light in a 30-foot cone and dim light for an additional 30 feet. The light can be switched on or off as a free action.</p>
-			<p>Once the light has been active for one hour, it’s internal energy source must recharge and the light can't be used again until the next dawn.</p>
-			<p><i>"When you really want to see the white in the enemies eyes."</i></p>
-			<p><i>There is a small carving near the handle that spells the name "James".</i></p>
-		</description>
-		<setters>
-			<set name="keywords">shield</set>
-			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="shield">Armor</set>
-			<!-- <set name="attunement">true</set> -->
-			<set name="rarity">Rare</set>
-			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-		</setters>
-	</element>
-	
-	<element name="Flight Suit" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_FLIGHTSUIT">
-		<description>
-			<p><i>Armor (light), Rare</i></p>
-			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier</p>
-			<p>This armor includes two wings attached under the arms.</p>
-			<p class="indent">When you are falling, you can use your reaction to spread your arms and engage the wings. The wings allow you to glide with a flying speed for 30 feet. While you are glinding, you cannot move upwards, and you descend at least 10 feet every turn, but you can choose the rate of your fall and in which direction you move.</p>
-			<p><i>"This is not flying, this is falling with style."</i></p>
-		</description>
-		<setters>
-			<set name="keywords">fly, flight, wings</set>
-			<set name="category">Magic Armor</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="slot">body</set>
-			<set name="type" addition="light">Armor</set>
-			<set name="rarity">Rare</set>
-			<set name="armor">Leather</set>
-		</setters>
-	</element>
-	
 	<element name="Parachute" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_PARACHUTE">
 		<description>
 			<p>When equipped (as you would a normal backpack), as a bonus action while falling, you can pull a chord on this packpack to release its parachute.</p>
@@ -248,24 +89,6 @@
 		</setters>
 	</element>
 	
-	<element name="Arcane Puzzle Box" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARCANE_PUZZLEBOX">
-		<description>
-			<p><i>Wonderous Item, Unique</i></p>
-			<p>A 10 cm wide puzzle box, engraved with a complex set of runes and movable components, that change every dawn.</p>
-			<p>This box can only hold one single item no bigger that 5 cubic feet, which appears once the box is opened.</p>
-			<p>To open the box, without being its owner, requires being occupied with the puzzle over 3 hours of uninterupted concentration. Then roll 3 consecutive DC 16 Intelligence checks. If one of the checks fail, the box "locks" and the puzzle cannot be attempted until it resets at the next dawn.</p>
-			<p>The last person to successfully open this box is its owner and can get access to it with a touch of their hand. They also receive a mental "alarm" whenever a puzzle attempt fails (provided they are on the same plane of existence).</p>
-			<p>The box cannot be destroyed by any means short of a <i>Disintegrate</i> or <i>Wish</i> spell.</p>
-			<p><i>Source: Dexter Griff’s corpse, Bunker 109, north-east of Suhast.</i></p>
-		</description>
-		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="rarity">Unique</set>
-		</setters>
-	</element>
-	
     <element name="Magicum (flask)" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_MAGICUM_FLASK">
 		<description>
 			<p>Magicum can come in a clay flask that holds 1 pint (16 oz.). This form of magicum can be used to power machines, artifacts and gadgets that are not considered ATUMs.</p>
@@ -276,91 +99,6 @@
 			<set name="cost" currency="gp">5</set>
 			<set name="weight" lb="0">—</set>
 			<set name="stackable">true</set>
-		</setters>
-	</element>
-	
-	
-	
-	<!-- Unique Items -->
-	
-	<element name="(Un-) Natural Selection +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_UNNATURAL_SELECTION">
-		<description>
-			<p><i>Magical Longsword (Martial Melee Weapon), unique</i></p>
-			<p class="indent"><b><i>Properties. </i></b>Versatile (1d10).</p>
-			<p class="indent"><b><i>Damage. </i></b>1d8 slashing.</p>
-			
-			<p class="indent"><b><i>Magical Weapon. </i></b>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
-			<p class="indent"><b><i>Unnatural Selection. </i></b>When you hit a fiend or an undead with this weapon, that creature takes additional 2d6 radiant damage.</p>
-			<p>This longsword is made out of glass as black as the night, with a beautifully carved wooden handle.</p>
-			<p><i>Source: Dryad from the Grove of Gannola</i></p>
-		</description>
-		<setters>
-			<set name="keywords">longsword</set>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="longsword">Weapon</set>
-			<set name="rarity">Unique</set>
-			<set name="enhancement">1</set>
-			<set name="weapon">Longsword</set>
-		</setters>
-	</element>
-	
-	<element name="Shiela" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
-		<description>
-			<p><i>Magical Firearm (Light Machine-Gun), unique</i></p>
-			
-			<p class="indent"><b><i>Properties. </i></b>Chainsaw Bayonet, Two-Handed, Reload (8), ROF (2), Ammunition (range 450/800).</p> 
-			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
-			
-			<p class="indent"><b><i>Magical Weapon. </i></b>This weapon ignores resistances to nonmagical damage.</p>
-			<p class="indent"><b><i>Scorching Chainsaw Bayonet. </i></b>As a bonus action you can make a scorching chainsaw bayonet magically appear on the tip of your rifle. This allows the weapon to be used as a simple melee weapon. On a successful hit it deals 1d6 fire damage and your next ranged attack with this weapon on the same target does not suffer disadvantage from close combat until the end of your next turn.</p>
-			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
-			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
-			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
-			<p class="indent"><b><i>Sentience. </i></b><i>Shiela</i> is a sentient true neutral weapon with hearing and vision out to a range of 60 feet. The weapon can speak, read and understand Common and Undercommon.</p>
-			<p class="indent"><b><i>Personality. </i></b><i>Shiela</i>’s voice is neutral. The weapon’s purpose is to instruct its wielder on its correct usage.</p>
-			
-			<p><i>"Your toast has been burned and no amount of scraping will remove the black parts!"</i></p>
-			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
-		</description>
-		<setters>
-			<set name="keywords">Machine-Gun, Light</set>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="any weapon">Weapon</set>
-			<set name="rarity">Unique</set>
-			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</set>
-		</setters>
-	</element>
-	
-	<element name="Widow’s Kiss +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_RAIL_GUN">
-		<description>
-			<p><i>Magical Firearm (Railgun Sniper Rifle)</i></p>
-			
-			<p class="indent"><b><i>Properties. </i></b>Heavy, Two-Handed, Reload (2), Armour-Piercing, Ammunition (600/1300).</p> 
-			<p class="indent"><b><i>Damage. </i></b>2d6 (Ammunition).</p> 
-			
-			<p class="indent"><b><i>Magical Weapon. </i></b>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
-			<p class="indent"><b><i>Poison Coating. </i></b>You can use a bonus action to cause thick, black poison to coat the next bullet - changing its damage type to poison. The poison remains for 1 minute or until this weapon fires a shot (regardless of hit or miss). On a successful hit, the target must succeed on a DC 15 Constitution saving throw or take 1d4 additional poison damage and become poisoned until the end of your next turn. The weapon can't be used this way again until the next dawn.</p>
-			<p class="indent"><b><i>Railgun. </i></b>The range of this weapon is increased by 100ft (to 600/1300).</p>
-			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
-			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
-			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
-			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
-			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
-			
-			<p><i>"Nothing personal, mon chéri."</i></p>
-			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
-		</description>
-		<setters>
-			<set name="keywords">Sniper Rifle</set>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="any weapon">Weapon</set>
-			<set name="rarity">Unique</set>
-			<set name="enhancement">1</set>
-			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE</set>
 		</setters>
 	</element>
 	

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-weapons.xml" />
+		</update>
+	</info>
+	
+	
+	<element name="Stun Batton" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_WEAPON_MACE_STUNBATTON">
+		<description>
+			<p><i>Weapon (mace), Rare</i></p>
+			<p><b><i>Damage. </i></b>1d6 bludgeoning</p>
+			<p>This Stun Batton has 4 charges. On a hit, you can expend 1 charge to force the target to make a DC 12 Constitution saving throw. The target has disadvantage on the saving throw if it is wearing armor made of metal. On a failure, the target takes additional 1d6 lightning damage, and it can’t take reactions until the start of its next turn.</p>
+			<p class="indent">The Stun Batton regains 1d4 expended charges after a long rest.</p>
+			<p><i>"Ask your local Artificer for spare AA batteries."</i></p>
+		</description>
+		<setters>
+			<set name="keywords">mace</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="mace">Weapon</set>
+			<!-- <set name="attunement">true</set> -->
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MACES</set>
+		</setters>
+	</element>
+	
+	<!-- Unique Items -->
+	
+	<element name="(Un-) Natural Selection +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_UNNATURAL_SELECTION">
+		<description>
+			<p><i>Magical Longsword (Martial Melee Weapon), unique</i></p>
+			<p class="indent"><b><i>Properties. </i></b>Versatile (1d10).</p>
+			<p class="indent"><b><i>Damage. </i></b>1d8 slashing.</p>
+			
+			<p class="indent"><b><i>Magical Weapon. </i></b>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><b><i>Unnatural Selection. </i></b>When you hit a fiend or an undead with this weapon, that creature takes additional 2d6 radiant damage.</p>
+			<p>This longsword is made out of glass as black as the night, with a beautifully carved wooden handle.</p>
+			<p><i>Source: Dryad from the Grove of Gannola</i></p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+	
+	<element name="Shiela" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_LMG">
+		<description>
+			<p><i>Magical Firearm (Light Machine-Gun), unique</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Chainsaw Bayonet, Two-Handed, Reload (8), ROF (2), Ammunition (range 450/800).</p> 
+			<p class="indent"><b><i>Damage. </i></b>1d6 (Ammunition).</p> 
+			
+			<p class="indent"><b><i>Magical Weapon. </i></b>This weapon ignores resistances to nonmagical damage.</p>
+			<p class="indent"><b><i>Scorching Chainsaw Bayonet. </i></b>As a bonus action you can make a scorching chainsaw bayonet magically appear on the tip of your rifle. This allows the weapon to be used as a simple melee weapon. On a successful hit it deals 1d6 fire damage and your next ranged attack with this weapon on the same target does not suffer disadvantage from close combat until the end of your next turn.</p>
+			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>ROF (x). </i></b>Some weapons make more than one shot or strike per attack. The number of shots or strikes a ranged weapon makes each time it is activated is shown in the brackets (x).</p>
+			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
+			<p class="indent"><b><i>Sentience. </i></b><i>Shiela</i> is a sentient true neutral weapon with hearing and vision out to a range of 60 feet. The weapon can speak, read and understand Common and Undercommon.</p>
+			<p class="indent"><b><i>Personality. </i></b><i>Shiela</i>’s voice is neutral. The weapon’s purpose is to instruct its wielder on its correct usage.</p>
+			
+			<p><i>"Your toast has been burned and no amount of scraping will remove the black parts!"</i></p>
+			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
+		</description>
+		<setters>
+			<set name="keywords">Machine-Gun, Light</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any weapon">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_LMG</set>
+		</setters>
+	</element>
+	
+	<element name="Widow’s Kiss +1" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_UNIQUE_WEAPON_CINEMA_ANCIENT_RAIL_GUN">
+		<description>
+			<p><i>Magical Firearm (Railgun Sniper Rifle)</i></p>
+			
+			<p class="indent"><b><i>Properties. </i></b>Heavy, Two-Handed, Reload (2), Armour-Piercing, Ammunition (600/1300).</p> 
+			<p class="indent"><b><i>Damage. </i></b>2d6 (Ammunition).</p> 
+			
+			<p class="indent"><b><i>Magical Weapon. </i></b>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent"><b><i>Poison Coating. </i></b>You can use a bonus action to cause thick, black poison to coat the next bullet - changing its damage type to poison. The poison remains for 1 minute or until this weapon fires a shot (regardless of hit or miss). On a successful hit, the target must succeed on a DC 15 Constitution saving throw or take 1d4 additional poison damage and become poisoned until the end of your next turn. The weapon can't be used this way again until the next dawn.</p>
+			<p class="indent"><b><i>Railgun. </i></b>The range of this weapon is increased by 100ft (to 600/1300).</p>
+			<p class="indent"><b><i>Heavy. </i></b>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</p>
+			<p class="indent"><b><i>Two-Handed. </i></b>This weapon requires two hands to use.</p>
+			<p class="indent"><b><i>Reload (x). </i></b>This weapon must be reloaded after it has made a number of shots or strikes equal to the value shown in the brackets (x). It takes an action to reload.</p>
+			<p class="indent"><b><i>Armour-Piercing. </i></b>This weapon ignores armour plating and resistances to nonmagical piercing damage.</p>
+			<p class="indent"><b><i>Ammunition. </i></b>Unlike conventional ammunition, all firearm ammunition is purchased in magazines, or clips, instead of individual rounds. A weapon’s magazine lasts for as long as the Reload (x) property listed on its profile, regardless of the amount of shots the weapon might actually fire. A weapon with no damage type uses the damage type of it’s ammunition.</p>
+			
+			<p><i>"Nothing personal, mon chéri."</i></p>
+			<p><i>Source: Cinema ruins in caves near Suhast</i></p>
+		</description>
+		<setters>
+			<set name="keywords">Sniper Rifle</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any weapon">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_TGMHB_WEAPON_GROUP_FIREARM_SNIPER_RIFLE</set>
+		</setters>
+	</element>
+	
+	
+	
+	<!-- ammunition -->
+	<element name="Arrow of Wrangling" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GRAPPLE_ARROW">
+		<description>
+			<p>An arrow made of metal, decorated with hooks that extend when pulled in the opposite direction.</p>
+			<p class="indent"><b><i>Hooked Arrowhead. </i></b>When you hit a successful attack using this arrow, it lodges into your target and grabs into it with metal hooks dealing an extra 1d4 damage.</p>
+			<p class="indent"><b><i>Ropeshot. </i></b>You can attach up to 90 ft of rope to this arrow without affecting the shot. If you successfully attack a small, medium, large or huge creature with this arrow, it can move unimpeded within a circle centered on the creature holding the other end of the rope. The radius of this circle is determined by when the ropeholder decides to tension the rope.</p>
+			<p class="indent"><b><i>Struggle. </i></b>Should the hooked creature try to move outside this radius, then it must make a Strength (Athletics) check against the ropeholder’s Strength (Athletics). On a failure it looses half its movement. On a success it can move at half speed and drag the ropeholder along (forced movement), or it moves unimpeded if the ropeholder chooses to let go of the rope.</p>
+			<p class="indent"><b><i>Wrangle. </i></b>Conversely, the ropeholding creature can spend an action to reduce the radius by pulling in rope. If the rope is slack or the ropeholder chooses to move towards the hooked creature, the ropeholder can pull in up to 30 ft of rope. Additionally, if the rope is taut, the ropeholder can make a Strength (Athletics) check against the hooked creature’s Strength (Athletics) in order to forcefully move it closer. On a success the hooked creature is moved towards the ropeholder by 5 ft if its size is greater than the ropeholder’s, or 10 ft otherwise.</p>
+			<p class="indent">You can choose to climb the rope. Whether or not the arrow holds your weight, the Strength (Athletics) DC for the climb and any (dis)advantage are at the DM’s discretion.</p>
+			<p class="indent">A creature of reasonable intelligence might realize eventually, that it can just try to cut the rope.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	
+	<!-- explosives -->
+	<element name="Grenade, Mustard Gas, Small" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_GRENADE_MUSTARD_GAS_SMALL">
+		<description>
+			<p>As an action, a character can throw a grenade at a point up to 60 feet away.</p>
+			<p class="indent">When this grenade lands, it emits a cloud of gas that creates a heavily obscured area in a 20-foot sphere. A moderate wind (at least 10 miles per hour) disperses the smoke in 2 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round. Otherwise, the gas lasts for 3 rounds.</p>
+			<p class="indent">All creatures who end their turn within the cloud must make a DC 15 Constitution saving throw, taking 5d6 poison damage on a failed save or half as much on a successful one.</p>
+			<p><i>"It's not like anyone cared about the Geneva Conventions for the last 1300 years anyway."</i></p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	
+</elements>

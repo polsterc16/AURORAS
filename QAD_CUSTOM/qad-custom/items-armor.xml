@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items Armor</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-armor.xml" />
+		</update>
+	</info>
+	
+	
+	<!-- LIGHT armor -->
+	
+	<!-- 	leather --> 
+	<element name="Flight Suit" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_FLIGHTSUIT">
+		<description>
+			<p><i>Armor (light), Rare</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier</p>
+			<p>This armor includes two wings attached under the arms.</p>
+			<p class="indent">When you are falling, you can use your reaction to spread your arms and engage the wings. The wings allow you to glide with a flying speed for 30 feet. While you are glinding, you cannot move upwards, and you descend at least 10 feet every turn, but you can choose the rate of your fall and in which direction you move.</p>
+			<p><i>"This is not flying, this is falling with style."</i></p>
+		</description>
+		<setters>
+			<set name="keywords">fly, flight, wings</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">Leather</set>
+		</setters>
+	</element>
+	
+	<element name="Xommantem's Magical Sweater (Brass)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_BRASS">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
+			<p>A nice knitted sweater. The patterns move on their own and form small groups of chatting brass dragons.</p>
+			<p class="indent">Wearing this sweater gives you +2 on all Charisma checks when dealing with ancient, old, or adult dragons.</p>
+			<p class="indent">This sweater also keeps you unusually warm in cold climate and can be used instead of a thick winter jacket.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass, dragon, warm</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Leather</set>
+		</setters>
+	</element>
+	<element name="Xommantem's Magical Sweater (Gold)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_GOLD">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
+			<p>A nice knitted sweater. The patterns move on their own and form small groups of playing gold dragons.</p>
+			<p class="indent">One per day, the wearer can hug any creature with an Intelligence score of 5 or higher and remind them of a comforting, cherished memory (can target the wearer).</p>
+			<p class="indent">This sweater also keeps you unusually warm in cold climate and can be used instead of a thick winter jacket.</p>
+		</description>
+		<setters>
+			<set name="keywords">gold, dragon, warm</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Leather</set>
+		</setters>
+	</element>
+	<element name="Xommantem's Magical Sweater (Steel)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_STEEL">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>12 + Dex modifier (Studded Leather Armor)</p>
+			<p>A nice knitted sweater. The patterns move on their own and form small groups of steel dragons dancing together.</p>
+			<p class="indent">This sweater can transform into other knit items - like a warm and fluffy blanket, a hat, mittens, oven mitts, a fuzzy scarf, socks, or a vest.</p>
+			<p class="indent">This sweater also keeps you unusually warm in cold climate and can be used instead of a thick winter jacket.</p>
+		</description>
+		<setters>
+			<set name="keywords">steel, dragon, warm</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="studded leather">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Studded Leather</set>
+		</setters>
+	</element>
+	
+	
+	<!-- MEDIUM armor -->
+	
+	
+	<!-- HEAVY armor -->
+	
+	
+	<!-- SHIELD -->
+	<element name="Riot Shield" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_SHIELD_RIOTSHIELD">
+		<description>
+			<p><i>Armor (shield), Unique</i></p>
+			<p>The Riot Shield is made from a lightweight, almost glass-like substance and is carried in one hand. It seems like this material is unaffected by rust or acid.</p>
+			<p>The shield has an inbuild light source, that casts bright light in a 30-foot cone and dim light for an additional 30 feet. The light can be switched on or off as a free action.</p>
+			<p>Once the light has been active for one hour, it’s internal energy source must recharge and the light can't be used again until the next dawn.</p>
+			<p><i>"When you really want to see the white in the enemies eyes."</i></p>
+			<p><i>There is a small carving near the handle that spells the name "James".</i></p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<!-- <set name="attunement">true</set> -->
+			<set name="rarity">Unique</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+	
+	
+</elements>

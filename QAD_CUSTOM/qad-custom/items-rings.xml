@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-rings.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-rings.xml" />
+		</update>
+	</info>
+	
+	
+	<!-- Bread-o-mancer -->
+	<element name="Ring of the Bread'o'mancer" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BOM_RING_OF_BOM">
+		<description>
+			<p>Using an action, you can expend one charge of this ring to magically animate a loaf of bread and bring it to life. The loaf can be commanded mentally to do your bidding with a bonus action, as long as you don't loose concentration.</p>
+			<p>After one hour, of if the loaf is reduced to 0 hitpoints, it turns back intp a normal loaf of bread.</p>
+			<p>If you loose concentration, the loaf sees you as its worst enemy and starts attacking you. If the bread is further than 60 feet from you, the effects are the same as if loosing concentration.</p>
+			<p>The ring holds 4 charges and regains all lost charges at the next dawn.</p>
+			<p><b><i>Loaf of Bread. </i></b>tiny construct, unaligned. AC 8 , HP 1, 20ft speed. Bite Attack: +1 to hit, 1 piercing damage.</p>
+			<p><i>"Bready or not, here it crumbs!"</i></p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+		</setters>
+	</element>
+	
+	
+</elements>

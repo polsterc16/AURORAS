@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Campaing stuff</name>
 		<description>Campaign specific custum stuff.</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="qad-custom.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom.index" />
 		</update>
 	</info>
@@ -11,6 +11,14 @@
 		<!-- QAD -->
 		<file name="sources.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/sources.xml" />
 		<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-armor.xml" />
+		<file name="items-rings.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-rings.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-weapons.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-wondrous.xml" />
+		
+		<file name="items-set-maestro.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-set-maestro.xml" />
+		<file name="items-set-xommantem.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-set-xommantem.xml" />
+		
 		
 		<!-- TOV -->
 		<file name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/tov/deities.xml" />

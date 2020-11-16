@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-wondrous.xml" />
+		</update>
+	</info>
+	
+	<element name="Image Tile" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BILDTAFELN">
+		<description>
+			<p>A set of thin metal plates the size of playing cards, engraved with an eye on its front side.</p>
+			<p class="indent">You can activate a tile as an action and use it in one the following ways:</p>			
+			<p class="indent"><b><i>View. </i></b>The tile’s stored image appears as a miniature <i>minor illustion</i> its back side.</p>
+			<p class="indent"><b><i>Capture. </i></b>Pointing the tile at something, causes a miniature <i>minor illustion</i> of the tile’s view to appear on its back side. Doing so for one minute causes this image to be stored in the tile until overwritten.</p>
+			<p class="indent"><b><i>Transfer. </i></b>You can choose to copy an image from one tile to another by activating them next to each other for one minute.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Transport Stone" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_TRANSPORTSTEIN">
+		<description>
+			<p>A small flat stone, covered in magical runes. A stone needs to be paired to another to allow for transport between them.</p>
+			<p class="indent"><b><i>Send. </i></b>You can spend 10 minutes in order to send non-living objects that can fit an a 2 foot cube to the stone’s counterpart. The stone can be used this way up to three times until the next dawn.</p>
+			<p class="indent"><b><i>Receive. </i></b>When the stone receives objects, certain runes on it start to blink. Using an action you can make them appear in an unoccupied space within 5 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Bag of Holding Potatoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BAG_OF_HOLDING_POTATOES">
+		<description>
+			<p>It appears to be a simple potato sack, but using an action, 1d4 potatoes can be removed from it.</p>
+			<p class="indent">Once potatoes have been removed 3 times, it can't be used again until the next dawn.</p>
+			<p class="indent"><i>The supply of potatoes seemingly is infinite, altough it cannot be said if it produces the potatoes magically or displaces them from somewhere else.</i></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Raw Magicum Crystal +1" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_MAGICUMCRYSTAL_RAW">
+		<description>
+			<p><i>Spellcasting Focus, Uncommon (requires attunement by a spellcaster)</i></p>
+			<p>The Raw Magicum Crystal can be used as a spellcasting focus. While holding this crystal, you gain a +1 bonus to spell attack rolls.</p>
+			<p class="indent"><b><i>Untamed Magic. </i></b>Every spell of second level or higher that is cast while this crystal is on your body triggers a <i>Wild Magic Surge</i>. Roll a d100 and consult the <i>Wild Magic Surge</i> table for the random magical effect (PHB p. 104).</p>
+			<p><i>Magicum is the basis for refined ATUM fuel.</i></p>
+			<p><i>The wizard Kardos mentioned, that he might be able to remove the chaotic aspect of this crystal, for a fee.</i></p>
+			<p><i>Source: Sunken temple (R17) in the Highland.</i></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+		</rules>
+	</element>
+	<element name="Arcane Puzzle Box" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARCANE_PUZZLEBOX">
+		<description>
+			<p><i>Wonderous Item, Unique</i></p>
+			<p>A 10 cm wide puzzle box, engraved with a complex set of runes and movable components, that change every dawn.</p>
+			<p>This box can only hold one single item no bigger that 5 cubic feet, which appears once the box is opened.</p>
+			<p>To open the box, without being its owner, requires being occupied with the puzzle over 3 hours of uninterupted concentration. Then roll 3 consecutive DC 16 Intelligence checks. If one of the checks fail, the box "locks" and the puzzle cannot be attempted until it resets at the next dawn.</p>
+			<p>The last person to successfully open this box is its owner and can get access to it with a touch of their hand. They also receive a mental "alarm" whenever a puzzle attempt fails (provided they are on the same plane of existence).</p>
+			<p>The box cannot be destroyed by any means short of a <i>Disintegrate</i> or <i>Wish</i> spell.</p>
+			<p><i>Source: Dexter Griff’s corpse, Bunker 109, north-east of Suhast.</i></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- Bread-o-mancer -->
+	<element name="The Trauma Bun" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_BOM_TRAUMABUN">
+		<description>
+			<p><i>Wonderous Item, Unique</i></p>
+			<p>A small bread roll, that is quite old and about as hard as a rock. It is about the size of a fist and when thrown by hand or by sling, it gives you +1 to attack and damage rolls.</p>
+			<p>While airborne, this bun will scream in fear.</p>
+			<p><i>"Here we go a-grain"</i></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	
+</elements>

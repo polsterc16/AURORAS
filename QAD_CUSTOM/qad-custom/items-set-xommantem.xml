@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items Xommantem</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-set-xommantem.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-set-xommantem.xml" />
+		</update>
+	</info>
+	
+	
+	<!-- LIGHT armor -->
+	
+	<!-- 	leather --> 
+	
+	<element name="Xommantem's Magical Sweater (Brass)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_BRASS">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
+			<p>A nice knitted sweater. The patterns move on their own and form small groups of chatting brass dragons.</p>
+			<p class="indent">Wearing this sweater gives you +2 on all Charisma checks when dealing with ancient, old, or adult dragons.</p>
+			<p class="indent">This sweater also keeps you unusually warm in cold climate and can be used instead of a thick winter jacket.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass, dragon, warm</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Leather</set>
+		</setters>
+	</element>
+	<element name="Xommantem's Magical Sweater (Gold)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_GOLD">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
+			<p>A nice knitted sweater. The patterns move on their own and form small groups of playing gold dragons.</p>
+			<p class="indent">One per day, the wearer can hug any creature with an Intelligence score of 5 or higher and remind them of a comforting, cherished memory (can target the wearer).</p>
+			<p class="indent">This sweater also keeps you unusually warm in cold climate and can be used instead of a thick winter jacket.</p>
+		</description>
+		<setters>
+			<set name="keywords">gold, dragon, warm</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Leather</set>
+		</setters>
+	</element>
+	<element name="Xommantem's Magical Sweater (Silver)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_SILVER">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
+			<p>A nice knitted sweater. The patterns move on their own and form small groups of silver dragons reading through books and occasionally yawning.</p>
+			<p class="indent">While you wear this sweater you can use an action to magically summon a medium sized campfire, twice a day. The fire itself is not magical and can be put out be magical and nonmagical means.</p>
+			<p class="indent">This sweater also keeps you unusually warm in cold climate and can be used instead of a thick winter jacket.</p>
+		</description>
+		<setters>
+			<set name="keywords">silver, dragon, warm</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Leather</set>
+		</setters>
+	</element>
+	
+	<!-- 	studded leather --> 
+	<element name="Xommantem's Magical Sweater (Steel)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_STEEL">
+		<description>
+			<p><i>Clothing, Unique</i></p>
+			<p class="indent"><b><i>Armor Class. </i></b>12 + Dex modifier (Studded Leather Armor)</p>
+			<p>A nice knitted sweater. The patterns move on their own and form small groups of steel dragons dancing together.</p>
+			<p class="indent">This sweater can transform into other knit items - like a warm and fluffy blanket, a hat, mittens, oven mitts, a fuzzy scarf, socks, or a vest.</p>
+			<p class="indent">This sweater also keeps you unusually warm in cold climate and can be used instead of a thick winter jacket.</p>
+		</description>
+		<setters>
+			<set name="keywords">steel, dragon, warm</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="studded leather">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="armor">Studded Leather</set>
+		</setters>
+	</element>
+	
+	
+	<!-- MEDIUM armor -->
+	
+	
+	<!-- HEAVY armor -->
+	
+	
+	<!-- SHIELD -->
+	
+	
+</elements>
