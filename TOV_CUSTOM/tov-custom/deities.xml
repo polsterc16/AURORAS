@@ -3,7 +3,7 @@
 	<info>
 		<name>Deities</name>
 		<update version="0.0.1">
-			<file name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/tov/deities.xml" />
+			<file name="deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/deities.xml" />
 		</update>
 	</info>
 	
