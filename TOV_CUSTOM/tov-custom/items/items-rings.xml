@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-rings.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-rings.xml" />
+		</update>
+	</info>
+	
+	
+	<element name="Ring of Diamond Skin" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_RING_OF_DIAMOND_SKIN">
+		<description>
+			<p>You gain a +20 bonus to AC while wearing this ring.</p>
+			<p class="indent"><b><i>Curse.</i></b> This ring is cursed. Attuning to it curses you until you are targeted by a <i>remove curse</i> spell or similar magic. As long as you remain cursed, you become petrified as a diamond statue.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Unique</set>
+			<set name="keywords">curse</set>
+			<set name="cursed">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="20" />
+		</rules>
+	</element>
+	<element name="Ring of Complete Invisibility" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_RINGOCOMPLETEINVISIBILITY">
+		<description>
+			<p>While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you.</p>
+			<p class="indent"><b><i>Curse.</i></b> This ring is cursed. Attuning to it curses you until you are targeted by a <i>remove curse</i> spell or similar magic. As long as you remain cursed, you are invisible and all creatures are invisible to you.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Unique</set>
+			<set name="keywords">curse</set>
+			<set name="cursed">true</set>
+		</setters>
+	</element>
+	
+</elements>

@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Campaing stuff</name>
 		<description>Campaign specific custum stuff.</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="qad-custom.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom.index" />
 		</update>
 	</info>
@@ -20,10 +20,8 @@
 		<file name="items-set-xommantem.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-set-xommantem.xml" />
 		
 		
-		<!-- TOV -->
-		<file name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/tov/deities.xml" />
 		
-		
+		<obsolete name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/tov/deities.xml" />
 		<obsolete name="source.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/source.xml" />
 	</files>
 </index>

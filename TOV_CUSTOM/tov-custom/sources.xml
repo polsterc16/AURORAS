@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/sources.xml" />
+		</update>
+	</info>
+	
+	<element name="ToV Campaign Custom" type="Source" source="Core" id="ID_TOV_CAMPAIGN_SOURCE_TOV_CAMPAIGN_CUSTOM">
+		<description>
+			<p>Custom stuff from the Towers of Vesija Campaign.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">TOV_CAMPAIGN</set>
+			<set name="url">https://www.youtube.com/watch?v=dQw4w9WgXcQ</set>
+			<set name="author" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ToV Campaign</set>
+			<set name="homebrew">true</set>
+			<!-- <set name="information">This source uses items found in The Greasemonkey's Handbook.</set> -->
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Staffs</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="items-staffs.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-staffs.xml" />
+		</update>
+	</info>
+	
+	<element name="Staff of Restoration" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_STAFF_OF_RESTORATION">
+		<description>
+			<p>This staff has 5 charges. While holding it, you can use an action to expend 1 or more of its charges to use one of the following effects from it: heal for 1d8 (1 charge), or regenerate one limb or appendage (5 charges).</p>
+			<p class="indent">The staff regains all expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">regenerate,heal</set>
+			<set name="category">Staffs</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Staff</set>
+			<!-- <set name="attunement" addition="by a cleric, druid, or warlock">true</set> -->
+			<set name="rarity">Uncommon</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+		</setters>
+	</element>
+	
+</elements>

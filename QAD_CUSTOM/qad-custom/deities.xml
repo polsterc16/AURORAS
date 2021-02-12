@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deities</name>
+		<update version="0.0.1">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/deities.xml" />
+		</update>
+	</info>
+	
+	<!-- Custom Gods for Qad -->
+	<element name="Mansana" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_MANSANA">
+		<description>
+			<p class="flavor"></p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Draconis Orientis" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_DRACONISORIENTIS">
+		<description>
+			<p class="flavor"></p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Der Meister" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_DERMEISTER">
+		<description>
+			<p class="flavor"></p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Gannola" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_GANNOLA">
+		<description>
+			<p class="flavor"></p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Der W&#228;chter" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_DERWACHTER">
+		<description>
+			<p class="flavor"></p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Pollux" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_POLLUX">
+		<description>
+			<p class="flavor"></p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="Sol" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_SOL">
+		<description>
+			<p class="flavor"></p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	
+	<element name="CISSUS" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_CISSUS">
+		<description>
+			<p class="flavor">god of progress</p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description>god of progress</description>
+		</sheet>
+	</element>
+	<element name="VIGIL" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_VIGIL">
+		<description>
+			<p class="flavor">god of knowledge</p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description>god of knowledge</description>
+		</sheet>
+	</element>
+	<element name="Filo" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_FILO">
+		<description>
+			<p class="flavor">local "god" of kobolds</p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description>local "god" of kobolds</description>
+		</sheet>
+	</element>
+	<element name="Fyion" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_FYION">
+		<description>
+			<p class="flavor">goddess of death</p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">NE</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description>goddess of death</description>
+		</sheet>
+	</element>
+	<element name="Nox" type="Deity" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_DEITY_NOX">
+		<description>
+			<p class="flavor">goddess of the night, darkness and dreams</p>
+		</description>
+		<setters>
+			<set name="setting">Qadrudia</set>
+			<set name="alignment">?</set>
+			<set name="domains">?</set>
+			<set name="symbol">?</set>
+			<set name="gender">?</set>
+		</setters>
+		<sheet>
+			<description>goddess of the night, darkness and dreams</description>
+		</sheet>
+	</element>
+</elements>

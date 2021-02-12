@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description/>
+		<update version="0.0.1">
+			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-wondrous.xml" />
+		</update>
+	</info>
+	
+	
+	<element name="Unspillable Bottle of Ink" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_UNSPILLABLEBOTTLEOFINK">
+		<description>
+			<p>This bottle can hold 1 ounce of ink.</p>
+			<p class="indent">The contents of this bottle cannot be spilled unintentionally.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Shirt of 'Fire Resistance'" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_FFT_SHIRTOFFIRERESISTANCE">
+		<description>
+			<p>This cloth shirt seems to constantly secrete water, keeping it wet.</p>
+			<p class="indent">On the inside is a label of "Frankie's Funny Things".</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	<element name="Sentient Backpack" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_FFT_SENTIENTBACKPACK">
+		<description>
+			<p>A backpack is a leather pack carried on the back, typically with straps to secure it. A backpack can hold 1 cubic foot/ 30 pounds of gear.</p>
+			<p class="indent">When filled with items, you can hear coughing from the backpack. It occationally throws up its contents.</p>
+			<p class="indent">On the inside is a label of "Frankie's Funny Things".</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	<element name="Glasses of Hindsight" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_FFT_GLASSESOFHINDSIGHT">
+		<description>
+			<p>This pair of glasses lets you see things more clearly... after you have already messed them up.</p>
+			<p class="indent">On the side you can spot an engraving of "Frankie's Funny Things".</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	<element name="Pants of Invisibility" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_FFT_PantsofInvisibility">
+		<description>
+			<p>This pair of pants becomes invisible when equipped.</p>
+			<p class="indent">On the inside is a label of "Frankie's Funny Things".</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	<element name="Amulet of Golem Control" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_AMULETOFGOLEMCONTROL">
+		<description>
+			<p>This amulet was used to maintain control over a golem.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Gloves of Climbing" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_GLOVESOFCLIMBING">
+		<description>
+			<p>While wearing these gloves, climbing doesn't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb.</p>
+		</description>
+		<setters>
+			<set name="keywords">athletics</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Door Handle of Giggles" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_DOORHANDLEOFGIGGLES">
+		<description>
+			<p>This seemingly sentient door handle will giggle whenever it seems to be amused.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	<element name="Hour Glass of Gravity" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_HourGlassofGravity">
+		<description>
+			<p>An hourglass is held by a metal frame.</p>
+			<p class="indent">Using an action, the hourglass can be turned upside down inside its frame. Doing so causes gravity to be reversed for 1 minute in a 20-foot radius cylinder up to 40 feet tall centered on a the position of the hourglass when it was used. The affected region is stationary for the duration.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	
+</elements>

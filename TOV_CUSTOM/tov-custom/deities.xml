@@ -3,11 +3,11 @@
 	<info>
 		<name>Deities</name>
 		<update version="0.0.1">
-			<file name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/tov/deities.xml" />
+			<file name="tov/deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/tov/deities.xml" />
 		</update>
 	</info>
 	
-	<!-- Custom Gods for ToV -->
+	
 	<element name="Chronos" type="Deity" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_DEITY_CHRONOS">
 		<description>
 			<p class="flavor">god of time</p>

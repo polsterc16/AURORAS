@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Custom Campaing stuff</name>
+		<description>Campaign specific custum stuff.</description>
+		<update version="0.0.1">
+			<file name="tov-custom.index" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom.index" />
+		</update>
+	</info>
+	<files>
+		<file name="sources.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/sources.xml" />
+		
+		<file name="items.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-armor.xml" />
+		<file name="items-rings.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-rings.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-weapons.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-wondrous.xml" />
+		
+		<file name="deities.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/tov/deities.xml" />
+		
+		
+	</files>
+</index>
