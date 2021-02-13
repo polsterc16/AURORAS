@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description/>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/TOV_CUSTOM/tov-custom/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -12,7 +12,7 @@
 	<element name="Unspillable Bottle of Ink" type="Magic Item" source="ToV Campaign Custom" id="ID_TOV_CAMPAIGN_MAGIC_ITEM_UNSPILLABLEBOTTLEOFINK">
 		<description>
 			<p>This bottle can hold 1 ounce of ink.</p>
-			<p class="indent">The contents of this bottle cannot be spilled unintentionally.</p>
+			<p class="indent">The contents of this enchanted bottle cannot be spilled unintentionally.</p>
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
