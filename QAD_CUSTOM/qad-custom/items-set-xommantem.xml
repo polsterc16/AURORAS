@@ -13,7 +13,7 @@
 	
 	<!-- 	leather --> 
 	
-	<element name="Xommantem's Magical Sweater (Brass)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_BRASS">
+	<element name="Xommantem’s Magical Sweater (Brass)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_BRASS">
 		<description>
 			<p><i>Clothing, Unique</i></p>
 			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
@@ -31,7 +31,7 @@
 			<set name="armor">Leather</set>
 		</setters>
 	</element>
-	<element name="Xommantem's Magical Sweater (Gold)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_GOLD">
+	<element name="Xommantem’s Magical Sweater (Gold)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_GOLD">
 		<description>
 			<p><i>Clothing, Unique</i></p>
 			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
@@ -49,7 +49,7 @@
 			<set name="armor">Leather</set>
 		</setters>
 	</element>
-	<element name="Xommantem's Magical Sweater (Silver)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_SILVER">
+	<element name="Xommantem’s Magical Sweater (Silver)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_SILVER">
 		<description>
 			<p><i>Clothing, Unique</i></p>
 			<p class="indent"><b><i>Armor Class. </i></b>11 + Dex modifier (Leather Armor)</p>
@@ -69,7 +69,7 @@
 	</element>
 	
 	<!-- 	studded leather --> 
-	<element name="Xommantem's Magical Sweater (Steel)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_STEEL">
+	<element name="Xommantem’s Magical Sweater (Steel)" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_STEEL">
 		<description>
 			<p><i>Clothing, Unique</i></p>
 			<p class="indent"><b><i>Armor Class. </i></b>12 + Dex modifier (Studded Leather Armor)</p>
@@ -89,13 +89,22 @@
 	</element>
 	
 	
-	<!-- MEDIUM armor -->
-	
-	
-	<!-- HEAVY armor -->
-	
-	
-	<!-- SHIELD -->
+	<element name="Xommantem’s Knitted Sweaters Pack" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_XOMMANTEMSSWEATERS_PACK">
+		<description>
+			<p>Includes Xommantem’s various knitted, magical sweaters (Steel, Brass, Silver and Gold).</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_STEEL</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_BRASS</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_SILVER</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_XOMMANTEMSWEATER_GOLD</item>
+		</extract>
+	</element>
 	
 	
 </elements>

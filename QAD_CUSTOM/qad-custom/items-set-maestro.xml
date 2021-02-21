@@ -3,13 +3,13 @@
 	<info>
 		<name>Items Maestro</name>
 		<description/>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-set-maestro.xml" url="https://raw.githubusercontent.com/polsterc16/AURORAS/master/QAD_CUSTOM/qad-custom/items-set-maestro.xml" />
 		</update>
 	</info>
 	
 	<!-- Armor -->
-	<element name="The Maestro's Suit Jacket" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_MAESTRO_JACKET">
+	<element name="The Maestro’s Suit Jacket" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_MAESTRO_JACKET">
 		<description>
 			<p><i>Light Armor, Unique</i></p>
 			<p class="indent"><b><i>Armor Class. </i></b>12 + Dex modifier (Studded Leather Armor)</p>
@@ -29,7 +29,7 @@
 	</element>
 	
 	<!-- Clothing -->
-	<element name="The Maestro's Shirt" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHIRT">
+	<element name="The Maestro’s Shirt" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHIRT">
 		<description>
 			<p><i>Clothing, Unique (requires attunement)</i></p>
 			<p>A very finely tailored white shirt that seemingly never gets dirty, complete with fitting bowtie.</p>
@@ -51,7 +51,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
 		</rules>
 	</element>
-	<element name="The Maestro's Pants" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_PANTS">
+	<element name="The Maestro’s Pants" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_PANTS">
 		<description>
 			<p><i>Clothing, Unique (requires attunement)</i></p>
 			<p>A very finely tailored pair of pants that goes nicely with the Maestro's Suit Jacket.</p>
@@ -71,7 +71,7 @@
 			<set name="rarity">Unique</set>
 		</setters>
 	</element>
-	<element name="The Maestro's Glasses" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_GLASSES">
+	<element name="The Maestro’s Glasses" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_GLASSES">
 		<description>
 			<p><i>Accessory, Unique</i></p>
 			<p>Objects viewed through these glasses can be magnified up to twice their size.</p>
@@ -88,7 +88,7 @@
 			<set name="rarity">Unique</set>
 		</setters>
 	</element>
-	<element name="The Maestro's Shoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHOES">
+	<element name="The Maestro’s Shoes" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHOES">
 		<description>
 			<p><i>Clothing, Unique</i></p>
 			<p class="indent">As a bonus action you can cause these shoes to make trombone sounds with every step you take for up to one minute</p>
@@ -108,7 +108,7 @@
 	</element>
 	
 	<!-- Baton/Special -->
-	<element name="The Maestro's Baton" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_BATON">
+	<element name="The Maestro’s Baton" type="Magic Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_BATON">
 		<description>
 			<p><i>Ranged/Melee Weapon, Unique</i></p>
 			<p>When not used as a weapons, this item appears to be the baton of a maestro.</p>
@@ -129,5 +129,23 @@
 	</element>
 	
 	
+	<element name="The Maestro’s Pack" type="Item" source="Qadrudia Campaign Custom" id="ID_QAD_CAMPAIGN_ITEM_MAESTROS_PACK">
+		<description>
+			<p>Includes the Maestro’s Suit Jacket, Shirt, Pants, Glasses and Baton... and bad puns.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_ARMOR_MAESTRO_JACKET</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHIRT</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_PANTS</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_SHOES</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_GLASSES</item>
+			<item>ID_QAD_CAMPAIGN_MAGIC_ITEM_CLOTHING_MAESTRO_BATON</item>
+		</extract>
+	</element>
 	
 </elements>
